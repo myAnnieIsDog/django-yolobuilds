@@ -1,0 +1,32 @@
+﻿username,first,last,email,is_active,is_staff,is_superuser,company_name,phone_number,address,city,state,zip
+aespinoza,Angelina,Espinoza,angelina.espinoza@yolocounty.org,True,True,False,Yolo County DCS,530-666-8775,292 W Beamer St,Woodland,CA,95695
+ayepez,Angelica,Yepez,angelica.yepez@yolocounty.org,True,True,False,Yolo County DCS,530-666-8775,292 W Beamer St,Woodland,CA,95695
+cmendoza,Cassandra,Mendoza,cassandra.mendoza@yolocounty.org,True,True,False,Yolo County DCS,530-666-8775,292 W Beamer St,Woodland,CA,95695
+ctschudin,Charlie,Tschudin,charlie.tschudin@yolocounty.org,True,True,False,Yolo County DCS,530-666-8775,292 W Beamer St,Woodland,CA,95695
+danderson,Deborah,Anderson,deborah.anderson@yolocounty.org,True,True,False,Yolo County DCS,530-666-8775,292 W Beamer St,Woodland,CA,95695
+dkoranda,Dawne,Koranda,dawne.koranda@yolocounty.org,True,True,False,Yolo County DCS,530-666-8775,292 W Beamer St,Woodland,CA,95695
+jacevedo,Josephine,Acevedo,josephine.acevedo@yolocounty.org,True,True,False,Yolo County ACE,530-666-8775,56465465,Woodland,CA,95695
+janderson,Jeff,Anderson,jeff.anderson@yolocounty.org,True,True,False,Yolo County DCS,530-666-8775,292 W Beamer St,Woodland,CA,95695
+jbautisa,Jair,Bautisa,jair.bautista@yolocounty.org,True,True,False,Yolo County DCS,530-666-8775,292 W Beamer St,Woodland,CA,95695
+jhuang,Jianmin,Huang,jianmin.huang@yolocounty.org,True,True,False,Yolo County DCS,530-666-8775,292 W Beamer St,Woodland,CA,95695
+jpimentel-morra,Josue,Pimentel-Morra,josue.pimentel@yolocounty.org,True,True,False,Yolo County DCS,530-666-8775,292 W Beamer St,Woodland,CA,95695
+jtrebec,JD,Trebec,jd.trebec@yolocounty.org,True,True,False,Yolo County DCS,530-666-8775,292 W Beamer St,Woodland,CA,95695
+jvanhorn,Jeremy,Van Horn,jeremy.vanhorn@yolocounty.org,True,True,False,Yolo County DCS,530-666-8775,292 W Beamer St,Woodland,CA,95695
+mfarhoudi,Maryam,Farhoudi,maryam.farhoodi@yolocounty.org ,True,True,False,Yolo County DCS,530-666-8775,292 W Beamer St,Woodland,CA,95695
+mnardiello,Marlin,Nardiello,marlin.nardiello@yolocounty.org,True,True,False,Yolo County DCS,530-666-8775,292 W Beamer St,Woodland,CA,95695
+phedrick,Pam,Hedrick,pam.hedrick@yolocounty.org,True,True,False,Yolo County DCS,530-666-8775,292 W Beamer St,Woodland,CA,95695
+sdoolittle,Scott,Doolittle,scott.doolittle@yolocounty.org,True,True,True,Yolo County DCS,530-666-8775,292 W Beamer St,Woodland,CA,95695
+scastagnola,Stacey,Castagnola,stacey.castagnola@yolocounty.org,True,True,False,Yolo County DCS,530-666-8775,292 W Beamer St,Woodland,CA,95695
+scormier,Stephanie,Cormier,stephanie.cormier@yolocounty.org,True,True,False,Yolo County DCS,530-666-8775,292 W Beamer St,Woodland,CA,95695
+sdawley,Suzie,Dawley,susie.dawlwy@yolocounty.org,True,True,False,Yolo County DCS,530-666-8775,292 W Beamer St,Woodland,CA,95695
+sjeet,Shriti,Jeet,shriti.jeet@yolocounty.org,True,True,False,Yolo County DCS,530-666-8775,292 W Beamer St,Woodland,CA,95695
+slee,Su,Lee,su.lee@yolocounty.org,True,True,False,Yolo County DCS,530-666-8775,292 W Beamer St,Woodland,CA,95695
+smiliren,Shelby,Miliren,shelby.milliren@yolocounty.org ,True,True,False,Yolo County DCS,530-666-8775,292 W Beamer St,Woodland,CA,95695
+tarchitect,Test,Architect,fake@test.com3,True,False,False,Architects R Us,123456789,56465465,city,CA,95000
+tcontractor,Test,Contractor,fake@test.com4,True,False,False,Contractors R Us,123456789,56465465,city,CA,95000
+tengineer,Test,Engineer,fake@test.com17,True,False,False,Engineers R Us,123456789,56465465,city,CA,95000
+tgonzalez,Tracy,Gonzalez,tracy.gonzalez@yolocounty.org,True,True,False,Yolo County DCS,530-666-8775,292 W Beamer St,Woodland,CA,95695
+tolee,Touyer,Lee,touyer.less@yolocounty.org,True,True,False,Yolo County DCS,530-666-8775,292 W Beamer St,Woodland,CA,95695
+towner,Test,Owner,fake@test.com11,True,False,False,Ione It,123456789,56465465,city,CA,95000
+tpartner,Test,Partner,fake@test.com1,True,False,False,Fire District,123456789,56465465,city,CA,95000
+tsurveyor,Test,Surveyor,fake@test.com16,True,False,False,Surveyors R Us,123456789,56465465,city,CA,95000

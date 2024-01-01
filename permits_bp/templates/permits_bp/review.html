@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<p>
+    <a href="https://www.yolocounty.org/government/general-government-departments/community-services/building-inspection-services/plans">
+        Is your application complete?</a>
+    <br>
+    If your application is not complete it will not be accepted. <br>
+    If required documents are not included in your submittal then your review is likely to take much longer.
+</p>
+
+<form id="Review">
+    <section> <!-- General Information  -->
+        <h2>General Information</h2> <!-- Permit Information  -->
+        <fieldset>
+            <p id="permit">BP2024-0000<br>
+            <span id="address">12345 CR 98</span><br>
+            <span id="apn">000-000-000</span></p>
+            <p id="type">Electrical<br>
+            <span id="subtype">Service, single-phase, 240V, 400 amp or less</span><br>
+            Overall Review Status: <strong id="review">Incomplete Submittal</strong></p>
+                <!-- Options: Incomplete Submittal, Under Review, Corrections Required, Approved, Revoked  -->
+        </fieldset>
+    </section>
+    <section>
+        <h2>Plan Review Status</h2> <!-- Overview: Status of Reviews  -->
+            <h3>Overall</h3>
+                <p>Status: [pending]
+                <br>Due Date: [tbd]
+            <h3>Building Division</h3>
+                <p>Result: [pending]
+                <br>Due Date: [tbd]
+                <br>Reviewer: [queue]</p> 
+
+            <h3>Code Enforcement</h3>
+                <p>Result: [pending]
+                <br>Due Date: [tbd]
+                <br>Reviewer: [queue]</p> 
+
+            <h3>Fire District</h3>
+                <p>Result: [pending]
+                <br>Due Date: [tbd]
+                <br>Reviewer: [queue]</p> 
+
+            <h3>Planning</h3>
+                <p>Result: [pending]
+                <br>Due Date: [tbd]
+                <br>Reviewer: [queue]</p> 
+
+            <h3>Public Works</h3>
+                <p>Result: [pending]
+                <br>Due Date: [tbd]
+                <br>Reviewer: [queue]</p> 
+
+            <h3>School District</h3>
+                <p>Result: [pending]
+                <br>Due Date: [tbd]
+                <br>Reviewer: [queue]</p> 
+
+            <h3>Service District</h3>
+                <p>Result: {{ school_status = "[pending]"}}
+                <br>Due Date: [tbd]
+                <br>Reviewer: [queue]</p>
+    </section>
+            
+
+        
+    </section>
+{% endblock %}

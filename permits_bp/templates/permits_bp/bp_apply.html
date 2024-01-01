@@ -1,0 +1,125 @@
+{% extends "layout.html" %}
+ 
+{% block header_text %}Bldg Permit App{% endblock header_text %}
+
+
+{% block main_content %}
+<form id="bp_app_html" method="post" action="">
+{% csrf_token %}
+
+
+    <section>
+    <h2>Project Location</h2>
+    <p>
+        {{ form.apn.label }} <br>
+        {{ form.apn }}
+    </p>
+    <p>
+        {{ form.address_num.label }} <br>
+        {{ form.address_num }}
+    </p>
+    <p>
+        {{ form.street.label }} <br>
+        {{ form.street }}
+    </p>
+    <p>
+        {{ form.zip.label }} <br>
+        {{ form.zip }}
+    </p>
+</section>
+
+<section>
+    <h2>Scope of Work</h2>
+    <p>
+        {{ form.type.label }} <br>
+        {{ form.type }}
+    </p>
+    <p>
+        {{ form.description.label }} <br>
+        {{ form.description }}
+    </p>
+
+</section>
+
+<section>
+    <h2>Applicant</h2>
+    <p>
+        {{ form.applicant.role.label }} <br>
+        {{ form.applicant.role }}
+    </p>
+    <p>
+        {{ form.applicant.first.label }} <br>
+        {{ form.applicant.first }}
+    </p>
+    <p>
+        {{ form.applicant.last.label }} <br>
+        {{ form.applicant.last }}
+    </p>
+    <p>
+        {{ form.applicant.email.label }} <br>
+        {{ form.applicant.email }}
+    </p>
+    <p>
+        {{ form.applicant.phone.label }} <br>
+        {{ form.applicant.phone }}
+    </p>
+    <p>
+        {{ form.applicant.mailing.label }} <br>
+        {{ form.applicant.mailing }}
+    </p>
+    <p>
+        {{ form.applicant.city.label }} <br>
+        {{ form.applicant.city }}
+    </p>
+    <p>
+        {{ form.applicant.state.label }} <br>
+        {{ form.applicant.state }}
+    </p>
+    <p>
+        {{ form.applicant.zip.label }} <br>
+        {{ form.applicant.zip }}
+    </p>
+</section>
+
+<section>
+    <h2>Owner</h2>
+    <p>
+        {{ form.owner.building }} {{ form.owner.building.label }}
+        <br>{{ form.owner.hiring }} {{ form.owner.hiring.label }}<br>{{ form.owner.employing }} {{ form.owner.employing.label }}
+    </p>
+    <p>
+        {{ form.owner.first.label }} <br>
+        {{ form.owner.first }}
+    </p>
+    <p>
+        {{ form.owner.last.label }} <br>
+        {{ form.owner.last }}
+    </p>
+    <p>
+        {{ form.owner.email.label }} <br>
+        {{ form.owner.email }}
+    </p>
+    <p>
+        {{ form.owner.phone.label }} <br>
+        {{ form.owner.phone }}
+    </p>
+    <p>
+        {{ form.owner.mailing.label }} <br>
+        {{ form.owner.mailing }}
+    </p>
+    <p>
+        {{ form.owner.city.label }} <br>
+        {{ form.owner.city }}
+    </p>
+    <p>
+        {{ form.owner.state.label }} <br>
+        {{ form.owner.state }}
+    </p>
+    <p>
+        {{ form.owner.zip.label }} <br>
+        {{ form.owner.zip }}
+    </p>
+</section>
+<button id="submit" type="submit" form="bp_app_html">Submit</button>
+
+{% endblock main_content %}

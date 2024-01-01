@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block title %}Permit{% endblock %}
+    
+{% block head_title %}Permit{% endblock %}
+
+{% block main_title %}General Information{% endblock %}
+
+{% block main_content %}
+    <section>
+        <p>
+            {% permit_num %}
+        </p>
+        <p>{{ if alerts }} 
+                {% alerts %}
+            {{ else }} 
+                None
+            {{ endif }}
+        </p>
+    </section>
+    <section>
+        <p>{% apn %}</p>
+        <p>{% address_line1 %}</p>
+        <p>{% address_line2 %}</p>
+    </section>
+    <section>
+        <p>{% Owner %}</p>
+        <p>{% Applicant %}</p>
+        <p>{% Contractor %}</p>
+        <p>{% Designer %}</p>
+    </section>
+
+    <section>
+        <p>{% permit_type %}  {% permit_subtype %}</p>
+        <p>{% description %}</p>
+    </section>
+            
+    <section>
+        <p>Status: {% status %} </p>
+        {{ if status = finaled }}
+            <p>Finaled: {% finaled %} </p> 
+            <p>Issued: {% issued %} </p>
+            <p>Applied: {% applied %} </p>
+            <p>All work is completed.</p>
+        {{ if status = issued }}
+            <p>Issued: {% issued %} </p>
+            <p>Expires: {% expires %} </p>
+            <p>Applied: {% applied %} </p>
+            <p>Construction may proceed. <br>
+            Inpsecitions may be scheduled. <br>
+            Occupancy is prohibited.</p>
+        {{ if status = review }}
+            <p>Applied: {% applied %} </p>
+            <p>Expires: {% expires %} </p>
+            <p>Construction shall not start until the permit is issued. <br>
+        {{ endif }}
+    </section>
+
+    <section>
+        <p>{% status description %}</p>
+    </section>
+
+    <form><h2>General Information</h2>
+        <!-- General permit information  -->
+{% endblock %}

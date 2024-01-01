@@ -1,0 +1,10 @@
+﻿tag,policy
+LOCK: This record is locked. See Details.,"This tag is only to be placed on records that have been locked due to a severe code violation, non-payment, or similar critical problems."
+ALERT: See Details,This tag can be used generally for any alert that does not fit a standard tag.
+ALERT: See Use Permit,This tag should be added to records that are associated with a Use Permit issued by Planning.
+ALERT: Site-specific dangers.,Add to records associated with a safety or health risk. Always add notes about the risk.
+ALERT: County-Owned Project,Add to records for property that is owned and/or operated by the County of Yolo.
+ALERT: Fee Balance Due,Add to records that have a balance due that must be paid.
+ALERT: Flood Review Required.,Add to records that require flood review.
+ALERT: (TCO) Temporary Certificate of Occupancy. See Notes.,Add to records that are associated with a TCO. Set an appropriate expiration date.
+ALERT: Wildland-Urban Interface (WUI),Add to records within a wildland-urban interface area.

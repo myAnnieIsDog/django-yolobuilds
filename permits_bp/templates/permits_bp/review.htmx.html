@@ -1,0 +1,86 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<section>
+    <h2>Review of {{ record.number }}</h2>
+
+    <p>
+        Status: <strong> {{ record.review.status }}</strong><br>
+        Due Date: {% if record.review.due %}{{record.number }}{{ else }}Waiting for applicant action.{% endif %}
+    </p>
+
+    <p>
+        {{ record.address }}<br>
+        {{ record.apn }}
+    </p>
+
+    <p>
+        {{ record.type }}<br>
+        {{ record.subtype }}<br>
+    </p>
+
+    <p>
+        Expiration: This permit application will be considered abandoned if the permit is not issued by <strong>12/23/2024</strong>. If the permit is abandoned the date used to determine the applicable code requirements will be updated to the new permit application date.
+    </p>
+</section>
+
+<section>
+    {% for review in reviews %}
+    <details>
+        <summary>{{ review.title }}: {{ review.status }}</summary>
+        <table>
+            <thead>
+                <tr>
+                    {% if user.is_staff %}<th>Edit</th>{% endif %}
+                    <th>Cycle</th>
+                    <th>Result</th>
+                    <th>Reviewer</th>
+                    <th>Returned</th>
+                    <th>Due</th>
+                    <th>Sent</th>
+                </tr>
+            </thead>
+
+            {% if user.is_staff %}
+                <tbody hx-target="closest tr" hx-swap="outerHTML">
+                {% else %}
+                <tbody>
+            {% endif %}
+                {% for reivew.cycle in review.cycles %}
+                    <tr>
+                        {% if user.is_staff %}
+                            <td>
+                                <button 
+                                    hx-get="/revew/${cycle.id}/edit"
+                                    hx-trigger="edit"
+                                    _="on click
+                                        if .editing is not empty
+                                            Swal.fire({title: 'Already Editing',
+                                                showCancelButton: true,
+                                                confirmButtonText: 'Yep, Edit This Row!',
+                                                text:'Hey!  You are already editing a row!  Do you want to cancel that edit and continue?'})
+                                            if the result's isConfirmed is false
+                                                halt
+                                            end
+                                            send cancel to .editing
+                                        end
+                                        trigger edit">
+                                    Edit
+                                </button>
+                                    <!-- before closing the opening tag, insert _="on click..."" see example and write the needed logic -->
+                            </td>
+                        {% endif %}
+                        <td>{{ reivew.cycle.number }}</td>
+                        <td>{{ reivew.cycle.result }}</td>
+                        <td>{{ reivew.cycle.reviewer }}</td>
+                        <td>{{ reivew.cycle.returned }}</td>
+                        <td>{{ reivew.cycle.due }}</td>
+                        <td>{{ reivew.cycle.sent }}</td>
+                    </tr>
+                
+                {% endfor %}
+            </tbody>
+        </table>
+    </details>
+    {% endfor %}
+{% endblock %}
