@@ -3,6 +3,7 @@
 import os
 import sys
 
+SECRET_KEY = os.getenv('django-yolobuilds-secret')
 
 def main():
     """Run administrative tasks."""
