@@ -1,0 +1,24 @@
+
+{% begin cycles %}
+<table>
+    <th>
+        <td>Cycle</td>
+        <td>Status</td>
+        <td>Reviewer</td>
+        <td>Completed Date</td>
+        <td>Due Date</td>
+        <td>Sent</td>
+        <td>Notes</td>
+    </th>
+    {% for cycle in cycles %}
+        <tr>
+            <td>{{ cycle.cycle }}</td>
+            <td>{{ cycle.status }}</td>
+            <td>{{ cycle.reviewer }}</td>
+            <td>{{ cycle.completed_date }}</td>
+            <td>{{ cycle.due }}</td>
+            <td>{{ cycle.sent }}</td>
+            <td>{{ cycle.notes }}</td>
+        </tr>
+    {{ endfor }}
+</table>

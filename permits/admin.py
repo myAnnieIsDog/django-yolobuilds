@@ -2,17 +2,10 @@
 """ Register Permit Base Models with the Admin Interface """
 ##########################################################################
 from django.contrib import admin
-from .models import (
-    Division, ReviewType, InspectionType,
-    PermitStatus, PermitType, PermitSubtype, Permit
-)
+from .models import Division, PermitStatus, PermitType, PermitSubtype, Permit
 
 @admin.register(Division)
 class DivisionAdmin(admin.ModelAdmin):
-    pass
-
-@admin.register(InspectionType)
-class InspectionTypeAdmin(admin.ModelAdmin):
     pass
 
 @admin.register(PermitStatus)

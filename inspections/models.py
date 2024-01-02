@@ -1,10 +1,33 @@
 from django.db import models
-from permits.models import InspectionType
+from permits.models import Division
+from profiles.models import User
 
 ##########################################################################
 """ Inspection Models.  See permits.models for InspectionType, which was 
 placed there to prevent a circular reference to the Permit model. """
 ##########################################################################
+
+class InspectionType(models.Model): 
+    division = models.ForeignKey(Division, on_delete=models.PROTECT)
+    inspection_type = models.CharField(max_length=30)
+    default_inspector = models.ForeignKey(User, on_delete=models.PROTECT)
+    duration_hours = models.DecimalField(
+        max_digits=3, decimal_places=1, default=0.3)
+    trip_factor = models.DecimalField(
+        max_digits=7, decimal_places=2, default=1.20)
+
+    prerequisite = models.ManyToManyField("self", blank=True)
+    inspection_checklist = models.TextField(blank=True)
+    add_next = models.ManyToManyField("self", blank=True)
+    
+    
+    def __str__(self) -> str:
+        return self.type
+
+    class Meta():
+        verbose_name = "Inspection Type"
+        verbose_name_plural = "Inspection Types"
+
 
 class InspectionResult(models.Model): 
     """ Inherits Label, Description, Created, Modified """

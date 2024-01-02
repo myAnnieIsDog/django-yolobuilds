@@ -4,8 +4,10 @@
 from django.contrib.auth.models import User
 from django.db import models
 from django.utils import timezone
-from permits.models import Permit, InspectionType, ReviewType
+from permits.models import Permit
 from profiles.models import Profile
+from inspections.models import InspectionType
+from reviews.models import ReviewType
 
 class ApplicantRole(models.Model):
     applicant_role_options = models.CharField(max_length=55, unique=True)
@@ -162,7 +164,7 @@ class Building(models.Model):
     other_description = models.PositiveIntegerField(default=0)
 
     review_days = 20
-    reviews = models.ManyToManyField(InspectionType, related_name="revs")
+    reviews = models.ManyToManyField(ReviewType, related_name="revs")
     default_reviews = [
         "Building (Full)", 
         "Env. Health", 

@@ -1,3 +1,9 @@
 from django.shortcuts import render
+from django.views.generic import ListView
+from locations.models import SiteAddress, Parcel, DistrictType, District
 
-# Create your views here.
+
+class AddressSearch(ListView):
+    model = SiteAddress
+
+

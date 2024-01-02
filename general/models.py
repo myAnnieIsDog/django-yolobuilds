@@ -3,7 +3,18 @@ from django.contrib.contenttypes.fields import GenericForeignKey
 from django.contrib.contenttypes.models import ContentType
 from django.db import models
 from django.utils import timezone
-  
+
+
+class Sequence(models.Model):
+    series = models.CharField(max_length=7)
+    year = models.DateTimeField(default=timezone.now().strftime("%Y"))
+    sequence = models.IntegerField()
+    description = models.TextField(max_length=255)
+
+    def __str__(self) -> str:
+        return self.series  
+    # BL, BP, CE, PW, ZF, Receipt, etc.
+
 
 ##########################################################################
 """ Tags """

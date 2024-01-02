@@ -38,15 +38,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
-    'django_extensions',
+    'django_extensions', # django-extensions
     'pandas',
     'numpy',
     # 'openpyxl',
-    'crispy_forms',
-    # 'crispy_bootstrap5',
-    'django_bootstrap5',
-    # 'django_htmx',
-    'django_recaptcha',
+    'crispy_forms', # django-crispy-forms
+    # 'crispy_bootstrap5', 
+    'django_bootstrap5', #django-bootstrap5
+    # 'django_htmx', #django-htmx
+    'django_recaptcha', #django-recaptcha
     # 'dotenv',
 
     'permits.apps.PermitsConfig',
