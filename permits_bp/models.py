@@ -30,7 +30,7 @@ class BP(models.Model):
     valuation = models.DecimalField(
         max_digits=15, decimal_places=2, default=2000)
     
-    applicant_role = models.ForeignKey(ApplicantRole, on_delete=models.PROTECT)
+    app_role = models.ForeignKey(ApplicantRole, on_delete=models.PROTECT)
     contractor = models.ForeignKey(Profile, on_delete=models.PROTECT, 
         null=True, blank=True, related_name="contrs") 
     designer = models.ForeignKey(Profile, on_delete=models.PROTECT, 
