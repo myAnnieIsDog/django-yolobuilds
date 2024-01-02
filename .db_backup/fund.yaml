@@ -1,0 +1,30 @@
+- model: fees.fund
+  pk: 1
+  fields:
+    fund_label: General Fund
+    fund_id: '1001'
+    fund_description: '2971'
+- model: fees.fund
+  pk: 2
+  fields:
+    fund_label: Building Enterprise Fund
+    fund_id: '6031'
+    fund_description: '2975'
+- model: fees.fund
+  pk: 3
+  fields:
+    fund_label: Road Fund
+    fund_id: '2030'
+    fund_description: '3011'
+- model: fees.fund
+  pk: 4
+  fields:
+    fund_label: FSA
+    fund_id: '0000'
+    fund_description: '0000'
+- model: fees.fund
+  pk: 5
+  fields:
+    fund_label: State
+    fund_id: '1111'
+    fund_description: '1111'

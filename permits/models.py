@@ -349,7 +349,21 @@ Building prototype is complete and "bug-free". """
 #     class Meta():
 #         verbose_name = "Planning Permits"
 #         verbose_name_plural = "Planning Permits"
-        
+
+##########################################################################
+""" All Models """
+##########################################################################
+"""This list only includes models that are in their stable form."""
+all_models = (
+    Division,
+    InspectionType,
+    ReviewType,
+    PermitStatus,
+    PermitType,
+    PermitSubtype,
+    WorkflowType,
+    Permit,
+)
 ##########################################################################
 """ End File """
 ##########################################################################

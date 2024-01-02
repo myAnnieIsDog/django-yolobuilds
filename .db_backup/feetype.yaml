@@ -1,0 +1,2373 @@
+- model: fees.feetype
+  pk: 99
+  fields:
+    fee_group: 5
+    fee_type: 31-60 days overdue
+    policy: ''
+    authorization: H&S 101325
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 0.1
+    units: $1 of overdue fees
+    rate_check: 10.00 / percent
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 100
+  fields:
+    fee_group: 5
+    fee_type: 61-90 days overdue
+    policy: ''
+    authorization: H&S 101325
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 0.1
+    units: $1 of overdue fees
+    rate_check: 10.00 / percent
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 70
+  fields:
+    fee_group: 2
+    fee_type: Additional Fire Inspections
+    policy: ''
+    authorization: H&S17951, GC66014
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 223.0
+    units: each inspection
+    rate_check: 223.00 / Per Inspection
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 71
+  fields:
+    fee_group: 1
+    fee_type: Additional Fire Plan Review (over 2 reviews)
+    policy: ''
+    authorization: H&S17951, GC66014
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 223.0
+    units: each review
+    rate_check: 223.00 / Per Review
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 6
+  fields:
+    fee_group: 3
+    fee_type: Additional Time Spent for Activities not Listed on Fee List
+    policy: ''
+    authorization: H&S 17951, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 149.0
+    units: each hour
+    rate_check: 149.00 / Actual Cost, Charged Per Hour
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 21
+  fields:
+    fee_group: 3
+    fee_type: Addressing Fee
+    policy: Staff time to assign a new address
+    authorization: GC 65104, 66016; Cal. Const. Art. XI @ 7
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 134.0
+    units: each permit
+    rate_check: 134.00 / Flat Fee
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 101
+  fields:
+    fee_group: 5
+    fee_type: Administrative Citation
+    policy: ''
+    authorization: GC66104, 54988
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 1300.0
+    units: each citation
+    rate_check: 1300.00 / each citation
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 102
+  fields:
+    fee_group: 5
+    fee_type: Administrative Citation Appeal Hearing Deposit
+    policy: ''
+    authorization: YCC 1-5.09
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 1000.0
+    units: each hearing
+    rate_check: 1000.00 / Deposit, Actual Cost
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 22
+  fields:
+    fee_group: 3
+    fee_type: Ag Exempt
+    policy: Staff time to verify the ag exempt structure meets the requirements of
+      Yolo County Count Section 7-1.03
+    authorization: YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 173.0
+    units: each permit
+    rate_check: 173.00 / Flat Fee
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 23
+  fields:
+    fee_group: 1
+    fee_type: Alternate Building Materials Requests
+    policy: Staff time for the review required by CBC 104.11
+    authorization: H&S 17951, GC66014, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 269.0
+    units: each hour
+    rate_check: 269.00 / per hour (min. 5 hours)
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 24
+  fields:
+    fee_group: 2
+    fee_type: Alternative Energy; Wind Turbine, Methane Gas Conversion, Agricultural
+      Crop Conversion For Bio-Fuels, Etc.
+    policy: ''
+    authorization: H & S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 1.0
+    units: $1 of Construction Valuation
+    rate_check: Based on construction valuation
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 84
+  fields:
+    fee_group: 2
+    fee_type: Approved Fireplace Insert
+    policy: ''
+    authorization: H&S 17951, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 217.0
+    units: each permit
+    rate_check: 217.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 25
+  fields:
+    fee_group: 3
+    fee_type: Building Permit Application Fee
+    policy: Staff time to intake a building permit application
+    authorization: H&S17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 67.0
+    units: each permit
+    rate_check: 67.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 26
+  fields:
+    fee_group: 3
+    fee_type: Building Permit Application Fee - Only for HVAC, Solar, Water Heater,
+      or other small projects as determined by CBO
+    policy: ''
+    authorization: H&S 17951, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 33.0
+    units: each permit
+    rate_check: 33.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 28
+  fields:
+    fee_group: 2
+    fee_type: Building Permit Fee Tier 1 - $1-$10,000 Valuation
+    policy: Staff time for building inspection. Valuation is a proxy measurement for
+      the overall complexity of a project used to determine the overall inspection
+      workload based on records from past permits.
+    authorization: H&S 17951, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 149.0
+    rate: 12.0
+    units: $1,000 of Construction Valuation
+    rate_check: 149.00 / Base Fee Plus$12.00 per $1,000; based on valuatio
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 29
+  fields:
+    fee_group: 2
+    fee_type: Building Permit Fee Tier 2 - $10,001-$25,000 Valuation
+    policy: Staff time for building inspection. Valuation is a proxy measurement for
+      the overall complexity of a project used to determine the overall inspection
+      workload based on records from past permits.
+    authorization: H&S 17951, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '10000'
+    tier_base_fee: 251.0
+    rate: 31.18
+    units: $1,000 of Construction Valuation
+    rate_check: 251.00 / Base Fee Plus$31.18 per $1,000; based on valuatio
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 31
+  fields:
+    fee_group: 2
+    fee_type: Building Permit Fee Tier 3 - $25,001-$50,000 Valuation
+    policy: Staff time for building inspection. Valuation is a proxy measurement for
+      the overall complexity of a project used to determine the overall inspection
+      workload based on records from past permits.
+    authorization: H&S 17951, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '25000'
+    tier_base_fee: 718.0
+    rate: 5.79
+    units: $1,000 of Construction Valuation
+    rate_check: 718.00 / Base Fee Plus$5.79 per $1,000; based on valuation
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 32
+  fields:
+    fee_group: 2
+    fee_type: Building Permit Fee Tier 4 - $50,001-$100,000 Valuation
+    policy: Staff time for building inspection. Valuation is a proxy measurement for
+      the overall complexity of a project used to determine the overall inspection
+      workload based on records from past permits.
+    authorization: H&S 17951, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '50000'
+    tier_base_fee: 863.0
+    rate: 9.91
+    units: $1,000 of Construction Valuation
+    rate_check: 863.00 / Base Fee Plus$9.91 per $1,000; based on valuation
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 30
+  fields:
+    fee_group: 2
+    fee_type: Building Permit Fee Tier 5 - $100,001-$500,000 Valuation
+    policy: Staff time for building inspection. Valuation is a proxy measurement for
+      the overall complexity of a project used to determine the overall inspection
+      workload based on records from past permits.
+    authorization: H&S 17951, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '100000'
+    tier_base_fee: 1359.0
+    rate: 7.2
+    units: $1,000 of Construction Valuation
+    rate_check: 1359.00 / Base Fee Plus$7.20 per $1,000; based on valuation
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 33
+  fields:
+    fee_group: 2
+    fee_type: Building Permit Fee Tier 6 - $500,001-$1,000,000 Valuation
+    policy: Staff time for building inspection. Valuation is a proxy measurement for
+      the overall complexity of a project used to determine the overall inspection
+      workload based on records from past permits.
+    authorization: H&S 17951, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '500000'
+    tier_base_fee: 4238.0
+    rate: 7.34
+    units: $1,000 of Construction Valuation
+    rate_check: 4238.00 / Base Fee Plus$7.34 per $1,000; based on valuation
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 27
+  fields:
+    fee_group: 2
+    fee_type: Building Permit Fee Tier 7 - $1,000,001+ Valuation
+    policy: Staff time for building inspection. Valuation is a proxy measurement for
+      the overall complexity of a project used to determine the overall inspection
+      workload based on records from past permits.
+    authorization: H&S 17951, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '1000000'
+    tier_base_fee: 7908.0
+    rate: 3.25
+    units: $1,000 of Construction Valuation
+    rate_check: 7908.00 / Base Fee Plus$3.25 per $1,000; based on valuation
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 34
+  fields:
+    fee_group: 3
+    fee_type: Building Permit Issuance Fee
+    policy: Staff time to issue a building permit
+    authorization: H&S 17951, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 56.0
+    units: each permit
+    rate_check: 56.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 35
+  fields:
+    fee_group: 10
+    fee_type: Business Site Inspection
+    policy: ''
+    authorization: YCC 12-1.513, 7-1.03, GC 66014
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '2'
+    tier_base_fee: 223.5
+    rate: 145.0
+    units: each hour
+    rate_check: 145.00 / per hour (min 1.5 hours)
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 7
+  fields:
+    fee_group: 1
+    fee_type: Cal Green
+    policy: ''
+    authorization: H&S 17951, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 0.15
+    units: $1 of Plan Review Fees
+    rate_check: 15% of the Plan Review Fee, as applicable
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 1
+  fields:
+    fee_group: 8
+    fee_type: California Building Standards Fee (State Pass-Through Fee)
+    policy: State mandated fee with 90% retained for staff training.
+    authorization: H&S 17951, GC66014
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 4.0
+    units: $1 of Construction Valuation
+    rate_check: 4.00 / 4.00 (Based on Valuation)
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 36
+  fields:
+    fee_group: 2
+    fee_type: Cellular Tower, Co-location
+    policy: ''
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 579.0
+    units: each permit
+    rate_check: 579.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 37
+  fields:
+    fee_group: 2
+    fee_type: Cellular Tower, Equipment container
+    policy: ''
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 579.0
+    units: each permit
+    rate_check: 579.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 38
+  fields:
+    fee_group: 2
+    fee_type: Cellular Tower, Free Standing
+    policy: ''
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 869.0
+    units: each permit
+    rate_check: 869.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 8
+  fields:
+    fee_group: 2
+    fee_type: Certificate of Occupancy/Temporary Certificate of Occupancy
+    policy: ''
+    authorization: H&S 17951, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 101.0
+    units: each permit
+    rate_check: 101.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 103
+  fields:
+    fee_group: 5
+    fee_type: Code Enforcement Hourly Rate-additional inspections, hearings (Min 1
+      hr.)
+    policy: ''
+    authorization: GC 54988
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 149.0
+    units: each hour
+    rate_check: 149.00 / Per Hour
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 72
+  fields:
+    fee_group: 2
+    fee_type: Commercial Kitchen Hood System / Special Systems
+    policy: ''
+    authorization: H&S17951, GC66014
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 446.0
+    units: each permit
+    rate_check: 446.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 93
+  fields:
+    fee_group: 2
+    fee_type: Commercial Pool and/or Spa
+    policy: ''
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 1.0
+    units: $1 of Construction Valuation
+    rate_check: Based on Valuation
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 73
+  fields:
+    fee_group: 2
+    fee_type: Commercial Sprinkler System - 201+ Sprinkler Heads (underground systems
+      included, new systems only)
+    policy: ''
+    authorization: H&S17951, GC66014
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 1189.0
+    units: each permit
+    rate_check: 1189.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 74
+  fields:
+    fee_group: 2
+    fee_type: Commercial/Residential Sprinkler Add/Alternative
+    policy: ''
+    authorization: H&S17951, GC66014
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 446.0
+    units: each permit
+    rate_check: 446.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 39
+  fields:
+    fee_group: 3
+    fee_type: Copy of Plans (non-standard sizes)
+    policy: ''
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 5.0
+    units: each sheet
+    rate_check: 5.00 / Per Sheet
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 40
+  fields:
+    fee_group: 1
+    fee_type: Deferred Submittal Request
+    policy: ''
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 134.0
+    units: each request
+    rate_check: 134.00 / Each Request
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 104
+  fields:
+    fee_group: 5
+    fee_type: Delinquent Account Referral Fee
+    policy: ''
+    authorization: H&S 101325
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 0.25
+    units: $1 of overdue fees
+    rate_check: 25.00 / percent
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 41
+  fields:
+    fee_group: 2
+    fee_type: Demolition
+    policy: ''
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 434.0
+    units: each building
+    rate_check: 434.00 / Per Building
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 94
+  fields:
+    fee_group: 2
+    fee_type: Demolition of Swimming Pool
+    policy: ''
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 217.0
+    units: each permit
+    rate_check: 217.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 19
+  fields:
+    fee_group: 10
+    fee_type: 'Disability Access: CASp'
+    policy: ''
+    authorization: SB1186
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 4.0
+    units: each permit
+    rate_check: 4.00 / Per Business License
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 9
+  fields:
+    fee_group: 1
+    fee_type: Disabled Access
+    policy: ''
+    authorization: H&S 17951, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 0.15
+    units: $1 of Plan Review Fees
+    rate_check: 15% of the Plan Review Fee, as applicable
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 85
+  fields:
+    fee_group: 2
+    fee_type: E.P.A. Approved Freestanding Wood Stove
+    policy: ''
+    authorization: H&S 17951, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 217.0
+    units: each permit
+    rate_check: 217.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 42
+  fields:
+    fee_group: 1
+    fee_type: Expedited Plan Review
+    policy: ''
+    authorization: H&S 17951, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 1.5
+    units: $1 of original plan review fee
+    rate_check: 1.5 times the original plan review fee
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 137
+  fields:
+    fee_group: 12
+    fee_type: FSA County - Commercial
+    policy: ''
+    authorization: GC66000, 66001
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 936.0
+    units: each 1,000 square feet
+    rate_check: 936.00 / per 1,000 sq. ft.
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 135
+  fields:
+    fee_group: 12
+    fee_type: FSA County - Industrial
+    policy: ''
+    authorization: GC66000, 66001
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 626.0
+    units: each 1,000 square feet
+    rate_check: 626.00 / per 1,000 sq. ft.
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 133
+  fields:
+    fee_group: 12
+    fee_type: FSA County - Multi-family (2 or more)
+    policy: ''
+    authorization: GC66000, 66001
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 4830.0
+    units: each unit
+    rate_check: 4830.00 / per unit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 136
+  fields:
+    fee_group: 12
+    fee_type: FSA County - Office
+    policy: ''
+    authorization: GC66000, 66001
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 1247.0
+    units: each 1,000 square feet
+    rate_check: 1247.00 / per 1,000 sq. ft.
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 134
+  fields:
+    fee_group: 12
+    fee_type: FSA County - Single Family Housing
+    policy: ''
+    authorization: GC66000, 66001
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 6515.0
+    units: each dwelling
+    rate_check: 6515.00 / dwelling
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 138
+  fields:
+    fee_group: 12
+    fee_type: FSA County - Warehouse
+    policy: ''
+    authorization: GC66000, 66001
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 375.0
+    units: each 1,000 square feet
+    rate_check: 375.00 / per 1,000 sq. ft.
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 113
+  fields:
+    fee_group: 12
+    fee_type: FSA Davis Commercial
+    policy: ''
+    authorization: GC66000, 66001
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 500.0
+    units: each 1,000 square feet
+    rate_check: 500.00 / per 1,000 sq. ft.
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 111
+  fields:
+    fee_group: 12
+    fee_type: FSA Davis Industrial
+    policy: ''
+    authorization: GC66000, 66001
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 334.0
+    units: each 1,000 square feet
+    rate_check: 334.00 / per 1,000 sq. ft.
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 109
+  fields:
+    fee_group: 12
+    fee_type: FSA Davis Multi-family (2 or more)
+    policy: Refer to County FSA Fee ordinance and the fee study driving the values
+      to determine fee applicability. Appeals are to be directed to Scott Doolittle,
+      Leslie Lindbo, and Mark Bryan.
+    authorization: GC66000, 66001
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 3180.0
+    units: each unit
+    rate_check: 3180.00 / per unit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 112
+  fields:
+    fee_group: 12
+    fee_type: FSA Davis Office Davis
+    policy: ''
+    authorization: GC66000, 66001
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 666.0
+    units: each 1,000 square feet
+    rate_check: 666.00 / per 1,000 sq. ft.
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 110
+  fields:
+    fee_group: 12
+    fee_type: FSA Davis Single Family Housing
+    policy: ''
+    authorization: GC66000, 66001
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 4290.0
+    units: each dwelling
+    rate_check: 4290.00 / dwelling
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 114
+  fields:
+    fee_group: 12
+    fee_type: FSA Davis Warehouse
+    policy: ''
+    authorization: GC66000, 66001
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 200.0
+    units: each 1,000 square feet
+    rate_check: 200.00 / per 1,000 sq. ft.
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 119
+  fields:
+    fee_group: 12
+    fee_type: FSA West Sacramento - Commercial
+    policy: ''
+    authorization: GC66000, 66001
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 500.0
+    units: each 1,000 square feet
+    rate_check: 500.00 / per 1,000 sq. ft.
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 117
+  fields:
+    fee_group: 12
+    fee_type: FSA West Sacramento - Industrial
+    policy: ''
+    authorization: GC66000, 66001
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 334.0
+    units: each 1,000 square feet
+    rate_check: 334.00 / per 1,000 sq. ft.
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 115
+  fields:
+    fee_group: 12
+    fee_type: FSA West Sacramento - Multi-family (2 or more)
+    policy: ''
+    authorization: GC66000, 66001
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 3267.0
+    units: each unit
+    rate_check: 3267.00 / per unit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 118
+  fields:
+    fee_group: 12
+    fee_type: FSA West Sacramento - Office
+    policy: ''
+    authorization: GC66000, 66001
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 666.0
+    units: each 1,000 square feet
+    rate_check: 666.00 / per 1,000 sq. ft.
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 116
+  fields:
+    fee_group: 12
+    fee_type: FSA West Sacramento - Single Family Housing
+    policy: ''
+    authorization: GC66000, 66001
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 4407.0
+    units: each dwelling
+    rate_check: 4407.00 / dwelling
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 120
+  fields:
+    fee_group: 12
+    fee_type: FSA West Sacramento - Warehouse
+    policy: ''
+    authorization: GC66000, 66001
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 200.0
+    units: each 1,000 square feet
+    rate_check: 200.00 / per 1,000 sq. ft.
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 125
+  fields:
+    fee_group: 12
+    fee_type: FSA Winters - Commercial
+    policy: ''
+    authorization: GC66000, 66001
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 500.0
+    units: each 1,000 square feet
+    rate_check: 500.00 / per 1,000 sq. ft.
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 123
+  fields:
+    fee_group: 12
+    fee_type: FSA Winters - Industrial
+    policy: ''
+    authorization: GC66000, 66001
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 334.0
+    units: each 1,000 square feet
+    rate_check: 334.00 / per 1,000 sq. ft.
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 121
+  fields:
+    fee_group: 12
+    fee_type: FSA Winters - Multi-family (2 or more)
+    policy: ''
+    authorization: GC66000, 66001
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 3267.0
+    units: each unit
+    rate_check: 3267.00 / per unit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 124
+  fields:
+    fee_group: 12
+    fee_type: FSA Winters - Office
+    policy: ''
+    authorization: GC66000, 66001
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 666.0
+    units: each 1,000 square feet
+    rate_check: 666.00 / per 1,000 sq. ft.
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 122
+  fields:
+    fee_group: 12
+    fee_type: FSA Winters - Single Family Housing
+    policy: ''
+    authorization: GC66000, 66001
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 4407.0
+    units: each dwelling
+    rate_check: 4407.00 / dwelling
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 126
+  fields:
+    fee_group: 12
+    fee_type: FSA Winters - Warehouse
+    policy: ''
+    authorization: GC66000, 66001
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 200.0
+    units: each 1,000 square feet
+    rate_check: 200.00 / per 1,000 sq. ft.
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 131
+  fields:
+    fee_group: 12
+    fee_type: FSA Woodland - Commercial
+    policy: ''
+    authorization: GC 66000,66001
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 500.0
+    units: each 1,000 square feet
+    rate_check: 500.00 / per 1,000 sq. ft.
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 129
+  fields:
+    fee_group: 12
+    fee_type: FSA Woodland - Industrial
+    policy: ''
+    authorization: GC66000, 66001
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 334.0
+    units: each 1,000 square feet
+    rate_check: 334.00 / per 1,000 sq. ft.
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 127
+  fields:
+    fee_group: 12
+    fee_type: FSA Woodland - Multi-family (2 or more)
+    policy: ''
+    authorization: GC66000, 66001
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 2312.0
+    units: each unit
+    rate_check: 2312.00 / per unit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 130
+  fields:
+    fee_group: 12
+    fee_type: FSA Woodland - Office
+    policy: ''
+    authorization: GC66000, 66001
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 666.0
+    units: each 1,000 square feet
+    rate_check: 666.00 / per 1,000 sq. ft.
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 128
+  fields:
+    fee_group: 12
+    fee_type: FSA Woodland - Single Family Housing
+    policy: ''
+    authorization: GC66000, 66001
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 3118.0
+    units: each dwelling
+    rate_check: 3118.00 / dwelling
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 132
+  fields:
+    fee_group: 12
+    fee_type: FSA Woodland - Warehouse
+    policy: ''
+    authorization: GC66000, 66001
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 200.0
+    units: each 1,000 square feet
+    rate_check: 200.00 / per 1,000 sq. ft.
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 75
+  fields:
+    fee_group: 1
+    fee_type: Fire Alarm System Plan Review Fee
+    policy: ''
+    authorization: H&S17951, GC66014
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 595.0
+    units: each permit
+    rate_check: 595.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 76
+  fields:
+    fee_group: 1
+    fee_type: Fire Construction Plan Review/Special Review
+    policy: ''
+    authorization: H&S17951, GC66014
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 446.0
+    units: each permit
+    rate_check: 446.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 77
+  fields:
+    fee_group: 2
+    fee_type: Fire Inspection Fee
+    policy: ''
+    authorization: H&S17951, GC66014
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 297.0
+    units: each permit
+    rate_check: 297.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 78
+  fields:
+    fee_group: 2
+    fee_type: Fire Inspection Fee - Underground, Hazmat, Hydrant, Tanks, Tents, Special
+      Events, Fire Investigation, Weed/ Fire Hazard Abatement
+    policy: ''
+    authorization: H&S17951, GC66014
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 595.0
+    units: each permit
+    rate_check: 595.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 79
+  fields:
+    fee_group: 2
+    fee_type: Flammable or Combustible Liquid Tank  - Installation or Removel (Above
+      Ground or Underground)
+    policy: ''
+    authorization: H&S17951, GC66014
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 595.0
+    units: each permit
+    rate_check: 595.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 15
+  fields:
+    fee_group: 1
+    fee_type: Flood Elevation Certificate
+    policy: ''
+    authorization: GC 65104, 66016; Cal. Const. Art. XI @ 7
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 558.0
+    units: each permit
+    rate_check: 558.00 / Flat Fee
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 18
+  fields:
+    fee_group: 2
+    fee_type: Flood Management Fee
+    policy: ''
+    authorization: H&S 17951, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 0.0466
+    units: $1 of Plan Review Fees
+    rate_check: 4.66% of the Plan Review Fee, as applicable
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 16
+  fields:
+    fee_group: 1
+    fee_type: Flood Plain Substantial Improvement Determination
+    policy: ''
+    authorization: H&S 17951, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 267.0
+    units: each permit
+    rate_check: 267.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 17
+  fields:
+    fee_group: 1
+    fee_type: Flood Zone Determination Fee
+    policy: ''
+    authorization: GC 65104, 66016; Cal. Const. Art. XI @ 7
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 33.0
+    units: 15 minutes
+    rate_check: 33.00 / per 15 minutes (15 minute minimum)
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 3
+  fields:
+    fee_group: 3
+    fee_type: General Plan Cost Recovery (value $50,000 and under)
+    policy: ''
+    authorization: GC 66104
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 0.05
+    units: $1 of Building Fees
+    rate_check: 5% of Building Fees
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 4
+  fields:
+    fee_group: 3
+    fee_type: General Plan Cost Recovery (value over $50,000)
+    policy: ''
+    authorization: GC 66104
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '50000'
+    tier_base_fee: 2500.0
+    rate: 0.1
+    units: $1 of Building Fees
+    rate_check: 10% of Building Fee
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 81
+  fields:
+    fee_group: 2
+    fee_type: 'Grading Inspection: 1 - 10,000 Cubic Yards'
+    policy: ''
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 290.0
+    units: each permit
+    rate_check: 290.00 / Flat Fee
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 82
+  fields:
+    fee_group: 2
+    fee_type: 'Grading Inspection: 10,001 - 100,000 Cubic Yards'
+    policy: ''
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 434.0
+    units: each permit
+    rate_check: 434.00 / Flat Fee
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 83
+  fields:
+    fee_group: 2
+    fee_type: 'Grading Inspection: 100,000+ Cubic Yards'
+    policy: ''
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 579.0
+    units: each permit
+    rate_check: 579.00 / Flat Fee
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 86
+  fields:
+    fee_group: 2
+    fee_type: 'HVAC Installation, Commercial: Furnace and/or A/C Condenser - over
+      3 units'
+    policy: ''
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 145.0
+    units: each unit
+    rate_check: 145.00 / Per Unit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 87
+  fields:
+    fee_group: 2
+    fee_type: 'HVAC Installation, Commercial: Furnace, A/C Condenser - up to 3 units'
+    policy: ''
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 434.0
+    units: each permit
+    rate_check: 434.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 88
+  fields:
+    fee_group: 2
+    fee_type: 'HVAC Installation, Residential: Furnace and/or A/C Condenser'
+    policy: ''
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 217.0
+    units: each permit
+    rate_check: 217.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 105
+  fields:
+    fee_group: 5
+    fee_type: Hearing Officer Hourly Rate
+    policy: ''
+    authorization: YCC 1-5.09
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 220.0
+    units: each hour
+    rate_check: 220.00 / 0
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 106
+  fields:
+    fee_group: 5
+    fee_type: Initial Code Enforcement Investigation Fee
+    policy: ''
+    authorization: GC54988; H&S17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 223.0
+    units: each case
+    rate_check: 223.00 / Per Case
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 62
+  fields:
+    fee_group: 2
+    fee_type: Install, Alter, Add Services  and/or Sub-Panel - over 1,001 amps
+    policy: Use "Service- or Sub-Panel Tier 2, all others"
+    authorization: H&S 17951, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 10.0
+    units: each permit
+    rate_check: 434.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 63
+  fields:
+    fee_group: 2
+    fee_type: Install, Alter, Add Services 0-325 amp/panel
+    policy: ''
+    authorization: H&S 17951, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 290.0
+    units: each permit
+    rate_check: 290.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 64
+  fields:
+    fee_group: 2
+    fee_type: Install, Alter, Add Services 325-1,000 amp/panel
+    policy: ''
+    authorization: H&S 17951, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 434.0
+    units: each permit
+    rate_check: 434.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 5
+  fields:
+    fee_group: 2
+    fee_type: Manufactured Home Fee - Permit Inspection
+    policy: ''
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 455.0
+    units: each permit
+    rate_check: 455.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 89
+  fields:
+    fee_group: 2
+    fee_type: Masonry fireplace with appliance insert
+    policy: ''
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 434.0
+    units: each permit
+    rate_check: 434.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 43
+  fields:
+    fee_group: 2
+    fee_type: Moved Structure (In addition to permit fees)
+    policy: ''
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 585.0
+    units: each permit
+    rate_check: 585.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 13
+  fields:
+    fee_group: 2
+    fee_type: New/Replace Sign Rate Illuminated, Non-Illuminated Monument or Pole
+    policy: ''
+    authorization: H&S 17951, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 434.0
+    units: each permit
+    rate_check: 434.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 14
+  fields:
+    fee_group: 2
+    fee_type: New/Replacement Building Sign Rate Illuminate or Non- Illuminated
+    policy: ''
+    authorization: H&S 17951, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 217.0
+    units: each permit
+    rate_check: 217.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 107
+  fields:
+    fee_group: 5
+    fee_type: Notice of Violation
+    policy: ''
+    authorization: GC66104
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 650.0
+    units: each violation
+    rate_check: 650.00 / each violation
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 44
+  fields:
+    fee_group: 2
+    fee_type: Other Requested Inspections
+    policy: ''
+    authorization: H&S 17951, GC 66014, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 1.5
+    units: each hour
+    rate_check: 145.00 / per hour (min. 1.5 hours)
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 45
+  fields:
+    fee_group: 2
+    fee_type: Patio Cover Enclosed/Trellis
+    policy: 'Use "Simple Permits: 2 Inspections"'
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 12.0
+    units: each permit
+    rate_check: 434.00 / Flat Fee
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 46
+  fields:
+    fee_group: 2
+    fee_type: Patio Deck, Uncovered
+    policy: 'Use "Simple Permits: 2 Inspections"'
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 10.0
+    units: each permit
+    rate_check: 434.00 / Flat Fee
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 47
+  fields:
+    fee_group: 1
+    fee_type: Permit Extension Request
+    policy: Use "Inspections - Hourly"
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 12.0
+    units: each request
+    rate_check: 101.00 / Each Request
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 48
+  fields:
+    fee_group: 1
+    fee_type: Permit Reviews and Requests
+    policy: ''
+    authorization: GC66014, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 149.0
+    units: each hour
+    rate_check: 149.00 / Per Hour, Actual Cost
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 65
+  fields:
+    fee_group: 2
+    fee_type: Photovoltaic/Solar System, Commercial - Ground mounted
+    policy: ''
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '3'
+    tier_base_fee: 435.0
+    rate: 145.0
+    units: each hour
+    rate_check: 145.00 / Per Hour (min. 3 hours)
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 66
+  fields:
+    fee_group: 2
+    fee_type: Photovoltaic/Solar System, Commercial - Roof mounted
+    policy: ''
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 434.0
+    units: each permit
+    rate_check: 434.00 / Flat Fee
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 67
+  fields:
+    fee_group: 2
+    fee_type: Photovoltaic/Solar System, Residential - Ground mounted
+    policy: ''
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 145.0
+    units: each hour
+    rate_check: 145.00 / Per Hour (min. 2 hours)
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 68
+  fields:
+    fee_group: 2
+    fee_type: Photovoltaic/Solar System, Residential - Roof mounted
+    policy: ''
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 290.0
+    units: each permit
+    rate_check: 290.00 / Flat Fee
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 49
+  fields:
+    fee_group: 1
+    fee_type: Plan Check Extension Request
+    policy: Use "Plan Review - Hourly"
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 12.0
+    units: each request
+    rate_check: 76.00 / Each Request
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 50
+  fields:
+    fee_group: 1
+    fee_type: Plan Review Fee-Master plan development after model approval      (1
+      hr minimum)
+    policy: Use "Plan Review - Hourly"
+    authorization: H&S 17951, GC 66014, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 12.0
+    units: each hour
+    rate_check: 149.00 / per hour
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 51
+  fields:
+    fee_group: 1
+    fee_type: Plan Review Fee-Single Family/Garages
+    policy: ''
+    authorization: H&S 17951, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 0.5
+    units: $1 of fee for a new permit
+    rate_check: 65% of building permit fee up to two reviews
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 95
+  fields:
+    fee_group: 2
+    fee_type: Pool and/or Spa remodel
+    policy: ''
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 434.0
+    units: each permit
+    rate_check: 434.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 52
+  fields:
+    fee_group: 1
+    fee_type: Pre-Application Review
+    policy: ''
+    authorization: H&S 17951, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 414.0
+    units: each meeting
+    rate_check: 414.00 / Per Meeting
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 90
+  fields:
+    fee_group: 2
+    fee_type: Propane Tank Installation
+    policy: ''
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 434.0
+    units: each permit
+    rate_check: 434.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 53
+  fields:
+    fee_group: 2
+    fee_type: Re-Inspection Fee - 1.5 Hour Minimum
+    policy: ''
+    authorization: H&S 17951, GC 66014, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '2'
+    tier_base_fee: 223.5
+    rate: 145.0
+    units: each hour
+    rate_check: 145.00 / Per Hour, Minimum 1.5 Hours
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 54
+  fields:
+    fee_group: 1
+    fee_type: Re-Instate Permit Fee (validated)
+    policy: Use "Plan Review - Hourly"
+    authorization: H&S 17951, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 0.5
+    units: $1 of fee for a new permit
+    rate_check: 1/2 of all related fees for a new permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 55
+  fields:
+    fee_group: 2
+    fee_type: Re-Roof (Residential, Commercial, Multi-Family)
+    policy: 'Use "Simple Permits: 2 Inspections"'
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 10.0
+    units: each building
+    rate_check: 434.00 / Per Building
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 56
+  fields:
+    fee_group: 3
+    fee_type: Records research
+    policy: ''
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 149.0
+    units: each hour
+    rate_check: 149.00 / Per Hour
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 80
+  fields:
+    fee_group: 2
+    fee_type: Residential Fire Sprinklers (New Buildings)
+    policy: ''
+    authorization: H&S17951, GC66014
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 595.0
+    units: each permit
+    rate_check: 595.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 10
+  fields:
+    fee_group: 3
+    fee_type: Returned Check Fee
+    policy: ''
+    authorization: H&S 17951, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 25.0
+    units: each permit
+    rate_check: 25.00 / Per Occurance
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 57
+  fields:
+    fee_group: 2
+    fee_type: Site inspection
+    policy: Use "Inspections - Hourly"
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 12.0
+    units: each hour
+    rate_check: 149.00 / Per Hour
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 58
+  fields:
+    fee_group: 1
+    fee_type: Soil review
+    policy: ''
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 149.0
+    units: each hour
+    rate_check: 149.00 / Per Hour
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 96
+  fields:
+    fee_group: 2
+    fee_type: Solar Heating for Pool / Spa
+    policy: ''
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 217.0
+    units: each permit
+    rate_check: 217.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 97
+  fields:
+    fee_group: 2
+    fee_type: Spa/Hot Tub Permit-Basic
+    policy: ''
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 434.0
+    units: each permit
+    rate_check: 434.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 59
+  fields:
+    fee_group: 2
+    fee_type: Special inspection request and/or pre-construction meeting
+    policy: Use "Inspections - Hourly"
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '2'
+    tier_base_fee: 298.0
+    rate: 149.0
+    units: each hour
+    rate_check: 149.00 / Per Hour (min. 2 hours)
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 2
+  fields:
+    fee_group: 11
+    fee_type: Strong Motion Instrumentation and Seismic Hazard Mapping (State Pass
+      Through Fee) ($7 for Strong Motion Instrumentation and $3 for Seismic Hazard
+      Mapp
+    policy: State mandated fee with 90% retained for staff training.
+    authorization: H&S 17951, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 1.0
+    units: $1 of Construction Valuation
+    rate_check: Per $100,000 Valuation, Set by State
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 11
+  fields:
+    fee_group: 2
+    fee_type: Stucco/ Siding
+    policy: ''
+    authorization: H&S 17951, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 434.0
+    units: each permit
+    rate_check: 434.00 / Flat Fee
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 98
+  fields:
+    fee_group: 2
+    fee_type: Swimming Pool Permit-Residential
+    policy: ''
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 869.0
+    units: each permit
+    rate_check: 869.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 20
+  fields:
+    fee_group: 4
+    fee_type: Technology Recovery Fee
+    policy: ''
+    authorization: Ordinance 1381
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 0.06
+    units: $1 of Permit Cost
+    rate_check: 6% of permit cost
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 69
+  fields:
+    fee_group: 2
+    fee_type: Temporary Electric
+    policy: Use "Service- or Sub-Panel"
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 12.0
+    units: each permit
+    rate_check: 217.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 91
+  fields:
+    fee_group: 2
+    fee_type: Temporary Gas
+    policy: ''
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 217.0
+    units: each permit
+    rate_check: 217.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 60
+  fields:
+    fee_group: 2
+    fee_type: Temporary Occupancy
+    policy: Use "Inspections - Hourly"
+    authorization: H&S 17951, GC66014, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 10.0
+    units: each permit
+    rate_check: 491.00 / Flat Fee
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 12
+  fields:
+    fee_group: 2
+    fee_type: Title 24 Review
+    policy: ''
+    authorization: H&S 17951, YCC 7-1.03
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 0.1
+    units: $1 of Plan Review Fees
+    rate_check: 10% of the Plan Review Fee, as applicable
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 92
+  fields:
+    fee_group: 2
+    fee_type: Water Heater Installation - up to 2 units
+    policy: ''
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 130.0
+    units: each permit
+    rate_check: 130.00 / Per Permit
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 61
+  fields:
+    fee_group: 2
+    fee_type: Window Installation and/or Replacement (Covers 1 Inspection)
+    policy: ''
+    authorization: H&S 17951
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 217.0
+    units: each permit
+    rate_check: 217.00 / Flat Fee
+    active: true
+    deleted: false
+- model: fees.feetype
+  pk: 108
+  fields:
+    fee_group: 5
+    fee_type: Zoning Violation Application (50%) of penalty)
+    policy: ''
+    authorization: GC65354.5
+    adopted: null
+    revised: null
+    expires: null
+    tier_base_qty: '0'
+    tier_base_fee: 0.0
+    rate: 0.5
+    units: $1 of Application Fee
+    rate_check: 50% of application fee
+    active: true
+    deleted: false

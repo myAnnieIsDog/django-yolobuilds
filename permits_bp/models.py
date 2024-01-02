@@ -24,6 +24,7 @@ class OwnerRole(models.Model):
     #         "Hiring employee's earning $500 or more and paying for worker's compensation insurance.", 
     #     ]
 
+
 class BP(models.Model):
     building_permit = models.OneToOneField(Permit, on_delete=models.PROTECT)
     suffix = models.CharField(max_length=4, default="0000")
@@ -451,6 +452,28 @@ class Pool(models.Model):
     inspections = ["Pre-Gunite", "Pre-Deck", "Final/Pre-Plaster/Enclosure"]
     notes = ""
 
+
+##########################################################################
+""" All Models """
+##########################################################################
+"""The following list does not currently include the subtypes
+because the models are not in their final form."""
+
+all_models = (
+    ApplicantRole,
+    OwnerRole,
+    BP,
+    Building,
+    Demolition,
+    Electrical,
+    Fire,
+    FloodZones,
+    Flood,
+    Grading,
+    Mechanical,
+    Plumbing,
+    Pool
+)
 ##########################################################################
 """ End File """
 ##########################################################################

@@ -155,7 +155,23 @@ class YoloCountyPartners(models.Model):
         verbose_name_plural = "Staff for Partner Agency"
         verbose_name_plural = "Staff for Partner Agencies"
 
+##########################################################################
+""" All Models """
+##########################################################################
+all_models = (
+    Profile,
+    
+    LicenseAgency,
+    LicenseType,
+    LicenseHolder,
 
+    DepartmentOptions,
+    DivisionOptions,
+    Staff,
+
+    AgencyOptions,
+    YoloCountyPartners,
+)
 ##########################################################################
 """ End File """
 ##########################################################################

@@ -43,5 +43,14 @@ class InspectionTrip(models.Model):
     requested_notes = models.CharField(max_length=256, null=True, blank=True)
 
 ##########################################################################
+""" All Models """
+##########################################################################
+all_models = (
+    InspectionType,
+    InspectionResult,
+    Inspection,
+    InspectionTrip,
+)
+##########################################################################
 """ End File """
 ##########################################################################
