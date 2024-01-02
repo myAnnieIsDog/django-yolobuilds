@@ -28,7 +28,7 @@ class BP(models.Model):
     building_permit = models.OneToOneField(Permit, on_delete=models.PROTECT)
     suffix = models.CharField(max_length=4, default="0000")
     valuation = models.DecimalField(
-        max_digits=100, decimal_places=2, default=2000)
+        max_digits=15, decimal_places=2, default=2000)
     
     applicant_role = models.ForeignKey(ApplicantRole, on_delete=models.PROTECT)
     contractor = models.ForeignKey(Profile, on_delete=models.PROTECT, 
