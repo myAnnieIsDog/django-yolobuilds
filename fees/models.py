@@ -4,6 +4,9 @@
 from django.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator
 
+def yaml_fees(all_models):
+    from general.models import yaml_backup
+    yaml_backup(all_models)
 
 ##########################################################################
 """ Fund Model """
@@ -29,6 +32,9 @@ class Fund(models.Model):
     class Meta():
         verbose_name = "Budget Units and Funds"
         verbose_name_plural = "Budget Units and Funds"
+
+    def bak(self):
+        yaml_fees([self])
 
 
 ##########################################################################
@@ -189,13 +195,13 @@ class UnitPortion(models.Model):
 ##########################################################################
 """ All Models """
 ##########################################################################
-all_models = (
+all_models = {
     Fund,
     BudgetUnit,
     FeeType,
     UIGroup,
     UnitPortion,
-)
+}
 ##########################################################################
 """ END FILE """
 ##########################################################################

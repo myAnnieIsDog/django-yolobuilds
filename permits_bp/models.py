@@ -164,7 +164,7 @@ class Building(models.Model):
     other_description = models.PositiveIntegerField(default=0)
 
     review_days = 20
-    reviews = models.ManyToManyField(ReviewType, related_name="revs")
+    # reviews = models.ManyToManyField(ReviewType, related_name="revs")
     default_reviews = [
         "Building (Full)", 
         "Env. Health", 
@@ -172,7 +172,7 @@ class Building(models.Model):
         "Int. Waste Management", 
         "Planning", 
         "Public Works"]
-    inspections = models.ManyToManyField(InspectionType, related_name="insps")
+    # inspections = models.ManyToManyField(InspectionType, related_name="insps")
     fees = [""]
     notes = ""
 
