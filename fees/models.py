@@ -14,16 +14,17 @@ def yaml_fees(all_models):
 class Fund(models.Model):
     """ General, Building, and Roads. """
 
-    fund_label = models.CharField(
-        max_length=30, 
-        unique=True,
-    ) 
     fund_id = models.CharField(
         max_length=4, 
         unique=True,
+        primary_key=True,
     )
     fund_description = models.CharField(
         max_length=4, 
+        unique=True,
+    )
+    fund_label = models.CharField(
+        max_length=30, 
         unique=True,
     )
     def __str__(self) -> str:
@@ -42,17 +43,18 @@ class Fund(models.Model):
 ##########################################################################
 class BudgetUnit(models.Model): 
     """ Each fund has 4-6 budget units. """
+    unit = models.CharField(
+        max_length=6, 
+        unique=True,
+    )
     unit_fund = models.ForeignKey(
         Fund, 
         on_delete=models.PROTECT, 
         null=True,
     )
+    share = models.DecimalField(max_digits=5, decimal_places=2, default=100)
     unit_label = models.CharField(
         max_length=40, 
-        unique=True,
-    )
-    unit = models.CharField(
-        max_length=6, 
         unique=True,
     )
     unit_description = models.CharField(
@@ -92,9 +94,8 @@ class UIGroup(models.Model):
 """ Fee Schedule Model """
 ##########################################################################
 class FeeType(models.Model): 
-    unit = models.ManyToManyField(
+    fee_budget_unit = models.ManyToManyField(
         BudgetUnit,
-        through="UnitPortion"
     )
     fee_group = models.ForeignKey(
         UIGroup,
@@ -157,39 +158,6 @@ class FeeType(models.Model):
         ordering = ["fee_type"]
         verbose_name = "Fee Type"
         verbose_name_plural = "Fee Types"
-
-
-##########################################################################
-""" Unit Portion Model """
-##########################################################################
-class UnitPortion(models.Model):
-    fee = models.ForeignKey(
-        FeeType,
-        on_delete=models.DO_NOTHING, 
-        null=True, 
-        blank=True,
-    )
-    unit = models.ForeignKey(
-        BudgetUnit,
-        on_delete=models.DO_NOTHING, 
-        null=True, 
-        blank=True,
-    )
-    share = models.DecimalField(
-        max_digits=3, 
-        decimal_places=2, 
-        default=1.00,
-        validators=[
-            MinValueValidator(0.00), 
-            MaxValueValidator(1.00),
-        ], 
-    )
-    def __str__(self) -> str:
-        return self.unit.unit 
-    
-    class Meta():
-        verbose_name = "Fee to Budget Unit Portions"
-        verbose_name_plural = "Fee to Budget Unit Portions"
 
 
 ##########################################################################

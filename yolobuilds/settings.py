@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     # 'django_htmx', #django-htmx
     'django_recaptcha', #django-recaptcha
     # 'dotenv',
+    'django_pandas', 
 
     'permits.apps.PermitsConfig',
     'permits_bp.apps.PermitsBPConfig',

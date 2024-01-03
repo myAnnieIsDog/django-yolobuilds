@@ -4,22 +4,25 @@ from fees.models import Fund, BudgetUnit, FeeType, UIGroup, UnitPortion
 from pprint import pprint
 import pandas as pd
 ##########################################################################
-""" python manage.py runscript import_csv """
+""" python manage.py runscript import_xlsx """
 ##########################################################################
 
 base = "scripts/init/"
 def run():
-    core_func()
+    core_func("fiscal_funds", )
     # print(funds())
     # print(units())
     # print(fees())
 
 
-def core_func():
-    with open(f'{base}fiscal_funds.xlsx', "rb") as f:
-        spam = pd.read_excel(f, engine="openpyxl")
-        for row in spam:
-            print(row)
+def core_func(file_name, sheet):
+    spam = pd.read_excel(
+        f'{base}{file_name}.xlsx', 
+        engine="openpyxl",
+        sheet_name=sheet,
+        index_col=0,
+    )
+    print(spam)
 
             
 
