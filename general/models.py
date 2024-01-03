@@ -6,14 +6,23 @@ from django.utils import timezone
 
 
 class Sequence(models.Model):
-    series = models.CharField(max_length=7)
+    series_title = models.CharField(max_length = 55)
+    series_prefix = models.CharField(max_length=2)
     year = models.DateTimeField(default=timezone.now().strftime("%Y"))
-    sequence = models.IntegerField()
+    sequence = models.CharField(max_length=4, default="0000")
     description = models.TextField(max_length=255)
 
     def __str__(self) -> str:
         return self.series  
     # BL, BP, CE, PW, ZF, Receipt, etc.
+
+    def next(series): # <- series title
+        n = Sequence.objects.get(series_title=series)
+        n.year = timezone.now().strftime("%Y")
+        n.sequence = str(int(n.sequence) + 1)
+        while len(n.sequence) < 4:
+            n.sequence = f"0{n.sequence}"
+        return f"{n.series}{n.year}-{n.sequence|zero_pad:4}"
 
 
 ##########################################################################

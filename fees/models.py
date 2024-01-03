@@ -8,99 +8,93 @@ def yaml_fees(all_models):
     from general.models import yaml_backup
     yaml_backup(all_models)
 
-##########################################################################
-""" Fund Model """
-##########################################################################
-class Fund(models.Model):
-    """ General, Building, and Roads. """
 
-    fund_id = models.CharField(
-        max_length=4, 
-        unique=True,
-        primary_key=True,
-    )
-    fund_description = models.CharField(
-        max_length=4, 
-        unique=True,
-    )
-    fund_label = models.CharField(
-        max_length=30, 
-        unique=True,
-    )
-    def __str__(self) -> str:
-        return self.fund_label
+# ##########################################################################
+# """ Fund Model """
+# ##########################################################################
+# class Fund(models.Model):
+#     """ General, Building, and Roads. """
+
+
+#     def __str__(self) -> str:
+#         return self.fund_label
     
-    class Meta():
-        verbose_name = "Budget Units and Funds"
-        verbose_name_plural = "Budget Units and Funds"
+#     class Meta():
+#         verbose_name = "Budget Units and Funds"
+#         verbose_name_plural = "Budget Units and Funds"
 
-    def bak(self):
-        yaml_fees([self])
+#     def bak(self):
+#         yaml_fees([self])
 
 
 ##########################################################################
-""" Budget Unit Model """
+""" Fiscal Accounts Model """
 ##########################################################################
-class BudgetUnit(models.Model): 
-    """ Each fund has 4-6 budget units. """
+class Account(models.Model): 
+
+    fund = models.CharField(
+        max_length=4)
+    fund_label = models.CharField(
+        max_length=55)
+    share = models.DecimalField(
+        max_digits=3, decimal_places=2, default=1.00)
     unit = models.CharField(
-        max_length=6, 
-        unique=True,
-    )
-    unit_fund = models.ForeignKey(
-        Fund, 
-        on_delete=models.PROTECT, 
-        null=True,
-    )
-    share = models.DecimalField(max_digits=5, decimal_places=2, default=100)
+        max_length=4)
     unit_label = models.CharField(
-        max_length=40, 
-        unique=True,
-    )
+        max_length=55)
     unit_description = models.CharField(
-        max_length=100, 
-        unique=True,
-    )
+        max_length=255)
+    cost_center = models.CharField(
+        max_length=6)
+    gl_account = models.CharField(
+        max_length=6, unique=True)
+    cams = models.CharField(
+        max_length=9)
+    infor_activity = models.CharField(
+        max_length=7)
+    infor_account = models.CharField(
+        max_length=5)
+    ledger = models.CharField(
+        max_length=20)
     def __str__(self) -> str:
-        return self.unit_label 
+        return self.unit_label
     
     class Meta():
         verbose_name = "Budget Unit"
         verbose_name_plural = "Budget Units"
 
 
-##########################################################################
-""" User Interface Group """
-##########################################################################
-class UIGroup(models.Model):
-    # fee = models.ForeignKey(
-    #     "FeeType", 
-    #     on_delete=models.PROTECT,
-    #     null=True
-    # )
-    group = models.CharField(
-        max_length=55,
-        unique=True,
-    )
-    def __str__(self) -> str:
-        return self.group 
+# ##########################################################################
+# """ User Interface Group """
+# ##########################################################################
+# class UIGroup(models.Model):
+#     # fee = models.ForeignKey(
+#     #     "FeeType", 
+#     #     on_delete=models.PROTECT,
+#     #     null=True
+#     # )
+#     group = models.CharField(
+#         max_length=55,
+#         unique=True,
+#     )
+#     def __str__(self) -> str:
+#         return self.group 
     
-    class Meta():
-        verbose_name = "Fee Group"
-        verbose_name_plural = "Fee Groups"
+#     class Meta():
+#         verbose_name = "Fee Group"
+#         verbose_name_plural = "Fee Groups"
 
 
 ##########################################################################
 """ Fee Schedule Model """
 ##########################################################################
 class FeeType(models.Model): 
-    fee_budget_unit = models.ManyToManyField(
-        BudgetUnit,
-    )
-    fee_group = models.ForeignKey(
-        UIGroup,
-        on_delete=models.PROTECT,
-        null=True,
+    
+    fee_account = models.ManyToManyField(Account)
+
+    fee_group = models.CharField(
+        max_length=255, 
+        unique=True,
     )
     fee_type = models.CharField(
         max_length=255, 
@@ -164,11 +158,8 @@ class FeeType(models.Model):
 """ All Models """
 ##########################################################################
 all_models = {
-    Fund,
-    BudgetUnit,
+    Account,
     FeeType,
-    UIGroup,
-    UnitPortion,
 }
 ##########################################################################
 """ END FILE """
