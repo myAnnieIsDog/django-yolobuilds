@@ -4,7 +4,7 @@ from django.views.generic.base import TemplateView
 app_name = "permits"
 urlpatterns = [
 
-    path('reviews/list/', 
-        TemplateView.as_view(template_name="review.html"), 
+    path('', 
+        TemplateView.as_view(template_name="reviews/cycles.html"), 
         name="review_list"),
 ]

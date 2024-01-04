@@ -65,6 +65,9 @@ class InspectionTrip(models.Model):
     requested_date = models.DateField()
     requested_notes = models.CharField(max_length=256, null=True, blank=True)
 
+    class Meta:
+        verbose_name = "Inspection Trip"
+        verbose_name_plural = "Inspection Trips"
 ##########################################################################
 """ All Models """
 ##########################################################################

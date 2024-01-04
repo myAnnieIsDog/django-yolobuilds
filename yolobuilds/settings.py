@@ -49,15 +49,12 @@ INSTALLED_APPS = [
     'django_recaptcha', #django-recaptcha
     # 'dotenv',
     'django_pandas', 
-
-    'permits.apps.PermitsConfig',
-    'permits_bp.apps.PermitsBPConfig',
     
     'fees.apps.FeesConfig',
-    'general.apps.GeneralConfig',
     'inspections.apps.InspectionsConfig',
     'locations.apps.LocationsConfig',
-    'payments.apps.PaymentsConfig',
+    'permits.apps.PermitsConfig',
+    'permits_bp.apps.PermitsBPConfig',
     'profiles.apps.ProfilesConfig',
     'reviews.apps.ReviewsConfig',
 ]

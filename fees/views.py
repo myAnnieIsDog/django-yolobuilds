@@ -1,7 +1,8 @@
 from crispy_forms.helper import FormHelper
 from django.views.generic import base, detail, list, edit, dates
 from .models import FeeType
-
+from .models import (Account, FeeType, Fee, ClaritiFee, 
+                     TrakitFee, PaymentMethod, Payment)
 
 class FiscalDetailView(detail.DetailView):
     template_name = "layout_form.html"

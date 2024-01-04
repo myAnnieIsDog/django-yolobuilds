@@ -63,6 +63,9 @@ class ReviewCycle(models.Model):
     
     days_allotted = models.DurationField(null=True)
     
+    class Meta():
+        verbose_name = "Review Cycle"
+        verbose_name_plural = "Review Cycles"
 
 ##########################################################################
 """ All Models """

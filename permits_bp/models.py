@@ -143,6 +143,10 @@ class BP(models.Model):
         self.save()
         # send_occupancy_email()
 
+    class Meta:
+        verbose_name = "Building Permits (Base)"
+        verbose_name_plural = "Building Permits (Base)"
+
 
 ##########################################################################
 """ Building """
@@ -175,6 +179,10 @@ class Building(models.Model):
     # inspections = models.ManyToManyField(InspectionType, related_name="insps")
     fees = [""]
     notes = ""
+
+    class Meta:
+        verbose_name = "Building Permits (Building and Residential Code)"
+        verbose_name_plural = "Building Permits (Building and Residential Code)"
 
 class Reroof(models.Model):
     bp = models.OneToOneField(Building, on_delete=models.PROTECT)
@@ -220,6 +228,9 @@ class Demolition(models.Model):
     inspections = ["Pre-Measure", "Final"]
     notes = ""
 
+    class Meta:
+        verbose_name = "Demolition Permits"
+        verbose_name_plural = "Demolition Permits"
 
 ##########################################################################
 """ Electrical """
@@ -246,6 +257,10 @@ class Electrical(models.Model):
     reviews = ["Building (Full)", "Env. Health", "Fire District", "Int. Waste Management", "Planning", "Public Works"]
     inspections = ["Rough Electrical", "Final"]
     notes = "This permit type is only for work that is not eligible to be expedited."
+
+    class Meta:
+        verbose_name = "Electrical Permits"
+        verbose_name_plural = "Electrical Permits"
 
 class ElectricalService(models.Model):
     suffix = "OTC-Elc"
@@ -315,6 +330,9 @@ class Fire(models.Model):
     hazardous_material = models.BooleanField(False)
     high_piled_combustible_storage = models.BooleanField(False)
 
+    class Meta:
+        verbose_name = "Fire Protection Permits"
+        verbose_name_plural = "Fire Protection Permits"
 
 ##########################################################################
 """ Flood """
@@ -345,11 +363,13 @@ class Flood(models.Model):
     inspections = ["Lowest Floor", "Final"]
     notes = "This permit type is only for work that is not eligible to be expedited."
 
+    class Meta:
+        verbose_name = "Flood Protection Permits"
+        verbose_name_plural = "Flood Protection Permits"
 
 ##########################################################################
 """ Grading """
 ##########################################################################
-
 
 class Grading(models.Model):
     grading_permit = models.OneToOneField(BP, on_delete=models.PROTECT)
@@ -363,11 +383,13 @@ class Grading(models.Model):
     geotech_report = models.BooleanField(default=True)
     special_inspection = models.BooleanField(default=True)
 
+    class Meta:
+        verbose_name = "Grading Permits"
+        verbose_name_plural = "Grading Permits"
 
 ##########################################################################
 """ Mechanical """
 ##########################################################################
-
 
 class Mechanical(models.Model):
     mechanical_permit = models.OneToOneField(BP, on_delete=models.PROTECT)
@@ -375,6 +397,10 @@ class Mechanical(models.Model):
     equipment_units = models.PositiveIntegerField(default=1)
     hvac_units = models.PositiveIntegerField(default=1)
     process_piping = models.PositiveIntegerField(default=1)
+
+    class Meta:
+        verbose_name = "Mechanical Permits"
+        verbose_name_plural = "Mechanical Permits"
 
 class HVAC(models.Model):
     suffix = "OTC-Mch"
@@ -391,7 +417,6 @@ class HVAC(models.Model):
 """ Plumbing """
 ##########################################################################
 
-
 class Plumbing(models.Model):
     plumbing_permit = models.OneToOneField(BP, on_delete=models.PROTECT)
     suffix = "Plb"
@@ -403,6 +428,10 @@ class Plumbing(models.Model):
     water_heating_heat_pump = models.PositiveIntegerField(default=100)
     water_heating_solar = models.PositiveIntegerField(default=10)
     water_heating_tankless = models.PositiveIntegerField(default=100)
+
+    class Meta:
+        verbose_name = "Plumbing Permits"
+        verbose_name_plural = "Plumbing Permits"
 
 class Propane(models.Model):
     suffix = "OTC-Gas"
@@ -437,7 +466,6 @@ class WaterHeater(models.Model):
 """ Pool """
 ##########################################################################
 
-
 class Pool(models.Model):
     pool_permit = models.OneToOneField(BP, on_delete=models.PROTECT)
     suffix = "Pool"
@@ -453,6 +481,10 @@ class Pool(models.Model):
     reviews = ["Building (Accessibility)", "Building (Enclosure)", "Building (Structural)", "Env. Health", "Fire District", "Int. Waste Management", "Planning", "Public Works"]
     inspections = ["Pre-Gunite", "Pre-Deck", "Final/Pre-Plaster/Enclosure"]
     notes = ""
+
+    class Meta:
+        verbose_name = "Pool/Spa Permits"
+        verbose_name_plural = "Pool/Spa Permits"
 
 
 ##########################################################################

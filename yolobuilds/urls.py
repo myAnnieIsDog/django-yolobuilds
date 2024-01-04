@@ -39,5 +39,6 @@ urlpatterns = [
     path('locations/', include('locations.urls'), name="locations"),    
     # path('payments/', include('payments.urls')),  
     path('profiles/', include('profiles.urls')),
+    path('reviews/', include('reviews.urls')),
     path('users/', include('django.contrib.auth.urls'), name="users"),
 ]
