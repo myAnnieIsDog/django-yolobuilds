@@ -8,7 +8,7 @@ from django.db import models
 from django.utils import timezone
 
 from locations.models import Parcel, SiteAddress
-from profiles.models import Profile
+from profiles.models import Division, Profile
 
 ##########################################################################
 """ Sequence Counts """
@@ -18,7 +18,6 @@ class Sequence(models.Model):
     series_prefix = models.CharField(max_length=2)
     year = models.DateTimeField(default=timezone.now().strftime("%Y"))
     sequence = models.CharField(max_length=4, default="0000")
-    description = models.TextField(max_length=255)
 
     def __str__(self) -> str:
         return self.series  
@@ -45,7 +44,7 @@ class Tag(models.Model):
 
 class TaggedRecord(models.Model):
     tag = models.ForeignKey(Tag, on_delete=models.PROTECT)
-    details = models.CharField(max_length=255, null=True, blank=True)
+    policy = models.CharField(max_length=255, null=True, blank=True)
 
     lock = models.BooleanField(
         "Lock this record?", default=False)
@@ -133,21 +132,6 @@ class PermitSubtype(models.Model):
         verbose_name = "Permit Subtype"
         verbose_name_plural = "Permit Subtypes"
 
-class WorkflowType(models.Model):
-    # Expedited
-    # Standard
-    # Discretionary
-    workflow = models.CharField(max_length=25, unique=True)
-    description = models.TextField(max_length=255)
-
-    def __str__(self) -> str:
-        return self.workflow
-
-    class Meta():
-        ordering = ["workflow"]
-        verbose_name = "Workflow Type"
-        verbose_name_plural = "Workflow Types"
-
     
 ##########################################################################
 """ Permit Model """
@@ -158,8 +142,6 @@ class Permit(models.Model):
     type = models.ForeignKey(PermitType, on_delete=models.PROTECT)
     subtype = models.ForeignKey(PermitSubtype, on_delete=models.PROTECT)
     description = models.TextField()
-
-    workflow_type = models.ForeignKey(WorkflowType, on_delete=models.PROTECT)
 
     status = models.ForeignKey(PermitStatus, on_delete=models.PROTECT)
     
@@ -197,7 +179,6 @@ all_models = (
     PermitStatus,
     PermitType,
     PermitSubtype,
-    WorkflowType,
     Permit,
 )
 ##########################################################################

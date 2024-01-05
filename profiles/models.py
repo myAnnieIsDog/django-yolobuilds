@@ -16,10 +16,10 @@ class Profile(models.Model):
         related_name="user_profile")
     first = models.CharField("First Name", max_length=100)
     last = models.CharField("Last Name", max_length=100)
-    company_name = models.CharField(max_length=40, blank=True)
+    company = models.CharField("Company Name", max_length=40, blank=True)
     
     email = models.EmailField()
-    phone_number = models.CharField(max_length=100)
+    phone = models.CharField(max_length=100)
     address = models.CharField(max_length=100)
     city = models.CharField(max_length=100)
     state = models.CharField(max_length=2)
@@ -41,8 +41,8 @@ class Profile(models.Model):
 
 
 class LicenseAgency(models.Model):
-    agency_short = models.CharField(max_length=7, unique=True)
-    agency_long = models.CharField(max_length=255, unique=True)
+    agency = models.CharField("Agency Acronym", max_length=7, unique=True)
+    agency_long = models.CharField("Agency Full Name", max_length=255, unique=True)
 
     def __str__(self) -> str:
         return self.agency_long
@@ -53,8 +53,8 @@ class LicenseAgency(models.Model):
 
 class LicenseType(models.Model):
     licensing_agency = models.ForeignKey(LicenseAgency, on_delete=models.PROTECT, null=True)
-    license_short = models.CharField(max_length=7, unique=True)
-    license_long = models.CharField(max_length=255, unique=True)
+    license_short = models.CharField("Licens Type", max_length=7, unique=True)
+    license_long = models.CharField("Licens Type", max_length=255, unique=True)
 
     def __str__(self) -> str:
         return self.license_long
@@ -86,48 +86,51 @@ class LicenseHolder(models.Model):
 ##########################################################################
 
 
-class AgencyOptions(models.Model):
-    agency_option_short = models.CharField(max_length=25, unique=True)
-    agency_option_full = models.CharField(max_length=255, unique=True)
+class Agency(models.Model):
+    agency = models.CharField(max_length=25, unique=True)
+    full_agency = models.CharField(max_length=255, unique=True)
 
     def __str__(self) -> str:
-        return self.agency_option_short
+        return self.agency
     
     class Meta:
-        ordering = ["agency_option_short"]
+        ordering = ["agency"]
         verbose_name = "Partner Agency"
         verbose_name_plural = "Partner Agency Options"
 
-class DepartmentOptions(models.Model):
-    department_option_short = models.CharField(max_length=25, unique=True)
-    department_option_full = models.CharField(max_length=255, unique=True)
+class Department(models.Model):
+    dept_code = models.CharField(max_length=25, unique=True)
+    department = models.CharField(max_length=255, unique=True)
 
     def __str__(self) -> str:
-        return self.department_option_short
+        return self.name
     
     class Meta:
-        ordering = ["department_option_short"]
+        ordering = ["dept_code"]
         verbose_name = "Department"
         verbose_name_plural = "Department Options"
 
-class DivisionOptions(models.Model):
-    division_options = models.CharField(max_length=25, unique=True)
+
+class Division(models.Model): 
+    prefix = models.CharField(max_length=2, unique=True) 
+    division = models.CharField(max_length=30, unique=True)
+    full_division = models.CharField(max_length=255, unique=True)
 
     def __str__(self) -> str:
-        return self.division_options
+        return self.prefix
     
     class Meta:
-        ordering = ["division_options"]
+        ordering = ["division"]
         verbose_name = "Division"
-        verbose_name_plural = "Division Options"
+        verbose_name_plural = "Divisions"
 
 class Staff(models.Model):
     profile = models.OneToOneField(
         Profile, on_delete=models.PROTECT, related_name="staff_profile")
     department = models.ForeignKey(
-        DepartmentOptions, on_delete=models.PROTECT)
+        Department, on_delete=models.PROTECT)
     division = models.ForeignKey(
-        DivisionOptions, on_delete=models.PROTECT)
+        Division, on_delete=models.PROTECT)
     supervisor = models.CharField(max_length=255, null=True, blank=True)
     supervisor_email = models.CharField(max_length=255, null=True, blank=True)
     # recent_records = models.ManyToManyField(Record)
@@ -143,7 +146,7 @@ class YoloCountyPartners(models.Model):
     profile = models.OneToOneField(
         Profile, on_delete=models.PROTECT)
     agency = models.ForeignKey(
-        AgencyOptions, on_delete=models.PROTECT)
+        Agency, on_delete=models.PROTECT)
     alt_contact_name = models.CharField(max_length=255, null=True, blank=True)
     alt_contact_email = models.CharField(max_length=255, null=True, blank=True)
     # recent_records = models.ManyToManyField(Record)
@@ -165,11 +168,11 @@ all_models = (
     LicenseType,
     LicenseHolder,
 
-    DepartmentOptions,
-    DivisionOptions,
+    Department,
+    Division,
     Staff,
 
-    AgencyOptions,
+    Agency,
     YoloCountyPartners,
 )
 ##########################################################################

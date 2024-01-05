@@ -17,7 +17,7 @@ class ReviewType(models.Model):
     days_cycle2 = models.PositiveSmallIntegerField(default=5)
     review_fees = models.ManyToManyField(FeeType, related_name="+")
     prerequisite = models.ManyToManyField("self")
-    review_checklist = models.TextField(blank=True)
+    review_checklist = models.TextField("Review Checklist", blank=True)
     add_next = models.ManyToManyField("self")
 
     def __str__(self) -> str:
@@ -29,20 +29,32 @@ class ReviewType(models.Model):
 
 
 class ReviewStatus(models.Model): 
-    """ Inherits Label, Description, Created, Modified """
+    status = models.CharField(max_length=55)
+    description = models.CharField(max_length=255)
+    color = models.CharField(max_length=55)
+
     class Meta():
         verbose_name = "Review Status Option"
         verbose_name_plural = "Review Status Options"
 
 class Review(models.Model):
-    parent_permit = models.ForeignKey(Permit, on_delete=models.PROTECT) 
+    permit = models.ForeignKey(Permit, on_delete=models.PROTECT) 
     type = models.ForeignKey(ReviewType, on_delete=models.PROTECT)   
-    status = models.ForeignKey(ReviewStatus, on_delete=models.PROTECT)  
+    status = models.ForeignKey(ReviewStatus, on_delete=models.PROTECT)
+    coa = models.TextField("Conditions of Approval", max_length=255)  
    
     # Fee Study
     staff_time_allotted = models.DecimalField(max_digits=7, decimal_places=1)
     staff_time_actual = models.DecimalField(max_digits=7, decimal_places=1)
 
+class CycleResult(models.Model):
+    result = models.CharField(max_length=55)
+    description = models.CharField(max_length=255)
+    causes_review_status = models.CharField(max_length=55)
+    
+    class Meta():
+        verbose_name = "Review Status Option"
+        verbose_name_plural = "Review Status Options"
 class ReviewCycle(models.Model):
     """ Inherits Label, Description, Created, Modified """
     # Fields for ReviewCycle.objects.filter(parent_review=review)
@@ -50,7 +62,7 @@ class ReviewCycle(models.Model):
     
     # Public fields
     cycle = models.PositiveSmallIntegerField(default=1)
-    status = models.ForeignKey(ReviewStatus, on_delete=models.PROTECT, default="Under Review")
+    result = models.ForeignKey(CycleResult, on_delete=models.PROTECT, default="In Progress")
     reviewer = models.CharField(max_length=100, null=True)
     completed_date = models.DateTimeField(null=True)
     due = models.DateTimeField(null=True)
@@ -74,6 +86,7 @@ all_models = (
     ReviewType,
     ReviewStatus,
     Review,
+    CycleResult,
     ReviewCycle,
 )
 ##########################################################################
