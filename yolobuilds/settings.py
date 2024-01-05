@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
+    'debug_toolbar'
     'django_extensions', # django-extensions
     'pandas',
     'numpy',
@@ -67,7 +68,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    
+
+    "debug_toolbar.middleware.DebugToolbarMiddleware",   
     "django_htmx.middleware.HtmxMiddleware",
 ]
 
@@ -175,3 +177,9 @@ USE_THOUSAND_SEPARATOR = True
 
 DEFAULT_FROM_EMAIL = "no-reply@yolobuilds.org"
 SERVER_EMAIL = "webmaster@yolobuilds.org"
+
+INTERNAL_IPS = [
+    # ...
+    "127.0.0.1",
+    # ...
+]

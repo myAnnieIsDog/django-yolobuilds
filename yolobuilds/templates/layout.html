@@ -6,12 +6,27 @@
 {% load humanize %} 
 <!-- Humanize: |apnumber |intcomma |intword |naturalday |naturaltime |ordinal -->
 
+{% if debug %}
+if (typeof window.htmx !== "undefined") {
+    htmx.on("htmx:afterSettle", function(detail) {
+        if (
+            typeof window.djdt !== "undefined"
+            && detail.target instanceof HTMLBodyElement
+        ) {
+            djdt.show_toolbar();
+        }
+    });
+}
+{% endif %}
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Scott Doolittle">
     <meta name="description" content="This is the html/css/javascript version of Yolo Builds.">
     
+
+
     {% load django_bootstrap5 %}
     {% bootstrap_css %}
     {% bootstrap_javascript %}
