@@ -11,19 +11,14 @@ from .models import ReviewType, ReviewStatus, Review, ReviewCycle
 class ReviewList(ListView):
     model = Review
 
-    def get_queryset(self) -> QuerySet[Any]:
-        return super().get_queryset()
+    def get_context_data(self, **kwargs: Any) -> dict[str, Any]:
+        context = super().get_context_data(**kwargs)
+        context["reviews"] = ReviewCycle.objects.all().filter(status="Under Review")
+        return context
 
 
 class ReviewDetail(DetailView):
     model = Review
-    
-
-
-    # def get_context_data(self, **kwargs: Any) -> dict[str, Any]:
-    #     cycles = ReviewCycle.objects.all().filter(review=self.pk)
-    #     context["cycles"] = cycles
-    #     return context
 
     def get_context_data(self, **kwargs: Any) -> dict[str, Any]:
         context = super().get_context_data(**kwargs)

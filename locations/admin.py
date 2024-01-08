@@ -23,9 +23,9 @@ class AddressInline(admin.StackedInline):
 class ParcelAdmin(admin.ModelAdmin):
     inlines = [AddressInline]
 
-# @admin.register(SiteAddress)
-# class SiteAddressAdmin(admin.ModelAdmin):
-#     pass
+@admin.register(SiteAddress)
+class SiteAddressAdmin(admin.ModelAdmin):
+    pass
 
 ##########################################################################
 """ End File """

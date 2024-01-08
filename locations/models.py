@@ -22,6 +22,7 @@ class District(models.Model):
     def __str__(self) -> str:
         return f"{self.district} {self.dist_type}"
 
+
 class Jurisdiction(models.Model): 
     jurisdiction = models.CharField(max_length=55)
 
@@ -78,6 +79,10 @@ class SiteAddress(models.Model):
     state = models.CharField(max_length=2, default="CA")
     zip = models.CharField(max_length=5, default="95695")
     geolocation = models.CharField(max_length=50, null=True, blank=True)
+
+    class Meta:
+        verbose_name = "Site Address"
+        verbose_name_plural = "Site Addresses"
 
 ##########################################################################
 """ All Models """
