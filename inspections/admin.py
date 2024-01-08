@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import (
-    InspectionResult, Inspection, InspectionTrip
+    InspectionType, InspectionResult, Inspection, InspectionTrip
 )
 
 ##########################################################################
@@ -9,18 +9,20 @@ from .models import (
 prevent a circular reference. """
 ##########################################################################
 
-
+@admin.register(InspectionType)
+class InspectionTypeAdmin(admin.ModelAdmin):
+    pass
 
 @admin.register(InspectionResult)
-class DivisionAdmin(admin.ModelAdmin):
+class InspectionResultAdmin(admin.ModelAdmin):
     pass
 
 @admin.register(Inspection)
-class PermitStatusAdmin(admin.ModelAdmin):
+class InspectionAdmin(admin.ModelAdmin):
     pass
 
 @admin.register(InspectionTrip)
-class ReviewTypeAdmin(admin.ModelAdmin):
+class InspectionTripAdmin(admin.ModelAdmin):
     pass
 
 ##########################################################################

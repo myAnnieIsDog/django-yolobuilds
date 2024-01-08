@@ -38,26 +38,16 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
-    'django_extensions', # django-extensions
-    'pandas',
-    'numpy',
-    # 'openpyxl',
-    'crispy_forms', # django-crispy-forms
-    # 'crispy_bootstrap5', 
-    'django_bootstrap5', #django-bootstrap5
-    # 'django_htmx', #django-htmx
-    'django_recaptcha', #django-recaptcha
-    # 'dotenv',
-    'django_pandas', 
+    'debug_toolbar',
+    'django_extensions',
+    'django_recaptcha',
 
-    'permits.apps.PermitsConfig',
-    'permits_bp.apps.PermitsBPConfig',
     
     'fees.apps.FeesConfig',
-    'general.apps.GeneralConfig',
     'inspections.apps.InspectionsConfig',
     'locations.apps.LocationsConfig',
-    'payments.apps.PaymentsConfig',
+    'permits.apps.PermitsConfig',
+    'permits_bp.apps.PermitsBPConfig',
     'profiles.apps.ProfilesConfig',
     'reviews.apps.ReviewsConfig',
 ]
@@ -70,8 +60,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    
-    "django_htmx.middleware.HtmxMiddleware",
+
+    "debug_toolbar.middleware.DebugToolbarMiddleware",   
+    # "django_htmx.middleware.HtmxMiddleware",
 ]
 
 ROOT_URLCONF = 'yolobuilds.urls'
@@ -157,9 +148,7 @@ STATIC_ROOT = "static/"
 
 STATIC_URL = 'static/'
 
-STATICFILES_DIRS = [
-    BASE_DIR / "yolobuilds/static"
-]
+STATICFILES_DIRS = ["yolobuilds/static/"]
 
 
 # Default primary key field type
@@ -178,3 +167,11 @@ USE_THOUSAND_SEPARATOR = True
 
 DEFAULT_FROM_EMAIL = "no-reply@yolobuilds.org"
 SERVER_EMAIL = "webmaster@yolobuilds.org"
+
+INTERNAL_IPS = [
+    # ...
+    "127.0.0.1",
+    # ...
+]
+
+FIXTURE_DIRS = ["fixtures/"]

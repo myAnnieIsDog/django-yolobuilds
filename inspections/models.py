@@ -8,9 +8,12 @@ placed there to prevent a circular reference to the Permit model. """
 ##########################################################################
 
 class InspectionType(models.Model): 
-    division = models.ForeignKey(Division, on_delete=models.PROTECT)
-    inspection_type = models.CharField(max_length=30)
-    default_inspector = models.ForeignKey(User, on_delete=models.PROTECT)
+    division = models.ForeignKey(
+        Division, on_delete=models.PROTECT, null=True, blank=True)
+    inspection_type = models.CharField(
+        max_length=255)
+    default_inspector = models.ForeignKey(
+        User, on_delete=models.PROTECT, null=True, blank=True)
     duration_hours = models.DecimalField(
         max_digits=3, decimal_places=1, default=0.3)
     trip_factor = models.DecimalField(
@@ -22,7 +25,7 @@ class InspectionType(models.Model):
     
     
     def __str__(self) -> str:
-        return self.type
+        return self.inspection_type
 
     class Meta():
         verbose_name = "Inspection Type"
@@ -30,7 +33,9 @@ class InspectionType(models.Model):
 
 
 class InspectionResult(models.Model): 
-    """ Inherits Label, Description, Created, Modified """
+    result = models.CharField(max_length=55, unique=True)
+    requirements = models.TextField(max_length=255)
+    
     class Meta():
         verbose_name = "Inspection Result Option"
         verbose_name_plural = "Inspection Result Options"
@@ -65,6 +70,9 @@ class InspectionTrip(models.Model):
     requested_date = models.DateField()
     requested_notes = models.CharField(max_length=256, null=True, blank=True)
 
+    class Meta:
+        verbose_name = "Inspection Trip"
+        verbose_name_plural = "Inspection Trips"
 ##########################################################################
 """ All Models """
 ##########################################################################

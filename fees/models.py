@@ -2,33 +2,22 @@
 """ Fee Type Models """
 ##########################################################################
 from django.db import models
+from django.contrib.auth.models import User
+from django.contrib.contenttypes.fields import GenericForeignKey
+from django.contrib.contenttypes.models import ContentType
 from django.core.validators import MaxValueValidator, MinValueValidator
+import requests
 
-def yaml_fees(all_models):
-    from general.models import yaml_backup
-    yaml_backup(all_models)
-
-
-# ##########################################################################
-# """ Fund Model """
-# ##########################################################################
-# class Fund(models.Model):
-#     """ General, Building, and Roads. """
+from profiles.models import Profile
 
 
-#     def __str__(self) -> str:
-#         return self.fund_label
-    
-#     class Meta():
-#         verbose_name = "Budget Units and Funds"
-#         verbose_name_plural = "Budget Units and Funds"
-
-#     def bak(self):
-#         yaml_fees([self])
+def yaml_fees(model_list: list) -> bool:
+    from scripts.bak_yaml import yaml_backup
+    return yaml_backup(model_list)
 
 
 ##########################################################################
-""" Fiscal Accounts Model """
+""" Accounts Model """
 ##########################################################################
 class Account(models.Model): 
 
@@ -60,41 +49,21 @@ class Account(models.Model):
         return self.unit_label
     
     class Meta():
-        verbose_name = "Budget Unit"
-        verbose_name_plural = "Budget Units"
-
-
-# ##########################################################################
-# """ User Interface Group """
-# ##########################################################################
-# class UIGroup(models.Model):
-#     # fee = models.ForeignKey(
-#     #     "FeeType", 
-#     #     on_delete=models.PROTECT,
-#     #     null=True
-#     # )
-#     group = models.CharField(
-#         max_length=55,
-#         unique=True,
-#     )
-#     def __str__(self) -> str:
-#         return self.group 
-    
-#     class Meta():
-#         verbose_name = "Fee Group"
-#         verbose_name_plural = "Fee Groups"
+        verbose_name = "Account"
+        verbose_name_plural = "Accounts"
 
 
 ##########################################################################
-""" Fee Schedule Model """
+""" Fee Types Model """
 ##########################################################################
 class FeeType(models.Model): 
     
-    fee_account = models.ManyToManyField(Account)
-
+    fee_account = models.ForeignKey(
+        Account, 
+        on_delete=models.PROTECT
+    )
     fee_group = models.CharField(
-        max_length=255, 
-        unique=True,
+        max_length=255,
     )
     fee_type = models.CharField(
         max_length=255, 
@@ -155,12 +124,117 @@ class FeeType(models.Model):
 
 
 ##########################################################################
+""" Model for fees applied to a record."""
+##########################################################################
+class Fee(models.Model):
+    # Attach the fee to a record of various types (permit, license, case)
+    content_type = models.ForeignKey(ContentType, on_delete=models.PROTECT)
+    object_id = models.PositiveIntegerField()
+    content_object = GenericForeignKey("content_type", "object_id")
+
+    fee_type = models.ForeignKey(FeeType, on_delete=models.PROTECT)
+    qty = models.DecimalField(max_digits=20, decimal_places=7, default=1.0)
+    rate = models.DecimalField(max_digits=15, decimal_places=2, default=1.00)
+    amount = models.DecimalField(max_digits=15, decimal_places=2, default=1.00)
+
+    paid_amount = models.DecimalField(max_digits=15, decimal_places=2, default=0.00)
+    paid_date = models.DateTimeField(null=True, blank=True)
+    receipt_number = models.CharField(max_length=25, null=True, blank=True)
+    balance = models.DecimalField(max_digits=15, decimal_places=2, default=1000000)
+    fully_paid = models.BooleanField(default=False)
+    created_on = models.DateTimeField(null=True, blank=True)
+    created_by = models.ForeignKey(User, on_delete=models.PROTECT)
+    notes = models.TextField(max_length=255)
+
+
+class TrakitFee(Fee):
+    main_fee = models.ForeignKey(Fee, on_delete=models.PROTECT, related_name="trakit_fee")
+    trakit_fee_code = models.CharField(max_length=255, null=True, blank=True)
+    tech = models.CharField(max_length=255, null=True, blank=True)
+    trakit_description = models.CharField(max_length=255, null=True, blank=True)
+    trakit_formula = models.CharField(max_length=255, null=True, blank=True)
+    trakit_id = models.CharField(max_length=255, null=True, blank=True)
+
+
+##########################################################################
+""" Payment Model. """
+##########################################################################
+class PaymentMethod(models.Model):
+    method = models.CharField(max_length=55, unique=True)
+    policy = models.TextField(max_length=255)
+
+    def __str__(self) -> str:
+        return self.method
+
+    class Meta:
+        verbose_name = "Payment Method"
+        verbose_name_plural = "Payment Methods"
+
+
+class Payment(models.Model):
+    fees = models.ManyToManyField(Fee)
+    method = models.CharField(max_length=255, null=True, blank=True)
+    date = models.DateTimeField(auto_now=True)
+    amount = models.DecimalField(max_digits=15, decimal_places=2, default=0.00)
+    paid_by = models.OneToOneField(Profile, on_delete=models.CASCADE)
+    check_number = models.CharField(max_length=255, null=True, blank=True)
+    receipt_number = models.PositiveSmallIntegerField(null=True)
+    collected_by = models.ForeignKey(User, on_delete=models.PROTECT)
+    deposit = models.BooleanField(default=False)
+    refund = models.BooleanField(default=False)
+
+
+    def pay_now():
+        # Process the transaction. FUTURE: integrate with Elavon/Converge.
+        # Generate a pdf receipt, save it to the payments directory, link 
+        # the file to the related fee records, and display it to the user 
+        # for printing. 
+        pass
+
+
+    def converge(
+        ssl_pin="123",
+        ssl_transaction_type="ccsale",
+        ssl_amount="0.10", 
+        merchant_id="000062",
+        merchant_user_id="sdoolittle",
+        merchant_pin="tbd",
+        demo="", 
+        **kwargs
+    ):
+        params = {
+            "ssl_pin": ssl_pin,
+            "ssl_transaction_type": ssl_transaction_type,
+            "ssl_amount": ssl_amount, 
+            "merchant_id": merchant_id,
+            "merchant_user_id": merchant_user_id,
+            "merchant_pin": merchant_pin,
+        }
+        demo = "demo." # comment-out for production url's to use the default empty string.
+        token_url = (f"https://api.{demo}convergepay.com/hosted-payments/transaction_token")
+        response = requests.post(token_url, params)  
+        print(response)
+        response.raise_for_status()
+        if response.status_code == 200:
+            header = (f"Location: https://api.{demo}convergepay.com/hosted-payments?ssl_txn_auth_token=$sessiontoken")
+            return requests.post(header)
+        else:
+            return f"HTTP Status: {response.status_code}. {response}"
+
+    # print(converge(ssl_amount = 0.50))
+
+    
+##########################################################################
 """ All Models """
 ##########################################################################
-all_models = {
+all_models = (
     Account,
     FeeType,
-}
+    Fee,
+    TrakitFee,
+    PaymentMethod,
+    Payment,
+)
 ##########################################################################
 """ END FILE """
 ##########################################################################

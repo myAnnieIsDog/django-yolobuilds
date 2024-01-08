@@ -3,28 +3,28 @@
 ##########################################################################
 from django.contrib import admin
 from .models import (Profile, LicenseAgency, LicenseType, LicenseHolder, 
-    AgencyOptions, YoloCountyPartners, DepartmentOptions, DivisionOptions, 
+    Agency, YoloCountyPartners, Department, Division, 
     Staff)
 
-@admin.register(AgencyOptions)
+@admin.register(Agency)
 class ProfilesAdmin(admin.ModelAdmin):
     verbose_name = "Agency Option"
     verbose_name_plural = "Agency Options"
 
-@admin.register(DepartmentOptions)
+@admin.register(Department)
 class ProfilesAdmin(admin.ModelAdmin):
     verbose_name = "Department Option"
     verbose_name_plural = "Department Options"
 
-@admin.register(DivisionOptions)
+@admin.register(Division)
 class ProfilesAdmin(admin.ModelAdmin):
     verbose_name = "Division Option"
     verbose_name_plural = "Division Options"
 
 
-# class LicenseTypeInline(admin.TabularInline):
-#     model = LicenseType
-#     extra = 3
+class LicenseTypeInline(admin.TabularInline):
+    model = LicenseType
+    extra = 3
 @admin.register(LicenseAgency)
 class ProfilesAdmin(admin.ModelAdmin):
     verbose_name = "Licensing Agency"

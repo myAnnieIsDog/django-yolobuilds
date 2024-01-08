@@ -5,12 +5,10 @@ from django.utils import timezone
 """ python manage.py runscript bak_yaml """
 ##########################################################################
 from fees.models import all_models as fee_models
-from general.models import all_models as general_models
 from inspections.models import all_models as inspections_models
 
 model_lists = [
     fee_models,
-    general_models,
     inspections_models,
 ]
 

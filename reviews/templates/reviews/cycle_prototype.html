@@ -1,0 +1,194 @@
+{% extends "base.html" %}
+
+{% block css %}<link rel="stylesheet" href="reviews/style.css">{% endblock css %}
+
+
+{% block heading %}Plan Review{% endblock heading %}
+
+{% block intro %}
+The following is a detail for a single plan review.
+{% endblock intro %}
+
+
+{% block main_content %}
+<style>
+td {
+    min-height: 50px;
+    min-width: 120px;
+}
+.key {
+    text-align: right;
+    font-weight: lighter;
+}
+.key, .value {
+    vertical-align: top;
+    padding: 7px;
+}
+</style>
+
+<section>
+    <h4>Overall Review Status: </h4>
+    <h3>Pending Applicant Action</h3>
+    <p>See the following details to understand what is left before your permit application can be approved for construction.</p>
+    <p>See your <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1">detailed report</a>.</p>
+</section>
+
+<details>
+    <summary>Fire District: Pending Applicant Action</summary>
+    <section>
+        <h4 style="text-align: center;">Cycle 1</h4>
+        <table>
+            <tr>
+                <td class="key">Result:</td>
+                <td class="value">Pending Applicant Action</td>
+            </tr>
+            <tr>
+                <td class="key">Reviewer:</td>
+                <td class="value">sdoolittle</td>
+            </tr>
+            <tr>
+                <td class="key">Returned:</td>
+                <td class="value">11/3/2023</td>
+            </tr>
+            <tr>
+                <td class="key">Due:</td>
+                <td class="value">11/4/2023</td>
+            </tr>
+            <tr>
+                <td class="key">Sent:</td>
+                <td class="value">10/15/2023</td>
+            </tr>
+            <tr>
+                <td class="key">Notes:</td>
+                <td class="value">The applicant must take the fire district review form to the fire district for their approval.</td>
+            </tr>  
+        </table>  
+    </section>
+</details> 
+
+
+    
+<details>
+    <summary>Building: Approved</summary>
+    <section>
+        <h4 style="text-align: center;">Revision 1</h4>
+        <table>
+            <tr>
+                <td class="key">Result:</td>
+                <td class="value">Approved</td>
+            </tr>
+            <tr>
+                <td class="key">Reviewer:</td>
+                <td class="value">sdoolittle</td>
+            </tr>
+            <tr>
+                <td class="key">Returned:</td>
+                <td class="value">1/3/2024</td>
+            </tr>
+            <tr>
+                <td class="key">Due:</td>
+                <td class="value">1/4/2024</td>
+            </tr>
+            <tr>
+                <td class="key">Sent:</td>
+                <td class="value">12/15/2024</td>
+            </tr>
+            <tr>
+                <td class="key">Notes:</td>
+                <td class="value">Changed beam size in the living room.</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h4 style="text-align: center;">Cycle 3</h4>
+        <table>
+            <tr>
+                <td class="key">Result:</td>
+                <td class="value">Corrections Required</td>
+            </tr>
+            <tr>
+                <td class="key">Reviewer:</td>
+                <td class="value">sdoolittle</td>
+            </tr>
+            <tr>
+                <td class="key">Returned:</td>
+                <td class="value">1/3/2024</td>
+            </tr>
+            <tr>
+                <td class="key">Due:</td>
+                <td class="value">1/4/2024</td>
+            </tr>
+            <tr>
+                <td class="key">Sent:</td>
+                <td class="value">12/15/2024</td>
+            </tr>
+            <tr>
+                <td class="key">Notes:</td>
+                <td class="value"></td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h4 style="text-align: center;">Cycle 2</h4>
+        <table>
+            <tr>
+                <td class="key">Result:</td>
+                <td class="value">Corrections Required</td>
+            </tr>
+            <tr>
+                <td class="key">Reviewer:</td>
+                <td class="value">sdoolittle</td>
+            </tr>
+            <tr>
+                <td class="key">Returned:</td>
+                <td class="value">1/3/2024</td>
+            </tr>
+            <tr>
+                <td class="key">Due:</td>
+                <td class="value">1/4/2024</td>
+            </tr>
+            <tr>
+                <td class="key">Sent:</td>
+                <td class="value">12/15/2024</td>
+            </tr>
+            <tr>
+                <td class="key">Notes:</td>
+                <td class="value">Resubmittal did not address Cycle 1 comments. They must be addressed in the next cycle or an incomplete submittal fee will be charged.</td>
+            </tr>
+        </table>
+    </section>       
+    
+
+    <section>
+        <h4 style="text-align: center;">Cycle 1</h4>
+        <table>
+            <tr>
+                <td class="key">Result:</td>
+                <td class="value">Corrections Required</td>
+            </tr>
+            <tr>
+                <td class="key">Reviewer:</td>
+                <td class="value">sdoolittle</td>
+            </tr>
+            <tr>
+                <td class="key">Returned:</td>
+                <td class="value">11/3/2023</td>
+            </tr>
+            <tr>
+                <td class="key">Due:</td>
+                <td class="value">11/4/2023</td>
+            </tr>
+            <tr>
+                <td class="key">Sent:</td>
+                <td class="value">10/15/2023</td>
+            </tr>
+            <tr>
+                <td class="key">Notes:</td>
+                <td class="value">See attached review comments.</td>
+            </tr>  
+        </table>  
+    </section>   
+</details> 
+{% endblock %}

@@ -4,8 +4,18 @@
 from django.contrib import admin
 from .models import (
     BP, Building, Demolition, Electrical, Fire, Flood, Grading, 
-    Mechanical, Plumbing, Pool
+    Mechanical, Plumbing, Pool, ApplicantRole, OwnerRole, FloodZones
 )
+
+
+@admin.register(ApplicantRole)
+class ApplicantRoleAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(OwnerRole)
+class OwnerRoleAdmin(admin.ModelAdmin):
+    pass
 
 @admin.register(BP)
 class DivisionAdmin(admin.ModelAdmin):
@@ -27,8 +37,13 @@ class PermitStatusAdmin(admin.ModelAdmin):
 class PermitTypeAdmin(admin.ModelAdmin):
     pass
 
+@admin.register(FloodZones)
+class FloodZonesAdmin(admin.ModelAdmin):
+    list_display = ["zone_code", "zone_description"]
+    list_display_links = ["zone_code", "zone_description"]
+    
 @admin.register(Flood)
-class PermitSubtypeAdmin(admin.ModelAdmin):
+class FloodAdmin(admin.ModelAdmin):
     pass
 
 @admin.register(Grading)

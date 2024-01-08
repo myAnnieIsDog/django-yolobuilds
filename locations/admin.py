@@ -1,22 +1,15 @@
 from django.contrib import admin
 from .models import (
-    DistrictType, District, Jurisdiction, Parcel, SiteAddress
+    District, Jurisdiction, Parcel, SiteAddress
 )
 ##########################################################################
 """ Location Admin """
 ##########################################################################
 
-class DistrictInline(admin.StackedInline):
-    model = District
-    extra = 1
 
-@admin.register(DistrictType)
-class DistrictTypeAdmin(admin.ModelAdmin):
-    inlines = [DistrictInline]
-
-# @admin.register(District)
-# class DistrictAdmin(admin.ModelAdmin):
-#     list_display = ["name", "type", "description"]
+@admin.register(District)
+class DistrictAdmin(admin.ModelAdmin):
+    list_display = ["dist_type", "district", "description"]
 
 @admin.register(Jurisdiction)
 class JurisdictionAdmin(admin.ModelAdmin):

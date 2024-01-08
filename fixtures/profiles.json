@@ -1,0 +1,1285 @@
+[
+  {
+    "model": "profiles.profile",
+    "pk": 1,
+    "fields": {
+      "user": null,
+      "first": "Angelina",
+      "last": "Espinoza",
+      "company_name": "Yolo County DCS",
+      "email": "angelina.espinoza@yolocounty.org",
+      "phone_number": "530-666-8775",
+      "address": "292 W Beamer St",
+      "city": "Woodland",
+      "state": "CA",
+      "zip": "95695"
+    }
+  },
+  {
+    "model": "profiles.profile",
+    "pk": 2,
+    "fields": {
+      "user": null,
+      "first": "Angelica",
+      "last": "Yepez",
+      "company_name": "Yolo County DCS",
+      "email": "angelica.yepez@yolocounty.org",
+      "phone_number": "530-666-8775",
+      "address": "292 W Beamer St",
+      "city": "Woodland",
+      "state": "CA",
+      "zip": "95695"
+    }
+  },
+  {
+    "model": "profiles.profile",
+    "pk": 3,
+    "fields": {
+      "user": null,
+      "first": "Cassandra",
+      "last": "Mendoza",
+      "company_name": "Yolo County DCS",
+      "email": "cassandra.mendoza@yolocounty.org",
+      "phone_number": "530-666-8775",
+      "address": "292 W Beamer St",
+      "city": "Woodland",
+      "state": "CA",
+      "zip": "95695"
+    }
+  },
+  {
+    "model": "profiles.profile",
+    "pk": 4,
+    "fields": {
+      "user": null,
+      "first": "Charlie",
+      "last": "Tschudin",
+      "company_name": "Yolo County DCS",
+      "email": "charlie.tschudin@yolocounty.org",
+      "phone_number": "530-666-8775",
+      "address": "292 W Beamer St",
+      "city": "Woodland",
+      "state": "CA",
+      "zip": "95695"
+    }
+  },
+  {
+    "model": "profiles.profile",
+    "pk": 5,
+    "fields": {
+      "user": null,
+      "first": "Deborah",
+      "last": "Anderson",
+      "company_name": "Yolo County DCS",
+      "email": "deborah.anderson@yolocounty.org",
+      "phone_number": "530-666-8775",
+      "address": "292 W Beamer St",
+      "city": "Woodland",
+      "state": "CA",
+      "zip": "95695"
+    }
+  },
+  {
+    "model": "profiles.profile",
+    "pk": 6,
+    "fields": {
+      "user": null,
+      "first": "Dawne",
+      "last": "Koranda",
+      "company_name": "Yolo County DCS",
+      "email": "dawne.koranda@yolocounty.org",
+      "phone_number": "530-666-8775",
+      "address": "292 W Beamer St",
+      "city": "Woodland",
+      "state": "CA",
+      "zip": "95695"
+    }
+  },
+  {
+    "model": "profiles.profile",
+    "pk": 7,
+    "fields": {
+      "user": null,
+      "first": "Josephine",
+      "last": "Acevedo",
+      "company_name": "Yolo County ACE",
+      "email": "josephine.acevedo@yolocounty.org",
+      "phone_number": "530-666-8775",
+      "address": "56465465",
+      "city": "Woodland",
+      "state": "CA",
+      "zip": "95695"
+    }
+  },
+  {
+    "model": "profiles.profile",
+    "pk": 8,
+    "fields": {
+      "user": null,
+      "first": "Jeff",
+      "last": "Anderson",
+      "company_name": "Yolo County DCS",
+      "email": "jeff.anderson@yolocounty.org",
+      "phone_number": "530-666-8775",
+      "address": "292 W Beamer St",
+      "city": "Woodland",
+      "state": "CA",
+      "zip": "95695"
+    }
+  },
+  {
+    "model": "profiles.profile",
+    "pk": 9,
+    "fields": {
+      "user": null,
+      "first": "Jair",
+      "last": "Bautisa",
+      "company_name": "Yolo County DCS",
+      "email": "jair.bautista@yolocounty.org",
+      "phone_number": "530-666-8775",
+      "address": "292 W Beamer St",
+      "city": "Woodland",
+      "state": "CA",
+      "zip": "95695"
+    }
+  },
+  {
+    "model": "profiles.profile",
+    "pk": 10,
+    "fields": {
+      "user": null,
+      "first": "Jianmin",
+      "last": "Huang",
+      "company_name": "Yolo County DCS",
+      "email": "jianmin.huang@yolocounty.org",
+      "phone_number": "530-666-8775",
+      "address": "292 W Beamer St",
+      "city": "Woodland",
+      "state": "CA",
+      "zip": "95695"
+    }
+  },
+  {
+    "model": "profiles.profile",
+    "pk": 11,
+    "fields": {
+      "user": null,
+      "first": "Josue",
+      "last": "Pimentel-Morra",
+      "company_name": "Yolo County DCS",
+      "email": "josue.pimentel@yolocounty.org",
+      "phone_number": "530-666-8775",
+      "address": "292 W Beamer St",
+      "city": "Woodland",
+      "state": "CA",
+      "zip": "95695"
+    }
+  },
+  {
+    "model": "profiles.profile",
+    "pk": 12,
+    "fields": {
+      "user": null,
+      "first": "JD",
+      "last": "Trebec",
+      "company_name": "Yolo County DCS",
+      "email": "jd.trebec@yolocounty.org",
+      "phone_number": "530-666-8775",
+      "address": "292 W Beamer St",
+      "city": "Woodland",
+      "state": "CA",
+      "zip": "95695"
+    }
+  },
+  {
+    "model": "profiles.profile",
+    "pk": 13,
+    "fields": {
+      "user": null,
+      "first": "Jeremy",
+      "last": "Van Horn",
+      "company_name": "Yolo County DCS",
+      "email": "jeremy.vanhorn@yolocounty.org",
+      "phone_number": "530-666-8775",
+      "address": "292 W Beamer St",
+      "city": "Woodland",
+      "state": "CA",
+      "zip": "95695"
+    }
+  },
+  {
+    "model": "profiles.profile",
+    "pk": 14,
+    "fields": {
+      "user": null,
+      "first": "Maryam",
+      "last": "Farhoudi",
+      "company_name": "Yolo County DCS",
+      "email": "maryam.farhoodi@yolocounty.org ",
+      "phone_number": "530-666-8775",
+      "address": "292 W Beamer St",
+      "city": "Woodland",
+      "state": "CA",
+      "zip": "95695"
+    }
+  },
+  {
+    "model": "profiles.profile",
+    "pk": 15,
+    "fields": {
+      "user": null,
+      "first": "Marlin",
+      "last": "Nardiello",
+      "company_name": "Yolo County DCS",
+      "email": "marlin.nardiello@yolocounty.org",
+      "phone_number": "530-666-8775",
+      "address": "292 W Beamer St",
+      "city": "Woodland",
+      "state": "CA",
+      "zip": "95695"
+    }
+  },
+  {
+    "model": "profiles.profile",
+    "pk": 16,
+    "fields": {
+      "user": null,
+      "first": "Pam",
+      "last": "Hedrick",
+      "company_name": "Yolo County DCS",
+      "email": "pam.hedrick@yolocounty.org",
+      "phone_number": "530-666-8775",
+      "address": "292 W Beamer St",
+      "city": "Woodland",
+      "state": "CA",
+      "zip": "95695"
+    }
+  },
+  {
+    "model": "profiles.profile",
+    "pk": 17,
+    "fields": {
+      "user": null,
+      "first": "Scott",
+      "last": "Doolittle",
+      "company_name": "Yolo County DCS",
+      "email": "scott.doolittle@yolocounty.org",
+      "phone_number": "530-666-8775",
+      "address": "292 W Beamer St",
+      "city": "Woodland",
+      "state": "CA",
+      "zip": "95695"
+    }
+  },
+  {
+    "model": "profiles.profile",
+    "pk": 18,
+    "fields": {
+      "user": null,
+      "first": "Stacey",
+      "last": "Castagnola",
+      "company_name": "Yolo County DCS",
+      "email": "stacey.castagnola@yolocounty.org",
+      "phone_number": "530-666-8775",
+      "address": "292 W Beamer St",
+      "city": "Woodland",
+      "state": "CA",
+      "zip": "95695"
+    }
+  },
+  {
+    "model": "profiles.profile",
+    "pk": 19,
+    "fields": {
+      "user": null,
+      "first": "Stephanie",
+      "last": "Cormier",
+      "company_name": "Yolo County DCS",
+      "email": "stephanie.cormier@yolocounty.org",
+      "phone_number": "530-666-8775",
+      "address": "292 W Beamer St",
+      "city": "Woodland",
+      "state": "CA",
+      "zip": "95695"
+    }
+  },
+  {
+    "model": "profiles.profile",
+    "pk": 20,
+    "fields": {
+      "user": null,
+      "first": "Suzie",
+      "last": "Dawley",
+      "company_name": "Yolo County DCS",
+      "email": "susie.dawlwy@yolocounty.org",
+      "phone_number": "530-666-8775",
+      "address": "292 W Beamer St",
+      "city": "Woodland",
+      "state": "CA",
+      "zip": "95695"
+    }
+  },
+  {
+    "model": "profiles.profile",
+    "pk": 21,
+    "fields": {
+      "user": null,
+      "first": "Shriti",
+      "last": "Jeet",
+      "company_name": "Yolo County DCS",
+      "email": "shriti.jeet@yolocounty.org",
+      "phone_number": "530-666-8775",
+      "address": "292 W Beamer St",
+      "city": "Woodland",
+      "state": "CA",
+      "zip": "95695"
+    }
+  },
+  {
+    "model": "profiles.profile",
+    "pk": 22,
+    "fields": {
+      "user": null,
+      "first": "Su",
+      "last": "Lee",
+      "company_name": "Yolo County DCS",
+      "email": "su.lee@yolocounty.org",
+      "phone_number": "530-666-8775",
+      "address": "292 W Beamer St",
+      "city": "Woodland",
+      "state": "CA",
+      "zip": "95695"
+    }
+  },
+  {
+    "model": "profiles.profile",
+    "pk": 23,
+    "fields": {
+      "user": null,
+      "first": "Shelby",
+      "last": "Miliren",
+      "company_name": "Yolo County DCS",
+      "email": "shelby.milliren@yolocounty.org ",
+      "phone_number": "530-666-8775",
+      "address": "292 W Beamer St",
+      "city": "Woodland",
+      "state": "CA",
+      "zip": "95695"
+    }
+  },
+  {
+    "model": "profiles.profile",
+    "pk": 24,
+    "fields": {
+      "user": null,
+      "first": "Test",
+      "last": "Architect",
+      "company_name": "Architects R Us",
+      "email": "fake@test.com3",
+      "phone_number": "123456789",
+      "address": "56465465",
+      "city": "city",
+      "state": "CA",
+      "zip": "95000"
+    }
+  },
+  {
+    "model": "profiles.profile",
+    "pk": 25,
+    "fields": {
+      "user": null,
+      "first": "Test",
+      "last": "Contractor",
+      "company_name": "Contractors R Us",
+      "email": "fake@test.com4",
+      "phone_number": "123456789",
+      "address": "56465465",
+      "city": "city",
+      "state": "CA",
+      "zip": "95000"
+    }
+  },
+  {
+    "model": "profiles.profile",
+    "pk": 26,
+    "fields": {
+      "user": null,
+      "first": "Test",
+      "last": "Engineer",
+      "company_name": "Engineers R Us",
+      "email": "fake@test.com17",
+      "phone_number": "123456789",
+      "address": "56465465",
+      "city": "city",
+      "state": "CA",
+      "zip": "95000"
+    }
+  },
+  {
+    "model": "profiles.profile",
+    "pk": 27,
+    "fields": {
+      "user": null,
+      "first": "Tracy",
+      "last": "Gonzalez",
+      "company_name": "Yolo County DCS",
+      "email": "tracy.gonzalez@yolocounty.org",
+      "phone_number": "530-666-8775",
+      "address": "292 W Beamer St",
+      "city": "Woodland",
+      "state": "CA",
+      "zip": "95695"
+    }
+  },
+  {
+    "model": "profiles.profile",
+    "pk": 28,
+    "fields": {
+      "user": null,
+      "first": "Touyer",
+      "last": "Lee",
+      "company_name": "Yolo County DCS",
+      "email": "touyer.less@yolocounty.org",
+      "phone_number": "530-666-8775",
+      "address": "292 W Beamer St",
+      "city": "Woodland",
+      "state": "CA",
+      "zip": "95695"
+    }
+  },
+  {
+    "model": "profiles.profile",
+    "pk": 29,
+    "fields": {
+      "user": null,
+      "first": "Test",
+      "last": "Owner",
+      "company_name": "Ione It",
+      "email": "fake@test.com11",
+      "phone_number": "123456789",
+      "address": "56465465",
+      "city": "city",
+      "state": "CA",
+      "zip": "95000"
+    }
+  },
+  {
+    "model": "profiles.profile",
+    "pk": 30,
+    "fields": {
+      "user": null,
+      "first": "Test",
+      "last": "Partner",
+      "company_name": "Fire District",
+      "email": "fake@test.com1",
+      "phone_number": "123456789",
+      "address": "56465465",
+      "city": "city",
+      "state": "CA",
+      "zip": "95000"
+    }
+  },
+  {
+    "model": "profiles.profile",
+    "pk": 31,
+    "fields": {
+      "user": null,
+      "first": "Test",
+      "last": "Surveyor",
+      "company_name": "Surveyors R Us",
+      "email": "fake@test.com16",
+      "phone_number": "123456789",
+      "address": "56465465",
+      "city": "city",
+      "state": "CA",
+      "zip": "95000"
+    }
+  },
+  {
+    "model": "profiles.licenseagency",
+    "pk": 1,
+    "fields": {
+      "agency_short": "ACE",
+      "agency_long": "California Architects Board"
+    }
+  },
+  {
+    "model": "profiles.licenseagency",
+    "pk": 2,
+    "fields": {
+      "agency_short": "ASCE",
+      "agency_long": "Americal Society of Civil Engineers"
+    }
+  },
+  {
+    "model": "profiles.licenseagency",
+    "pk": 3,
+    "fields": {
+      "agency_short": "CSLB",
+      "agency_long": "Contractors State License Board"
+    }
+  },
+  {
+    "model": "profiles.licenseagency",
+    "pk": 4,
+    "fields": {
+      "agency_short": "ICC",
+      "agency_long": "International Code Council"
+    }
+  },
+  {
+    "model": "profiles.licenseagency",
+    "pk": 5,
+    "fields": {
+      "agency_short": "PELS",
+      "agency_long": "Board for Professional Engineers, Land Surveyors, and Geologists"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 1,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "Arch",
+      "license_long": "Architect"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 2,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "PE",
+      "license_long": "Civil Engineer"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 3,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "GE",
+      "license_long": "Geotechnical Engineer"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 4,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "SE",
+      "license_long": "Structural Engineer"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 5,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "LLS",
+      "license_long": "Licensed Land Surveyor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 6,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "A",
+      "license_long": "General Engineering Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 7,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "B",
+      "license_long": "General Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 8,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "B-2",
+      "license_long": "Residential Remodeling Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 9,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-2",
+      "license_long": "Insulation and Acoustical Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 10,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-4",
+      "license_long": "Boiler, Hot Water Heating and Steam Fitting Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 11,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-5",
+      "license_long": "Framing and Rough Carpentry Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 12,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-6",
+      "license_long": "Cabinet, Millwork and Finish Carpentry Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 13,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-7",
+      "license_long": "Low Voltage Systems Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 14,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-8",
+      "license_long": "Concrete Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 15,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-9",
+      "license_long": "Drywall Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 16,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-10",
+      "license_long": "Electrical Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 17,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-11",
+      "license_long": "Elevator Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 18,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-12",
+      "license_long": "Earthwork and Paving Contractors"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 19,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-13",
+      "license_long": "Fencing Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 20,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-15",
+      "license_long": "Flooring and Floor Covering Contractors"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 21,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-16",
+      "license_long": "Fire Protection Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 22,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-17",
+      "license_long": "Glazing Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 23,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-20",
+      "license_long": "Warm-Air Heating, Ventilating and Air-Conditioning Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 24,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-21",
+      "license_long": "Building Moving/Demolition Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 25,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-22",
+      "license_long": "Asbestos Abatement Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 26,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-23",
+      "license_long": "Ornamental Metal Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 27,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-27",
+      "license_long": "Landscaping Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 28,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-28",
+      "license_long": "Lock and Security Equipment Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 29,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-29",
+      "license_long": "Masonry Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 30,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-31",
+      "license_long": "Construction Zone Traffic Control Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 31,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-32",
+      "license_long": "Parking and Highway Improvement Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 32,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-33",
+      "license_long": "Painting and Decorating Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 33,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-34",
+      "license_long": "Pipeline Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 34,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-35",
+      "license_long": "Lathing and Plastering Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 35,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-36",
+      "license_long": "Plumbing Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 36,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-38",
+      "license_long": "Refrigeration Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 37,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-39",
+      "license_long": "Roofing Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 38,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-42",
+      "license_long": "Sanitation System Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 39,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-43",
+      "license_long": "Sheet Metal Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 40,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-45",
+      "license_long": "Sign Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 41,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-46",
+      "license_long": "Solar Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 42,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-47",
+      "license_long": "General Manufactured Housing Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 43,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-49",
+      "license_long": "Tree and Palm Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 44,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-50",
+      "license_long": "Reinforcing Steel Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 45,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-51",
+      "license_long": "Structural Steel Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 46,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-53",
+      "license_long": "Swimming Pool Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 47,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-54",
+      "license_long": "Ceramic and Mosaic Tile Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 48,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-55",
+      "license_long": "Water Conditioning Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 49,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-57",
+      "license_long": "Well Drilling Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 50,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-60",
+      "license_long": "Welding Contractor"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 51,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "C-61",
+      "license_long": "Limited Specialty"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 52,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "ASB",
+      "license_long": "Asbestos Certification"
+    }
+  },
+  {
+    "model": "profiles.licensetype",
+    "pk": 53,
+    "fields": {
+      "licensing_agency": null,
+      "license_short": "HAZ",
+      "license_long": "Hazardous Substance Removal Certification"
+    }
+  },
+  {
+    "model": "profiles.agencyoptions",
+    "pk": 1,
+    "fields": {
+      "agency_option_short": "Capay Fire",
+      "agency_option_full": "Capay Fire District"
+    }
+  },
+  {
+    "model": "profiles.agencyoptions",
+    "pk": 2,
+    "fields": {
+      "agency_option_short": "Davis Fire",
+      "agency_option_full": "City of Davis Fire Department"
+    }
+  },
+  {
+    "model": "profiles.agencyoptions",
+    "pk": 3,
+    "fields": {
+      "agency_option_short": "Dunnigan Fire",
+      "agency_option_full": "Dunnigan Fire District"
+    }
+  },
+  {
+    "model": "profiles.agencyoptions",
+    "pk": 4,
+    "fields": {
+      "agency_option_short": "Esparto Fire",
+      "agency_option_full": "Esparto Fire District"
+    }
+  },
+  {
+    "model": "profiles.agencyoptions",
+    "pk": 5,
+    "fields": {
+      "agency_option_short": "Knights Landing Fire",
+      "agency_option_full": "Knights Landing Fire District"
+    }
+  },
+  {
+    "model": "profiles.agencyoptions",
+    "pk": 6,
+    "fields": {
+      "agency_option_short": "Madison Fire",
+      "agency_option_full": "Madison Fire District"
+    }
+  },
+  {
+    "model": "profiles.agencyoptions",
+    "pk": 7,
+    "fields": {
+      "agency_option_short": "West Plainfield Fire",
+      "agency_option_full": "West Plainfield Fire District"
+    }
+  },
+  {
+    "model": "profiles.agencyoptions",
+    "pk": 8,
+    "fields": {
+      "agency_option_short": "West Sac Fire",
+      "agency_option_full": "City of West Sacramento Fire Department"
+    }
+  },
+  {
+    "model": "profiles.agencyoptions",
+    "pk": 9,
+    "fields": {
+      "agency_option_short": "Winters Fire",
+      "agency_option_full": "City of Winters Fire Department"
+    }
+  },
+  {
+    "model": "profiles.agencyoptions",
+    "pk": 10,
+    "fields": {
+      "agency_option_short": "Woodland Fire",
+      "agency_option_full": "City of Woodland Fire Department"
+    }
+  },
+  {
+    "model": "profiles.agencyoptions",
+    "pk": 11,
+    "fields": {
+      "agency_option_short": "Yolo County",
+      "agency_option_full": "County of Yolo"
+    }
+  },
+  {
+    "model": "profiles.agencyoptions",
+    "pk": 12,
+    "fields": {
+      "agency_option_short": "Yolo Fire",
+      "agency_option_full": "Yolo Fire District"
+    }
+  },
+  {
+    "model": "profiles.agencyoptions",
+    "pk": 13,
+    "fields": {
+      "agency_option_short": "YSAQMD",
+      "agency_option_full": "Yolo Solano Air Quality Management District"
+    }
+  },
+  {
+    "model": "profiles.departmentoptions",
+    "pk": 1,
+    "fields": {
+      "department_option_short": "ACE",
+      "department_option_full": "Assessor-Clerk/Recorder-Elections"
+    }
+  },
+  {
+    "model": "profiles.departmentoptions",
+    "pk": 2,
+    "fields": {
+      "department_option_short": "AG",
+      "department_option_full": "Agriculture Weights & Measure"
+    }
+  },
+  {
+    "model": "profiles.departmentoptions",
+    "pk": 3,
+    "fields": {
+      "department_option_short": "CAO",
+      "department_option_full": "County Administrator"
+    }
+  },
+  {
+    "model": "profiles.departmentoptions",
+    "pk": 4,
+    "fields": {
+      "department_option_short": "DCS",
+      "department_option_full": "Department of Community Services"
+    }
+  },
+  {
+    "model": "profiles.departmentoptions",
+    "pk": 5,
+    "fields": {
+      "department_option_short": "CC",
+      "department_option_full": "County Counsel"
+    }
+  },
+  {
+    "model": "profiles.departmentoptions",
+    "pk": 6,
+    "fields": {
+      "department_option_short": "DA",
+      "department_option_full": "District Attorney"
+    }
+  },
+  {
+    "model": "profiles.departmentoptions",
+    "pk": 7,
+    "fields": {
+      "department_option_short": "DFS",
+      "department_option_full": "Financial Services"
+    }
+  },
+  {
+    "model": "profiles.departmentoptions",
+    "pk": 8,
+    "fields": {
+      "department_option_short": "GSD",
+      "department_option_full": "General Services"
+    }
+  },
+  {
+    "model": "profiles.departmentoptions",
+    "pk": 9,
+    "fields": {
+      "department_option_short": "HHSA",
+      "department_option_full": "Health & Human Services"
+    }
+  },
+  {
+    "model": "profiles.departmentoptions",
+    "pk": 10,
+    "fields": {
+      "department_option_short": "HR",
+      "department_option_full": "Human Resources"
+    }
+  },
+  {
+    "model": "profiles.departmentoptions",
+    "pk": 11,
+    "fields": {
+      "department_option_short": "LIB",
+      "department_option_full": "Library"
+    }
+  },
+  {
+    "model": "profiles.departmentoptions",
+    "pk": 12,
+    "fields": {
+      "department_option_short": "OES",
+      "department_option_full": "Office of Emergency Services"
+    }
+  },
+  {
+    "model": "profiles.departmentoptions",
+    "pk": 13,
+    "fields": {
+      "department_option_short": "PARKS",
+      "department_option_full": "Parks"
+    }
+  },
+  {
+    "model": "profiles.departmentoptions",
+    "pk": 14,
+    "fields": {
+      "department_option_short": "PROB",
+      "department_option_full": "Probation"
+    }
+  },
+  {
+    "model": "profiles.departmentoptions",
+    "pk": 15,
+    "fields": {
+      "department_option_short": "YCPD",
+      "department_option_full": "Public Defender"
+    }
+  },
+  {
+    "model": "profiles.departmentoptions",
+    "pk": 16,
+    "fields": {
+      "department_option_short": "YCPG",
+      "department_option_full": "Public Guardian"
+    }
+  },
+  {
+    "model": "profiles.departmentoptions",
+    "pk": 17,
+    "fields": {
+      "department_option_short": "YCSO",
+      "department_option_full": "Sheriff-Coroners"
+    }
+  },
+  {
+    "model": "profiles.divisionoptions",
+    "pk": 1,
+    "fields": { "division_options": "Building" }
+  },
+  {
+    "model": "profiles.divisionoptions",
+    "pk": 2,
+    "fields": { "division_options": "Public Works" }
+  },
+  {
+    "model": "profiles.divisionoptions",
+    "pk": 3,
+    "fields": { "division_options": "Planning" }
+  },
+  {
+    "model": "profiles.divisionoptions",
+    "pk": 4,
+    "fields": { "division_options": "Env. Health" }
+  },
+  {
+    "model": "profiles.divisionoptions",
+    "pk": 5,
+    "fields": { "division_options": "Fiscal-Admin" }
+  },
+  {
+    "model": "profiles.divisionoptions",
+    "pk": 6,
+    "fields": { "division_options": "Int. Waste" }
+  }
+]

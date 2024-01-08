@@ -1,24 +1,50 @@
+{% extends "base.html" %}
 
-{% begin cycles %}
-<table>
-    <th>
-        <td>Cycle</td>
-        <td>Status</td>
-        <td>Reviewer</td>
-        <td>Completed Date</td>
-        <td>Due Date</td>
-        <td>Sent</td>
-        <td>Notes</td>
-    </th>
-    {% for cycle in cycles %}
-        <tr>
-            <td>{{ cycle.cycle }}</td>
-            <td>{{ cycle.status }}</td>
-            <td>{{ cycle.reviewer }}</td>
-            <td>{{ cycle.completed_date }}</td>
-            <td>{{ cycle.due }}</td>
-            <td>{{ cycle.sent }}</td>
-            <td>{{ cycle.notes }}</td>
-        </tr>
-    {{ endfor }}
-</table>
+{% block heading %}Plan Review{% endblock heading %}
+
+
+{% block main_content %}
+
+    <section>
+        <h4>{{ object.review.permit.number }}</h4>
+        <h4>Overall Review Status:</h4>
+        <h3>{{ object.review.status }}</h3>
+        <p>See the following details to understand what is left before your permit application can be approved for construction.</p>
+        <p>See your <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1">detailed report</a>.</p>
+    </section>
+
+    <details>
+        <summary>{{ object.type.review_type }}: {{object.status}}</summary>
+        {% for cycle in cycles %}
+        <section>
+            <h4 style="text-align: center;">Cycle {{ cycle }}</h4>
+            <table>
+                <tr>
+                    <td class="key">Result:</td>
+                    <td class="value">{{ cycle.result }}</td>
+                </tr>
+                <tr>
+                    <td class="key">Reviewer:</td>
+                    <td class="value">{{ cycle.reviewer }}</td>
+                </tr>
+                <tr>
+                    <td class="key">Returned:</td>
+                    <td class="value">{{ cycle.completed_date }}</td>
+                </tr>
+                <tr>
+                    <td class="key">Due:</td>
+                    <td class="value">{{ cycle.due }}</td>
+                </tr>
+                <tr>
+                    <td class="key">Sent:</td>
+                    <td class="value">{{ cycle.sent }}</td>
+                </tr>
+                <tr>
+                    <td class="key">Notes:</td>
+                    <td class="value">{{ cycle.notes }}</td>
+                </tr>  
+            </table>  
+        </section>
+        {% endfor %}
+    </details> 
+{% endblock %}

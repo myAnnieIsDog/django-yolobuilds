@@ -1,7 +1,7 @@
-from crispy_forms.helper import FormHelper
 from django.views.generic import base, detail, list, edit, dates
 from .models import FeeType
-
+from .models import (Account, FeeType, Fee, 
+                     TrakitFee, PaymentMethod, Payment)
 
 class FiscalDetailView(detail.DetailView):
     template_name = "layout_form.html"
@@ -11,6 +11,3 @@ class FiscalDetailView(detail.DetailView):
         "heading": "Fee Types", 
         "intro": "This is a list of all of the fees charged by Yolo Builds."
     }
-    
-    def __init__(self, *args, **kwargs):
-        self.helper = FormHelper()

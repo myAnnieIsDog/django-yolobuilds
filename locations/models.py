@@ -8,20 +8,9 @@ def apn_string_to_display(input: str) -> str:
     book, page, parcel = input[:-6], input[-6:-3], input[-3:]
     return f"{book}-{page}-{parcel}"
 
-class DistrictType(models.Model): 
-    type = models.CharField(max_length=100)
-    
-    def __str__(self) -> str:
-        return self.type
-
-    class Meta():
-        ordering = ["type"]
-        verbose_name = "District Type"
-        verbose_name_plural = "District Types"
-
 class District(models.Model): 
-    type = models.ForeignKey(DistrictType, on_delete=models.PROTECT)
-    name = models.CharField(max_length=55)
+    dist_type = models.CharField(max_length=100)
+    district = models.CharField(max_length=55)
     description = models.CharField(max_length=255)
 
     address = models.CharField(max_length=255, null=True, blank=True)
@@ -31,20 +20,13 @@ class District(models.Model):
     website = models.URLField(null=True, blank=True)
     
     def __str__(self) -> str:
-        return f"{self.name} {self.type}"
+        return f"{self.district} {self.dist_type}"
 
 class Jurisdiction(models.Model): 
-    name = models.CharField(max_length=55)
-    description = models.CharField(max_length=255)
-
-    address = models.CharField(max_length=255, null=True, blank=True)
-    city_state_zip = models.CharField(max_length=255, null=True, blank=True)
-    phone = models.CharField(max_length=20, null=True, blank=True)
-    email = models.EmailField(null=True, blank=True)
-    website = models.URLField(null=True, blank=True)
+    jurisdiction = models.CharField(max_length=55)
 
     def __str__(self) -> str:
-        return f"{self.name}"
+        return f"{self.jurisdiction}"
 
 ##########################################################################
 """ Parcel Model """
@@ -56,7 +38,7 @@ class Parcel(models.Model):
     parcel = models.CharField(max_length=3, default="000")
     
     active = models.BooleanField(default=True)
-    parents = models.ManyToManyField("self")
+    related = models.ManyToManyField("self", blank=True)
     
     owner_name = models.CharField(
         max_length=100, null=True, blank=True)
@@ -101,7 +83,6 @@ class SiteAddress(models.Model):
 """ All Models """
 ##########################################################################
 all_models = (
-    DistrictType,
     District,
     Jurisdiction,
     Parcel,
