@@ -137,7 +137,7 @@ class PermitSubtype(models.Model):
 """ Permit Model """
 ##########################################################################
 class Permit(models.Model):
-    number = models.ForeignKey(Sequence, on_delete=models.PROTECT)
+    number = models.CharField(max_length=55, blank=True)
     division = models.ForeignKey(Division, on_delete=models.PROTECT)
     type = models.ForeignKey(PermitType, on_delete=models.PROTECT)
     subtype = models.ForeignKey(PermitSubtype, on_delete=models.PROTECT)

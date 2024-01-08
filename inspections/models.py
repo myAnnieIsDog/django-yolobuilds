@@ -11,7 +11,7 @@ class InspectionType(models.Model):
     division = models.ForeignKey(
         Division, on_delete=models.PROTECT, null=True, blank=True)
     inspection_type = models.CharField(
-        max_length=30)
+        max_length=255)
     default_inspector = models.ForeignKey(
         User, on_delete=models.PROTECT, null=True, blank=True)
     duration_hours = models.DecimalField(
@@ -25,7 +25,7 @@ class InspectionType(models.Model):
     
     
     def __str__(self) -> str:
-        return self.type
+        return self.inspection_type
 
     class Meta():
         verbose_name = "Inspection Type"

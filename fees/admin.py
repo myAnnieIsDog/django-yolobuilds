@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import (Account, FeeType, Fee, ClaritiFee, 
+from .models import (Account, FeeType, Fee, 
                      TrakitFee, PaymentMethod, Payment)
 
 
@@ -75,10 +75,6 @@ class FeeTypeAdmin(admin.ModelAdmin):
 @admin.register(Fee)
 class FeeAdmin(admin.ModelAdmin):
     pass
-
-@admin.register(ClaritiFee)
-class FeeAdmin(admin.ModelAdmin):
-    name = "Clariti Fees"
 
 @admin.register(TrakitFee)
 class FeeAdmin(admin.ModelAdmin):

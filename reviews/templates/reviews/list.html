@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block heading %}Review List{% endblock heading %}
+
+
+
+{% block main_content %}
+
+<section>
+    <h2 style="padding: 10px 10px 10px 40px;">Filters:</h2>
+    <table>
+        <tr>
+            <td>Status:</td>
+            <td>(placeholder)</td>
+        </tr>
+        <tr>
+            <td>Due:</td>
+            <td>(placeholder)</td>
+        </tr>
+        <tr>
+            <td>Reviewer:</td>
+            <td>(placeholder)</td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <table>
+        <tr>
+            <th>Permit:</th>
+            <th>Review:</th>
+            <th>Status:</th>
+            <th>Cycle:</th>
+            <th>Result:</th>
+            <th>Reviewer:</th>
+            <th>Completed:</th>
+            <th>Due:</th>
+            <th>Sent:</th>
+            <th>Notes:</th>>
+        </tr>
+
+        <!-- {% for review in reviews %} -->
+            <tr>
+                <td>{{ review.permit }}:</td>
+                <td>{{ review.type }}</td>
+                <td>{{ review.cycle.cycle }}</td>
+                <td>{{ review.cycle.result }}</td>
+                <td>{{ review.cycle.reviewer }}</td>
+                <td>{{ review.cycle.completed_date }}</td>
+                <td>{{ review.cycle.due }}</td>
+                <td>{{ review.cycle.sent }}</td>
+                <td>{{ review.cycle.notes }}</td>
+            </tr>
+        <!-- {% endfor %} -->
+    </table>
+</section>
+
+{% endblock main_content %}

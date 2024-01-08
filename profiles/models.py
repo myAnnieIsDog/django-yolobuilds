@@ -34,6 +34,10 @@ class Profile(models.Model):
     def get_full_name(self):
         return f"{self.first} {self.last}"
     
+    class Meta:
+        verbose_name = "Profile"
+        verbose_name_plural = "Profiles"
+    
 
 ##########################################################################
 """ PROFESSIONALS """
@@ -103,7 +107,7 @@ class Department(models.Model):
     department = models.CharField(max_length=255, unique=True)
 
     def __str__(self) -> str:
-        return self.name
+        return self.dept_code
     
     class Meta:
         ordering = ["dept_code"]

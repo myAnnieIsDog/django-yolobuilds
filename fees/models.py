@@ -58,11 +58,12 @@ class Account(models.Model):
 ##########################################################################
 class FeeType(models.Model): 
     
-    fee_account = models.ForeignKey(Account, on_delete=models.PROTECT)
-
+    fee_account = models.ForeignKey(
+        Account, 
+        on_delete=models.PROTECT
+    )
     fee_group = models.CharField(
-        max_length=255, 
-        unique=True,
+        max_length=255,
     )
     fee_type = models.CharField(
         max_length=255, 
@@ -146,11 +147,8 @@ class Fee(models.Model):
     notes = models.TextField(max_length=255)
 
 
-class ClaritiFee(Fee):
-    pass
-
-
 class TrakitFee(Fee):
+    main_fee = models.ForeignKey(Fee, on_delete=models.PROTECT, related_name="trakit_fee")
     trakit_fee_code = models.CharField(max_length=255, null=True, blank=True)
     tech = models.CharField(max_length=255, null=True, blank=True)
     trakit_description = models.CharField(max_length=255, null=True, blank=True)
@@ -233,7 +231,6 @@ all_models = (
     Account,
     FeeType,
     Fee,
-    ClaritiFee,
     TrakitFee,
     PaymentMethod,
     Payment,

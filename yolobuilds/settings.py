@@ -38,18 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
-    'debug_toolbar'
-    'django_extensions', # django-extensions
-    'pandas',
-    'numpy',
-    # 'openpyxl',
-    'crispy_forms', # django-crispy-forms
-    # 'crispy_bootstrap5', 
-    'django_bootstrap5', #django-bootstrap5
-    # 'django_htmx', #django-htmx
-    'django_recaptcha', #django-recaptcha
-    # 'dotenv',
-    'django_pandas', 
+    'debug_toolbar',
+    'django_extensions',
+    'django_recaptcha',
+
     
     'fees.apps.FeesConfig',
     'inspections.apps.InspectionsConfig',
@@ -70,7 +62,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
     "debug_toolbar.middleware.DebugToolbarMiddleware",   
-    "django_htmx.middleware.HtmxMiddleware",
+    # "django_htmx.middleware.HtmxMiddleware",
 ]
 
 ROOT_URLCONF = 'yolobuilds.urls'
@@ -156,9 +148,7 @@ STATIC_ROOT = "static/"
 
 STATIC_URL = 'static/'
 
-STATICFILES_DIRS = [
-    BASE_DIR / "yolobuilds/static"
-]
+STATICFILES_DIRS = ["yolobuilds/static/"]
 
 
 # Default primary key field type
@@ -183,3 +173,5 @@ INTERNAL_IPS = [
     "127.0.0.1",
     # ...
 ]
+
+FIXTURE_DIRS = ["fixtures/"]

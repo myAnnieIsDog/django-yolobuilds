@@ -1,32 +1,59 @@
-{% extends "layout.html" %}
+{% extends "base.html" %}
 
-{% block heading %}Welcome{% endblock heading %}
+{% block heading %}Welcome{% endblock %} 
 
 {% block intro %}
-This is your home for the permits listed below if you are operating in the unincorporated portions of Yolo County, California.
-{% endblock intro %}
+This is Yolo County's permit application and tracking tool for Building, 
+Planning, and Public Works permits.{% endblock %}
+
+##########################################################################
+<!-- Content -->
+##########################################################################
 
 {% block main_content %}
 
 <section>
-    <p><a href="/apn" aria-disabled="true">Search by location</a> to view all public records that are available for an address or APN.</p>  
+    <p><a href="/apn" aria-disabled="true">
+        Search by location</a> to view all public records that are 
+        available for an address or APN.
+    </p>  
 </section>
 
 <section>
-    <p><a href="/bp">Building</a> enforces all building permits including construction, demolition, change of use, electrical, mechacnical, plumbing, grading, fire, flood, and pool/spa.</p>
+    <p><a href="/bp">
+        Building</a> 
+        issues all building permits including construction, demolition, 
+        change of use, electrical, mechacnical, plumbing, grading, fire, 
+        flood, and pool/spa.
+    </p>
 </section>
 
 <section>
-    <p><a href="/bl" aria-disabled="true">Business Licenses</a> handles all business licenses for businesses operating in the unincorporated portions of Yolo County.</p> 
-    <p>Contact the <a href="https://www.yolorecorder.org/filings/fictitious">Yolo County Recorder</a> to record a fictitious business name (DBA).</p>
+    <p><a href="/bl" aria-disabled="true">
+        Business Licenses</a> 
+        issues all business licenses for businesses operating in the 
+        unincorporated portions of Yolo County.
+    </p> 
+    <p>Contact the <a href="https://www.yolorecorder.org/filings/fictitious">
+        Yolo County Recorder</a> 
+        to record a fictitious business name (DBA).
+    </p>
 </section>
 
 <section>
-    <p><a href="/ce" aria-disabled="true">Code Enforcement</a> investigates reported code violations and works with the appropriate agencies to abate violations.</p>
+    <p><a href="/ce" aria-disabled="true">
+        Code Enforcement</a> 
+        investigates reported code violations and works with the 
+        appropriate individuals and agencies to abate violations.
+    </p>
 </section>
 
 <section>
-    <p><a href="https://www.yolocounty.org/government/general-government-departments/community-services/environmental-health-division">Environmental Health</a> handles permits for consumer protection (food service, tatoos, piercing, etc.), wells, septic systems, solid waste, and hazardous materials.</p>
+    <p><a href="https://www.yolocounty.org/government/general-government-departments/community-services/environmental-health-division">
+        Environmental Health</a> issues permits for consumer protection 
+        (food service, tatoos, piercing, etc.), wells, septic systems, 
+        solid waste, and hazardous materials.
+    </p>
 </section>
 
 <section>
@@ -34,10 +61,19 @@ This is your home for the permits listed below if you are operating in the uninc
 </section>
 
 <section>
-    <p><a href="/zf" aria-disabled="true">Planning</a> handles both ministerial reviews and discretionary land use permits.</p>
+    <p><a href="/zf" aria-disabled="true">
+        Planning</a> issues both ministerial reviews and discretionary 
+        land use permits.</p>
 </section>
 
 <section>
-    <p><a href="/pw" aria-disabled="true">Public Works</a> handles encroachment permits, transportation permits, and county surveyor requests.</p>
+    <p><a href="/pw" aria-disabled="true">
+        Public Works</a> issues encroachment permits, 
+        transportation permits, and county surveyor requests.</p>
 </section>
+
 {% endblock main_content %}
+
+##########################################################################
+<!-- End File -->
+##########################################################################

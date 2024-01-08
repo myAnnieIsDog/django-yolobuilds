@@ -20,13 +20,13 @@ class District(models.Model):
     website = models.URLField(null=True, blank=True)
     
     def __str__(self) -> str:
-        return f"{self.name} {self.type}"
+        return f"{self.district} {self.dist_type}"
 
 class Jurisdiction(models.Model): 
     jurisdiction = models.CharField(max_length=55)
 
     def __str__(self) -> str:
-        return f"{self.name}"
+        return f"{self.jurisdiction}"
 
 ##########################################################################
 """ Parcel Model """
@@ -38,7 +38,7 @@ class Parcel(models.Model):
     parcel = models.CharField(max_length=3, default="000")
     
     active = models.BooleanField(default=True)
-    related = models.ManyToManyField("self")
+    related = models.ManyToManyField("self", blank=True)
     
     owner_name = models.CharField(
         max_length=100, null=True, blank=True)

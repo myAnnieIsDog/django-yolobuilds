@@ -1,4 +1,3 @@
-from crispy_forms.helper import FormHelper
 from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin, UserPassesTestMixin
 from django.views.generic import base, detail, list, edit, dates
@@ -41,9 +40,6 @@ class ProfileCreateView(LoginRequiredMixin, PermissionRequiredMixin, UserPassesT
     success_url = "profile-update"
     success_message = "The profile for %(first_name)s %(last_name)s was created successfully."  
 
-    def __init__(self, *args, **kwargs):
-        self.helper = FormHelper()
-
 
 class ProfileDetailView(detail.DetailView):
     template_name = "layout_form.html"
@@ -54,9 +50,6 @@ class ProfileDetailView(detail.DetailView):
         "intro": "Use this form to update your user profile.", 
         "button_text": "Update"}
     success_url = "profile-update"
-    
-    def __init__(self, *args, **kwargs):
-        self.helper = FormHelper()
 
 
 class ProfileUpdateView(edit.UpdateView):
@@ -73,7 +66,3 @@ class ProfileUpdateView(edit.UpdateView):
         "intro": "Use this form to update your user profile.", 
         "button_text": "Update"}
     success_url = "profile-update"
-    
-    def __init__(self, *args, **kwargs):
-        self.helper = FormHelper()
-

@@ -10,7 +10,7 @@ from inspections.models import InspectionType
 from reviews.models import ReviewType
 
 class ApplicantRole(models.Model):
-    applicant_role_options = models.CharField(max_length=55, unique=True)
+    applicant_role = models.TextField("Applicant Role", max_length=55, unique=True)
     # applicant_role_options = [
     #         "Property Owner", 
     #         "Property Owner's Authorized Agent", 
@@ -18,13 +18,27 @@ class ApplicantRole(models.Model):
     #         "CSLB Licensed Contractor's Authorized Employee",
     #     ]
 
+    def __str__(self) -> str:
+        return self.applicant_role
+    
+    class Meta:
+        verbose_name = "Applicant Role Option"
+        verbose_name_plural = "Applicant Role Options"
+
 class OwnerRole(models.Model):
-    owner_role_options = models.CharField(max_length=55, unique=True)
+    owner_role = models.CharField(max_length=100, unique=True)
     # owner_role_options = [
     #         "Performing all of the work, except for employess earning $500 or less for the entire project.", 
     #         "Hiring CSLB Licensed Contractors and verifying the contractor's worker's compensation insurance.", 
     #         "Hiring employee's earning $500 or more and paying for worker's compensation insurance.", 
     #     ]
+
+    def __str__(self) -> str:
+        return self.owner_role
+    
+    class Meta:
+        verbose_name = "Owner Role"
+        verbose_name_plural = "Owner Roles"
 
 
 class BP(models.Model):
@@ -144,14 +158,13 @@ class BP(models.Model):
         # send_occupancy_email()
 
     class Meta:
-        verbose_name = "Building Permits (Base)"
-        verbose_name_plural = "Building Permits (Base)"
+        verbose_name = "Building Permits"
+        verbose_name_plural = "Building Permits"
 
 
 ##########################################################################
 """ Building """
 ##########################################################################
-
 
 class Building(models.Model):
     building_permit = models.OneToOneField(BP, on_delete=models.PROTECT)
@@ -181,42 +194,13 @@ class Building(models.Model):
     notes = ""
 
     class Meta:
-        verbose_name = "Building Permits (Building and Residential Code)"
-        verbose_name_plural = "Building Permits (Building and Residential Code)"
-
-class Reroof(models.Model):
-    bp = models.OneToOneField(Building, on_delete=models.PROTECT)
-    suffix = "OTC-Bld"
-    reroof_area = models.PositiveIntegerField(default=0)
-    fire_class = models.CharField(max_length=1)
-    cf1r = models.BooleanField(default=False)
-    reviews = ["CF1R"]
-    inspections = ["Roof Deck Nail", "Final"]
-
-class Stucco(models.Model):
-    suffix = "OTC-Bld"
-    type = models.CharField(max_length=255, default="Stucco")
-    area = models.PositiveIntegerField(default=0)
-    fire_class = models.CharField(max_length=1)
-    class Meta():
-        verbose_name = "Replace Exterior Wall (Siding/Stucco)"
-
-class Windows(models.Model):
-    suffix = "OTC-Win"
-    number_of_window = models.PositiveIntegerField(default=0)
-    new_area = models.PositiveIntegerField(default=0)
-    replacement_area = models.PositiveIntegerField(default=0)
-    cf1r = models.BooleanField(default=False)
-    hazardous_locations = models.BooleanField(default=False)
-    notes = "At inspection provide the CF2R and the installation instructions."
-    class Meta():
-        verbose_name = "Window Replacement"
+        verbose_name = "New Building/Structure"
+        verbose_name_plural = "New Buildings/Structures"
 
 
 ##########################################################################
 """ Demolition """
 ##########################################################################
-
 
 class Demolition(models.Model):
     demolition_permit = models.OneToOneField(BP, on_delete=models.PROTECT)
@@ -313,6 +297,40 @@ class Solar(models.Model):
     review_days = 0
     notes = "Plans approved by SolarAPP+ can start work immediately, even if there is an error processing this permit application. At inspection provide the SolarAPP+ checklist."
 
+
+##########################################################################
+""" Existing Building/Structure """
+##########################################################################
+
+class Reroof(models.Model):
+    bp = models.OneToOneField(Building, on_delete=models.PROTECT)
+    suffix = "OTC-Bld"
+    reroof_area = models.PositiveIntegerField(default=0)
+    fire_class = models.CharField(max_length=1)
+    cf1r = models.BooleanField(default=False)
+    reviews = ["CF1R"]
+    inspections = ["Roof Deck Nail", "Final"]
+
+class Stucco(models.Model):
+    suffix = "OTC-Bld"
+    type = models.CharField(max_length=255, default="Stucco")
+    area = models.PositiveIntegerField(default=0)
+    fire_class = models.CharField(max_length=1)
+    class Meta():
+        verbose_name = "Replace Exterior Wall (Siding/Stucco)"
+
+class Windows(models.Model):
+    suffix = "OTC-Win"
+    number_of_window = models.PositiveIntegerField(default=0)
+    new_area = models.PositiveIntegerField(default=0)
+    replacement_area = models.PositiveIntegerField(default=0)
+    cf1r = models.BooleanField(default=False)
+    hazardous_locations = models.BooleanField(default=False)
+    notes = "At inspection provide the CF2R and the installation instructions."
+    class Meta():
+        verbose_name = "Window Replacement"
+
+
 ##########################################################################
 """ Fire """
 ##########################################################################
@@ -340,13 +358,21 @@ class Fire(models.Model):
 
 
 class FloodZones(models.Model):
-    zone_code = models.CharField(max_length=7)
-    zone_description = models.CharField(max_length=255)
+    zone_code = models.CharField("Flood Zone Code", max_length=7)
+    zone_description = models.CharField("Flood Zone Description", max_length=255)
     # FLOOD_ZONE_A = "A", "Approximate A Zone"
     # FLOOD_ZONE_AE = "AE", "Detailed AE Zone"
     # FLOOD_ZONE_AO = "AO", "Shallow Flooding"
     # FLOOD_ZONE_A_FLOODWAY = "A/F", "No-Rise Floodway"
     # FLOOD_ZONE_X = "X", "Not Regulated"
+
+    def __str__(self) -> str:
+        return self.zone_code
+    
+    class Meta:
+        verbose_name = "Flood Zone"
+        verbose_name_plural = "Flood Zones"
+
 class Flood(models.Model):
     flood_protection_permit = models.OneToOneField(BP, on_delete=models.PROTECT)
     suffix = "Flood"
@@ -470,18 +496,21 @@ class Pool(models.Model):
     pool_permit = models.OneToOneField(BP, on_delete=models.PROTECT)
     suffix = "Pool"
     public = models.BooleanField(default=100)
-    area = models.PositiveIntegerField(default=1000)
-    depth = models.PositiveIntegerField(default=6)
+    area = models.PositiveIntegerField("Area (square feet)", default=1000)
+    depth = models.PositiveIntegerField("Depth (feet)", default=6)
 
     enclosure = models.BooleanField(default=100)
     structural = models.BooleanField(default=100)
     accessibility = models.BooleanField(default=100)
 
-    review_days = 20
-    reviews = ["Building (Accessibility)", "Building (Enclosure)", "Building (Structural)", "Env. Health", "Fire District", "Int. Waste Management", "Planning", "Public Works"]
-    inspections = ["Pre-Gunite", "Pre-Deck", "Final/Pre-Plaster/Enclosure"]
-    notes = ""
 
+    reviews = models.ManyToManyField(ReviewType, blank=True)
+    inspections = models.ManyToManyField(InspectionType, blank=True)
+    notes = models.TextField("Notes", max_length=255, blank=True)
+
+    def __str__(self) -> str:
+        return f"{self.pool_permit}-Pool"
+    
     class Meta:
         verbose_name = "Pool/Spa Permits"
         verbose_name_plural = "Pool/Spa Permits"

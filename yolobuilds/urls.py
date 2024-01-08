@@ -36,11 +36,11 @@ urlpatterns = [
     path('admin/', admin.site.urls, name="admin"),
     path('fees/', include('fees.urls')),
     # path('licenses/', include('licenses.urls'), name="licenses"),  
-    path('locations/', include('locations.urls'), name="locations"),    
+    path('location/', include('locations.urls'), name="locations"),    
     # path('payments/', include('payments.urls')),  
-    path('profiles/', include('profiles.urls')),
-    path('reviews/', include('reviews.urls')),
-    path('users/', include('django.contrib.auth.urls'), name="users"),
+    path('profile/', include('profiles.urls')),
+    path('review/', include('reviews.urls')),
+    path('user/', include('django.contrib.auth.urls'), name="users"),
 
-    path('__debug__/', include('debug.toolbar.urls')),
+    path('__debug__/', include('debug_toolbar.urls')),
 ]
