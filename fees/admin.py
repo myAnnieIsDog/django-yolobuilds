@@ -35,7 +35,7 @@ class AccountAdmin(admin.ModelAdmin):
 class FeeTypeAdmin(admin.ModelAdmin):
     list_display = [
         "fee_group",
-        "fee_type",  
+        "fee_name",  
         "tier_base_qty", 
         "tier_base_fee",
         "rate", 
@@ -44,11 +44,11 @@ class FeeTypeAdmin(admin.ModelAdmin):
     ]
     ordering = [
         "fee_group", 
-        "fee_type", 
+        "fee_name", 
     ]
     list_display_links = [
         "fee_group", 
-        "fee_type", 
+        "fee_name", 
         # "tier_base_qty", 
         # "tier_base_fee",
         # "rate", 
