@@ -22,29 +22,30 @@ def yaml_fees(model_list: list) -> bool:
 class Account(models.Model): 
 
     fund = models.CharField(
-        max_length=4)
+        max_length=4, null=True, blank=True)
     fund_label = models.CharField(
-        max_length=55)
+        max_length=55, null=True, blank=True)
     share = models.DecimalField(
         max_digits=3, decimal_places=2, default=1.00)
     unit = models.CharField(
-        max_length=4)
+        max_length=4, null=True, blank=True)
     unit_label = models.CharField(
-        max_length=55)
+        max_length=55, null=True, blank=True)
     unit_description = models.CharField(
-        max_length=255)
+        max_length=255, null=True, blank=True)
     cost_center = models.CharField(
-        max_length=6)
+        max_length=6, null=True, blank=True)
     gl_account = models.CharField(
-        max_length=6, unique=True)
+        max_length=6, null=True, blank=True)
     cams = models.CharField(
-        max_length=9)
+        max_length=9, null=True, blank=True)
     infor_activity = models.CharField(
-        max_length=7)
+        max_length=7, null=True, blank=True)
     infor_account = models.CharField(
-        max_length=5)
+        max_length=5, null=True, blank=True)
     ledger = models.CharField(
-        max_length=20)
+        max_length=20, null=True, blank=True)
+    
     def __str__(self) -> str:
         return self.unit_label
     
@@ -60,13 +61,20 @@ class FeeType(models.Model):
     
     fee_account = models.ForeignKey(
         Account, 
-        on_delete=models.PROTECT
+        on_delete=models.PROTECT,
+        null=True,
+        blank=True,
+        related_name="acct"
     )
     fee_group = models.CharField(
         max_length=255,
+        null=True,
+        blank=True,
     )
-    fee_type = models.CharField(
-        max_length=255, 
+    fee_name = models.CharField(
+        max_length=255,
+        null=True,
+        blank=True, 
         unique=True,
     )
     policy = models.TextField(
@@ -115,10 +123,10 @@ class FeeType(models.Model):
     deleted = models.BooleanField(default=False)
 
     def __str__(self) -> str:
-        return self.fee_type 
+        return self.fee_name 
     
     class Meta():
-        ordering = ["fee_type"]
+        ordering = ["fee_name"]
         verbose_name = "Fee Type"
         verbose_name_plural = "Fee Types"
 

@@ -11,7 +11,7 @@ def apn_string_to_display(input: str) -> str:
 class District(models.Model): 
     dist_type = models.CharField(max_length=100)
     district = models.CharField(max_length=55)
-    description = models.CharField(max_length=255)
+    description = models.CharField(max_length=255, null=True, blank=True)
 
     address = models.CharField(max_length=255, null=True, blank=True)
     city_state_zip = models.CharField(max_length=255, null=True, blank=True)
