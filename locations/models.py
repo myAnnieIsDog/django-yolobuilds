@@ -1,3 +1,5 @@
+from django.contrib.contenttypes.fields import GenericForeignKey
+from django.contrib.contenttypes.models import ContentType
 from django.db import models
 
 ##########################################################################
@@ -29,6 +31,8 @@ class Jurisdiction(models.Model):
     def __str__(self) -> str:
         return f"{self.jurisdiction}"
 
+
+
 ##########################################################################
 """ Parcel Model """
 ##########################################################################
@@ -37,32 +41,39 @@ class Parcel(models.Model):
     book = models.CharField(max_length=3, default="000")
     page = models.CharField(max_length=3, default="000")
     parcel = models.CharField(max_length=3, default="000")
-
-    
     active = models.BooleanField(default=True)
-    related = models.ManyToManyField("self", blank=True)
-    
     owner_name = models.CharField(
         max_length=100, null=True, blank=True)
     owner_address = models.CharField(
         max_length=100, null=True, blank=True)
-
     land_use_zone = models.CharField(max_length=10, default="A-N")
-    jurisdiction = models.ForeignKey(
-        Jurisdiction, on_delete=models.PROTECT, null=True, blank=True)
-    districts = models.ManyToManyField(District)
-
     wui_sra = models.BooleanField()
     wui_lra = models.BooleanField()
     wui_risk = models.DecimalField(
         max_digits=1, decimal_places=0, default=0)
     wui_regulations = models.BooleanField()
-
     flood_a = models.BooleanField()
     flood_ae = models.BooleanField()
     flood_ao = models.BooleanField()
     flood_x = models.BooleanField()
     floodway = models.BooleanField()
+
+    jurisdiction = models.ForeignKey(
+        Jurisdiction, on_delete=models.PROTECT, null=True, blank=True)
+    districts = models.ManyToManyField(District, blank=True)
+    
+    content_type = models.ForeignKey(
+        ContentType, on_delete=models.CASCADE, null=True, blank=True)
+    object_id = models.PositiveIntegerField()
+    content_object = GenericForeignKey("content_type", "object_id")
+    
+    parcels = models.ManyToManyField("self", blank=True)
+    # addresses = one to many; see foreign key below
+    # bl = models.ManyToManyField(SiteAddress, blank=True)
+    # bp = models.ManyToManyField(BP, blank=True)
+    # ce = models.ManyToManyField(SiteAddress, blank=True)
+    # pw = models.ManyToManyField(SiteAddress, blank=True)
+    # zf = models.ManyToManyField(SiteAddress, blank=True)
 
     def __str__(self) -> str:
         return f"{self.book}-{self.page}-{self.parcel}"
@@ -70,15 +81,25 @@ class Parcel(models.Model):
 ##########################################################################
 """ Address Model """
 ##########################################################################
+class CityStZip(models.Model):
+    city = models.CharField(max_length=55, blank=True)
+    state = "CA"
+    zip = models.CharField(max_length=25, blank=True)
+
+    def __str__(self) -> str:
+        return f"{self.city}, {self.state} {self.zip}" 
+    
+    class Meta:
+        verbose_name = "City, State Zip"
+        verbose_name_plural = "City, State Zip"
 
 class SiteAddress(models.Model): 
     """ Inherits Label, Description, Created, Modified """
-    parcel = models.ForeignKey(Parcel, on_delete=models.PROTECT, related_name="site_address")
+    parcel = models.ForeignKey(
+        Parcel, on_delete=models.PROTECT, null=True, blank=True)
     number = models.CharField(max_length=10, default="12345")
-    street = models.CharField(max_length=50, default="CR 98")
-    city = models.CharField(max_length=50, default="Woodland")
-    state = models.CharField(max_length=2, default="CA")
-    zip = models.CharField(max_length=5, default="95695")
+    street = models.CharField(max_length=50, default="County Road 98")
+    city_st_zip = models.ForeignKey(CityStZip, on_delete=models.PROTECT, null=True, blank=True)
     geolocation = models.CharField(max_length=50, null=True, blank=True)
 
     def __str__(self) -> str:
