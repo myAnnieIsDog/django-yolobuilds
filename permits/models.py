@@ -96,13 +96,13 @@ class RelatedRecord(models.Model):
 
 ##########################################################################
 """ Permit Options """
-##########################################################################
-class Division(models.Model): 
-    prefix = models.CharField(max_length=2, unique=True) 
-    title = models.CharField(max_length=30, unique=True) 
+#########################################################################
+# class Division(models.Model): 
+#     prefix = models.CharField(max_length=2, unique=True) 
+#     title = models.CharField(max_length=30, unique=True) 
 
-    def __str__(self) -> str:
-        return self.prefix
+#     def __str__(self) -> str:
+#         return self.prefix
 
 class PermitStatus(models.Model): 
     status = models.CharField(max_length=30, unique=True)
@@ -123,14 +123,14 @@ class PermitType(models.Model):
         verbose_name = "Permit Type"
         verbose_name_plural = "Permit Types"
 
-class PermitSubtype(models.Model): 
-    type = models.ForeignKey(PermitType, on_delete=models.PROTECT)
-    subtype = models.CharField(max_length=255, unique=True)
-    policy = models.CharField(max_length=255)
+# class PermitSubtype(models.Model): 
+#     type = models.ForeignKey(PermitType, on_delete=models.PROTECT)
+#     subtype = models.CharField(max_length=255, unique=True)
+#     policy = models.CharField(max_length=255)
 
-    class Meta():
-        verbose_name = "Permit Subtype"
-        verbose_name_plural = "Permit Subtypes"
+#     class Meta():
+#         verbose_name = "Permit Subtype"
+#         verbose_name_plural = "Permit Subtypes"
 
     
 ##########################################################################
@@ -140,7 +140,6 @@ class Permit(models.Model):
     number = models.CharField(max_length=55, blank=True)
     division = models.ForeignKey(Division, on_delete=models.PROTECT)
     type = models.ForeignKey(PermitType, on_delete=models.PROTECT)
-    subtype = models.ForeignKey(PermitSubtype, on_delete=models.PROTECT)
     description = models.TextField()
 
     status = models.ForeignKey(PermitStatus, on_delete=models.PROTECT)
@@ -178,7 +177,6 @@ all_models = (
     Division,
     PermitStatus,
     PermitType,
-    PermitSubtype,
     Permit,
 )
 ##########################################################################

@@ -11,11 +11,6 @@ import requests
 from profiles.models import Profile
 
 
-def yaml_fees(model_list: list) -> bool:
-    from scripts.bak_yaml import yaml_backup
-    return yaml_backup(model_list)
-
-
 ##########################################################################
 """ Accounts Model """
 ##########################################################################
@@ -154,15 +149,32 @@ class Fee(models.Model):
     created_by = models.ForeignKey(User, on_delete=models.PROTECT)
     notes = models.TextField(max_length=255)
 
+    def __str__(self) -> str:
+        return self.fee_type
+
 
 class TrakitFee(Fee):
-    main_fee = models.ForeignKey(Fee, on_delete=models.PROTECT, related_name="trakit_fee")
+    trakit_main_fee = models.ForeignKey(Fee, on_delete=models.PROTECT, related_name="trakit_fee")
     trakit_fee_code = models.CharField(max_length=255, null=True, blank=True)
     tech = models.CharField(max_length=255, null=True, blank=True)
     trakit_description = models.CharField(max_length=255, null=True, blank=True)
     trakit_formula = models.CharField(max_length=255, null=True, blank=True)
     trakit_id = models.CharField(max_length=255, null=True, blank=True)
 
+    def __str__(self) -> str:
+        return self.main_fee.fee_type
+
+class ClaritiFee(Fee):
+    clariti_main_fee = models.ForeignKey(Fee, on_delete=models.PROTECT, related_name="clariti_fee")
+    clariti_fee_code = models.CharField(max_length=255, null=True, blank=True)
+    tech = models.CharField(max_length=255, null=True, blank=True)
+    clariti_description = models.CharField(max_length=255, null=True, blank=True)
+    clariti_formula = models.CharField(max_length=255, null=True, blank=True)
+    clariti_id = models.CharField(max_length=255, null=True, blank=True)
+
+    def __str__(self) -> str:
+        return self.main_fee.fee_type
+    
 
 ##########################################################################
 """ Payment Model. """

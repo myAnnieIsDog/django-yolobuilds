@@ -2,11 +2,7 @@
 """ Register Permit Base Models with the Admin Interface """
 ##########################################################################
 from django.contrib import admin
-from .models import Division, PermitStatus, PermitType, PermitSubtype, Permit
-
-@admin.register(Division)
-class DivisionAdmin(admin.ModelAdmin):
-    pass
+from .models import PermitStatus, PermitType, Permit
 
 @admin.register(PermitStatus)
 class PermitStatusAdmin(admin.ModelAdmin):
@@ -14,10 +10,6 @@ class PermitStatusAdmin(admin.ModelAdmin):
 
 @admin.register(PermitType)
 class PermitTypeAdmin(admin.ModelAdmin):
-    pass
-
-@admin.register(PermitSubtype)
-class PermitSubtypeAdmin(admin.ModelAdmin):
     pass
 
 @admin.register(Permit)

@@ -9,13 +9,17 @@ from profiles.models import User
 
 
 class ReviewType(models.Model): 
-    review_division = models.ForeignKey(Division, on_delete=models.PROTECT, related_name="+")
-    default_reviewer = models.ForeignKey(User, on_delete=models.PROTECT, related_name="+")
-
+    review_division = models.ForeignKey(
+        Division, on_delete=models.PROTECT, related_name="+", 
+        null=True, blank=True)
+    default_reviewer = models.ForeignKey(
+        User, on_delete=models.PROTECT, related_name="+", 
+        null=True, blank=True)
     review_type = models.CharField(max_length=30)
     days_cycle1 = models.PositiveSmallIntegerField(default=15)
     days_cycle2 = models.PositiveSmallIntegerField(default=5)
-    review_fees = models.ManyToManyField(FeeType, related_name="+")
+    review_fees = models.ManyToManyField(
+        FeeType, related_name="+", blank=True)
     prerequisite = models.ManyToManyField("self", blank=True)
     review_checklist = models.TextField("Review Checklist", blank=True)
     add_next = models.ManyToManyField("self", blank=True)
