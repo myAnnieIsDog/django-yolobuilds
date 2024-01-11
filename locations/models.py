@@ -37,6 +37,7 @@ class Parcel(models.Model):
     book = models.CharField(max_length=3, default="000")
     page = models.CharField(max_length=3, default="000")
     parcel = models.CharField(max_length=3, default="000")
+
     
     active = models.BooleanField(default=True)
     related = models.ManyToManyField("self", blank=True)
@@ -72,7 +73,7 @@ class Parcel(models.Model):
 
 class SiteAddress(models.Model): 
     """ Inherits Label, Description, Created, Modified """
-    parcel = models.ForeignKey(Parcel, on_delete=models.PROTECT)
+    parcel = models.ForeignKey(Parcel, on_delete=models.PROTECT, related_name="site_address")
     number = models.CharField(max_length=10, default="12345")
     street = models.CharField(max_length=50, default="CR 98")
     city = models.CharField(max_length=50, default="Woodland")
@@ -80,6 +81,9 @@ class SiteAddress(models.Model):
     zip = models.CharField(max_length=5, default="95695")
     geolocation = models.CharField(max_length=50, null=True, blank=True)
 
+    def __str__(self) -> str:
+        return f"{self.number} {self.street}"
+    
     class Meta:
         verbose_name = "Site Address"
         verbose_name_plural = "Site Addresses"

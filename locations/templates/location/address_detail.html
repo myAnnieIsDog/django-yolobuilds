@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+
+{% block main_content %}
+<p>Name:</p>
+<div class="name">
+    <input class="first" type="text" name="first" placeholder="Scott">
+    <input class="last" type="text" name="last" placeholder="Doolittle">
+</div>
+
+<p>Email:</p>
+<div class="email">
+    <input class="user" type="text" name="user" placeholder="building.division">
+    <p>@</p><input class="subdomain" type="text" name="subdomain" placeholder="yolocounty">
+    <p>.</p><input class="domain" type="text" name="domain" placeholder="org">
+</div>
+
+<p>Phone:</p>
+<div class="phone">
+    <p>(</p><input class="area_code" type="text" name="area" placeholder="530"><p>)</p>
+    <input class="prefix" type="text" name="prefix" placeholder="666">
+    <p>-</p><input class="four" type="text" name="four" placeholder="8037">
+</div>
+
+<p>Address:</p>
+<div class="address">
+    <input class="number" type="text" name="number" placeholder="292">
+    <input class="street" type="text" name="street" placeholder="W Beamer St">
+    <input class="city" type="text" name="city" placeholder="Woodland">
+    <input class="state" type="text" name="state" value="CA">
+    <input class="zip" type="text" name="zip" placeholder="95695">
+</div>
+
+<p>License (Architect, Contractor, or Engineer):</p>
+<div class="license">
+    <input class="lic_type" type="text" name="type" placeholder="C-10 Electrical">
+    <input class="lic_number" type="text" name="number" placeholder="1234567">
+</div>
+
+<p>Yolo County Business License:</p>
+<div class="bus_lic">
+    <input class="bl_name" type="text" name="bl_type" placeholder="Yolo County DCS">
+    <input class="bl_number" type="text" name="bl_number" placeholder="12345">
+</div>
+{% endblock main_content %}

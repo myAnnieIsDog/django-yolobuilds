@@ -36,7 +36,7 @@ urlpatterns = [
     path('admin/', admin.site.urls, name="admin"),
     path('fees/', include('fees.urls')),
     # path('licenses/', include('licenses.urls'), name="licenses"),  
-    path('location/', include('locations.urls'), name="locations"),    
+    path('locations/', include('locations.urls'), name="locations"),    
     # path('payments/', include('payments.urls')),  
     path('profile/', include('profiles.urls')),
     path('review/', include('reviews.urls')),

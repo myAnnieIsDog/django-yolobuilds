@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+
+{% block main_content %}
+    <section>
+        <table>
+            <tr>
+                <th style="text-align: center;">
+                    <a @click="alert('What the fuck, man?')">
+                        APN
+                    </a>
+                </th>
+                <th style="text-align: center;">
+                    <a @click="alert('Howdy')">
+                        Address
+                    </a>
+                </th>
+                <th style="text-align: center;">
+                    <a @click="alert('Glorious times')">
+                        City
+                    </a>
+                </th>
+                <th style="text-align: center;">
+                    <a @click="alert('Better than a man.')">
+                        Fire District
+                    </a>
+                </th>
+            </tr>
+            <tr>
+                <td><input type="text" class="width=100"></td>
+                <td><input type="text" class="width=100"></td>
+                <td><input type="text" class="width=100"></td>
+                <td><input type="text" class="width=100"></td>
+            </tr>
+            {% for apn in object_list %}
+                <tr  @click="alert('click')">
+                    <td style="text-align: center;">
+                        {{ apn }}
+                    </td>
+                    {% for address in apn.site_address.all %}
+                        <td style="text-align: center;">
+                            <p>{{ address }}</p>
+                        </td>
+                        <td style="text-align: center;">
+                            <p>{{ address.city }}</p>
+                        </td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </table>
+    </section>
+{% endblock main_content %}

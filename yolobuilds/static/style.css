@@ -156,6 +156,10 @@ input[type="tel"] {
     width: 300px;
     box-shadow: var(--BOXSHADOW);
 }
+table input[type="text"],
+table button {
+    width: 150px;
+}
 
 /* Fieldset Formatting */
 fieldset {
@@ -199,11 +203,11 @@ details[open] > summary {
     display: flex;
     flex-wrap: wrap;
     max-width: 300px;}
-.number {max-width: 80px;}
+.number {max-width: 110px;}
 .street {max-width: 190px;}
-.city {max-width: 140px;}
+.city {max-width: 160px;}
 .state {max-width: 50px;}
-.zip {max-width: 80px;}
+.zip {max-width: 90px;}
 
 
 .phone {
@@ -218,21 +222,21 @@ details[open] > summary {
 .email {
     display: flex;
     flex-wrap: wrap;
-    max-width: 420px;}
-.user  {max-width: 160px;}
-.subdomain  {max-width: 160px;}
+    max-width: 400px;}
+.user  {max-width: 150px;}
+.subdomain  {max-width: 132px;}
 .domain {max-width: 60px;}
 
 .license {
     display: flex;
     flex-wrap: wrap;
-    max-width: 420px;}
-.lic_type  {max-width: 200px;}
-.lic_number  {max-width: 120px;}
+    max-width: 320px;}
+.lic_type  {max-width: 190px;}
+.lic_number  {max-width: 110px;}
 
 .bus_lic {
     display: flex;
     flex-wrap: wrap;
     max-width: 420px;}
-.bl_name  {max-width: 200px;}
-.bl_number  {max-width: 120px;}
+.bl_name  {max-width: 190px;}
+.bl_number  {max-width: 110px;}
