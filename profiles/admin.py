@@ -8,23 +8,23 @@ from .models import (Profile, LicenseAgency, LicenseType, LicenseHolder,
 
 @admin.register(Agency)
 class ProfilesAdmin(admin.ModelAdmin):
-    verbose_name = "Agency Option"
-    verbose_name_plural = "Agency Options"
+    list_display = ["agency", "full_agency"]
+    list_display_links = ["agency", "full_agency"]
 
 @admin.register(Department)
 class ProfilesAdmin(admin.ModelAdmin):
-    verbose_name = "Department Option"
-    verbose_name_plural = "Department Options"
+    list_display = ["dept_code", "department"]
+    list_display_links = ["dept_code", "department"]
 
 @admin.register(Division)
 class ProfilesAdmin(admin.ModelAdmin):
-    verbose_name = "Division Option"
-    verbose_name_plural = "Division Options"
+    list_display = ["prefix", "division", "full_division"]
+    list_display_links = ["prefix", "division", "full_division"]
 
 
 class LicenseTypeInline(admin.TabularInline):
     model = LicenseType
-    extra = 3
+    extra = 0
 @admin.register(LicenseAgency)
 class ProfilesAdmin(admin.ModelAdmin):
     verbose_name = "Licensing Agency"
@@ -41,13 +41,13 @@ class ProfilesAdmin(admin.ModelAdmin):
 
 class LicenseHolderInline(admin.TabularInline):
     model = LicenseHolder
-    extra = 3
+    extra = 0
 class YoloCountyPartnersInline(admin.TabularInline):
     model = YoloCountyPartners
-    extra = 3
+    extra = 0
 class StaffInline(admin.TabularInline):
     model = Staff
-    extra = 3
+    extra = 0
 @admin.register(Profile)
 class ProfilesAdmin(admin.ModelAdmin):
     verbose_name = "Profile (all contacts)"

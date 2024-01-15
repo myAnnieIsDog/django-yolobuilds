@@ -1,0 +1,605 @@
+[
+    {
+        "default_inspector_id": 20,
+        "duration_hours": 0.3,
+        "id": 1,
+        "insp_group_id": 19,
+        "inspection_checklist": "Use this inspection only for large/complex permits when building has approved their inspections, but other inspections are preventing moving the permit to status Finaled. \r\n\r\nSetting this review to approved means that the permit can be set to final once all non-Building inspections are approved.",
+        "inspection_type": "Final Building",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 16,
+        "duration_hours": 0.3,
+        "id": 2,
+        "insp_group_id": 19,
+        "inspection_checklist": "",
+        "inspection_type": "Final C&D",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 3,
+        "duration_hours": 0.3,
+        "id": 3,
+        "insp_group_id": 19,
+        "inspection_checklist": "",
+        "inspection_type": "Final Env. Health",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 20,
+        "duration_hours": 0.3,
+        "id": 4,
+        "insp_group_id": 12,
+        "inspection_checklist": "",
+        "inspection_type": "Fire",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 9,
+        "duration_hours": 0.3,
+        "id": 5,
+        "insp_group_id": 19,
+        "inspection_checklist": "",
+        "inspection_type": "Final Public Works",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 6,
+        "insp_group_id": 16,
+        "inspection_checklist": "",
+        "inspection_type": "Insulation (Ceiling)",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 7,
+        "insp_group_id": 16,
+        "inspection_checklist": "",
+        "inspection_type": "Insulation (Floor)",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 8,
+        "insp_group_id": 16,
+        "inspection_checklist": "",
+        "inspection_type": "Insulation (Rafters)",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 9,
+        "insp_group_id": 16,
+        "inspection_checklist": "",
+        "inspection_type": "Insulation (Roof Deck)",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 10,
+        "insp_group_id": 16,
+        "inspection_checklist": "",
+        "inspection_type": "Insulation (Wall Cavity)",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 11,
+        "insp_group_id": 16,
+        "inspection_checklist": "",
+        "inspection_type": "Insulation (Wall Panels)",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 12,
+        "insp_group_id": 16,
+        "inspection_checklist": "",
+        "inspection_type": "Roofing",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 13,
+        "insp_group_id": 16,
+        "inspection_checklist": "",
+        "inspection_type": "Siding",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 14,
+        "insp_group_id": 16,
+        "inspection_checklist": "",
+        "inspection_type": "Stucco / Lath",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 15,
+        "insp_group_id": 16,
+        "inspection_checklist": "",
+        "inspection_type": "Stucco / Scratch",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 16,
+        "insp_group_id": 16,
+        "inspection_checklist": "",
+        "inspection_type": "Windows",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 17,
+        "insp_group_id": 15,
+        "inspection_checklist": "",
+        "inspection_type": "Demolition 1 Pre-Measure and Utility Disconnect",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 18,
+        "insp_group_id": 15,
+        "inspection_checklist": "",
+        "inspection_type": "Demolition 2 Final",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 19,
+        "insp_group_id": 4,
+        "inspection_checklist": "",
+        "inspection_type": "Battery Backup (Residential)",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 20,
+        "insp_group_id": 5,
+        "inspection_checklist": "",
+        "inspection_type": "Equipment",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 21,
+        "insp_group_id": 4,
+        "inspection_checklist": "",
+        "inspection_type": "Electrical Vehicle (EV) Charging Station",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 22,
+        "insp_group_id": 19,
+        "inspection_checklist": "",
+        "inspection_type": "Final Electrical",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 23,
+        "insp_group_id": 4,
+        "inspection_checklist": "",
+        "inspection_type": "Fire Alarms",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 24,
+        "insp_group_id": 4,
+        "inspection_checklist": "",
+        "inspection_type": "Meter Release",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 25,
+        "insp_group_id": 4,
+        "inspection_checklist": "",
+        "inspection_type": "Rough Electrical",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 26,
+        "insp_group_id": 4,
+        "inspection_checklist": "",
+        "inspection_type": "Solar Photovoltaic (PV)",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 27,
+        "insp_group_id": 4,
+        "inspection_checklist": "",
+        "inspection_type": "Switchgear",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 28,
+        "insp_group_id": 4,
+        "inspection_checklist": "",
+        "inspection_type": "Underground Electrical",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 29,
+        "insp_group_id": 11,
+        "inspection_checklist": "",
+        "inspection_type": "EC2 Lowest Floor Elevation",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 30,
+        "insp_group_id": 11,
+        "inspection_checklist": "",
+        "inspection_type": "EC3 Finished Construction",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 20,
+        "duration_hours": 0.3,
+        "id": 31,
+        "insp_group_id": 19,
+        "inspection_checklist": "This inspection goes on every permit and changes the permit status to \"Finaled\" or prompts the user with pending items.\r\n\r\nCHECKLIST: Verify ALL agencies, districts, departments, and divisions divisions have approved this permit before setting to final, or that their inspection is not necessary for the permit type:\r\n\r\nBuilding\r\nEnv. Health\r\nFire District\r\nInt. Waste\r\nPublic Works\r\nService District\r\netc.",
+        "inspection_type": "** PERMIT FINAL **",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 20,
+        "duration_hours": 0.3,
+        "id": 32,
+        "insp_group_id": 17,
+        "inspection_checklist": "",
+        "inspection_type": "Lifts / Progress",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 20,
+        "duration_hours": 0.3,
+        "id": 33,
+        "insp_group_id": 17,
+        "inspection_checklist": "",
+        "inspection_type": "Site Prep",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 34,
+        "insp_group_id": 19,
+        "inspection_checklist": "",
+        "inspection_type": "Final Mechanical",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 35,
+        "insp_group_id": 5,
+        "inspection_checklist": "",
+        "inspection_type": "Hood (Type 1)",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 36,
+        "insp_group_id": 5,
+        "inspection_checklist": "",
+        "inspection_type": "Hood (Type 2)",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 37,
+        "insp_group_id": 5,
+        "inspection_checklist": "",
+        "inspection_type": "HVAC",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 38,
+        "insp_group_id": 5,
+        "inspection_checklist": "",
+        "inspection_type": "Rough Mechanical",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 39,
+        "insp_group_id": 19,
+        "inspection_checklist": "",
+        "inspection_type": "Final Plumbing",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 40,
+        "insp_group_id": 6,
+        "inspection_checklist": "",
+        "inspection_type": "Gas",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 41,
+        "insp_group_id": 6,
+        "inspection_checklist": "",
+        "inspection_type": "Rough Plumbing",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 42,
+        "insp_group_id": 6,
+        "inspection_checklist": "",
+        "inspection_type": "Underground Plumbing",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 43,
+        "insp_group_id": 6,
+        "inspection_checklist": "",
+        "inspection_type": "Water Heater (Gas)",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 44,
+        "insp_group_id": 6,
+        "inspection_checklist": "",
+        "inspection_type": "Water Heater (Heat Pump)",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 45,
+        "insp_group_id": 6,
+        "inspection_checklist": "",
+        "inspection_type": "Water Heater (Solar)",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 46,
+        "insp_group_id": 18,
+        "inspection_checklist": "",
+        "inspection_type": "Hot Tub",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 47,
+        "insp_group_id": 18,
+        "inspection_checklist": "",
+        "inspection_type": "Pool 2 Pre-Deck",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 48,
+        "insp_group_id": 18,
+        "inspection_checklist": "",
+        "inspection_type": "Pool 1 Pre-Gunite",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 49,
+        "insp_group_id": 18,
+        "inspection_checklist": "",
+        "inspection_type": "Pool 3 Pre-Plaster",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 50,
+        "insp_group_id": 16,
+        "inspection_checklist": "",
+        "inspection_type": "Reroof 1 Roof Deck",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 51,
+        "insp_group_id": 16,
+        "inspection_checklist": "",
+        "inspection_type": "Reroof 2 Final",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 52,
+        "insp_group_id": 7,
+        "inspection_checklist": "",
+        "inspection_type": "Concrete Footings/Piers",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 53,
+        "insp_group_id": 7,
+        "inspection_checklist": "",
+        "inspection_type": "Concrete Slab",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 54,
+        "insp_group_id": 7,
+        "inspection_checklist": "",
+        "inspection_type": "Concrete Walls",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 55,
+        "insp_group_id": 16,
+        "inspection_checklist": "",
+        "inspection_type": "Gypsum Board Nailing",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 56,
+        "insp_group_id": 7,
+        "inspection_checklist": "",
+        "inspection_type": "Masonry 1 Footing",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 57,
+        "insp_group_id": 7,
+        "inspection_checklist": "",
+        "inspection_type": "Masonry 2 Lift",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 58,
+        "insp_group_id": 7,
+        "inspection_checklist": "",
+        "inspection_type": "Masonry 3 Cap",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 59,
+        "insp_group_id": 7,
+        "inspection_checklist": "",
+        "inspection_type": "Wood 1 Subfloor",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 60,
+        "insp_group_id": 7,
+        "inspection_checklist": "",
+        "inspection_type": "Wood 2 Shear & Roof Deck",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 61,
+        "insp_group_id": 7,
+        "inspection_checklist": "",
+        "inspection_type": "Wood 3 Frame",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 62,
+        "insp_group_id": 9,
+        "inspection_checklist": "",
+        "inspection_type": "Manufactured Home 1 Anchoring/Setup",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 63,
+        "insp_group_id": 9,
+        "inspection_checklist": "",
+        "inspection_type": "Manufactured Home 3 Marriage/Utilities",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 64,
+        "insp_group_id": 10,
+        "inspection_checklist": "",
+        "inspection_type": "Commercial Coach Egress",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 65,
+        "insp_group_id": 10,
+        "inspection_checklist": "",
+        "inspection_type": "Commercial Coach Disabled Access",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 15,
+        "duration_hours": 0.3,
+        "id": 66,
+        "insp_group_id": 10,
+        "inspection_checklist": "",
+        "inspection_type": "Commercial Coach Final",
+        "trip_factor": 1.2
+    },
+    {
+        "default_inspector_id": 1,
+        "duration_hours": 0.3,
+        "id": 67,
+        "insp_group_id": 19,
+        "inspection_checklist": "",
+        "inspection_type": "Final Fire District",
+        "trip_factor": 1.2
+    }
+]

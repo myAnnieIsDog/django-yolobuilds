@@ -1,0 +1,4 @@
+1,Approved,"This review is approved. Once all reviews are approved, then the permit will be ready to issue.",blue
+2,Approved with Conditions,"See the attached conditions of approval. This review is approved if the applicant agrees to meet these conditions. Once all reviews are approved, then the permit will be ready to issue.",yellow
+3,Applicant Action Required,This review cannot proceed until the applicant takes action. See notes for more details.,orange
+4,In Progress,This review is scheduled and will be completed by staff as quickly as possible.,white

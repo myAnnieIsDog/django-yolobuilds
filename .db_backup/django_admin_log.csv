@@ -1,0 +1,526 @@
+3,1,Building,1,"[{""added"": {}}]",3,20,2024-01-11 04:18:45.085880
+4,2,Plannnig,1,"[{""added"": {}}]",3,20,2024-01-11 04:18:50.695204
+5,3,Public Works,1,"[{""added"": {}}]",3,20,2024-01-11 04:18:55.449999
+6,4,Review and Inspection Only,1,"[{""added"": {}}]",3,20,2024-01-11 04:19:04.209179
+7,1,Building,2,"[{""changed"": {""fields"": [""Permissions""]}}]",3,20,2024-01-11 04:22:51.253176
+8,1,aespinoza,2,"[{""changed"": {""fields"": [""Groups""]}}]",4,20,2024-01-11 04:23:25.106136
+9,2,ayepez,2,"[{""changed"": {""fields"": [""Groups""]}}]",4,20,2024-01-11 04:23:39.570145
+10,5,Admin,1,"[{""added"": {}}]",3,20,2024-01-11 04:24:25.541235
+11,3,cmendoza,2,"[{""changed"": {""fields"": [""Groups""]}}]",4,20,2024-01-11 04:24:41.881921
+12,4,ctschudin,2,"[{""changed"": {""fields"": [""Groups""]}}]",4,20,2024-01-11 04:24:49.738968
+13,4,ctschudin,2,[],4,20,2024-01-11 04:24:55.769032
+14,5,danderson,2,[],4,20,2024-01-11 04:25:04.256220
+15,6,dkoranda,2,"[{""changed"": {""fields"": [""Groups""]}}]",4,20,2024-01-11 04:25:24.811136
+16,5,danderson,2,"[{""changed"": {""fields"": [""Groups""]}}]",4,20,2024-01-11 04:25:32.371924
+17,7,jacevedo,2,"[{""changed"": {""fields"": [""Groups""]}}]",4,20,2024-01-11 04:25:42.000540
+18,8,janderson,2,"[{""changed"": {""fields"": [""Groups""]}}]",4,20,2024-01-11 04:25:49.318396
+19,9,jbautisa,2,"[{""changed"": {""fields"": [""Groups""]}}]",4,20,2024-01-11 04:25:57.148587
+20,10,jhuang,2,"[{""changed"": {""fields"": [""Groups""]}}]",4,20,2024-01-11 04:26:09.374307
+21,11,jpimentel-morra,2,"[{""changed"": {""fields"": [""Groups""]}}]",4,20,2024-01-11 04:26:19.205477
+22,12,jtrebec,2,"[{""changed"": {""fields"": [""Groups""]}}]",4,20,2024-01-11 04:26:26.657436
+23,13,jvanhorn,2,"[{""changed"": {""fields"": [""Groups""]}}]",4,20,2024-01-11 04:26:34.081180
+24,14,mfarhoudi,2,"[{""changed"": {""fields"": [""Email address"", ""Groups""]}}]",4,20,2024-01-11 04:26:44.166517
+25,15,mnardiello,2,"[{""changed"": {""fields"": [""Groups""]}}]",4,20,2024-01-11 04:27:03.596718
+26,3,cmendoza,2,"[{""changed"": {""fields"": [""Groups""]}}]",4,20,2024-01-11 04:27:22.569921
+27,7,jacevedo,2,"[{""changed"": {""fields"": [""Groups""]}}]",4,20,2024-01-11 04:27:29.595519
+28,20,sdoolittle,2,"[{""changed"": {""fields"": [""Groups""]}}]",4,20,2024-01-11 04:28:14.272065
+29,17,scastagnola,2,"[{""changed"": {""fields"": [""Groups""]}}]",4,20,2024-01-11 04:28:22.640689
+30,18,scormier,2,"[{""changed"": {""fields"": [""Groups""]}}]",4,20,2024-01-11 04:28:32.403947
+31,27,tgonzalez,2,"[{""changed"": {""fields"": [""Groups""]}}]",4,20,2024-01-11 04:28:43.821266
+32,6,Fiscal,1,"[{""added"": {}}]",3,20,2024-01-11 04:29:37.688043
+33,23,smiliren,2,"[{""changed"": {""fields"": [""Email address"", ""Groups""]}}]",4,20,2024-01-11 04:29:40.938932
+34,21,sjeet,2,"[{""changed"": {""fields"": [""Groups""]}}]",4,20,2024-01-11 04:29:54.022299
+35,16,phedrick,2,"[{""changed"": {""fields"": [""Groups""]}}]",4,20,2024-01-11 04:30:04.850957
+36,19,sdawley,2,"[{""changed"": {""fields"": [""Groups""]}}]",4,20,2024-01-11 04:30:13.710809
+37,22,slee,2,"[{""changed"": {""fields"": [""Groups""]}}]",4,20,2024-01-11 04:30:22.528685
+38,3,cmendoza,2,"[{""changed"": {""fields"": [""Groups""]}}]",4,20,2024-01-11 04:30:36.563498
+39,14,mfarhoudi,2,"[{""changed"": {""fields"": [""Groups""]}}]",4,20,2024-01-11 04:30:54.188642
+40,5,Admin,3,,3,20,2024-01-11 04:31:38.218249
+41,1,111-222-333,1,"[{""added"": {}}]",20,20,2024-01-11 04:34:34.431045
+42,2,222-333-444,1,"[{""added"": {}}]",20,20,2024-01-11 04:34:50.635917
+43,3,333-444-555,1,"[{""added"": {}}]",20,20,2024-01-11 04:35:05.646546
+44,4,444-555-666,1,"[{""added"": {}}]",20,20,2024-01-11 04:35:26.415811
+45,1,12345CR 98,1,"[{""added"": {}}]",21,20,2024-01-11 04:36:00.006852
+46,2,54321CR 0,1,"[{""added"": {}}]",21,20,2024-01-11 04:36:13.054454
+47,3,12345CR 98,1,"[{""added"": {}}]",21,20,2024-01-11 04:36:22.368360
+48,3,333-444-555,2,"[{""changed"": {""fields"": [""Related""]}}]",20,20,2024-01-11 04:36:54.187062
+49,1,111-222-333,2,"[{""changed"": {""fields"": [""Related""]}}]",20,20,2024-01-11 04:37:03.978240
+50,1,"Woodland, CA 95695",1,"[{""added"": {}}]",70,20,2024-01-11 14:59:39.010586
+51,2,"Woodland, CA 95776",1,"[{""added"": {}}]",70,20,2024-01-11 14:59:58.466406
+52,3,"Davis, CA 95616",1,"[{""added"": {}}]",70,20,2024-01-11 15:00:25.997037
+53,4,"Davis, CA 95617",1,"[{""added"": {}}]",70,20,2024-01-11 15:00:33.222421
+54,5,"Davis, CA 95618",1,"[{""added"": {}}]",70,20,2024-01-11 15:00:40.233479
+55,6,"Winters, CA 95694",1,"[{""added"": {}}]",70,20,2024-01-11 15:01:04.431395
+56,7,"West Sacramento, CA 95605",1,"[{""added"": {}}]",70,20,2024-01-11 15:01:28.758819
+57,8,"West Sacramento, CA 95691",1,"[{""added"": {}}]",70,20,2024-01-11 15:01:34.888848
+58,9,"West Sacramento, CA 95798",1,"[{""added"": {}}]",70,20,2024-01-11 15:01:41.399459
+59,10,"West Sacramento, CA 95799",1,"[{""added"": {}}]",70,20,2024-01-11 15:01:51.297158
+60,11,"West Sacramento, CA 95899",1,"[{""added"": {}}]",70,20,2024-01-11 15:01:58.635227
+61,12,"Bryte, CA 95605",1,"[{""added"": {}}]",70,20,2024-01-11 15:02:36.881387
+62,12,"Bryte, CA 95605",3,,70,20,2024-01-11 15:02:55.729315
+63,13,"Brooks, CA 95606",1,"[{""added"": {}}]",70,20,2024-01-11 15:03:13.256239
+64,14,"Esparto, CA 95607",1,"[{""added"": {}}]",70,20,2024-01-11 15:03:47.141406
+65,15,"Clarksburg, CA 95612",1,"[{""added"": {}}]",70,20,2024-01-11 15:03:57.214819
+66,16,"El Macero, CA 95618",1,"[{""added"": {}}]",70,20,2024-01-11 15:04:12.022677
+67,17,"Capay, CA 95607",1,"[{""added"": {}}]",70,20,2024-01-11 15:04:23.037394
+68,18,"Bryte, CA 95605",1,"[{""added"": {}}]",70,20,2024-01-11 15:04:31.002974
+69,19,"Broderick, CA 95605",1,"[{""added"": {}}]",70,20,2024-01-11 15:04:38.888937
+70,20,"Esparto, CA 95627",1,"[{""added"": {}}]",70,20,2024-01-11 15:04:50.648916
+71,21,"Guinda, CA 95637",1,"[{""added"": {}}]",70,20,2024-01-11 15:05:00.385098
+72,22,"Knights Landing, CA 95645",1,"[{""added"": {}}]",70,20,2024-01-11 15:05:11.128071
+73,23,"Madison, CA 95653",1,"[{""added"": {}}]",70,20,2024-01-11 15:05:18.626497
+74,24,"Rumsey, CA 95679",1,"[{""added"": {}}]",70,20,2024-01-11 15:05:26.434944
+75,25,"West Sacramento, CA 95691",1,"[{""added"": {}}]",70,20,2024-01-11 15:05:39.370698
+76,26,"Yolo, CA 95697",1,"[{""added"": {}}]",70,20,2024-01-11 15:05:54.364721
+77,27,"Zamora, CA 95698",1,"[{""added"": {}}]",70,20,2024-01-11 15:06:01.032116
+78,28,"Dunnigan, CA 95937",1,"[{""added"": {}}]",70,20,2024-01-11 15:06:12.118340
+79,3,12345 CR 98,2,"[{""changed"": {""fields"": [""City st zip""]}}]",21,20,2024-01-11 15:07:19.481344
+80,2,54321 CR 0,2,"[{""changed"": {""fields"": [""City st zip""]}}]",21,20,2024-01-11 15:07:26.133042
+81,1,12345 CR 98,2,"[{""changed"": {""fields"": [""City st zip""]}}]",21,20,2024-01-11 15:07:34.839194
+82,1,292 W Beamer St,2,"[{""changed"": {""fields"": [""Number"", ""Street"", ""City st zip""]}}]",21,20,2024-01-11 15:08:24.912094
+83,2,54321 Willowbank,2,"[{""changed"": {""fields"": [""Street""]}}]",21,20,2024-01-11 15:09:13.446061
+84,603,California Building Standards Fee (State Pass-Through Fee),2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:45:06.671305
+85,601,Strong Motion Instrumentation and Seismic Hazard Mapping (State Pass Through Fee) ($7 for Strong Motion Instrumentation and $3 for Seismic Hazard Mapp,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:45:06.691248
+86,605,Additional Time Spent for Activities not Listed on Fee List,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:45:50.484600
+87,606,Addressing Fee,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:45:50.490000
+88,607,Ag Exempt,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:45:50.491994
+89,608,Building Permit Application Fee,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:45:50.492992
+90,609,"Building Permit Application Fee - Only for HVAC, Solar, Water Heater, or other small projects as determined by CBO",2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:45:50.494987
+91,610,Building Permit Issuance Fee,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:45:50.497020
+92,611,Copy of Plans (non-standard sizes),2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:45:50.498019
+93,612,Deferred Submittal Request,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:45:50.500012
+94,613,"General Plan Cost Recovery (value $50,000 and under)",2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:45:50.501010
+95,614,"General Plan Cost Recovery (value over $50,000)",2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:45:50.503005
+96,615,Permit Extension Request,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:45:50.507018
+97,616,Plan Check Extension Request,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:45:50.508019
+98,618,Re-Instate Permit Fee (validated),2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:45:50.510017
+99,617,Records research,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:45:50.513005
+100,619,Returned Check Fee,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:45:50.514002
+101,685,Additional Fire Inspections,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:46:14.887011
+102,686,Additional Fire Plan Review (over 2 reviews),2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:46:14.893989
+103,687,Commercial Kitchen Hood System / Special Systems,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:46:14.894987
+104,688,"Commercial Sprinkler System - 201+ Sprinkler Heads (underground systems included, new systems only)",2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:46:14.896981
+105,689,Commercial/Residential Sprinkler Add/Alternative,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:46:14.897979
+106,690,Fire Alarm System Plan Review Fee,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:46:14.899973
+107,691,Fire Construction Plan Review/Special Review,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:46:14.901970
+108,692,Fire Inspection Fee,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:46:14.905960
+109,693,"Fire Inspection Fee - Underground, Hazmat, Hydrant, Tanks, Tents, Special Events, Fire Investigation, Weed/ Fire Hazard Abatement",2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:46:14.907966
+110,694,Flammable or Combustible Liquid Tank  - Installation or Removel (Above Ground or Underground),2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:46:14.910946
+111,695,Residential Fire Sprinklers (New Buildings),2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:46:14.914934
+112,696,Flood Elevation Certificate,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:46:28.327556
+113,697,Flood Management Fee,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:46:28.333539
+114,698,Flood Plain Substantial Improvement Determination,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:46:28.335535
+115,699,Flood Zone Determination Fee,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:46:28.337531
+116,636,"Alternative Energy; Wind Turbine, Methane Gas Conversion, Agricultural Crop Conversion For Bio-Fuels, Etc.",2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.135097
+117,637,Approved Fireplace Insert,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.144057
+118,629,"Building Permit Fee - Tier 1 - $1-$10,000 Valuation",2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.147047
+119,630,"Building Permit Fee - Tier 2 - $10,001-$25,000 Valuation",2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.148046
+120,631,"Building Permit Fee - Tier 3 - $25,001-$50,000 Valuation",2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.150041
+121,632,"Building Permit Fee - Tier 4 - $50,001-$100,000 Valuation",2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.152047
+122,633,"Building Permit Fee - Tier 5 - $100,001-$500,000 Valuation",2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.154028
+123,634,"Building Permit Fee - Tier 6 - $500,001-$1,000,000 Valuation",2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.155028
+124,635,"Building Permit Fee - Tier 7 - $1,000,001+ Valuation",2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.157022
+125,638,Business Site Inspection,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.159017
+126,639,"Cellular Tower, Co-location",2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.163004
+127,640,"Cellular Tower, Equipment container",2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.165001
+128,641,"Cellular Tower, Free Standing",2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.166994
+129,642,Certificate of Occupancy/Temporary Certificate of Occupancy,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.167992
+130,643,Commercial Pool and/or Spa,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.169986
+131,644,Demolition,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.171981
+132,645,Demolition of Swimming Pool,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.173977
+133,647,Disability Access: CASp,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.175971
+134,646,Disabled Access,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.177968
+135,648,E.P.A. Approved Freestanding Wood Stove,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.180956
+136,649,"Grading Inspection: 1 - 10,000 Cubic Yards",2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.182953
+137,650,"Grading Inspection: 10,001 - 100,000 Cubic Yards",2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.184948
+138,651,"Grading Inspection: 100,000+ Cubic Yards",2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.186961
+139,652,"HVAC Installation, Commercial: Furnace and/or A/C Condenser - over 3 units",2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.190934
+140,653,"HVAC Installation, Commercial: Furnace, A/C Condenser - up to 3 units",2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.192927
+141,654,"HVAC Installation, Residential: Furnace and/or A/C Condenser",2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.195916
+142,655,"Install, Alter, Add Services  and/or Sub-Panel - over 1,001 amps",2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.198909
+143,656,"Install, Alter, Add Services 0-325 amp/panel",2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.199907
+144,657,"Install, Alter, Add Services 325-1,000 amp/panel",2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.201902
+145,658,Manufactured Home Fee - Permit Inspection,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.203895
+146,659,Masonry fireplace with appliance insert,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.205901
+147,660,Moved Structure (In addition to permit fees),2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.207884
+148,661,"New/Replace Sign Rate Illuminated, Non-Illuminated Monument or Pole",2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.208883
+149,662,New/Replacement Building Sign Rate Illuminate or Non- Illuminated,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.210879
+150,663,Other Requested Inspections,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.213879
+151,664,Patio Cover Enclosed/Trellis,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.216865
+152,665,"Patio Deck, Uncovered",2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.219852
+153,666,"Photovoltaic/Solar System, Commercial - Ground mounted",2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.221847
+154,667,"Photovoltaic/Solar System, Commercial - Roof mounted",2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.223842
+155,668,"Photovoltaic/Solar System, Residential - Ground mounted",2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.224839
+156,669,"Photovoltaic/Solar System, Residential - Roof mounted",2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.227831
+157,670,Pool and/or Spa remodel,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.230823
+158,671,Propane Tank Installation,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.232818
+159,672,Re-Inspection Fee - 1.5 Hour Minimum,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.234813
+160,673,"Re-Roof (Residential, Commercial, Multi-Family)",2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.236808
+161,674,Site inspection,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.238802
+162,675,Solar Heating for Pool / Spa,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.240797
+163,676,Spa/Hot Tub Permit-Basic,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.243792
+164,677,Special inspection request and/or pre-construction meeting,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.246780
+165,678,Stucco/ Siding,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.249774
+166,679,Swimming Pool Permit-Residential,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.251768
+167,680,Temporary Electric,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.253763
+168,681,Temporary Gas,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.255757
+169,682,Temporary Occupancy,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.257752
+170,683,Water Heater Installation - up to 2 units,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.259747
+171,684,Window Installation and/or Replacement (Covers 1 Inspection),2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:20.262744
+172,625,Alternate Building Materials Requests,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:48.077787
+173,622,Cal Green,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:48.084750
+174,626,Expedited Plan Review,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:48.086744
+175,621,Permit Reviews and Requests,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:48.089736
+176,627,Plan Review Fee-Master plan development after model approval      (1 hr minimum),2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:48.091732
+177,620,Plan Review Fee-Single Family/Garages,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:48.094724
+178,628,Pre-Application Review,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:48.095722
+179,624,Soil review,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:48.097716
+180,623,Title 24 Review,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:48:48.098714
+181,810,Technology Recovery Fee,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:49:04.343540
+182,111,31-60 days overdue,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:49:31.156259
+183,112,61-90 days overdue,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:49:31.164242
+184,113,Administrative Citation,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:49:31.167234
+185,114,Administrative Citation Appeal Hearing Deposit,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:49:31.169227
+186,115,"Code Enforcement Hourly Rate-additional inspections, hearings (Min 1 hr.)",2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:49:31.171223
+187,116,Delinquent Account Referral Fee,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:49:31.173218
+188,117,Hearing Officer Hourly Rate,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:49:31.176210
+189,118,Initial Code Enforcement Investigation Fee,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:49:31.177207
+190,119,Notice of Violation,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:49:31.179202
+191,120,Zoning Violation Application (50%) of penalty),2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:49:31.183219
+192,14,County - Commercial,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:51:38.977038
+193,12,County - Industrial,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:51:38.983179
+194,10,County - Multi-family (2 or more),2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:51:38.985174
+195,13,County - Office,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:51:38.986170
+196,11,County - Single Family Housing,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:51:38.988166
+197,15,County - Warehouse,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:51:38.990160
+198,20,Davis - Commercial,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:51:38.992157
+199,18,Davis - Industrial,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:51:38.994150
+200,16,Davis - Multi-family (2 or more),2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:51:38.996143
+201,19,Davis - Office,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:51:38.997142
+202,17,Davis - Single Family Housing,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:51:38.999136
+203,21,Davis - Warehouse,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:51:39.001132
+204,26,West Sacramento - Commercial,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:51:39.004123
+205,24,West Sacramento - Industrial,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:51:39.005120
+206,22,West Sacramento - Multi-family (2 or more),2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:51:39.007123
+207,25,West Sacramento - Office,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:51:39.010111
+208,23,West Sacramento - Single Family Housing,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:51:39.012128
+209,27,West Sacramento - Warehouse,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:51:39.014137
+210,32,Winters - Commercial,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:51:39.016113
+211,30,Winters - Industrial,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:51:39.018086
+212,28,Winters - Multi-family (2 or more),2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:51:39.020080
+213,31,Winters - Office,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:51:39.022075
+214,29,Winters - Single Family Housing,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:51:39.023085
+215,33,Winters - Warehouse,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:51:39.025066
+216,38,Woodland - Commercial,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:51:39.028071
+217,36,Woodland - Industrial,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:51:39.029056
+218,34,Woodland - Multi-family (2 or more),2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:51:39.031051
+219,37,Woodland - Office,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:51:39.033045
+220,35,Woodland - Single Family Housing,2,"[{""changed"": {""fields"": [""Fee account""]}}]",9,20,2024-01-11 22:51:39.035040
+221,8,WM,1,"[{""added"": {}}]",58,20,2024-01-11 23:04:02.593100
+222,1,* Final Bldg,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.364353
+223,2,* Final C&D,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.369339
+224,3,* Final EH,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.371335
+225,4,* Final Fire,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.372332
+226,5,* Final PW,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.374326
+227,6,Arch.Insul.Ceiling,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.377319
+228,7,Arch.Insul.Floor,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.378317
+229,8,Arch.Insul.Rafters,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.380311
+230,9,Arch.Insul.RoofDeck,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.382305
+231,10,Arch.Insul.Wall.Cavity,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.383303
+232,11,Arch.Insul.Wall.Panels,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.385297
+233,12,Arch.Roofing,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.386294
+234,13,Arch.Siding,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.388289
+235,14,Arch.Stucco.Lath,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.389287
+236,15,Arch.Stucco.Scratch,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.390284
+237,16,Arch.Windows,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.392280
+238,17,Demo.1.Pre,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.394274
+239,18,Demo.2.Post,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.396268
+240,19,Elc.Battery,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.397265
+241,21,Elc.EV,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.398263
+242,20,Elc.Equipment,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.400257
+243,22,Elc.Final,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.401254
+244,23,Elc.FireAlarms,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.403249
+245,24,Elc.MeterRelease,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.404247
+246,25,Elc.Rough,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.406241
+247,26,Elc.Solar,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.407239
+248,27,Elc.Switchgear,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.408236
+249,28,Elc.Underground,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.410233
+250,29,Flood.EC2.LowestFloor,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.411228
+251,30,Flood.EC3.FinishedConstruction,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.413222
+252,31,Grading.Final,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.415218
+253,32,Grading.Lift/Progress,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.416215
+254,33,Grading.SitePrep,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.419206
+255,34,Mch.Final,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.420204
+256,37,Mch.HVAC,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.422199
+257,35,Mch.HoodT1,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.423196
+258,36,Mch.HoodT2,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.425191
+259,38,Mch.Rough,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.427185
+260,39,Plb.Final,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.429182
+261,40,Plb.Gas,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.430177
+262,41,Plb.Rough,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.432172
+263,42,Plb.Underground,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.433169
+264,43,Plb.WH.Gas,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.435164
+265,44,Plb.WH.HeatPump,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.436161
+266,45,Plb.WH.Solar,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.438156
+267,46,Pool.HotTub,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.439153
+268,47,Pool.PreDeck,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.441148
+269,48,Pool.PreGunite,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.443147
+270,49,Pool.PrePlaster,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.445138
+271,50,Reroof.1.RoofDeck,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.446135
+272,51,Reroof.2.Final,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.448129
+273,52,Str.Conc.Footings/Piers,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.449128
+274,53,Str.Conc.Slab,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.452119
+275,54,Str.Conc.Walls,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.453117
+276,55,Str.GypsumNailing,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.455111
+277,56,Str.Mason.1.Footing,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.456108
+278,57,Str.Mason.2.Lift,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.458107
+279,58,Str.Mason.3.Cap,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.460100
+280,59,Str.Wood.1.Subfloor,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.462103
+281,60,Str.Wood.2.Shear&RoofDeck,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.464087
+282,61,Str.Wood.3.Frame,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.466091
+283,62,T25.1.Anchoring/Setup,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.467079
+284,63,T25.3.Marriage/Utilities,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.469073
+285,64,T25.5.Egress,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.470071
+286,65,T25.6.DisabledAccess,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.472065
+287,66,T25.7.Final,2,"[{""changed"": {""fields"": [""Division"", ""Default inspector""]}}]",17,20,2024-01-11 23:09:28.473062
+288,1,* Final Bldg,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:49.940776
+289,4,* Final Fire,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:49.951748
+290,6,Arch.Insul.Ceiling,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:49.952745
+291,7,Arch.Insul.Floor,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:49.954739
+292,8,Arch.Insul.Rafters,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:49.956733
+293,9,Arch.Insul.RoofDeck,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:49.958729
+294,10,Arch.Insul.Wall.Cavity,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:49.959726
+295,11,Arch.Insul.Wall.Panels,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:49.963401
+296,12,Arch.Roofing,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:49.965394
+297,13,Arch.Siding,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:49.966411
+298,14,Arch.Stucco.Lath,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:49.968386
+299,15,Arch.Stucco.Scratch,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:49.969421
+300,16,Arch.Windows,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:49.970421
+301,17,Demo.1.Pre,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:49.972413
+302,18,Demo.2.Post,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:49.973410
+303,19,Elc.Battery,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:49.974409
+304,21,Elc.EV,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:49.975412
+305,20,Elc.Equipment,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:49.977401
+306,22,Elc.Final,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:49.978399
+307,23,Elc.FireAlarms,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:49.979395
+308,24,Elc.MeterRelease,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:49.982392
+309,25,Elc.Rough,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:49.984386
+310,26,Elc.Solar,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:49.987375
+311,27,Elc.Switchgear,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:49.989369
+312,28,Elc.Underground,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:49.990354
+313,29,Flood.EC2.LowestFloor,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:49.991352
+314,30,Flood.EC3.FinishedConstruction,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:49.993348
+315,31,Grading.Final,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:49.994343
+316,32,Grading.Lift/Progress,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:49.995341
+317,33,Grading.SitePrep,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:49.998306
+318,34,Mch.Final,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:49.999304
+319,37,Mch.HVAC,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.001300
+320,35,Mch.HoodT1,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.003321
+321,36,Mch.HoodT2,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.004318
+322,38,Mch.Rough,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.005315
+323,39,Plb.Final,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.007310
+324,40,Plb.Gas,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.008307
+325,41,Plb.Rough,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.009304
+326,42,Plb.Underground,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.010302
+327,43,Plb.WH.Gas,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.012297
+328,44,Plb.WH.HeatPump,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.014283
+329,45,Plb.WH.Solar,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.016258
+330,46,Pool.HotTub,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.017255
+331,47,Pool.PreDeck,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.019250
+332,48,Pool.PreGunite,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.020247
+333,49,Pool.PrePlaster,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.021245
+334,50,Reroof.1.RoofDeck,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.024236
+335,51,Reroof.2.Final,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.025234
+336,52,Str.Conc.Footings/Piers,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.026231
+337,53,Str.Conc.Slab,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.030222
+338,54,Str.Conc.Walls,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.032215
+339,55,Str.GypsumNailing,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.033212
+340,56,Str.Mason.1.Footing,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.035207
+341,57,Str.Mason.2.Lift,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.036204
+342,58,Str.Mason.3.Cap,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.038227
+343,59,Str.Wood.1.Subfloor,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.039225
+344,60,Str.Wood.2.Shear&RoofDeck,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.041191
+345,61,Str.Wood.3.Frame,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.042189
+346,62,T25.1.Anchoring/Setup,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.044184
+347,63,T25.3.Marriage/Utilities,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.046180
+348,64,T25.5.Egress,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.049170
+349,65,T25.6.DisabledAccess,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.051165
+350,66,T25.7.Final,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.052189
+351,3,* Final EH,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.054196
+352,2,* Final C&D,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.055188
+353,5,* Final PW,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:14:50.057186
+354,1,* Final Bldg,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:15:30.547902
+355,4,* Final Fire,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:15:30.553898
+356,3,* Final EH,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:15:30.554876
+357,2,* Final C&D,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:15:30.556870
+358,5,* Final PW,2,"[{""changed"": {""fields"": [""Inspection group""]}}]",17,20,2024-01-11 23:15:30.557867
+359,1,Bldg,2,"[{""changed"": {""fields"": [""Inspection group"", ""Inspection type""]}}]",17,20,2024-01-11 23:26:54.155722
+360,4,Fire,2,"[{""changed"": {""fields"": [""Inspection group"", ""Inspection type""]}}]",17,20,2024-01-11 23:26:54.162689
+361,3,EH,2,"[{""changed"": {""fields"": [""Inspection group"", ""Inspection type""]}}]",17,20,2024-01-11 23:26:54.164682
+362,2,C&D,2,"[{""changed"": {""fields"": [""Inspection group"", ""Inspection type""]}}]",17,20,2024-01-11 23:26:54.166678
+363,5,PW,2,"[{""changed"": {""fields"": [""Inspection group"", ""Inspection type""]}}]",17,20,2024-01-11 23:26:54.168672
+364,6,Insulation (Ceiling),2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.170665
+365,7,Insulation (Floor),2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.172660
+366,8,Insulation (Rafters),2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.174655
+367,9,Insulation (Roof Deck),2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.176649
+368,10,Insulation (Wall Cavity),2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.178644
+369,11,Insulation (Wall Panels),2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.179670
+370,12,Roofing,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.182634
+371,13,Siding,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.184628
+372,14,Stucco / Lath,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.186654
+373,15,Stucco / Scratch,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.188623
+374,16,Windows,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.190612
+375,50,Reroof 1 Roof Deck,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.193607
+376,51,Reroof 2 Final,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.195600
+377,52,Concrete Footings/Piers,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.197613
+378,53,Concrete Slab,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.199607
+379,54,Concrete Walls,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.201585
+380,55,Gypsum Board Nailing,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.203598
+381,56,Masonry 1 Footing,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.205574
+382,57,Masonry 2 Lift,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.207566
+383,58,Masonry 3 Cap,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.209562
+384,59,Wood 1 Subfloor,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.211555
+385,60,Wood 2 Shear & Roof Deck,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.213551
+386,61,Wood 3 Frame,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.215546
+387,62,Manufactured Home 1 Anchoring/Setup,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.217543
+388,63,Manufactured Home 3 Marriage/Utilities,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.219536
+389,64,Commercial Coach Egress,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.221531
+390,65,Commercial Coach Disabled Access,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.223525
+391,66,Commercial Coach Final,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.225519
+392,17,Demolition 1 Pre-Measure and Utility Disconnect,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.227514
+393,18,Demolition 2 Final,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.229509
+394,19,Battery Backup (Residential),2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.231502
+395,21,Electrical Vehicle (EV) Charging Station,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.233499
+396,20,Equipment,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.235494
+397,22,Final Electrical,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.238483
+398,23,Fire Alarms,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.241477
+399,24,Meter Release,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.243472
+400,25,Rough Electrical,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.245467
+401,26,Solar Photovoltaic (PV),2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.247462
+402,27,Switchgear,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.249469
+403,28,Underground Electrical,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.251450
+404,29,EC2 Lowest Floor Elevation,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.254441
+405,30,EC3 Finished Construction,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.256438
+406,31,Final,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.259427
+407,32,Lifts / Progress,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.261422
+408,33,Site Prep,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.263418
+409,34,Final Mechanical,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.266412
+410,37,HVAC,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.267408
+411,35,Hood (Type 1),2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.270400
+412,36,Hood (Type 2),2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.273390
+413,38,Rough Mechanical,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.275384
+414,39,Final Plumbing,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.276381
+415,40,Gas,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.278376
+416,41,Rough Plumbing,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.280370
+417,42,Underground Plumbing,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.281368
+418,43,Water Heater (Gas),2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.282365
+419,44,Water Heater (Heat Pump),2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.284359
+420,45,Water Heater (Solar),2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.286355
+421,46,Hot Tub,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.288350
+422,47,Pool 2 Pre-Deck,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.290352
+423,48,Pool 1 Pre-Gunite,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.293338
+424,49,Pool 3 Pre-Plaster,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:26:54.294335
+425,1,Int. Waste,1,"[{""added"": {}}]",71,20,2024-01-11 23:34:18.476109
+426,2,Env. Health,1,"[{""added"": {}}]",71,20,2024-01-11 23:34:24.530897
+427,3,Public Works,1,"[{""added"": {}}]",71,20,2024-01-11 23:34:33.445054
+428,4,Building: Electrical,1,"[{""added"": {}}]",71,20,2024-01-11 23:34:51.395756
+429,5,Building: Mechanical,1,"[{""added"": {}}]",71,20,2024-01-11 23:34:58.083065
+430,6,Building: Plumbing,1,"[{""added"": {}}]",71,20,2024-01-11 23:35:08.404233
+431,7,Building: Structural,1,"[{""added"": {}}]",71,20,2024-01-11 23:35:23.572802
+432,8,Building: CALGree/Energy,1,"[{""added"": {}}]",71,20,2024-01-11 23:35:46.965838
+433,9,Building: Manufactured Home,1,"[{""added"": {}}]",71,20,2024-01-11 23:35:58.320339
+434,10,Building Commercial Coach,1,"[{""added"": {}}]",71,20,2024-01-11 23:36:07.160928
+435,11,Building: Flood,1,"[{""added"": {}}]",71,20,2024-01-11 23:36:14.725383
+436,12,Building: Fire,1,"[{""added"": {}}]",71,20,2024-01-11 23:36:20.516679
+437,13,Fire District,1,"[{""added"": {}}]",71,20,2024-01-11 23:36:26.801556
+438,14,Building: Disabled Access,1,"[{""added"": {}}]",71,20,2024-01-11 23:36:42.503074
+439,10,Building: Commercial Coach,2,"[{""changed"": {""fields"": [""Group""]}}]",71,20,2024-01-11 23:36:50.550655
+440,15,Demolition,1,"[{""added"": {}}]",71,20,2024-01-11 23:43:12.529570
+441,19,Battery Backup (Residential),2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:43:33.449368
+442,2,C&D,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:43:33.456351
+443,65,Commercial Coach Disabled Access,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:43:33.458345
+444,64,Commercial Coach Egress,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:43:33.460340
+445,66,Commercial Coach Final,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:43:33.462333
+446,52,Concrete Footings/Piers,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:43:33.463330
+447,53,Concrete Slab,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:43:33.465325
+448,54,Concrete Walls,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:43:33.469314
+449,17,Demolition 1 Pre-Measure and Utility Disconnect,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:43:33.471309
+450,16,Building (Nonstructural),1,"[{""added"": {}}]",71,20,2024-01-11 23:44:22.054702
+451,16,Building: Nonstructural,2,"[{""changed"": {""fields"": [""Group""]}}]",71,20,2024-01-11 23:44:40.339035
+452,17,Building: Grading,1,"[{""added"": {}}]",71,20,2024-01-11 23:46:00.483336
+453,18,Building: Pool,1,"[{""added"": {}}]",71,20,2024-01-11 23:46:38.044714
+454,49,Pool 3 Pre-Plaster,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:46:48.927898
+455,50,Reroof 1 Roof Deck,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:46:48.935877
+456,51,Reroof 2 Final,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:46:48.937871
+457,12,Roofing,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:46:48.939866
+458,25,Rough Electrical,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:46:48.941861
+459,38,Rough Mechanical,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:46:48.942858
+460,41,Rough Plumbing,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:46:48.944853
+461,13,Siding,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:46:48.946848
+462,33,Site Prep,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:46:48.948841
+463,26,Solar Photovoltaic (PV),2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:46:48.950837
+464,14,Stucco / Lath,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:46:48.952831
+465,15,Stucco / Scratch,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:46:48.954826
+466,27,Switchgear,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:46:48.955823
+467,28,Underground Electrical,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:46:48.957818
+468,42,Underground Plumbing,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:46:48.959813
+469,43,Water Heater (Gas),2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:46:48.961805
+470,44,Water Heater (Heat Pump),2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:46:48.963800
+471,45,Water Heater (Solar),2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:46:48.965795
+472,16,Windows,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:46:48.969787
+473,59,Wood 1 Subfloor,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:46:48.971781
+474,60,Wood 2 Shear & Roof Deck,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:46:48.972776
+475,61,Wood 3 Frame,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:46:48.975770
+476,15,Building: Demolition,2,"[{""changed"": {""fields"": [""Group""]}}]",71,20,2024-01-11 23:47:13.692137
+477,18,Demolition 2 Final,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:49:38.925769
+478,29,EC2 Lowest Floor Elevation,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:49:38.932749
+479,30,EC3 Finished Construction,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:49:38.934744
+480,3,EH,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:49:38.936738
+481,21,Electrical Vehicle (EV) Charging Station,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:49:38.938732
+482,22,Final Electrical,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:49:38.940734
+483,34,Final Mechanical,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:49:38.942723
+484,39,Final Plumbing,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:49:38.944721
+485,4,Fire,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:49:38.946711
+486,23,Fire Alarms,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:49:38.948707
+487,40,Gas,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:49:38.950701
+488,55,Gypsum Board Nailing,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:49:38.955688
+489,37,HVAC,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:49:38.957683
+490,35,Hood (Type 1),2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:49:38.960674
+491,36,Hood (Type 2),2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:49:38.965662
+492,46,Hot Tub,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:49:38.968654
+493,6,Insulation (Ceiling),2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:49:38.971645
+494,7,Insulation (Floor),2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:49:38.973640
+495,8,Insulation (Rafters),2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:49:38.975634
+496,9,Insulation (Roof Deck),2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:49:38.977630
+497,10,Insulation (Wall Cavity),2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:49:38.979624
+498,11,Insulation (Wall Panels),2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:49:38.980621
+499,32,Lifts / Progress,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:49:38.982615
+500,62,Manufactured Home 1 Anchoring/Setup,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:49:38.984611
+501,63,Manufactured Home 3 Marriage/Utilities,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:49:38.987603
+502,56,Masonry 1 Footing,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:49:38.989597
+503,57,Masonry 2 Lift,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:49:38.992589
+504,58,Masonry 3 Cap,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:49:38.994584
+505,24,Meter Release,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:49:38.995581
+506,5,PW,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:49:38.997575
+507,48,Pool 1 Pre-Gunite,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:49:38.999570
+508,47,Pool 2 Pre-Deck,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:49:39.001565
+509,19,** PERMIT FINAL **,1,"[{""added"": {}}]",71,20,2024-01-11 23:50:01.449114
+510,31,** PERMIT FINAL **,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-11 23:50:26.735791
+511,1,Final Building,2,"[{""changed"": {""fields"": [""Insp group"", ""Inspection type""]}}]",17,20,2024-01-11 23:51:09.260324
+512,31,** PERMIT FINAL **,2,"[{""changed"": {""fields"": [""Inspection checklist""]}}]",17,20,2024-01-11 23:54:25.702728
+513,1,Final Building,2,"[{""changed"": {""fields"": [""Inspection checklist""]}}]",17,20,2024-01-11 23:56:35.335960
+514,31,** PERMIT FINAL **,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:57:34.853223
+515,1,Final Building,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:57:34.861204
+516,22,Final Electrical,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:57:34.863199
+517,34,Final Mechanical,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:57:34.865193
+518,39,Final Plumbing,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:57:34.866191
+519,19,_Finals,2,"[{""changed"": {""fields"": [""Group""]}}]",71,20,2024-01-11 23:57:51.808589
+520,20,Equipment,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-11 23:59:00.566666
+521,19,* Finals,2,"[{""changed"": {""fields"": [""Group""]}}]",71,20,2024-01-11 23:59:41.871017
+522,5,PW,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-12 00:01:56.869390
+523,3,EH,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-12 00:02:11.094704
+524,2,C&D,2,"[{""changed"": {""fields"": [""Insp group""]}}]",17,20,2024-01-12 00:02:18.683297
+525,5,Final Public Works,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-12 00:02:53.223136
+526,3,Final Env. Health,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-12 00:03:09.670894
+527,2,Final C&D,2,"[{""changed"": {""fields"": [""Inspection type""]}}]",17,20,2024-01-12 00:03:20.651402
+528,67,Final Fire District,1,"[{""added"": {}}]",17,20,2024-01-12 00:03:46.990328

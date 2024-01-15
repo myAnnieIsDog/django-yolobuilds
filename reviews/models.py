@@ -4,9 +4,8 @@ placed there to prevent a circular reference to the Permit model. """
 ##########################################################################
 from django.db import models
 from fees.models import FeeType
-from permits.models import Division, Permit
-from profiles.models import User
-
+from profiles.models import Division, User
+from records.models import Record
 
 class ReviewType(models.Model): 
     review_division = models.ForeignKey(
@@ -28,6 +27,7 @@ class ReviewType(models.Model):
         return self.review_type
 
     class Meta():
+        ordering = ["review_division", "review_type"]
         verbose_name = "Review Type"
         verbose_name_plural = "Review Types"
 
@@ -41,12 +41,13 @@ class ReviewStatus(models.Model):
         return self.status
 
     class Meta():
+        ordering = ["status"]
         verbose_name = "Review Status Option"
         verbose_name_plural = "Review Status Options"
 
 
 class Review(models.Model):
-    permit = models.ForeignKey(Permit, on_delete=models.PROTECT) 
+    record = models.ForeignKey(Record, on_delete=models.PROTECT) 
     type = models.ForeignKey(ReviewType, on_delete=models.PROTECT)   
     status = models.ForeignKey(ReviewStatus, on_delete=models.PROTECT)
     coa = models.TextField("Conditions of Approval", max_length=255)  
@@ -56,8 +57,10 @@ class Review(models.Model):
     staff_time_actual = models.DecimalField(max_digits=7, decimal_places=1)
 
     def __str__(self) -> str:
-        return f"{self.permit.number} {self.type.review_type}"
+        return f"{self.record.number} {self.type.review_type}"
 
+    class Meta:
+        ordering = ["record", "type", "status"]
 
 class CycleResult(models.Model):
     result = models.CharField(max_length=55)
@@ -68,6 +71,7 @@ class CycleResult(models.Model):
         return self.result
     
     class Meta():
+        ordering = ["result"]
         verbose_name = "Cycle Result Option"
         verbose_name_plural = "Cycle Result Options"
 
@@ -96,6 +100,7 @@ class ReviewCycle(models.Model):
         return f"{self.cycle}"
     
     class Meta():
+        ordering = ["review"]
         verbose_name = "Review Cycle"
         verbose_name_plural = "Review Cycles"
 

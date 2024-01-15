@@ -1,0 +1,137 @@
+[
+    {
+        "city": "Woodland",
+        "id": 1,
+        "zip": "95695"
+    },
+    {
+        "city": "Woodland",
+        "id": 2,
+        "zip": "95776"
+    },
+    {
+        "city": "Davis",
+        "id": 3,
+        "zip": "95616"
+    },
+    {
+        "city": "Davis",
+        "id": 4,
+        "zip": "95617"
+    },
+    {
+        "city": "Davis",
+        "id": 5,
+        "zip": "95618"
+    },
+    {
+        "city": "Winters",
+        "id": 6,
+        "zip": "95694"
+    },
+    {
+        "city": "West Sacramento",
+        "id": 7,
+        "zip": "95605"
+    },
+    {
+        "city": "West Sacramento",
+        "id": 8,
+        "zip": "95691"
+    },
+    {
+        "city": "West Sacramento",
+        "id": 9,
+        "zip": "95798"
+    },
+    {
+        "city": "West Sacramento",
+        "id": 10,
+        "zip": "95799"
+    },
+    {
+        "city": "West Sacramento",
+        "id": 11,
+        "zip": "95899"
+    },
+    {
+        "city": "Brooks",
+        "id": 13,
+        "zip": "95606"
+    },
+    {
+        "city": "Esparto",
+        "id": 14,
+        "zip": "95607"
+    },
+    {
+        "city": "Clarksburg",
+        "id": 15,
+        "zip": "95612"
+    },
+    {
+        "city": "El Macero",
+        "id": 16,
+        "zip": "95618"
+    },
+    {
+        "city": "Capay",
+        "id": 17,
+        "zip": "95607"
+    },
+    {
+        "city": "Bryte",
+        "id": 18,
+        "zip": "95605"
+    },
+    {
+        "city": "Broderick",
+        "id": 19,
+        "zip": "95605"
+    },
+    {
+        "city": "Esparto",
+        "id": 20,
+        "zip": "95627"
+    },
+    {
+        "city": "Guinda",
+        "id": 21,
+        "zip": "95637"
+    },
+    {
+        "city": "Knights Landing",
+        "id": 22,
+        "zip": "95645"
+    },
+    {
+        "city": "Madison",
+        "id": 23,
+        "zip": "95653"
+    },
+    {
+        "city": "Rumsey",
+        "id": 24,
+        "zip": "95679"
+    },
+    {
+        "city": "West Sacramento",
+        "id": 25,
+        "zip": "95691"
+    },
+    {
+        "city": "Yolo",
+        "id": 26,
+        "zip": "95697"
+    },
+    {
+        "city": "Zamora",
+        "id": 27,
+        "zip": "95698"
+    },
+    {
+        "city": "Dunnigan",
+        "id": 28,
+        "zip": "95937"
+    }
+]

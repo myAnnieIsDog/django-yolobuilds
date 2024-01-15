@@ -1,0 +1,78 @@
+[
+    {
+        "group": "Int. Waste",
+        "id": 1
+    },
+    {
+        "group": "Env. Health",
+        "id": 2
+    },
+    {
+        "group": "Public Works",
+        "id": 3
+    },
+    {
+        "group": "Building: Electrical",
+        "id": 4
+    },
+    {
+        "group": "Building: Mechanical",
+        "id": 5
+    },
+    {
+        "group": "Building: Plumbing",
+        "id": 6
+    },
+    {
+        "group": "Building: Structural",
+        "id": 7
+    },
+    {
+        "group": "Building: CALGree/Energy",
+        "id": 8
+    },
+    {
+        "group": "Building: Manufactured Home",
+        "id": 9
+    },
+    {
+        "group": "Building: Commercial Coach",
+        "id": 10
+    },
+    {
+        "group": "Building: Flood",
+        "id": 11
+    },
+    {
+        "group": "Building: Fire",
+        "id": 12
+    },
+    {
+        "group": "Fire District",
+        "id": 13
+    },
+    {
+        "group": "Building: Disabled Access",
+        "id": 14
+    },
+    {
+        "group": "Building: Demolition",
+        "id": 15
+    },
+    {
+        "group": "Building: Nonstructural",
+        "id": 16
+    },
+    {
+        "group": "Building: Grading",
+        "id": 17
+    },
+    {
+        "group": "Building: Pool",
+        "id": 18
+    },
+    {
+        "group": "* Finals",
+        "id": 19
+    }
+]

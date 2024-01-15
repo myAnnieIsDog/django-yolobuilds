@@ -24,6 +24,10 @@ class District(models.Model):
     def __str__(self) -> str:
         return f"{self.district} {self.dist_type}"
 
+    class Meta:
+        ordering = ["district"]
+        verbose_name = "District"
+        verbose_name_plural = "Districts"
 
 class Jurisdiction(models.Model): 
     jurisdiction = models.CharField(max_length=55)
@@ -31,6 +35,10 @@ class Jurisdiction(models.Model):
     def __str__(self) -> str:
         return f"{self.jurisdiction}"
 
+    class Meta:
+        ordering = ["jurisdiction"]
+        verbose_name = "Jurisdiction"
+        verbose_name_plural = "Jurisdictions"
 
 
 ##########################################################################
@@ -77,6 +85,11 @@ class Parcel(models.Model):
 
     def __str__(self) -> str:
         return f"{self.book}-{self.page}-{self.parcel}"
+    
+    class Meta:
+        ordering = ["book", "page", "parcel"]
+        verbose_name = "Parcel"
+        verbose_name_plural = "Parcels"
 
 ##########################################################################
 """ Address Model """
@@ -90,6 +103,7 @@ class CityStZip(models.Model):
         return f"{self.city}, {self.state} {self.zip}" 
     
     class Meta:
+        ordering = ["city", "zip"]
         verbose_name = "City, State Zip"
         verbose_name_plural = "City, State Zip"
 
@@ -103,9 +117,10 @@ class SiteAddress(models.Model):
     geolocation = models.CharField(max_length=50, null=True, blank=True)
 
     def __str__(self) -> str:
-        return f"{self.number} {self.street}"
+        return f"{self.number} {self.street} {self.city_st_zip}"
     
     class Meta:
+        ordering = ["number", "street", "city_st_zip"]
         verbose_name = "Site Address"
         verbose_name_plural = "Site Addresses"
 

@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "method": "Cash",
+        "policy": "For all cash payments. Must be exact change. Do not split a single fee into multiple payments."
+    },
+    {
+        "id": 2,
+        "method": "Check",
+        "policy": "For checks received at the front counter or through the mail. Do not split a single fee into multiple payments."
+    },
+    {
+        "id": 3,
+        "method": "Credit Card - Counter",
+        "policy": "For card transactions at the front counter. Do not split a single fee into multiple payments."
+    },
+    {
+        "id": 4,
+        "method": "Credit Card - Online",
+        "policy": "For online card transactions. Do not split a single fee into multiple payments."
+    },
+    {
+        "id": 5,
+        "method": "Internal Billing",
+        "policy": "For projects on Yolo County property. Do not split a single fee into multiple payments."
+    },
+    {
+        "id": 6,
+        "method": "Refund",
+        "policy": "All refunds must be approved by management and fiscal."
+    }
+]

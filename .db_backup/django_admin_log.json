@@ -1,0 +1,5262 @@
+[
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 04:18:45.085880",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 3,
+        "id": 3,
+        "object_id": "1",
+        "object_repr": "Building",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 04:18:50.695204",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 3,
+        "id": 4,
+        "object_id": "2",
+        "object_repr": "Plannnig",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 04:18:55.449999",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 3,
+        "id": 5,
+        "object_id": "3",
+        "object_repr": "Public Works",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 04:19:04.209179",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 3,
+        "id": 6,
+        "object_id": "4",
+        "object_repr": "Review and Inspection Only",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 04:22:51.253176",
+        "change_message": "[{\"changed\": {\"fields\": [\"Permissions\"]}}]",
+        "content_type_id": 3,
+        "id": 7,
+        "object_id": "1",
+        "object_repr": "Building",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 04:23:25.106136",
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]",
+        "content_type_id": 4,
+        "id": 8,
+        "object_id": "1",
+        "object_repr": "aespinoza",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 04:23:39.570145",
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]",
+        "content_type_id": 4,
+        "id": 9,
+        "object_id": "2",
+        "object_repr": "ayepez",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 04:24:25.541235",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 3,
+        "id": 10,
+        "object_id": "5",
+        "object_repr": "Admin",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 04:24:41.881921",
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]",
+        "content_type_id": 4,
+        "id": 11,
+        "object_id": "3",
+        "object_repr": "cmendoza",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 04:24:49.738968",
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]",
+        "content_type_id": 4,
+        "id": 12,
+        "object_id": "4",
+        "object_repr": "ctschudin",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 04:24:55.769032",
+        "change_message": "[]",
+        "content_type_id": 4,
+        "id": 13,
+        "object_id": "4",
+        "object_repr": "ctschudin",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 04:25:04.256220",
+        "change_message": "[]",
+        "content_type_id": 4,
+        "id": 14,
+        "object_id": "5",
+        "object_repr": "danderson",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 04:25:24.811136",
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]",
+        "content_type_id": 4,
+        "id": 15,
+        "object_id": "6",
+        "object_repr": "dkoranda",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 04:25:32.371924",
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]",
+        "content_type_id": 4,
+        "id": 16,
+        "object_id": "5",
+        "object_repr": "danderson",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 04:25:42.000540",
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]",
+        "content_type_id": 4,
+        "id": 17,
+        "object_id": "7",
+        "object_repr": "jacevedo",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 04:25:49.318396",
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]",
+        "content_type_id": 4,
+        "id": 18,
+        "object_id": "8",
+        "object_repr": "janderson",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 04:25:57.148587",
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]",
+        "content_type_id": 4,
+        "id": 19,
+        "object_id": "9",
+        "object_repr": "jbautisa",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 04:26:09.374307",
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]",
+        "content_type_id": 4,
+        "id": 20,
+        "object_id": "10",
+        "object_repr": "jhuang",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 04:26:19.205477",
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]",
+        "content_type_id": 4,
+        "id": 21,
+        "object_id": "11",
+        "object_repr": "jpimentel-morra",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 04:26:26.657436",
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]",
+        "content_type_id": 4,
+        "id": 22,
+        "object_id": "12",
+        "object_repr": "jtrebec",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 04:26:34.081180",
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]",
+        "content_type_id": 4,
+        "id": 23,
+        "object_id": "13",
+        "object_repr": "jvanhorn",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 04:26:44.166517",
+        "change_message": "[{\"changed\": {\"fields\": [\"Email address\", \"Groups\"]}}]",
+        "content_type_id": 4,
+        "id": 24,
+        "object_id": "14",
+        "object_repr": "mfarhoudi",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 04:27:03.596718",
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]",
+        "content_type_id": 4,
+        "id": 25,
+        "object_id": "15",
+        "object_repr": "mnardiello",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 04:27:22.569921",
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]",
+        "content_type_id": 4,
+        "id": 26,
+        "object_id": "3",
+        "object_repr": "cmendoza",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 04:27:29.595519",
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]",
+        "content_type_id": 4,
+        "id": 27,
+        "object_id": "7",
+        "object_repr": "jacevedo",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 04:28:14.272065",
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]",
+        "content_type_id": 4,
+        "id": 28,
+        "object_id": "20",
+        "object_repr": "sdoolittle",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 04:28:22.640689",
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]",
+        "content_type_id": 4,
+        "id": 29,
+        "object_id": "17",
+        "object_repr": "scastagnola",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 04:28:32.403947",
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]",
+        "content_type_id": 4,
+        "id": 30,
+        "object_id": "18",
+        "object_repr": "scormier",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 04:28:43.821266",
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]",
+        "content_type_id": 4,
+        "id": 31,
+        "object_id": "27",
+        "object_repr": "tgonzalez",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 04:29:37.688043",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 3,
+        "id": 32,
+        "object_id": "6",
+        "object_repr": "Fiscal",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 04:29:40.938932",
+        "change_message": "[{\"changed\": {\"fields\": [\"Email address\", \"Groups\"]}}]",
+        "content_type_id": 4,
+        "id": 33,
+        "object_id": "23",
+        "object_repr": "smiliren",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 04:29:54.022299",
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]",
+        "content_type_id": 4,
+        "id": 34,
+        "object_id": "21",
+        "object_repr": "sjeet",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 04:30:04.850957",
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]",
+        "content_type_id": 4,
+        "id": 35,
+        "object_id": "16",
+        "object_repr": "phedrick",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 04:30:13.710809",
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]",
+        "content_type_id": 4,
+        "id": 36,
+        "object_id": "19",
+        "object_repr": "sdawley",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 04:30:22.528685",
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]",
+        "content_type_id": 4,
+        "id": 37,
+        "object_id": "22",
+        "object_repr": "slee",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 04:30:36.563498",
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]",
+        "content_type_id": 4,
+        "id": 38,
+        "object_id": "3",
+        "object_repr": "cmendoza",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 04:30:54.188642",
+        "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]",
+        "content_type_id": 4,
+        "id": 39,
+        "object_id": "14",
+        "object_repr": "mfarhoudi",
+        "user_id": 20
+    },
+    {
+        "action_flag": 3,
+        "action_time": "2024-01-11 04:31:38.218249",
+        "change_message": "",
+        "content_type_id": 3,
+        "id": 40,
+        "object_id": "5",
+        "object_repr": "Admin",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 04:34:34.431045",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 20,
+        "id": 41,
+        "object_id": "1",
+        "object_repr": "111-222-333",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 04:34:50.635917",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 20,
+        "id": 42,
+        "object_id": "2",
+        "object_repr": "222-333-444",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 04:35:05.646546",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 20,
+        "id": 43,
+        "object_id": "3",
+        "object_repr": "333-444-555",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 04:35:26.415811",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 20,
+        "id": 44,
+        "object_id": "4",
+        "object_repr": "444-555-666",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 04:36:00.006852",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 21,
+        "id": 45,
+        "object_id": "1",
+        "object_repr": "12345CR 98",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 04:36:13.054454",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 21,
+        "id": 46,
+        "object_id": "2",
+        "object_repr": "54321CR 0",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 04:36:22.368360",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 21,
+        "id": 47,
+        "object_id": "3",
+        "object_repr": "12345CR 98",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 04:36:54.187062",
+        "change_message": "[{\"changed\": {\"fields\": [\"Related\"]}}]",
+        "content_type_id": 20,
+        "id": 48,
+        "object_id": "3",
+        "object_repr": "333-444-555",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 04:37:03.978240",
+        "change_message": "[{\"changed\": {\"fields\": [\"Related\"]}}]",
+        "content_type_id": 20,
+        "id": 49,
+        "object_id": "1",
+        "object_repr": "111-222-333",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 14:59:39.010586",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 70,
+        "id": 50,
+        "object_id": "1",
+        "object_repr": "Woodland, CA 95695",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 14:59:58.466406",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 70,
+        "id": 51,
+        "object_id": "2",
+        "object_repr": "Woodland, CA 95776",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 15:00:25.997037",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 70,
+        "id": 52,
+        "object_id": "3",
+        "object_repr": "Davis, CA 95616",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 15:00:33.222421",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 70,
+        "id": 53,
+        "object_id": "4",
+        "object_repr": "Davis, CA 95617",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 15:00:40.233479",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 70,
+        "id": 54,
+        "object_id": "5",
+        "object_repr": "Davis, CA 95618",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 15:01:04.431395",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 70,
+        "id": 55,
+        "object_id": "6",
+        "object_repr": "Winters, CA 95694",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 15:01:28.758819",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 70,
+        "id": 56,
+        "object_id": "7",
+        "object_repr": "West Sacramento, CA 95605",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 15:01:34.888848",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 70,
+        "id": 57,
+        "object_id": "8",
+        "object_repr": "West Sacramento, CA 95691",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 15:01:41.399459",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 70,
+        "id": 58,
+        "object_id": "9",
+        "object_repr": "West Sacramento, CA 95798",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 15:01:51.297158",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 70,
+        "id": 59,
+        "object_id": "10",
+        "object_repr": "West Sacramento, CA 95799",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 15:01:58.635227",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 70,
+        "id": 60,
+        "object_id": "11",
+        "object_repr": "West Sacramento, CA 95899",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 15:02:36.881387",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 70,
+        "id": 61,
+        "object_id": "12",
+        "object_repr": "Bryte, CA 95605",
+        "user_id": 20
+    },
+    {
+        "action_flag": 3,
+        "action_time": "2024-01-11 15:02:55.729315",
+        "change_message": "",
+        "content_type_id": 70,
+        "id": 62,
+        "object_id": "12",
+        "object_repr": "Bryte, CA 95605",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 15:03:13.256239",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 70,
+        "id": 63,
+        "object_id": "13",
+        "object_repr": "Brooks, CA 95606",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 15:03:47.141406",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 70,
+        "id": 64,
+        "object_id": "14",
+        "object_repr": "Esparto, CA 95607",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 15:03:57.214819",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 70,
+        "id": 65,
+        "object_id": "15",
+        "object_repr": "Clarksburg, CA 95612",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 15:04:12.022677",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 70,
+        "id": 66,
+        "object_id": "16",
+        "object_repr": "El Macero, CA 95618",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 15:04:23.037394",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 70,
+        "id": 67,
+        "object_id": "17",
+        "object_repr": "Capay, CA 95607",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 15:04:31.002974",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 70,
+        "id": 68,
+        "object_id": "18",
+        "object_repr": "Bryte, CA 95605",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 15:04:38.888937",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 70,
+        "id": 69,
+        "object_id": "19",
+        "object_repr": "Broderick, CA 95605",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 15:04:50.648916",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 70,
+        "id": 70,
+        "object_id": "20",
+        "object_repr": "Esparto, CA 95627",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 15:05:00.385098",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 70,
+        "id": 71,
+        "object_id": "21",
+        "object_repr": "Guinda, CA 95637",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 15:05:11.128071",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 70,
+        "id": 72,
+        "object_id": "22",
+        "object_repr": "Knights Landing, CA 95645",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 15:05:18.626497",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 70,
+        "id": 73,
+        "object_id": "23",
+        "object_repr": "Madison, CA 95653",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 15:05:26.434944",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 70,
+        "id": 74,
+        "object_id": "24",
+        "object_repr": "Rumsey, CA 95679",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 15:05:39.370698",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 70,
+        "id": 75,
+        "object_id": "25",
+        "object_repr": "West Sacramento, CA 95691",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 15:05:54.364721",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 70,
+        "id": 76,
+        "object_id": "26",
+        "object_repr": "Yolo, CA 95697",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 15:06:01.032116",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 70,
+        "id": 77,
+        "object_id": "27",
+        "object_repr": "Zamora, CA 95698",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 15:06:12.118340",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 70,
+        "id": 78,
+        "object_id": "28",
+        "object_repr": "Dunnigan, CA 95937",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 15:07:19.481344",
+        "change_message": "[{\"changed\": {\"fields\": [\"City st zip\"]}}]",
+        "content_type_id": 21,
+        "id": 79,
+        "object_id": "3",
+        "object_repr": "12345 CR 98",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 15:07:26.133042",
+        "change_message": "[{\"changed\": {\"fields\": [\"City st zip\"]}}]",
+        "content_type_id": 21,
+        "id": 80,
+        "object_id": "2",
+        "object_repr": "54321 CR 0",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 15:07:34.839194",
+        "change_message": "[{\"changed\": {\"fields\": [\"City st zip\"]}}]",
+        "content_type_id": 21,
+        "id": 81,
+        "object_id": "1",
+        "object_repr": "12345 CR 98",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 15:08:24.912094",
+        "change_message": "[{\"changed\": {\"fields\": [\"Number\", \"Street\", \"City st zip\"]}}]",
+        "content_type_id": 21,
+        "id": 82,
+        "object_id": "1",
+        "object_repr": "292 W Beamer St",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 15:09:13.446061",
+        "change_message": "[{\"changed\": {\"fields\": [\"Street\"]}}]",
+        "content_type_id": 21,
+        "id": 83,
+        "object_id": "2",
+        "object_repr": "54321 Willowbank",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:45:06.671305",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 84,
+        "object_id": "603",
+        "object_repr": "California Building Standards Fee (State Pass-Through Fee)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:45:06.691248",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 85,
+        "object_id": "601",
+        "object_repr": "Strong Motion Instrumentation and Seismic Hazard Mapping (State Pass Through Fee) ($7 for Strong Motion Instrumentation and $3 for Seismic Hazard Mapp",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:45:50.484600",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 86,
+        "object_id": "605",
+        "object_repr": "Additional Time Spent for Activities not Listed on Fee List",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:45:50.490000",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 87,
+        "object_id": "606",
+        "object_repr": "Addressing Fee",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:45:50.491994",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 88,
+        "object_id": "607",
+        "object_repr": "Ag Exempt",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:45:50.492992",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 89,
+        "object_id": "608",
+        "object_repr": "Building Permit Application Fee",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:45:50.494987",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 90,
+        "object_id": "609",
+        "object_repr": "Building Permit Application Fee - Only for HVAC, Solar, Water Heater, or other small projects as determined by CBO",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:45:50.497020",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 91,
+        "object_id": "610",
+        "object_repr": "Building Permit Issuance Fee",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:45:50.498019",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 92,
+        "object_id": "611",
+        "object_repr": "Copy of Plans (non-standard sizes)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:45:50.500012",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 93,
+        "object_id": "612",
+        "object_repr": "Deferred Submittal Request",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:45:50.501010",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 94,
+        "object_id": "613",
+        "object_repr": "General Plan Cost Recovery (value $50,000 and under)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:45:50.503005",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 95,
+        "object_id": "614",
+        "object_repr": "General Plan Cost Recovery (value over $50,000)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:45:50.507018",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 96,
+        "object_id": "615",
+        "object_repr": "Permit Extension Request",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:45:50.508019",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 97,
+        "object_id": "616",
+        "object_repr": "Plan Check Extension Request",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:45:50.510017",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 98,
+        "object_id": "618",
+        "object_repr": "Re-Instate Permit Fee (validated)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:45:50.513005",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 99,
+        "object_id": "617",
+        "object_repr": "Records research",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:45:50.514002",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 100,
+        "object_id": "619",
+        "object_repr": "Returned Check Fee",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:46:14.887011",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 101,
+        "object_id": "685",
+        "object_repr": "Additional Fire Inspections",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:46:14.893989",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 102,
+        "object_id": "686",
+        "object_repr": "Additional Fire Plan Review (over 2 reviews)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:46:14.894987",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 103,
+        "object_id": "687",
+        "object_repr": "Commercial Kitchen Hood System / Special Systems",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:46:14.896981",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 104,
+        "object_id": "688",
+        "object_repr": "Commercial Sprinkler System - 201+ Sprinkler Heads (underground systems included, new systems only)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:46:14.897979",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 105,
+        "object_id": "689",
+        "object_repr": "Commercial/Residential Sprinkler Add/Alternative",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:46:14.899973",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 106,
+        "object_id": "690",
+        "object_repr": "Fire Alarm System Plan Review Fee",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:46:14.901970",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 107,
+        "object_id": "691",
+        "object_repr": "Fire Construction Plan Review/Special Review",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:46:14.905960",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 108,
+        "object_id": "692",
+        "object_repr": "Fire Inspection Fee",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:46:14.907966",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 109,
+        "object_id": "693",
+        "object_repr": "Fire Inspection Fee - Underground, Hazmat, Hydrant, Tanks, Tents, Special Events, Fire Investigation, Weed/ Fire Hazard Abatement",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:46:14.910946",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 110,
+        "object_id": "694",
+        "object_repr": "Flammable or Combustible Liquid Tank  - Installation or Removel (Above Ground or Underground)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:46:14.914934",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 111,
+        "object_id": "695",
+        "object_repr": "Residential Fire Sprinklers (New Buildings)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:46:28.327556",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 112,
+        "object_id": "696",
+        "object_repr": "Flood Elevation Certificate",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:46:28.333539",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 113,
+        "object_id": "697",
+        "object_repr": "Flood Management Fee",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:46:28.335535",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 114,
+        "object_id": "698",
+        "object_repr": "Flood Plain Substantial Improvement Determination",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:46:28.337531",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 115,
+        "object_id": "699",
+        "object_repr": "Flood Zone Determination Fee",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.135097",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 116,
+        "object_id": "636",
+        "object_repr": "Alternative Energy; Wind Turbine, Methane Gas Conversion, Agricultural Crop Conversion For Bio-Fuels, Etc.",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.144057",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 117,
+        "object_id": "637",
+        "object_repr": "Approved Fireplace Insert",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.147047",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 118,
+        "object_id": "629",
+        "object_repr": "Building Permit Fee - Tier 1 - $1-$10,000 Valuation",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.148046",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 119,
+        "object_id": "630",
+        "object_repr": "Building Permit Fee - Tier 2 - $10,001-$25,000 Valuation",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.150041",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 120,
+        "object_id": "631",
+        "object_repr": "Building Permit Fee - Tier 3 - $25,001-$50,000 Valuation",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.152047",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 121,
+        "object_id": "632",
+        "object_repr": "Building Permit Fee - Tier 4 - $50,001-$100,000 Valuation",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.154028",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 122,
+        "object_id": "633",
+        "object_repr": "Building Permit Fee - Tier 5 - $100,001-$500,000 Valuation",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.155028",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 123,
+        "object_id": "634",
+        "object_repr": "Building Permit Fee - Tier 6 - $500,001-$1,000,000 Valuation",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.157022",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 124,
+        "object_id": "635",
+        "object_repr": "Building Permit Fee - Tier 7 - $1,000,001+ Valuation",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.159017",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 125,
+        "object_id": "638",
+        "object_repr": "Business Site Inspection",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.163004",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 126,
+        "object_id": "639",
+        "object_repr": "Cellular Tower, Co-location",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.165001",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 127,
+        "object_id": "640",
+        "object_repr": "Cellular Tower, Equipment container",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.166994",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 128,
+        "object_id": "641",
+        "object_repr": "Cellular Tower, Free Standing",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.167992",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 129,
+        "object_id": "642",
+        "object_repr": "Certificate of Occupancy/Temporary Certificate of Occupancy",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.169986",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 130,
+        "object_id": "643",
+        "object_repr": "Commercial Pool and/or Spa",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.171981",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 131,
+        "object_id": "644",
+        "object_repr": "Demolition",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.173977",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 132,
+        "object_id": "645",
+        "object_repr": "Demolition of Swimming Pool",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.175971",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 133,
+        "object_id": "647",
+        "object_repr": "Disability Access: CASp",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.177968",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 134,
+        "object_id": "646",
+        "object_repr": "Disabled Access",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.180956",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 135,
+        "object_id": "648",
+        "object_repr": "E.P.A. Approved Freestanding Wood Stove",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.182953",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 136,
+        "object_id": "649",
+        "object_repr": "Grading Inspection: 1 - 10,000 Cubic Yards",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.184948",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 137,
+        "object_id": "650",
+        "object_repr": "Grading Inspection: 10,001 - 100,000 Cubic Yards",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.186961",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 138,
+        "object_id": "651",
+        "object_repr": "Grading Inspection: 100,000+ Cubic Yards",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.190934",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 139,
+        "object_id": "652",
+        "object_repr": "HVAC Installation, Commercial: Furnace and/or A/C Condenser - over 3 units",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.192927",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 140,
+        "object_id": "653",
+        "object_repr": "HVAC Installation, Commercial: Furnace, A/C Condenser - up to 3 units",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.195916",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 141,
+        "object_id": "654",
+        "object_repr": "HVAC Installation, Residential: Furnace and/or A/C Condenser",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.198909",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 142,
+        "object_id": "655",
+        "object_repr": "Install, Alter, Add Services  and/or Sub-Panel - over 1,001 amps",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.199907",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 143,
+        "object_id": "656",
+        "object_repr": "Install, Alter, Add Services 0-325 amp/panel",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.201902",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 144,
+        "object_id": "657",
+        "object_repr": "Install, Alter, Add Services 325-1,000 amp/panel",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.203895",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 145,
+        "object_id": "658",
+        "object_repr": "Manufactured Home Fee - Permit Inspection",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.205901",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 146,
+        "object_id": "659",
+        "object_repr": "Masonry fireplace with appliance insert",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.207884",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 147,
+        "object_id": "660",
+        "object_repr": "Moved Structure (In addition to permit fees)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.208883",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 148,
+        "object_id": "661",
+        "object_repr": "New/Replace Sign Rate Illuminated, Non-Illuminated Monument or Pole",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.210879",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 149,
+        "object_id": "662",
+        "object_repr": "New/Replacement Building Sign Rate Illuminate or Non- Illuminated",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.213879",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 150,
+        "object_id": "663",
+        "object_repr": "Other Requested Inspections",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.216865",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 151,
+        "object_id": "664",
+        "object_repr": "Patio Cover Enclosed/Trellis",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.219852",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 152,
+        "object_id": "665",
+        "object_repr": "Patio Deck, Uncovered",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.221847",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 153,
+        "object_id": "666",
+        "object_repr": "Photovoltaic/Solar System, Commercial - Ground mounted",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.223842",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 154,
+        "object_id": "667",
+        "object_repr": "Photovoltaic/Solar System, Commercial - Roof mounted",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.224839",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 155,
+        "object_id": "668",
+        "object_repr": "Photovoltaic/Solar System, Residential - Ground mounted",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.227831",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 156,
+        "object_id": "669",
+        "object_repr": "Photovoltaic/Solar System, Residential - Roof mounted",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.230823",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 157,
+        "object_id": "670",
+        "object_repr": "Pool and/or Spa remodel",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.232818",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 158,
+        "object_id": "671",
+        "object_repr": "Propane Tank Installation",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.234813",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 159,
+        "object_id": "672",
+        "object_repr": "Re-Inspection Fee - 1.5 Hour Minimum",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.236808",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 160,
+        "object_id": "673",
+        "object_repr": "Re-Roof (Residential, Commercial, Multi-Family)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.238802",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 161,
+        "object_id": "674",
+        "object_repr": "Site inspection",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.240797",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 162,
+        "object_id": "675",
+        "object_repr": "Solar Heating for Pool / Spa",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.243792",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 163,
+        "object_id": "676",
+        "object_repr": "Spa/Hot Tub Permit-Basic",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.246780",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 164,
+        "object_id": "677",
+        "object_repr": "Special inspection request and/or pre-construction meeting",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.249774",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 165,
+        "object_id": "678",
+        "object_repr": "Stucco/ Siding",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.251768",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 166,
+        "object_id": "679",
+        "object_repr": "Swimming Pool Permit-Residential",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.253763",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 167,
+        "object_id": "680",
+        "object_repr": "Temporary Electric",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.255757",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 168,
+        "object_id": "681",
+        "object_repr": "Temporary Gas",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.257752",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 169,
+        "object_id": "682",
+        "object_repr": "Temporary Occupancy",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.259747",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 170,
+        "object_id": "683",
+        "object_repr": "Water Heater Installation - up to 2 units",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:20.262744",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 171,
+        "object_id": "684",
+        "object_repr": "Window Installation and/or Replacement (Covers 1 Inspection)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:48.077787",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 172,
+        "object_id": "625",
+        "object_repr": "Alternate Building Materials Requests",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:48.084750",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 173,
+        "object_id": "622",
+        "object_repr": "Cal Green",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:48.086744",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 174,
+        "object_id": "626",
+        "object_repr": "Expedited Plan Review",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:48.089736",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 175,
+        "object_id": "621",
+        "object_repr": "Permit Reviews and Requests",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:48.091732",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 176,
+        "object_id": "627",
+        "object_repr": "Plan Review Fee-Master plan development after model approval      (1 hr minimum)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:48.094724",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 177,
+        "object_id": "620",
+        "object_repr": "Plan Review Fee-Single Family/Garages",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:48.095722",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 178,
+        "object_id": "628",
+        "object_repr": "Pre-Application Review",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:48.097716",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 179,
+        "object_id": "624",
+        "object_repr": "Soil review",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:48:48.098714",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 180,
+        "object_id": "623",
+        "object_repr": "Title 24 Review",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:49:04.343540",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 181,
+        "object_id": "810",
+        "object_repr": "Technology Recovery Fee",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:49:31.156259",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 182,
+        "object_id": "111",
+        "object_repr": "31-60 days overdue",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:49:31.164242",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 183,
+        "object_id": "112",
+        "object_repr": "61-90 days overdue",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:49:31.167234",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 184,
+        "object_id": "113",
+        "object_repr": "Administrative Citation",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:49:31.169227",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 185,
+        "object_id": "114",
+        "object_repr": "Administrative Citation Appeal Hearing Deposit",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:49:31.171223",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 186,
+        "object_id": "115",
+        "object_repr": "Code Enforcement Hourly Rate-additional inspections, hearings (Min 1 hr.)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:49:31.173218",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 187,
+        "object_id": "116",
+        "object_repr": "Delinquent Account Referral Fee",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:49:31.176210",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 188,
+        "object_id": "117",
+        "object_repr": "Hearing Officer Hourly Rate",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:49:31.177207",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 189,
+        "object_id": "118",
+        "object_repr": "Initial Code Enforcement Investigation Fee",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:49:31.179202",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 190,
+        "object_id": "119",
+        "object_repr": "Notice of Violation",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:49:31.183219",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 191,
+        "object_id": "120",
+        "object_repr": "Zoning Violation Application (50%) of penalty)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:51:38.977038",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 192,
+        "object_id": "14",
+        "object_repr": "County - Commercial",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:51:38.983179",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 193,
+        "object_id": "12",
+        "object_repr": "County - Industrial",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:51:38.985174",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 194,
+        "object_id": "10",
+        "object_repr": "County - Multi-family (2 or more)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:51:38.986170",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 195,
+        "object_id": "13",
+        "object_repr": "County - Office",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:51:38.988166",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 196,
+        "object_id": "11",
+        "object_repr": "County - Single Family Housing",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:51:38.990160",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 197,
+        "object_id": "15",
+        "object_repr": "County - Warehouse",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:51:38.992157",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 198,
+        "object_id": "20",
+        "object_repr": "Davis - Commercial",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:51:38.994150",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 199,
+        "object_id": "18",
+        "object_repr": "Davis - Industrial",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:51:38.996143",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 200,
+        "object_id": "16",
+        "object_repr": "Davis - Multi-family (2 or more)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:51:38.997142",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 201,
+        "object_id": "19",
+        "object_repr": "Davis - Office",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:51:38.999136",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 202,
+        "object_id": "17",
+        "object_repr": "Davis - Single Family Housing",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:51:39.001132",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 203,
+        "object_id": "21",
+        "object_repr": "Davis - Warehouse",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:51:39.004123",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 204,
+        "object_id": "26",
+        "object_repr": "West Sacramento - Commercial",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:51:39.005120",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 205,
+        "object_id": "24",
+        "object_repr": "West Sacramento - Industrial",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:51:39.007123",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 206,
+        "object_id": "22",
+        "object_repr": "West Sacramento - Multi-family (2 or more)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:51:39.010111",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 207,
+        "object_id": "25",
+        "object_repr": "West Sacramento - Office",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:51:39.012128",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 208,
+        "object_id": "23",
+        "object_repr": "West Sacramento - Single Family Housing",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:51:39.014137",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 209,
+        "object_id": "27",
+        "object_repr": "West Sacramento - Warehouse",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:51:39.016113",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 210,
+        "object_id": "32",
+        "object_repr": "Winters - Commercial",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:51:39.018086",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 211,
+        "object_id": "30",
+        "object_repr": "Winters - Industrial",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:51:39.020080",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 212,
+        "object_id": "28",
+        "object_repr": "Winters - Multi-family (2 or more)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:51:39.022075",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 213,
+        "object_id": "31",
+        "object_repr": "Winters - Office",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:51:39.023085",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 214,
+        "object_id": "29",
+        "object_repr": "Winters - Single Family Housing",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:51:39.025066",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 215,
+        "object_id": "33",
+        "object_repr": "Winters - Warehouse",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:51:39.028071",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 216,
+        "object_id": "38",
+        "object_repr": "Woodland - Commercial",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:51:39.029056",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 217,
+        "object_id": "36",
+        "object_repr": "Woodland - Industrial",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:51:39.031051",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 218,
+        "object_id": "34",
+        "object_repr": "Woodland - Multi-family (2 or more)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:51:39.033045",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 219,
+        "object_id": "37",
+        "object_repr": "Woodland - Office",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 22:51:39.035040",
+        "change_message": "[{\"changed\": {\"fields\": [\"Fee account\"]}}]",
+        "content_type_id": 9,
+        "id": 220,
+        "object_id": "35",
+        "object_repr": "Woodland - Single Family Housing",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 23:04:02.593100",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 58,
+        "id": 221,
+        "object_id": "8",
+        "object_repr": "WM",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.364353",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 222,
+        "object_id": "1",
+        "object_repr": "* Final Bldg",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.369339",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 223,
+        "object_id": "2",
+        "object_repr": "* Final C&D",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.371335",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 224,
+        "object_id": "3",
+        "object_repr": "* Final EH",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.372332",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 225,
+        "object_id": "4",
+        "object_repr": "* Final Fire",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.374326",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 226,
+        "object_id": "5",
+        "object_repr": "* Final PW",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.377319",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 227,
+        "object_id": "6",
+        "object_repr": "Arch.Insul.Ceiling",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.378317",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 228,
+        "object_id": "7",
+        "object_repr": "Arch.Insul.Floor",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.380311",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 229,
+        "object_id": "8",
+        "object_repr": "Arch.Insul.Rafters",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.382305",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 230,
+        "object_id": "9",
+        "object_repr": "Arch.Insul.RoofDeck",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.383303",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 231,
+        "object_id": "10",
+        "object_repr": "Arch.Insul.Wall.Cavity",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.385297",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 232,
+        "object_id": "11",
+        "object_repr": "Arch.Insul.Wall.Panels",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.386294",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 233,
+        "object_id": "12",
+        "object_repr": "Arch.Roofing",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.388289",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 234,
+        "object_id": "13",
+        "object_repr": "Arch.Siding",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.389287",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 235,
+        "object_id": "14",
+        "object_repr": "Arch.Stucco.Lath",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.390284",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 236,
+        "object_id": "15",
+        "object_repr": "Arch.Stucco.Scratch",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.392280",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 237,
+        "object_id": "16",
+        "object_repr": "Arch.Windows",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.394274",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 238,
+        "object_id": "17",
+        "object_repr": "Demo.1.Pre",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.396268",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 239,
+        "object_id": "18",
+        "object_repr": "Demo.2.Post",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.397265",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 240,
+        "object_id": "19",
+        "object_repr": "Elc.Battery",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.398263",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 241,
+        "object_id": "21",
+        "object_repr": "Elc.EV",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.400257",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 242,
+        "object_id": "20",
+        "object_repr": "Elc.Equipment",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.401254",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 243,
+        "object_id": "22",
+        "object_repr": "Elc.Final",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.403249",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 244,
+        "object_id": "23",
+        "object_repr": "Elc.FireAlarms",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.404247",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 245,
+        "object_id": "24",
+        "object_repr": "Elc.MeterRelease",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.406241",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 246,
+        "object_id": "25",
+        "object_repr": "Elc.Rough",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.407239",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 247,
+        "object_id": "26",
+        "object_repr": "Elc.Solar",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.408236",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 248,
+        "object_id": "27",
+        "object_repr": "Elc.Switchgear",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.410233",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 249,
+        "object_id": "28",
+        "object_repr": "Elc.Underground",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.411228",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 250,
+        "object_id": "29",
+        "object_repr": "Flood.EC2.LowestFloor",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.413222",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 251,
+        "object_id": "30",
+        "object_repr": "Flood.EC3.FinishedConstruction",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.415218",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 252,
+        "object_id": "31",
+        "object_repr": "Grading.Final",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.416215",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 253,
+        "object_id": "32",
+        "object_repr": "Grading.Lift/Progress",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.419206",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 254,
+        "object_id": "33",
+        "object_repr": "Grading.SitePrep",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.420204",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 255,
+        "object_id": "34",
+        "object_repr": "Mch.Final",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.422199",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 256,
+        "object_id": "37",
+        "object_repr": "Mch.HVAC",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.423196",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 257,
+        "object_id": "35",
+        "object_repr": "Mch.HoodT1",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.425191",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 258,
+        "object_id": "36",
+        "object_repr": "Mch.HoodT2",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.427185",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 259,
+        "object_id": "38",
+        "object_repr": "Mch.Rough",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.429182",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 260,
+        "object_id": "39",
+        "object_repr": "Plb.Final",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.430177",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 261,
+        "object_id": "40",
+        "object_repr": "Plb.Gas",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.432172",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 262,
+        "object_id": "41",
+        "object_repr": "Plb.Rough",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.433169",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 263,
+        "object_id": "42",
+        "object_repr": "Plb.Underground",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.435164",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 264,
+        "object_id": "43",
+        "object_repr": "Plb.WH.Gas",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.436161",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 265,
+        "object_id": "44",
+        "object_repr": "Plb.WH.HeatPump",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.438156",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 266,
+        "object_id": "45",
+        "object_repr": "Plb.WH.Solar",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.439153",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 267,
+        "object_id": "46",
+        "object_repr": "Pool.HotTub",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.441148",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 268,
+        "object_id": "47",
+        "object_repr": "Pool.PreDeck",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.443147",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 269,
+        "object_id": "48",
+        "object_repr": "Pool.PreGunite",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.445138",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 270,
+        "object_id": "49",
+        "object_repr": "Pool.PrePlaster",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.446135",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 271,
+        "object_id": "50",
+        "object_repr": "Reroof.1.RoofDeck",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.448129",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 272,
+        "object_id": "51",
+        "object_repr": "Reroof.2.Final",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.449128",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 273,
+        "object_id": "52",
+        "object_repr": "Str.Conc.Footings/Piers",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.452119",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 274,
+        "object_id": "53",
+        "object_repr": "Str.Conc.Slab",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.453117",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 275,
+        "object_id": "54",
+        "object_repr": "Str.Conc.Walls",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.455111",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 276,
+        "object_id": "55",
+        "object_repr": "Str.GypsumNailing",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.456108",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 277,
+        "object_id": "56",
+        "object_repr": "Str.Mason.1.Footing",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.458107",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 278,
+        "object_id": "57",
+        "object_repr": "Str.Mason.2.Lift",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.460100",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 279,
+        "object_id": "58",
+        "object_repr": "Str.Mason.3.Cap",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.462103",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 280,
+        "object_id": "59",
+        "object_repr": "Str.Wood.1.Subfloor",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.464087",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 281,
+        "object_id": "60",
+        "object_repr": "Str.Wood.2.Shear&RoofDeck",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.466091",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 282,
+        "object_id": "61",
+        "object_repr": "Str.Wood.3.Frame",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.467079",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 283,
+        "object_id": "62",
+        "object_repr": "T25.1.Anchoring/Setup",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.469073",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 284,
+        "object_id": "63",
+        "object_repr": "T25.3.Marriage/Utilities",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.470071",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 285,
+        "object_id": "64",
+        "object_repr": "T25.5.Egress",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.472065",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 286,
+        "object_id": "65",
+        "object_repr": "T25.6.DisabledAccess",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:09:28.473062",
+        "change_message": "[{\"changed\": {\"fields\": [\"Division\", \"Default inspector\"]}}]",
+        "content_type_id": 17,
+        "id": 287,
+        "object_id": "66",
+        "object_repr": "T25.7.Final",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:49.940776",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 288,
+        "object_id": "1",
+        "object_repr": "* Final Bldg",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:49.951748",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 289,
+        "object_id": "4",
+        "object_repr": "* Final Fire",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:49.952745",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 290,
+        "object_id": "6",
+        "object_repr": "Arch.Insul.Ceiling",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:49.954739",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 291,
+        "object_id": "7",
+        "object_repr": "Arch.Insul.Floor",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:49.956733",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 292,
+        "object_id": "8",
+        "object_repr": "Arch.Insul.Rafters",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:49.958729",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 293,
+        "object_id": "9",
+        "object_repr": "Arch.Insul.RoofDeck",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:49.959726",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 294,
+        "object_id": "10",
+        "object_repr": "Arch.Insul.Wall.Cavity",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:49.963401",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 295,
+        "object_id": "11",
+        "object_repr": "Arch.Insul.Wall.Panels",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:49.965394",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 296,
+        "object_id": "12",
+        "object_repr": "Arch.Roofing",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:49.966411",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 297,
+        "object_id": "13",
+        "object_repr": "Arch.Siding",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:49.968386",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 298,
+        "object_id": "14",
+        "object_repr": "Arch.Stucco.Lath",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:49.969421",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 299,
+        "object_id": "15",
+        "object_repr": "Arch.Stucco.Scratch",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:49.970421",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 300,
+        "object_id": "16",
+        "object_repr": "Arch.Windows",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:49.972413",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 301,
+        "object_id": "17",
+        "object_repr": "Demo.1.Pre",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:49.973410",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 302,
+        "object_id": "18",
+        "object_repr": "Demo.2.Post",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:49.974409",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 303,
+        "object_id": "19",
+        "object_repr": "Elc.Battery",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:49.975412",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 304,
+        "object_id": "21",
+        "object_repr": "Elc.EV",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:49.977401",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 305,
+        "object_id": "20",
+        "object_repr": "Elc.Equipment",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:49.978399",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 306,
+        "object_id": "22",
+        "object_repr": "Elc.Final",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:49.979395",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 307,
+        "object_id": "23",
+        "object_repr": "Elc.FireAlarms",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:49.982392",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 308,
+        "object_id": "24",
+        "object_repr": "Elc.MeterRelease",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:49.984386",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 309,
+        "object_id": "25",
+        "object_repr": "Elc.Rough",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:49.987375",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 310,
+        "object_id": "26",
+        "object_repr": "Elc.Solar",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:49.989369",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 311,
+        "object_id": "27",
+        "object_repr": "Elc.Switchgear",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:49.990354",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 312,
+        "object_id": "28",
+        "object_repr": "Elc.Underground",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:49.991352",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 313,
+        "object_id": "29",
+        "object_repr": "Flood.EC2.LowestFloor",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:49.993348",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 314,
+        "object_id": "30",
+        "object_repr": "Flood.EC3.FinishedConstruction",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:49.994343",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 315,
+        "object_id": "31",
+        "object_repr": "Grading.Final",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:49.995341",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 316,
+        "object_id": "32",
+        "object_repr": "Grading.Lift/Progress",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:49.998306",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 317,
+        "object_id": "33",
+        "object_repr": "Grading.SitePrep",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:49.999304",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 318,
+        "object_id": "34",
+        "object_repr": "Mch.Final",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.001300",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 319,
+        "object_id": "37",
+        "object_repr": "Mch.HVAC",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.003321",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 320,
+        "object_id": "35",
+        "object_repr": "Mch.HoodT1",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.004318",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 321,
+        "object_id": "36",
+        "object_repr": "Mch.HoodT2",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.005315",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 322,
+        "object_id": "38",
+        "object_repr": "Mch.Rough",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.007310",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 323,
+        "object_id": "39",
+        "object_repr": "Plb.Final",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.008307",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 324,
+        "object_id": "40",
+        "object_repr": "Plb.Gas",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.009304",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 325,
+        "object_id": "41",
+        "object_repr": "Plb.Rough",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.010302",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 326,
+        "object_id": "42",
+        "object_repr": "Plb.Underground",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.012297",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 327,
+        "object_id": "43",
+        "object_repr": "Plb.WH.Gas",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.014283",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 328,
+        "object_id": "44",
+        "object_repr": "Plb.WH.HeatPump",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.016258",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 329,
+        "object_id": "45",
+        "object_repr": "Plb.WH.Solar",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.017255",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 330,
+        "object_id": "46",
+        "object_repr": "Pool.HotTub",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.019250",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 331,
+        "object_id": "47",
+        "object_repr": "Pool.PreDeck",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.020247",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 332,
+        "object_id": "48",
+        "object_repr": "Pool.PreGunite",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.021245",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 333,
+        "object_id": "49",
+        "object_repr": "Pool.PrePlaster",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.024236",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 334,
+        "object_id": "50",
+        "object_repr": "Reroof.1.RoofDeck",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.025234",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 335,
+        "object_id": "51",
+        "object_repr": "Reroof.2.Final",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.026231",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 336,
+        "object_id": "52",
+        "object_repr": "Str.Conc.Footings/Piers",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.030222",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 337,
+        "object_id": "53",
+        "object_repr": "Str.Conc.Slab",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.032215",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 338,
+        "object_id": "54",
+        "object_repr": "Str.Conc.Walls",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.033212",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 339,
+        "object_id": "55",
+        "object_repr": "Str.GypsumNailing",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.035207",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 340,
+        "object_id": "56",
+        "object_repr": "Str.Mason.1.Footing",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.036204",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 341,
+        "object_id": "57",
+        "object_repr": "Str.Mason.2.Lift",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.038227",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 342,
+        "object_id": "58",
+        "object_repr": "Str.Mason.3.Cap",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.039225",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 343,
+        "object_id": "59",
+        "object_repr": "Str.Wood.1.Subfloor",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.041191",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 344,
+        "object_id": "60",
+        "object_repr": "Str.Wood.2.Shear&RoofDeck",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.042189",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 345,
+        "object_id": "61",
+        "object_repr": "Str.Wood.3.Frame",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.044184",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 346,
+        "object_id": "62",
+        "object_repr": "T25.1.Anchoring/Setup",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.046180",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 347,
+        "object_id": "63",
+        "object_repr": "T25.3.Marriage/Utilities",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.049170",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 348,
+        "object_id": "64",
+        "object_repr": "T25.5.Egress",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.051165",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 349,
+        "object_id": "65",
+        "object_repr": "T25.6.DisabledAccess",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.052189",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 350,
+        "object_id": "66",
+        "object_repr": "T25.7.Final",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.054196",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 351,
+        "object_id": "3",
+        "object_repr": "* Final EH",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.055188",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 352,
+        "object_id": "2",
+        "object_repr": "* Final C&D",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:14:50.057186",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 353,
+        "object_id": "5",
+        "object_repr": "* Final PW",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:15:30.547902",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 354,
+        "object_id": "1",
+        "object_repr": "* Final Bldg",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:15:30.553898",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 355,
+        "object_id": "4",
+        "object_repr": "* Final Fire",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:15:30.554876",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 356,
+        "object_id": "3",
+        "object_repr": "* Final EH",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:15:30.556870",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 357,
+        "object_id": "2",
+        "object_repr": "* Final C&D",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:15:30.557867",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\"]}}]",
+        "content_type_id": 17,
+        "id": 358,
+        "object_id": "5",
+        "object_repr": "* Final PW",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.155722",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\", \"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 359,
+        "object_id": "1",
+        "object_repr": "Bldg",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.162689",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\", \"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 360,
+        "object_id": "4",
+        "object_repr": "Fire",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.164682",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\", \"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 361,
+        "object_id": "3",
+        "object_repr": "EH",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.166678",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\", \"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 362,
+        "object_id": "2",
+        "object_repr": "C&D",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.168672",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection group\", \"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 363,
+        "object_id": "5",
+        "object_repr": "PW",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.170665",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 364,
+        "object_id": "6",
+        "object_repr": "Insulation (Ceiling)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.172660",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 365,
+        "object_id": "7",
+        "object_repr": "Insulation (Floor)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.174655",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 366,
+        "object_id": "8",
+        "object_repr": "Insulation (Rafters)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.176649",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 367,
+        "object_id": "9",
+        "object_repr": "Insulation (Roof Deck)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.178644",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 368,
+        "object_id": "10",
+        "object_repr": "Insulation (Wall Cavity)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.179670",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 369,
+        "object_id": "11",
+        "object_repr": "Insulation (Wall Panels)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.182634",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 370,
+        "object_id": "12",
+        "object_repr": "Roofing",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.184628",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 371,
+        "object_id": "13",
+        "object_repr": "Siding",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.186654",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 372,
+        "object_id": "14",
+        "object_repr": "Stucco / Lath",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.188623",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 373,
+        "object_id": "15",
+        "object_repr": "Stucco / Scratch",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.190612",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 374,
+        "object_id": "16",
+        "object_repr": "Windows",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.193607",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 375,
+        "object_id": "50",
+        "object_repr": "Reroof 1 Roof Deck",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.195600",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 376,
+        "object_id": "51",
+        "object_repr": "Reroof 2 Final",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.197613",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 377,
+        "object_id": "52",
+        "object_repr": "Concrete Footings/Piers",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.199607",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 378,
+        "object_id": "53",
+        "object_repr": "Concrete Slab",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.201585",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 379,
+        "object_id": "54",
+        "object_repr": "Concrete Walls",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.203598",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 380,
+        "object_id": "55",
+        "object_repr": "Gypsum Board Nailing",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.205574",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 381,
+        "object_id": "56",
+        "object_repr": "Masonry 1 Footing",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.207566",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 382,
+        "object_id": "57",
+        "object_repr": "Masonry 2 Lift",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.209562",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 383,
+        "object_id": "58",
+        "object_repr": "Masonry 3 Cap",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.211555",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 384,
+        "object_id": "59",
+        "object_repr": "Wood 1 Subfloor",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.213551",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 385,
+        "object_id": "60",
+        "object_repr": "Wood 2 Shear & Roof Deck",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.215546",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 386,
+        "object_id": "61",
+        "object_repr": "Wood 3 Frame",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.217543",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 387,
+        "object_id": "62",
+        "object_repr": "Manufactured Home 1 Anchoring/Setup",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.219536",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 388,
+        "object_id": "63",
+        "object_repr": "Manufactured Home 3 Marriage/Utilities",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.221531",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 389,
+        "object_id": "64",
+        "object_repr": "Commercial Coach Egress",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.223525",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 390,
+        "object_id": "65",
+        "object_repr": "Commercial Coach Disabled Access",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.225519",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 391,
+        "object_id": "66",
+        "object_repr": "Commercial Coach Final",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.227514",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 392,
+        "object_id": "17",
+        "object_repr": "Demolition 1 Pre-Measure and Utility Disconnect",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.229509",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 393,
+        "object_id": "18",
+        "object_repr": "Demolition 2 Final",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.231502",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 394,
+        "object_id": "19",
+        "object_repr": "Battery Backup (Residential)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.233499",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 395,
+        "object_id": "21",
+        "object_repr": "Electrical Vehicle (EV) Charging Station",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.235494",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 396,
+        "object_id": "20",
+        "object_repr": "Equipment",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.238483",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 397,
+        "object_id": "22",
+        "object_repr": "Final Electrical",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.241477",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 398,
+        "object_id": "23",
+        "object_repr": "Fire Alarms",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.243472",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 399,
+        "object_id": "24",
+        "object_repr": "Meter Release",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.245467",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 400,
+        "object_id": "25",
+        "object_repr": "Rough Electrical",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.247462",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 401,
+        "object_id": "26",
+        "object_repr": "Solar Photovoltaic (PV)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.249469",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 402,
+        "object_id": "27",
+        "object_repr": "Switchgear",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.251450",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 403,
+        "object_id": "28",
+        "object_repr": "Underground Electrical",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.254441",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 404,
+        "object_id": "29",
+        "object_repr": "EC2 Lowest Floor Elevation",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.256438",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 405,
+        "object_id": "30",
+        "object_repr": "EC3 Finished Construction",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.259427",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 406,
+        "object_id": "31",
+        "object_repr": "Final",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.261422",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 407,
+        "object_id": "32",
+        "object_repr": "Lifts / Progress",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.263418",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 408,
+        "object_id": "33",
+        "object_repr": "Site Prep",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.266412",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 409,
+        "object_id": "34",
+        "object_repr": "Final Mechanical",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.267408",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 410,
+        "object_id": "37",
+        "object_repr": "HVAC",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.270400",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 411,
+        "object_id": "35",
+        "object_repr": "Hood (Type 1)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.273390",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 412,
+        "object_id": "36",
+        "object_repr": "Hood (Type 2)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.275384",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 413,
+        "object_id": "38",
+        "object_repr": "Rough Mechanical",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.276381",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 414,
+        "object_id": "39",
+        "object_repr": "Final Plumbing",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.278376",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 415,
+        "object_id": "40",
+        "object_repr": "Gas",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.280370",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 416,
+        "object_id": "41",
+        "object_repr": "Rough Plumbing",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.281368",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 417,
+        "object_id": "42",
+        "object_repr": "Underground Plumbing",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.282365",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 418,
+        "object_id": "43",
+        "object_repr": "Water Heater (Gas)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.284359",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 419,
+        "object_id": "44",
+        "object_repr": "Water Heater (Heat Pump)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.286355",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 420,
+        "object_id": "45",
+        "object_repr": "Water Heater (Solar)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.288350",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 421,
+        "object_id": "46",
+        "object_repr": "Hot Tub",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.290352",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 422,
+        "object_id": "47",
+        "object_repr": "Pool 2 Pre-Deck",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.293338",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 423,
+        "object_id": "48",
+        "object_repr": "Pool 1 Pre-Gunite",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:26:54.294335",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 424,
+        "object_id": "49",
+        "object_repr": "Pool 3 Pre-Plaster",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 23:34:18.476109",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 71,
+        "id": 425,
+        "object_id": "1",
+        "object_repr": "Int. Waste",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 23:34:24.530897",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 71,
+        "id": 426,
+        "object_id": "2",
+        "object_repr": "Env. Health",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 23:34:33.445054",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 71,
+        "id": 427,
+        "object_id": "3",
+        "object_repr": "Public Works",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 23:34:51.395756",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 71,
+        "id": 428,
+        "object_id": "4",
+        "object_repr": "Building: Electrical",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 23:34:58.083065",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 71,
+        "id": 429,
+        "object_id": "5",
+        "object_repr": "Building: Mechanical",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 23:35:08.404233",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 71,
+        "id": 430,
+        "object_id": "6",
+        "object_repr": "Building: Plumbing",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 23:35:23.572802",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 71,
+        "id": 431,
+        "object_id": "7",
+        "object_repr": "Building: Structural",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 23:35:46.965838",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 71,
+        "id": 432,
+        "object_id": "8",
+        "object_repr": "Building: CALGree/Energy",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 23:35:58.320339",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 71,
+        "id": 433,
+        "object_id": "9",
+        "object_repr": "Building: Manufactured Home",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 23:36:07.160928",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 71,
+        "id": 434,
+        "object_id": "10",
+        "object_repr": "Building Commercial Coach",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 23:36:14.725383",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 71,
+        "id": 435,
+        "object_id": "11",
+        "object_repr": "Building: Flood",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 23:36:20.516679",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 71,
+        "id": 436,
+        "object_id": "12",
+        "object_repr": "Building: Fire",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 23:36:26.801556",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 71,
+        "id": 437,
+        "object_id": "13",
+        "object_repr": "Fire District",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 23:36:42.503074",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 71,
+        "id": 438,
+        "object_id": "14",
+        "object_repr": "Building: Disabled Access",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:36:50.550655",
+        "change_message": "[{\"changed\": {\"fields\": [\"Group\"]}}]",
+        "content_type_id": 71,
+        "id": 439,
+        "object_id": "10",
+        "object_repr": "Building: Commercial Coach",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 23:43:12.529570",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 71,
+        "id": 440,
+        "object_id": "15",
+        "object_repr": "Demolition",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:43:33.449368",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 441,
+        "object_id": "19",
+        "object_repr": "Battery Backup (Residential)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:43:33.456351",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 442,
+        "object_id": "2",
+        "object_repr": "C&D",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:43:33.458345",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 443,
+        "object_id": "65",
+        "object_repr": "Commercial Coach Disabled Access",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:43:33.460340",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 444,
+        "object_id": "64",
+        "object_repr": "Commercial Coach Egress",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:43:33.462333",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 445,
+        "object_id": "66",
+        "object_repr": "Commercial Coach Final",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:43:33.463330",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 446,
+        "object_id": "52",
+        "object_repr": "Concrete Footings/Piers",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:43:33.465325",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 447,
+        "object_id": "53",
+        "object_repr": "Concrete Slab",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:43:33.469314",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 448,
+        "object_id": "54",
+        "object_repr": "Concrete Walls",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:43:33.471309",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 449,
+        "object_id": "17",
+        "object_repr": "Demolition 1 Pre-Measure and Utility Disconnect",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 23:44:22.054702",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 71,
+        "id": 450,
+        "object_id": "16",
+        "object_repr": "Building (Nonstructural)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:44:40.339035",
+        "change_message": "[{\"changed\": {\"fields\": [\"Group\"]}}]",
+        "content_type_id": 71,
+        "id": 451,
+        "object_id": "16",
+        "object_repr": "Building: Nonstructural",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 23:46:00.483336",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 71,
+        "id": 452,
+        "object_id": "17",
+        "object_repr": "Building: Grading",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 23:46:38.044714",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 71,
+        "id": 453,
+        "object_id": "18",
+        "object_repr": "Building: Pool",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:46:48.927898",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 454,
+        "object_id": "49",
+        "object_repr": "Pool 3 Pre-Plaster",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:46:48.935877",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 455,
+        "object_id": "50",
+        "object_repr": "Reroof 1 Roof Deck",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:46:48.937871",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 456,
+        "object_id": "51",
+        "object_repr": "Reroof 2 Final",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:46:48.939866",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 457,
+        "object_id": "12",
+        "object_repr": "Roofing",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:46:48.941861",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 458,
+        "object_id": "25",
+        "object_repr": "Rough Electrical",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:46:48.942858",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 459,
+        "object_id": "38",
+        "object_repr": "Rough Mechanical",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:46:48.944853",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 460,
+        "object_id": "41",
+        "object_repr": "Rough Plumbing",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:46:48.946848",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 461,
+        "object_id": "13",
+        "object_repr": "Siding",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:46:48.948841",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 462,
+        "object_id": "33",
+        "object_repr": "Site Prep",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:46:48.950837",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 463,
+        "object_id": "26",
+        "object_repr": "Solar Photovoltaic (PV)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:46:48.952831",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 464,
+        "object_id": "14",
+        "object_repr": "Stucco / Lath",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:46:48.954826",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 465,
+        "object_id": "15",
+        "object_repr": "Stucco / Scratch",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:46:48.955823",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 466,
+        "object_id": "27",
+        "object_repr": "Switchgear",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:46:48.957818",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 467,
+        "object_id": "28",
+        "object_repr": "Underground Electrical",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:46:48.959813",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 468,
+        "object_id": "42",
+        "object_repr": "Underground Plumbing",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:46:48.961805",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 469,
+        "object_id": "43",
+        "object_repr": "Water Heater (Gas)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:46:48.963800",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 470,
+        "object_id": "44",
+        "object_repr": "Water Heater (Heat Pump)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:46:48.965795",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 471,
+        "object_id": "45",
+        "object_repr": "Water Heater (Solar)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:46:48.969787",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 472,
+        "object_id": "16",
+        "object_repr": "Windows",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:46:48.971781",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 473,
+        "object_id": "59",
+        "object_repr": "Wood 1 Subfloor",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:46:48.972776",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 474,
+        "object_id": "60",
+        "object_repr": "Wood 2 Shear & Roof Deck",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:46:48.975770",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 475,
+        "object_id": "61",
+        "object_repr": "Wood 3 Frame",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:47:13.692137",
+        "change_message": "[{\"changed\": {\"fields\": [\"Group\"]}}]",
+        "content_type_id": 71,
+        "id": 476,
+        "object_id": "15",
+        "object_repr": "Building: Demolition",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:49:38.925769",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 477,
+        "object_id": "18",
+        "object_repr": "Demolition 2 Final",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:49:38.932749",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 478,
+        "object_id": "29",
+        "object_repr": "EC2 Lowest Floor Elevation",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:49:38.934744",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 479,
+        "object_id": "30",
+        "object_repr": "EC3 Finished Construction",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:49:38.936738",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 480,
+        "object_id": "3",
+        "object_repr": "EH",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:49:38.938732",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 481,
+        "object_id": "21",
+        "object_repr": "Electrical Vehicle (EV) Charging Station",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:49:38.940734",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 482,
+        "object_id": "22",
+        "object_repr": "Final Electrical",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:49:38.942723",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 483,
+        "object_id": "34",
+        "object_repr": "Final Mechanical",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:49:38.944721",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 484,
+        "object_id": "39",
+        "object_repr": "Final Plumbing",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:49:38.946711",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 485,
+        "object_id": "4",
+        "object_repr": "Fire",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:49:38.948707",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 486,
+        "object_id": "23",
+        "object_repr": "Fire Alarms",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:49:38.950701",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 487,
+        "object_id": "40",
+        "object_repr": "Gas",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:49:38.955688",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 488,
+        "object_id": "55",
+        "object_repr": "Gypsum Board Nailing",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:49:38.957683",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 489,
+        "object_id": "37",
+        "object_repr": "HVAC",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:49:38.960674",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 490,
+        "object_id": "35",
+        "object_repr": "Hood (Type 1)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:49:38.965662",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 491,
+        "object_id": "36",
+        "object_repr": "Hood (Type 2)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:49:38.968654",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 492,
+        "object_id": "46",
+        "object_repr": "Hot Tub",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:49:38.971645",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 493,
+        "object_id": "6",
+        "object_repr": "Insulation (Ceiling)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:49:38.973640",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 494,
+        "object_id": "7",
+        "object_repr": "Insulation (Floor)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:49:38.975634",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 495,
+        "object_id": "8",
+        "object_repr": "Insulation (Rafters)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:49:38.977630",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 496,
+        "object_id": "9",
+        "object_repr": "Insulation (Roof Deck)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:49:38.979624",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 497,
+        "object_id": "10",
+        "object_repr": "Insulation (Wall Cavity)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:49:38.980621",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 498,
+        "object_id": "11",
+        "object_repr": "Insulation (Wall Panels)",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:49:38.982615",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 499,
+        "object_id": "32",
+        "object_repr": "Lifts / Progress",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:49:38.984611",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 500,
+        "object_id": "62",
+        "object_repr": "Manufactured Home 1 Anchoring/Setup",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:49:38.987603",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 501,
+        "object_id": "63",
+        "object_repr": "Manufactured Home 3 Marriage/Utilities",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:49:38.989597",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 502,
+        "object_id": "56",
+        "object_repr": "Masonry 1 Footing",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:49:38.992589",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 503,
+        "object_id": "57",
+        "object_repr": "Masonry 2 Lift",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:49:38.994584",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 504,
+        "object_id": "58",
+        "object_repr": "Masonry 3 Cap",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:49:38.995581",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 505,
+        "object_id": "24",
+        "object_repr": "Meter Release",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:49:38.997575",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 506,
+        "object_id": "5",
+        "object_repr": "PW",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:49:38.999570",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 507,
+        "object_id": "48",
+        "object_repr": "Pool 1 Pre-Gunite",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:49:39.001565",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 508,
+        "object_id": "47",
+        "object_repr": "Pool 2 Pre-Deck",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-11 23:50:01.449114",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 71,
+        "id": 509,
+        "object_id": "19",
+        "object_repr": "** PERMIT FINAL **",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:50:26.735791",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 510,
+        "object_id": "31",
+        "object_repr": "** PERMIT FINAL **",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:51:09.260324",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\", \"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 511,
+        "object_id": "1",
+        "object_repr": "Final Building",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:54:25.702728",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection checklist\"]}}]",
+        "content_type_id": 17,
+        "id": 512,
+        "object_id": "31",
+        "object_repr": "** PERMIT FINAL **",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:56:35.335960",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection checklist\"]}}]",
+        "content_type_id": 17,
+        "id": 513,
+        "object_id": "1",
+        "object_repr": "Final Building",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:57:34.853223",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 514,
+        "object_id": "31",
+        "object_repr": "** PERMIT FINAL **",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:57:34.861204",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 515,
+        "object_id": "1",
+        "object_repr": "Final Building",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:57:34.863199",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 516,
+        "object_id": "22",
+        "object_repr": "Final Electrical",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:57:34.865193",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 517,
+        "object_id": "34",
+        "object_repr": "Final Mechanical",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:57:34.866191",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 518,
+        "object_id": "39",
+        "object_repr": "Final Plumbing",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:57:51.808589",
+        "change_message": "[{\"changed\": {\"fields\": [\"Group\"]}}]",
+        "content_type_id": 71,
+        "id": 519,
+        "object_id": "19",
+        "object_repr": "_Finals",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:59:00.566666",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 520,
+        "object_id": "20",
+        "object_repr": "Equipment",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-11 23:59:41.871017",
+        "change_message": "[{\"changed\": {\"fields\": [\"Group\"]}}]",
+        "content_type_id": 71,
+        "id": 521,
+        "object_id": "19",
+        "object_repr": "* Finals",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-12 00:01:56.869390",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 522,
+        "object_id": "5",
+        "object_repr": "PW",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-12 00:02:11.094704",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 523,
+        "object_id": "3",
+        "object_repr": "EH",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-12 00:02:18.683297",
+        "change_message": "[{\"changed\": {\"fields\": [\"Insp group\"]}}]",
+        "content_type_id": 17,
+        "id": 524,
+        "object_id": "2",
+        "object_repr": "C&D",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-12 00:02:53.223136",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 525,
+        "object_id": "5",
+        "object_repr": "Final Public Works",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-12 00:03:09.670894",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 526,
+        "object_id": "3",
+        "object_repr": "Final Env. Health",
+        "user_id": 20
+    },
+    {
+        "action_flag": 2,
+        "action_time": "2024-01-12 00:03:20.651402",
+        "change_message": "[{\"changed\": {\"fields\": [\"Inspection type\"]}}]",
+        "content_type_id": 17,
+        "id": 527,
+        "object_id": "2",
+        "object_repr": "Final C&D",
+        "user_id": 20
+    },
+    {
+        "action_flag": 1,
+        "action_time": "2024-01-12 00:03:46.990328",
+        "change_message": "[{\"added\": {}}]",
+        "content_type_id": 17,
+        "id": 528,
+        "object_id": "67",
+        "object_repr": "Final Fire District",
+        "user_id": 20
+    }
+]

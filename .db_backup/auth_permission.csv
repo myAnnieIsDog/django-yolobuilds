@@ -1,0 +1,304 @@
+1,1,add_logentry,Can add log entry
+2,1,change_logentry,Can change log entry
+3,1,delete_logentry,Can delete log entry
+4,1,view_logentry,Can view log entry
+5,2,add_permission,Can add permission
+6,2,change_permission,Can change permission
+7,2,delete_permission,Can delete permission
+8,2,view_permission,Can view permission
+9,3,add_group,Can add group
+10,3,change_group,Can change group
+11,3,delete_group,Can delete group
+12,3,view_group,Can view group
+13,4,add_user,Can add user
+14,4,change_user,Can change user
+15,4,delete_user,Can delete user
+16,4,view_user,Can view user
+17,5,add_contenttype,Can add content type
+18,5,change_contenttype,Can change content type
+19,5,delete_contenttype,Can delete content type
+20,5,view_contenttype,Can view content type
+21,6,add_session,Can add session
+22,6,change_session,Can change session
+23,6,delete_session,Can delete session
+24,6,view_session,Can view session
+25,7,add_account,Can add Account
+26,7,change_account,Can change Account
+27,7,delete_account,Can delete Account
+28,7,view_account,Can view Account
+29,8,add_paymentmethod,Can add Payment Method
+30,8,change_paymentmethod,Can change Payment Method
+31,8,delete_paymentmethod,Can delete Payment Method
+32,8,view_paymentmethod,Can view Payment Method
+33,9,add_feetype,Can add Fee Type
+34,9,change_feetype,Can change Fee Type
+35,9,delete_feetype,Can delete Fee Type
+36,9,view_feetype,Can view Fee Type
+37,10,add_fee,Can add fee
+38,10,change_fee,Can change fee
+39,10,delete_fee,Can delete fee
+40,10,view_fee,Can view fee
+41,11,add_payment,Can add payment
+42,11,change_payment,Can change payment
+43,11,delete_payment,Can delete payment
+44,11,view_payment,Can view payment
+45,12,add_claritifee,Can add clariti fee
+46,12,change_claritifee,Can change clariti fee
+47,12,delete_claritifee,Can delete clariti fee
+48,12,view_claritifee,Can view clariti fee
+49,13,add_trakitfee,Can add trakit fee
+50,13,change_trakitfee,Can change trakit fee
+51,13,delete_trakitfee,Can delete trakit fee
+52,13,view_trakitfee,Can view trakit fee
+53,14,add_inspectionresult,Can add Inspection Result Option
+54,14,change_inspectionresult,Can change Inspection Result Option
+55,14,delete_inspectionresult,Can delete Inspection Result Option
+56,14,view_inspectionresult,Can view Inspection Result Option
+57,15,add_inspection,Can add inspection
+58,15,change_inspection,Can change inspection
+59,15,delete_inspection,Can delete inspection
+60,15,view_inspection,Can view inspection
+61,16,add_inspectiontrip,Can add Inspection Trip
+62,16,change_inspectiontrip,Can change Inspection Trip
+63,16,delete_inspectiontrip,Can delete Inspection Trip
+64,16,view_inspectiontrip,Can view Inspection Trip
+65,17,add_inspectiontype,Can add Inspection Type
+66,17,change_inspectiontype,Can change Inspection Type
+67,17,delete_inspectiontype,Can delete Inspection Type
+68,17,view_inspectiontype,Can view Inspection Type
+69,18,add_district,Can add district
+70,18,change_district,Can change district
+71,18,delete_district,Can delete district
+72,18,view_district,Can view district
+73,19,add_jurisdiction,Can add jurisdiction
+74,19,change_jurisdiction,Can change jurisdiction
+75,19,delete_jurisdiction,Can delete jurisdiction
+76,19,view_jurisdiction,Can view jurisdiction
+77,20,add_parcel,Can add parcel
+78,20,change_parcel,Can change parcel
+79,20,delete_parcel,Can delete parcel
+80,20,view_parcel,Can view parcel
+81,21,add_siteaddress,Can add Site Address
+82,21,change_siteaddress,Can change Site Address
+83,21,delete_siteaddress,Can delete Site Address
+84,21,view_siteaddress,Can view Site Address
+85,22,add_division,Can add division
+86,22,change_division,Can change division
+87,22,delete_division,Can delete division
+88,22,view_division,Can view division
+89,23,add_permitstatus,Can add Permit Status
+90,23,change_permitstatus,Can change Permit Status
+91,23,delete_permitstatus,Can delete Permit Status
+92,23,view_permitstatus,Can view Permit Status
+93,24,add_permittype,Can add Permit Type
+94,24,change_permittype,Can change Permit Type
+95,24,delete_permittype,Can delete Permit Type
+96,24,view_permittype,Can view Permit Type
+97,25,add_sequence,Can add sequence
+98,25,change_sequence,Can change sequence
+99,25,delete_sequence,Can delete sequence
+100,25,view_sequence,Can view sequence
+101,26,add_tag,Can add tag
+102,26,change_tag,Can change tag
+103,26,delete_tag,Can delete tag
+104,26,view_tag,Can view tag
+105,27,add_permitsubtype,Can add Permit Subtype
+106,27,change_permitsubtype,Can change Permit Subtype
+107,27,delete_permitsubtype,Can delete Permit Subtype
+108,27,view_permitsubtype,Can view Permit Subtype
+109,28,add_permit,Can add Permit
+110,28,change_permit,Can change Permit
+111,28,delete_permit,Can delete Permit
+112,28,view_permit,Can view Permit
+113,29,add_relatedrecord,Can add Related Record
+114,29,change_relatedrecord,Can change Related Record
+115,29,delete_relatedrecord,Can delete Related Record
+116,29,view_relatedrecord,Can view Related Record
+117,30,add_taggedrecord,Can add Tagged Record
+118,30,change_taggedrecord,Can change Tagged Record
+119,30,delete_taggedrecord,Can delete Tagged Record
+120,30,view_taggedrecord,Can view Tagged Record
+121,31,add_applicantrole,Can add Applicant Role Option
+122,31,change_applicantrole,Can change Applicant Role Option
+123,31,delete_applicantrole,Can delete Applicant Role Option
+124,31,view_applicantrole,Can view Applicant Role Option
+125,32,add_electricalservice,Can add Electrical Service Replacement/Upgrade
+126,32,change_electricalservice,Can change Electrical Service Replacement/Upgrade
+127,32,delete_electricalservice,Can delete Electrical Service Replacement/Upgrade
+128,32,view_electricalservice,Can view Electrical Service Replacement/Upgrade
+129,33,add_ess,Can add Energy Storage System (Battery)
+130,33,change_ess,Can change Energy Storage System (Battery)
+131,33,delete_ess,Can delete Energy Storage System (Battery)
+132,33,view_ess,Can view Energy Storage System (Battery)
+133,34,add_evcs,Can add Electrical Vehicle Charging Station
+134,34,change_evcs,Can change Electrical Vehicle Charging Station
+135,34,delete_evcs,Can delete Electrical Vehicle Charging Station
+136,34,view_evcs,Can view Electrical Vehicle Charging Station
+137,35,add_floodzones,Can add Flood Zone
+138,35,change_floodzones,Can change Flood Zone
+139,35,delete_floodzones,Can delete Flood Zone
+140,35,view_floodzones,Can view Flood Zone
+141,36,add_generator,Can add Backup Generator
+142,36,change_generator,Can change Backup Generator
+143,36,delete_generator,Can delete Backup Generator
+144,36,view_generator,Can view Backup Generator
+145,37,add_hvac,Can add HVAC Replacement
+146,37,change_hvac,Can change HVAC Replacement
+147,37,delete_hvac,Can delete HVAC Replacement
+148,37,view_hvac,Can view HVAC Replacement
+149,38,add_ownerrole,Can add Owner Role
+150,38,change_ownerrole,Can change Owner Role
+151,38,delete_ownerrole,Can delete Owner Role
+152,38,view_ownerrole,Can view Owner Role
+153,39,add_propane,Can add Install Propane Tank
+154,39,change_propane,Can change Install Propane Tank
+155,39,delete_propane,Can delete Install Propane Tank
+156,39,view_propane,Can view Install Propane Tank
+157,40,add_sewer,Can add Building Sewer Replacement
+158,40,change_sewer,Can change Building Sewer Replacement
+159,40,delete_sewer,Can delete Building Sewer Replacement
+160,40,view_sewer,Can view Building Sewer Replacement
+161,41,add_solar,Can add solar
+162,41,change_solar,Can change solar
+163,41,delete_solar,Can delete solar
+164,41,view_solar,Can view solar
+165,42,add_stucco,Can add Replace Exterior Wall (Siding/Stucco)
+166,42,change_stucco,Can change Replace Exterior Wall (Siding/Stucco)
+167,42,delete_stucco,Can delete Replace Exterior Wall (Siding/Stucco)
+168,42,view_stucco,Can view Replace Exterior Wall (Siding/Stucco)
+169,43,add_waterheater,Can add Water Heater Replacement
+170,43,change_waterheater,Can change Water Heater Replacement
+171,43,delete_waterheater,Can delete Water Heater Replacement
+172,43,view_waterheater,Can view Water Heater Replacement
+173,44,add_windows,Can add Window Replacement
+174,44,change_windows,Can change Window Replacement
+175,44,delete_windows,Can delete Window Replacement
+176,44,view_windows,Can view Window Replacement
+177,45,add_bp,Can add Building Permits
+178,45,change_bp,Can change Building Permits
+179,45,delete_bp,Can delete Building Permits
+180,45,view_bp,Can view Building Permits
+181,46,add_building,Can add New Building/Structure
+182,46,change_building,Can change New Building/Structure
+183,46,delete_building,Can delete New Building/Structure
+184,46,view_building,Can view New Building/Structure
+185,47,add_demolition,Can add Demolition Permits
+186,47,change_demolition,Can change Demolition Permits
+187,47,delete_demolition,Can delete Demolition Permits
+188,47,view_demolition,Can view Demolition Permits
+189,48,add_electrical,Can add Electrical Permits
+190,48,change_electrical,Can change Electrical Permits
+191,48,delete_electrical,Can delete Electrical Permits
+192,48,view_electrical,Can view Electrical Permits
+193,49,add_fire,Can add Fire Protection Permits
+194,49,change_fire,Can change Fire Protection Permits
+195,49,delete_fire,Can delete Fire Protection Permits
+196,49,view_fire,Can view Fire Protection Permits
+197,50,add_flood,Can add Flood Protection Permits
+198,50,change_flood,Can change Flood Protection Permits
+199,50,delete_flood,Can delete Flood Protection Permits
+200,50,view_flood,Can view Flood Protection Permits
+201,51,add_grading,Can add Grading Permits
+202,51,change_grading,Can change Grading Permits
+203,51,delete_grading,Can delete Grading Permits
+204,51,view_grading,Can view Grading Permits
+205,52,add_mechanical,Can add Mechanical Permits
+206,52,change_mechanical,Can change Mechanical Permits
+207,52,delete_mechanical,Can delete Mechanical Permits
+208,52,view_mechanical,Can view Mechanical Permits
+209,53,add_plumbing,Can add Plumbing Permits
+210,53,change_plumbing,Can change Plumbing Permits
+211,53,delete_plumbing,Can delete Plumbing Permits
+212,53,view_plumbing,Can view Plumbing Permits
+213,54,add_pool,Can add Pool/Spa Permits
+214,54,change_pool,Can change Pool/Spa Permits
+215,54,delete_pool,Can delete Pool/Spa Permits
+216,54,view_pool,Can view Pool/Spa Permits
+217,55,add_reroof,Can add reroof
+218,55,change_reroof,Can change reroof
+219,55,delete_reroof,Can delete reroof
+220,55,view_reroof,Can view reroof
+221,56,add_agency,Can add Partner Agency
+222,56,change_agency,Can change Partner Agency
+223,56,delete_agency,Can delete Partner Agency
+224,56,view_agency,Can view Partner Agency
+225,57,add_department,Can add Department
+226,57,change_department,Can change Department
+227,57,delete_department,Can delete Department
+228,57,view_department,Can view Department
+229,58,add_division,Can add Division
+230,58,change_division,Can change Division
+231,58,delete_division,Can delete Division
+232,58,view_division,Can view Division
+233,59,add_licenseagency,Can add License Agency
+234,59,change_licenseagency,Can change License Agency
+235,59,delete_licenseagency,Can delete License Agency
+236,59,view_licenseagency,Can view License Agency
+237,60,add_licensetype,Can add License Type
+238,60,change_licensetype,Can change License Type
+239,60,delete_licensetype,Can delete License Type
+240,60,view_licensetype,Can view License Type
+241,61,add_profile,Can add Profile
+242,61,change_profile,Can change Profile
+243,61,delete_profile,Can delete Profile
+244,61,view_profile,Can view Profile
+245,62,add_licenseholder,Can add license holder
+246,62,change_licenseholder,Can change license holder
+247,62,delete_licenseholder,Can delete license holder
+248,62,view_licenseholder,Can view license holder
+249,63,add_staff,Can add staff
+250,63,change_staff,Can change staff
+251,63,delete_staff,Can delete staff
+252,63,view_staff,Can view staff
+253,64,add_yolocountypartners,Can add yolo county partners
+254,64,change_yolocountypartners,Can change yolo county partners
+255,64,delete_yolocountypartners,Can delete yolo county partners
+256,64,view_yolocountypartners,Can view yolo county partners
+257,65,add_cycleresult,Can add Cycle Result Option
+258,65,change_cycleresult,Can change Cycle Result Option
+259,65,delete_cycleresult,Can delete Cycle Result Option
+260,65,view_cycleresult,Can view Cycle Result Option
+261,66,add_reviewstatus,Can add Review Status Option
+262,66,change_reviewstatus,Can change Review Status Option
+263,66,delete_reviewstatus,Can delete Review Status Option
+264,66,view_reviewstatus,Can view Review Status Option
+265,67,add_review,Can add review
+266,67,change_review,Can change review
+267,67,delete_review,Can delete review
+268,67,view_review,Can view review
+269,68,add_reviewcycle,Can add Review Cycle
+270,68,change_reviewcycle,Can change Review Cycle
+271,68,delete_reviewcycle,Can delete Review Cycle
+272,68,view_reviewcycle,Can view Review Cycle
+273,69,add_reviewtype,Can add Review Type
+274,69,change_reviewtype,Can change Review Type
+275,69,delete_reviewtype,Can delete Review Type
+276,69,view_reviewtype,Can view Review Type
+277,70,add_citystzip,Can add city st zip
+278,70,change_citystzip,Can change city st zip
+279,70,delete_citystzip,Can delete city st zip
+280,70,view_citystzip,Can view city st zip
+281,71,add_inspectiongroup,Can add inspection group
+282,71,change_inspectiongroup,Can change inspection group
+283,71,delete_inspectiongroup,Can delete inspection group
+284,71,view_inspectiongroup,Can view inspection group
+285,72,add_contact,Can add Contact
+286,72,change_contact,Can change Contact
+287,72,delete_contact,Can delete Contact
+288,72,view_contact,Can view Contact
+289,30,add_restriction,Can add restriction
+290,30,change_restriction,Can change restriction
+291,30,delete_restriction,Can delete restriction
+292,30,view_restriction,Can view restriction
+293,73,add_form,Can add form
+294,73,change_form,Can change form
+295,73,delete_form,Can delete form
+296,73,view_form,Can view form
+297,74,add_contacttype,Can add contact type
+298,74,change_contacttype,Can change contact type
+299,74,delete_contacttype,Can delete contact type
+300,74,view_contacttype,Can view contact type
+301,75,add_appquestion,Can add app question
+302,75,change_appquestion,Can change app question
+303,75,delete_appquestion,Can delete app question
+304,75,view_appquestion,Can view app question

@@ -9,13 +9,14 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 import requests
 
 from profiles.models import Profile
+from records.models import Record
+
 
 
 ##########################################################################
 """ Accounts Model """
 ##########################################################################
 class Account(models.Model): 
-
     fund = models.CharField(
         max_length=4, null=True, blank=True)
     fund_label = models.CharField(
@@ -45,6 +46,7 @@ class Account(models.Model):
         return self.unit_label
     
     class Meta():
+        ordering = ["fund", "unit", "cost_center"]
         verbose_name = "Account"
         verbose_name_plural = "Accounts"
 
@@ -53,67 +55,22 @@ class Account(models.Model):
 """ Fee Types Model """
 ##########################################################################
 class FeeType(models.Model): 
-    
-    fee_account = models.ForeignKey(
-        Account, 
-        on_delete=models.PROTECT,
-        null=True,
-        blank=True,
-        related_name="acct"
-    )
-    fee_group = models.CharField(
-        max_length=255,
-        null=True,
-        blank=True,
-    )
-    fee_name = models.CharField(
-        max_length=255,
-        null=True,
-        blank=True, 
-        unique=True,
-    )
-    policy = models.TextField(
-        max_length=1000, 
-        null=True, 
-        blank=True,
-    )
-    authorization = models.CharField(
-        max_length=255, 
-        null=True, 
-        blank=True,
-    )
-    adopted = models.DateField(
-        null=True, 
-        blank=True,
-    )
-    revised = models.DateField(
-        null=True, 
-        blank=True,
-    )
-    expires = models.DateField(
-        null=True, 
-        blank=True,
-    )
-    tier_base_qty = models.DecimalField(
-        max_digits=15, 
-        decimal_places=0, 
-        default=0, 
-    )
-    tier_base_fee = models.FloatField(
-        default=0,
-    )
-    rate = models.FloatField(
-        default=5000000,
-    )
-    units = models.CharField(
-        max_length=255, 
-        default="each",
-    )
-    rate_check = models.CharField(
-        max_length=255, 
-        null=True, 
-        blank=True,
-    ) 
+    fee_account = models.ForeignKey(Account, on_delete=models.PROTECT, 
+                                    related_name="acct")
+    fee_group = models.CharField(max_length=255)
+    fee_name = models.CharField(max_length=255, unique=True)
+    policy = models.TextField(max_length=1000, blank=True)
+    authorization = models.CharField(max_length=255, blank=True)
+    adopted = models.DateField(null=True, blank=True)
+    revised = models.DateField(null=True, blank=True)
+    expires = models.DateField(null=True, blank=True)
+    tier_base_qty = models.DecimalField(max_digits=15, decimal_places=0, 
+                                        default=0)
+    tier_base_fee = models.DecimalField(max_digits=15, decimal_places=2, 
+                                        default=0)
+    rate = models.FloatField(default=5000000) # round to prevent Float errors
+    units = models.CharField(max_length=255, default="each")
+    rate_check = models.CharField(max_length=255, null=True, blank=True) 
     active = models.BooleanField(default=True)
     deleted = models.BooleanField(default=False)
 
@@ -131,22 +88,15 @@ class FeeType(models.Model):
 ##########################################################################
 class Fee(models.Model):
     # Attach the fee to a record of various types (permit, license, case)
-    content_type = models.ForeignKey(ContentType, on_delete=models.PROTECT)
-    object_id = models.PositiveIntegerField()
-    content_object = GenericForeignKey("content_type", "object_id")
-
+    # content_type = models.ForeignKey(ContentType, on_delete=models.PROTECT)
+    # object_id = models.PositiveIntegerField()
+    # content_object = GenericForeignKey("content_type", "object_id")
+    
+    permit = models.ForeignKey(Record, on_delete=models.PROTECT)
     fee_type = models.ForeignKey(FeeType, on_delete=models.PROTECT)
     qty = models.DecimalField(max_digits=20, decimal_places=7, default=1.0)
-    rate = models.DecimalField(max_digits=15, decimal_places=2, default=1.00)
     amount = models.DecimalField(max_digits=15, decimal_places=2, default=1.00)
-
-    paid_amount = models.DecimalField(max_digits=15, decimal_places=2, default=0.00)
-    paid_date = models.DateTimeField(null=True, blank=True)
-    receipt_number = models.CharField(max_length=25, null=True, blank=True)
     balance = models.DecimalField(max_digits=15, decimal_places=2, default=1000000)
-    fully_paid = models.BooleanField(default=False)
-    created_on = models.DateTimeField(null=True, blank=True)
-    created_by = models.ForeignKey(User, on_delete=models.PROTECT)
     notes = models.TextField(max_length=255)
 
     def __str__(self) -> str:
@@ -193,15 +143,16 @@ class PaymentMethod(models.Model):
 
 class Payment(models.Model):
     fees = models.ManyToManyField(Fee)
-    method = models.CharField(max_length=255, null=True, blank=True)
+    method = models.ForeignKey(PaymentMethod, on_delete=models.PROTECT)
     date = models.DateTimeField(auto_now=True)
     amount = models.DecimalField(max_digits=15, decimal_places=2, default=0.00)
-    paid_by = models.OneToOneField(Profile, on_delete=models.CASCADE)
+    paid_by = models.ForeignKey(Profile, on_delete=models.PROTECT)
     check_number = models.CharField(max_length=255, null=True, blank=True)
     receipt_number = models.PositiveSmallIntegerField(null=True)
     collected_by = models.ForeignKey(User, on_delete=models.PROTECT)
     deposit = models.BooleanField(default=False)
     refund = models.BooleanField(default=False)
+    notes = models.TextField(max_length=255)
 
 
     def pay_now():

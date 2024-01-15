@@ -46,9 +46,10 @@ INSTALLED_APPS = [
     'fees.apps.FeesConfig',
     'inspections.apps.InspectionsConfig',
     'locations.apps.LocationsConfig',
-    'permits.apps.PermitsConfig',
-    'permits_bp.apps.PermitsBPConfig',
+    # 'permits.apps.PermitsConfig',
+    # 'permits_bp.apps.PermitsBPConfig',
     'profiles.apps.ProfilesConfig',
+    'records.apps.RecordsConfig',
     'reviews.apps.ReviewsConfig',
 ]
 

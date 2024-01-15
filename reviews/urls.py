@@ -15,7 +15,7 @@ urlpatterns = [
         ReviewList.as_view(template_name="reviews/list.html"), 
         name="review_list"),
 
-    path('detail/<int:pk>', 
+    path('<int:pk>', 
         ReviewDetail.as_view(template_name="reviews/cycles.html"), 
         name="review_list"),
 ]

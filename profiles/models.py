@@ -1,9 +1,6 @@
-##########################################################################
-""" Profile Models """
-##########################################################################
-""" Profile objects have an optional OneToOne relationship with the 
+""" Profile Models have an optional OneToOne relationship with the 
 django default User objects to act as an extension of the User model."""
-##########################################################################
+
 from django.contrib.auth.models import User
 from django.db import models
 
@@ -28,6 +25,8 @@ class Profile(models.Model):
     def __str__(self) -> str:
         return f"{self.last}, {self.first}"
     
+    """ To-Do: automate creation of a User when creating a Profile."""
+    
     def get_username(self) -> str:
         return self.user.username
     
@@ -35,6 +34,7 @@ class Profile(models.Model):
         return f"{self.first} {self.last}"
     
     class Meta:
+        ordering = ["first", "last"]  # or ["username"]?
         verbose_name = "Profile"
         verbose_name_plural = "Profiles"
     
@@ -42,8 +42,6 @@ class Profile(models.Model):
 ##########################################################################
 """ PROFESSIONALS """
 ##########################################################################
-
-
 class LicenseAgency(models.Model):
     agency = models.CharField("Agency Acronym", max_length=7, unique=True)
     agency_long = models.CharField("Agency Full Name", max_length=255, unique=True)
@@ -52,6 +50,7 @@ class LicenseAgency(models.Model):
         return self.agency_long
     
     class Meta:
+        ordering = ["agency"]
         verbose_name = "License Agency"
         verbose_name_plural = "License Agencies"
 
@@ -86,22 +85,8 @@ class LicenseHolder(models.Model):
 
 
 ##########################################################################
-""" STAFF AND PARTNERS """
+""" Staff """
 ##########################################################################
-
-
-class Agency(models.Model):
-    agency = models.CharField(max_length=25, unique=True)
-    full_agency = models.CharField(max_length=255, unique=True)
-
-    def __str__(self) -> str:
-        return self.agency
-    
-    class Meta:
-        ordering = ["agency"]
-        verbose_name = "Partner Agency"
-        verbose_name_plural = "Partner Agency Options"
-
 class Department(models.Model):
     dept_code = models.CharField(max_length=25, unique=True)
     department = models.CharField(max_length=255, unique=True)
@@ -143,8 +128,25 @@ class Staff(models.Model):
         return self.profile.user.username
     
     class Meta():
-        verbose_name_plural = "Staff Member"
+        ordering = ["department", "division", "profile"]
+        verbose_name = "Staff Member"
         verbose_name_plural = "Staff Members"
+
+
+##########################################################################
+""" Partners """
+##########################################################################
+class Agency(models.Model):
+    agency = models.CharField(max_length=25, unique=True)
+    full_agency = models.CharField(max_length=255, unique=True)
+
+    def __str__(self) -> str:
+        return self.agency
+    
+    class Meta:
+        ordering = ["agency"]
+        verbose_name = "DCS Partner Agency"
+        verbose_name_plural = "DCS Partner Agencies"
 
 class YoloCountyPartners(models.Model):
     profile = models.OneToOneField(
@@ -159,8 +161,9 @@ class YoloCountyPartners(models.Model):
         return self.profile.user.username
     
     class Meta():
-        verbose_name_plural = "Staff for Partner Agency"
-        verbose_name_plural = "Staff for Partner Agencies"
+        ordering = ["agency", "profile"]
+        verbose_name = "DCS Partner"
+        verbose_name_plural = "DCS Partners"
 
 ##########################################################################
 """ All Models """

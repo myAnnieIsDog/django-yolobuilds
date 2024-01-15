@@ -7,9 +7,8 @@ import openpyxl
 from fees.models import Account, FeeType, PaymentMethod
 from inspections.models import InspectionType, InspectionResult
 from locations.models import District, Jurisdiction
-from permits.models import Tag, Division, PermitStatus, PermitType, Sequence
-from permits_bp.models import ApplicantRole, OwnerRole
-from profiles.models import Profile, LicenseAgency, LicenseType, Agency, Department, Division, Staff
+from records.models import Tag, Division, Status, Type, Number
+from profiles.models import Profile, LicenseAgency, LicenseType, Agency, Department, Division
 from reviews.models import ReviewType, ReviewStatus, CycleResult
 
 ##########################################################################
@@ -17,13 +16,13 @@ from reviews.models import ReviewType, ReviewStatus, CycleResult
 ##########################################################################
 base = ".init/"
 def run():
-    # fiscal()
-    # inspections()
-    # locations()
-    # profiles()
-    # reviews()
-    permits()
-    permits_bp()
+    fiscal()
+    inspections()
+    locations()
+    profiles()
+    reviews()
+    records()
+    # permits_bp()
 
 ##########################################################################
 """ Fiscal """
@@ -56,7 +55,7 @@ def fiscal():
         a.id = ws[f"A{i}"].value
         # a.fee_account = acct.get(id=ws[f"B{i}"].value)
         a.fee_group = ws[f"C{i}"].value
-        a.fee_type = ws[f"D{i}"].value
+        a.fee_name = ws[f"D{i}"].value
         a.policy = ws[f"E{i}"].value
         a.authorization = ws[f"F{i}"].value
         a.adopted = ws[f"G{i}"].value
@@ -238,12 +237,12 @@ def reviews():
 ##########################################################################
 """ Permits """
 ##########################################################################
-def permits():
+def records():
     wb = openpyxl.load_workbook(f'{base}permits.xlsx')
     
     ws = wb["sequence"]
     for i in range(2, 7):
-        a = Sequence()
+        a = Number()
         a.id = ws[f"A{i}"].value
         a.series_title = ws[f"B{i}"].value
         a.series_prefix = ws[f"C{i}"].value
@@ -261,7 +260,7 @@ def permits():
 
     ws = wb["permit_status"]
     for i in range(2, 13):
-        a = PermitStatus()
+        a = Status()
         a.id = ws[f"A{i}"].value
         a.status = ws[f"B{i}"].value
         a.policy = ws[f"C{i}"].value
@@ -271,31 +270,11 @@ def permits():
 
     ws = wb["permit_type"]
     for i in range(2, 18):
-        a = PermitType()
+        a = Type()
         a.id = ws[f"A{i}"].value
         a.type = ws[f"B{i}"].value
         a.policy = ws[f"C{i}"].value
         a.suffix = ws[f"D{i}"].value
-        a.save()
-
-##########################################################################
-""" Permits_BP """
-##########################################################################
-def permits_bp():
-    wb = openpyxl.load_workbook(f'{base}permits.xlsx')
-
-    ws = wb["app_role"]
-    for i in range(2, 5):
-        a = ApplicantRole()
-        a.id = ws[f"A{i}"].value
-        a.applicant_role = ws[f"B{i}"].value
-        a.save()
-
-    ws = wb["owner_role"]
-    for i in range(2, 5):
-        a = OwnerRole()
-        a.id = ws[f"A{i}"].value
-        a.owner_role = ws[f"B{i}"].value
         a.save()
 
 

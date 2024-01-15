@@ -1,0 +1,1826 @@
+[
+    {
+        "codename": "add_logentry",
+        "content_type_id": 1,
+        "id": 1,
+        "name": "Can add log entry"
+    },
+    {
+        "codename": "change_logentry",
+        "content_type_id": 1,
+        "id": 2,
+        "name": "Can change log entry"
+    },
+    {
+        "codename": "delete_logentry",
+        "content_type_id": 1,
+        "id": 3,
+        "name": "Can delete log entry"
+    },
+    {
+        "codename": "view_logentry",
+        "content_type_id": 1,
+        "id": 4,
+        "name": "Can view log entry"
+    },
+    {
+        "codename": "add_permission",
+        "content_type_id": 2,
+        "id": 5,
+        "name": "Can add permission"
+    },
+    {
+        "codename": "change_permission",
+        "content_type_id": 2,
+        "id": 6,
+        "name": "Can change permission"
+    },
+    {
+        "codename": "delete_permission",
+        "content_type_id": 2,
+        "id": 7,
+        "name": "Can delete permission"
+    },
+    {
+        "codename": "view_permission",
+        "content_type_id": 2,
+        "id": 8,
+        "name": "Can view permission"
+    },
+    {
+        "codename": "add_group",
+        "content_type_id": 3,
+        "id": 9,
+        "name": "Can add group"
+    },
+    {
+        "codename": "change_group",
+        "content_type_id": 3,
+        "id": 10,
+        "name": "Can change group"
+    },
+    {
+        "codename": "delete_group",
+        "content_type_id": 3,
+        "id": 11,
+        "name": "Can delete group"
+    },
+    {
+        "codename": "view_group",
+        "content_type_id": 3,
+        "id": 12,
+        "name": "Can view group"
+    },
+    {
+        "codename": "add_user",
+        "content_type_id": 4,
+        "id": 13,
+        "name": "Can add user"
+    },
+    {
+        "codename": "change_user",
+        "content_type_id": 4,
+        "id": 14,
+        "name": "Can change user"
+    },
+    {
+        "codename": "delete_user",
+        "content_type_id": 4,
+        "id": 15,
+        "name": "Can delete user"
+    },
+    {
+        "codename": "view_user",
+        "content_type_id": 4,
+        "id": 16,
+        "name": "Can view user"
+    },
+    {
+        "codename": "add_contenttype",
+        "content_type_id": 5,
+        "id": 17,
+        "name": "Can add content type"
+    },
+    {
+        "codename": "change_contenttype",
+        "content_type_id": 5,
+        "id": 18,
+        "name": "Can change content type"
+    },
+    {
+        "codename": "delete_contenttype",
+        "content_type_id": 5,
+        "id": 19,
+        "name": "Can delete content type"
+    },
+    {
+        "codename": "view_contenttype",
+        "content_type_id": 5,
+        "id": 20,
+        "name": "Can view content type"
+    },
+    {
+        "codename": "add_session",
+        "content_type_id": 6,
+        "id": 21,
+        "name": "Can add session"
+    },
+    {
+        "codename": "change_session",
+        "content_type_id": 6,
+        "id": 22,
+        "name": "Can change session"
+    },
+    {
+        "codename": "delete_session",
+        "content_type_id": 6,
+        "id": 23,
+        "name": "Can delete session"
+    },
+    {
+        "codename": "view_session",
+        "content_type_id": 6,
+        "id": 24,
+        "name": "Can view session"
+    },
+    {
+        "codename": "add_account",
+        "content_type_id": 7,
+        "id": 25,
+        "name": "Can add Account"
+    },
+    {
+        "codename": "change_account",
+        "content_type_id": 7,
+        "id": 26,
+        "name": "Can change Account"
+    },
+    {
+        "codename": "delete_account",
+        "content_type_id": 7,
+        "id": 27,
+        "name": "Can delete Account"
+    },
+    {
+        "codename": "view_account",
+        "content_type_id": 7,
+        "id": 28,
+        "name": "Can view Account"
+    },
+    {
+        "codename": "add_paymentmethod",
+        "content_type_id": 8,
+        "id": 29,
+        "name": "Can add Payment Method"
+    },
+    {
+        "codename": "change_paymentmethod",
+        "content_type_id": 8,
+        "id": 30,
+        "name": "Can change Payment Method"
+    },
+    {
+        "codename": "delete_paymentmethod",
+        "content_type_id": 8,
+        "id": 31,
+        "name": "Can delete Payment Method"
+    },
+    {
+        "codename": "view_paymentmethod",
+        "content_type_id": 8,
+        "id": 32,
+        "name": "Can view Payment Method"
+    },
+    {
+        "codename": "add_feetype",
+        "content_type_id": 9,
+        "id": 33,
+        "name": "Can add Fee Type"
+    },
+    {
+        "codename": "change_feetype",
+        "content_type_id": 9,
+        "id": 34,
+        "name": "Can change Fee Type"
+    },
+    {
+        "codename": "delete_feetype",
+        "content_type_id": 9,
+        "id": 35,
+        "name": "Can delete Fee Type"
+    },
+    {
+        "codename": "view_feetype",
+        "content_type_id": 9,
+        "id": 36,
+        "name": "Can view Fee Type"
+    },
+    {
+        "codename": "add_fee",
+        "content_type_id": 10,
+        "id": 37,
+        "name": "Can add fee"
+    },
+    {
+        "codename": "change_fee",
+        "content_type_id": 10,
+        "id": 38,
+        "name": "Can change fee"
+    },
+    {
+        "codename": "delete_fee",
+        "content_type_id": 10,
+        "id": 39,
+        "name": "Can delete fee"
+    },
+    {
+        "codename": "view_fee",
+        "content_type_id": 10,
+        "id": 40,
+        "name": "Can view fee"
+    },
+    {
+        "codename": "add_payment",
+        "content_type_id": 11,
+        "id": 41,
+        "name": "Can add payment"
+    },
+    {
+        "codename": "change_payment",
+        "content_type_id": 11,
+        "id": 42,
+        "name": "Can change payment"
+    },
+    {
+        "codename": "delete_payment",
+        "content_type_id": 11,
+        "id": 43,
+        "name": "Can delete payment"
+    },
+    {
+        "codename": "view_payment",
+        "content_type_id": 11,
+        "id": 44,
+        "name": "Can view payment"
+    },
+    {
+        "codename": "add_claritifee",
+        "content_type_id": 12,
+        "id": 45,
+        "name": "Can add clariti fee"
+    },
+    {
+        "codename": "change_claritifee",
+        "content_type_id": 12,
+        "id": 46,
+        "name": "Can change clariti fee"
+    },
+    {
+        "codename": "delete_claritifee",
+        "content_type_id": 12,
+        "id": 47,
+        "name": "Can delete clariti fee"
+    },
+    {
+        "codename": "view_claritifee",
+        "content_type_id": 12,
+        "id": 48,
+        "name": "Can view clariti fee"
+    },
+    {
+        "codename": "add_trakitfee",
+        "content_type_id": 13,
+        "id": 49,
+        "name": "Can add trakit fee"
+    },
+    {
+        "codename": "change_trakitfee",
+        "content_type_id": 13,
+        "id": 50,
+        "name": "Can change trakit fee"
+    },
+    {
+        "codename": "delete_trakitfee",
+        "content_type_id": 13,
+        "id": 51,
+        "name": "Can delete trakit fee"
+    },
+    {
+        "codename": "view_trakitfee",
+        "content_type_id": 13,
+        "id": 52,
+        "name": "Can view trakit fee"
+    },
+    {
+        "codename": "add_inspectionresult",
+        "content_type_id": 14,
+        "id": 53,
+        "name": "Can add Inspection Result Option"
+    },
+    {
+        "codename": "change_inspectionresult",
+        "content_type_id": 14,
+        "id": 54,
+        "name": "Can change Inspection Result Option"
+    },
+    {
+        "codename": "delete_inspectionresult",
+        "content_type_id": 14,
+        "id": 55,
+        "name": "Can delete Inspection Result Option"
+    },
+    {
+        "codename": "view_inspectionresult",
+        "content_type_id": 14,
+        "id": 56,
+        "name": "Can view Inspection Result Option"
+    },
+    {
+        "codename": "add_inspection",
+        "content_type_id": 15,
+        "id": 57,
+        "name": "Can add inspection"
+    },
+    {
+        "codename": "change_inspection",
+        "content_type_id": 15,
+        "id": 58,
+        "name": "Can change inspection"
+    },
+    {
+        "codename": "delete_inspection",
+        "content_type_id": 15,
+        "id": 59,
+        "name": "Can delete inspection"
+    },
+    {
+        "codename": "view_inspection",
+        "content_type_id": 15,
+        "id": 60,
+        "name": "Can view inspection"
+    },
+    {
+        "codename": "add_inspectiontrip",
+        "content_type_id": 16,
+        "id": 61,
+        "name": "Can add Inspection Trip"
+    },
+    {
+        "codename": "change_inspectiontrip",
+        "content_type_id": 16,
+        "id": 62,
+        "name": "Can change Inspection Trip"
+    },
+    {
+        "codename": "delete_inspectiontrip",
+        "content_type_id": 16,
+        "id": 63,
+        "name": "Can delete Inspection Trip"
+    },
+    {
+        "codename": "view_inspectiontrip",
+        "content_type_id": 16,
+        "id": 64,
+        "name": "Can view Inspection Trip"
+    },
+    {
+        "codename": "add_inspectiontype",
+        "content_type_id": 17,
+        "id": 65,
+        "name": "Can add Inspection Type"
+    },
+    {
+        "codename": "change_inspectiontype",
+        "content_type_id": 17,
+        "id": 66,
+        "name": "Can change Inspection Type"
+    },
+    {
+        "codename": "delete_inspectiontype",
+        "content_type_id": 17,
+        "id": 67,
+        "name": "Can delete Inspection Type"
+    },
+    {
+        "codename": "view_inspectiontype",
+        "content_type_id": 17,
+        "id": 68,
+        "name": "Can view Inspection Type"
+    },
+    {
+        "codename": "add_district",
+        "content_type_id": 18,
+        "id": 69,
+        "name": "Can add district"
+    },
+    {
+        "codename": "change_district",
+        "content_type_id": 18,
+        "id": 70,
+        "name": "Can change district"
+    },
+    {
+        "codename": "delete_district",
+        "content_type_id": 18,
+        "id": 71,
+        "name": "Can delete district"
+    },
+    {
+        "codename": "view_district",
+        "content_type_id": 18,
+        "id": 72,
+        "name": "Can view district"
+    },
+    {
+        "codename": "add_jurisdiction",
+        "content_type_id": 19,
+        "id": 73,
+        "name": "Can add jurisdiction"
+    },
+    {
+        "codename": "change_jurisdiction",
+        "content_type_id": 19,
+        "id": 74,
+        "name": "Can change jurisdiction"
+    },
+    {
+        "codename": "delete_jurisdiction",
+        "content_type_id": 19,
+        "id": 75,
+        "name": "Can delete jurisdiction"
+    },
+    {
+        "codename": "view_jurisdiction",
+        "content_type_id": 19,
+        "id": 76,
+        "name": "Can view jurisdiction"
+    },
+    {
+        "codename": "add_parcel",
+        "content_type_id": 20,
+        "id": 77,
+        "name": "Can add parcel"
+    },
+    {
+        "codename": "change_parcel",
+        "content_type_id": 20,
+        "id": 78,
+        "name": "Can change parcel"
+    },
+    {
+        "codename": "delete_parcel",
+        "content_type_id": 20,
+        "id": 79,
+        "name": "Can delete parcel"
+    },
+    {
+        "codename": "view_parcel",
+        "content_type_id": 20,
+        "id": 80,
+        "name": "Can view parcel"
+    },
+    {
+        "codename": "add_siteaddress",
+        "content_type_id": 21,
+        "id": 81,
+        "name": "Can add Site Address"
+    },
+    {
+        "codename": "change_siteaddress",
+        "content_type_id": 21,
+        "id": 82,
+        "name": "Can change Site Address"
+    },
+    {
+        "codename": "delete_siteaddress",
+        "content_type_id": 21,
+        "id": 83,
+        "name": "Can delete Site Address"
+    },
+    {
+        "codename": "view_siteaddress",
+        "content_type_id": 21,
+        "id": 84,
+        "name": "Can view Site Address"
+    },
+    {
+        "codename": "add_division",
+        "content_type_id": 22,
+        "id": 85,
+        "name": "Can add division"
+    },
+    {
+        "codename": "change_division",
+        "content_type_id": 22,
+        "id": 86,
+        "name": "Can change division"
+    },
+    {
+        "codename": "delete_division",
+        "content_type_id": 22,
+        "id": 87,
+        "name": "Can delete division"
+    },
+    {
+        "codename": "view_division",
+        "content_type_id": 22,
+        "id": 88,
+        "name": "Can view division"
+    },
+    {
+        "codename": "add_permitstatus",
+        "content_type_id": 23,
+        "id": 89,
+        "name": "Can add Permit Status"
+    },
+    {
+        "codename": "change_permitstatus",
+        "content_type_id": 23,
+        "id": 90,
+        "name": "Can change Permit Status"
+    },
+    {
+        "codename": "delete_permitstatus",
+        "content_type_id": 23,
+        "id": 91,
+        "name": "Can delete Permit Status"
+    },
+    {
+        "codename": "view_permitstatus",
+        "content_type_id": 23,
+        "id": 92,
+        "name": "Can view Permit Status"
+    },
+    {
+        "codename": "add_permittype",
+        "content_type_id": 24,
+        "id": 93,
+        "name": "Can add Permit Type"
+    },
+    {
+        "codename": "change_permittype",
+        "content_type_id": 24,
+        "id": 94,
+        "name": "Can change Permit Type"
+    },
+    {
+        "codename": "delete_permittype",
+        "content_type_id": 24,
+        "id": 95,
+        "name": "Can delete Permit Type"
+    },
+    {
+        "codename": "view_permittype",
+        "content_type_id": 24,
+        "id": 96,
+        "name": "Can view Permit Type"
+    },
+    {
+        "codename": "add_sequence",
+        "content_type_id": 25,
+        "id": 97,
+        "name": "Can add sequence"
+    },
+    {
+        "codename": "change_sequence",
+        "content_type_id": 25,
+        "id": 98,
+        "name": "Can change sequence"
+    },
+    {
+        "codename": "delete_sequence",
+        "content_type_id": 25,
+        "id": 99,
+        "name": "Can delete sequence"
+    },
+    {
+        "codename": "view_sequence",
+        "content_type_id": 25,
+        "id": 100,
+        "name": "Can view sequence"
+    },
+    {
+        "codename": "add_tag",
+        "content_type_id": 26,
+        "id": 101,
+        "name": "Can add tag"
+    },
+    {
+        "codename": "change_tag",
+        "content_type_id": 26,
+        "id": 102,
+        "name": "Can change tag"
+    },
+    {
+        "codename": "delete_tag",
+        "content_type_id": 26,
+        "id": 103,
+        "name": "Can delete tag"
+    },
+    {
+        "codename": "view_tag",
+        "content_type_id": 26,
+        "id": 104,
+        "name": "Can view tag"
+    },
+    {
+        "codename": "add_permitsubtype",
+        "content_type_id": 27,
+        "id": 105,
+        "name": "Can add Permit Subtype"
+    },
+    {
+        "codename": "change_permitsubtype",
+        "content_type_id": 27,
+        "id": 106,
+        "name": "Can change Permit Subtype"
+    },
+    {
+        "codename": "delete_permitsubtype",
+        "content_type_id": 27,
+        "id": 107,
+        "name": "Can delete Permit Subtype"
+    },
+    {
+        "codename": "view_permitsubtype",
+        "content_type_id": 27,
+        "id": 108,
+        "name": "Can view Permit Subtype"
+    },
+    {
+        "codename": "add_permit",
+        "content_type_id": 28,
+        "id": 109,
+        "name": "Can add Permit"
+    },
+    {
+        "codename": "change_permit",
+        "content_type_id": 28,
+        "id": 110,
+        "name": "Can change Permit"
+    },
+    {
+        "codename": "delete_permit",
+        "content_type_id": 28,
+        "id": 111,
+        "name": "Can delete Permit"
+    },
+    {
+        "codename": "view_permit",
+        "content_type_id": 28,
+        "id": 112,
+        "name": "Can view Permit"
+    },
+    {
+        "codename": "add_relatedrecord",
+        "content_type_id": 29,
+        "id": 113,
+        "name": "Can add Related Record"
+    },
+    {
+        "codename": "change_relatedrecord",
+        "content_type_id": 29,
+        "id": 114,
+        "name": "Can change Related Record"
+    },
+    {
+        "codename": "delete_relatedrecord",
+        "content_type_id": 29,
+        "id": 115,
+        "name": "Can delete Related Record"
+    },
+    {
+        "codename": "view_relatedrecord",
+        "content_type_id": 29,
+        "id": 116,
+        "name": "Can view Related Record"
+    },
+    {
+        "codename": "add_taggedrecord",
+        "content_type_id": 30,
+        "id": 117,
+        "name": "Can add Tagged Record"
+    },
+    {
+        "codename": "change_taggedrecord",
+        "content_type_id": 30,
+        "id": 118,
+        "name": "Can change Tagged Record"
+    },
+    {
+        "codename": "delete_taggedrecord",
+        "content_type_id": 30,
+        "id": 119,
+        "name": "Can delete Tagged Record"
+    },
+    {
+        "codename": "view_taggedrecord",
+        "content_type_id": 30,
+        "id": 120,
+        "name": "Can view Tagged Record"
+    },
+    {
+        "codename": "add_applicantrole",
+        "content_type_id": 31,
+        "id": 121,
+        "name": "Can add Applicant Role Option"
+    },
+    {
+        "codename": "change_applicantrole",
+        "content_type_id": 31,
+        "id": 122,
+        "name": "Can change Applicant Role Option"
+    },
+    {
+        "codename": "delete_applicantrole",
+        "content_type_id": 31,
+        "id": 123,
+        "name": "Can delete Applicant Role Option"
+    },
+    {
+        "codename": "view_applicantrole",
+        "content_type_id": 31,
+        "id": 124,
+        "name": "Can view Applicant Role Option"
+    },
+    {
+        "codename": "add_electricalservice",
+        "content_type_id": 32,
+        "id": 125,
+        "name": "Can add Electrical Service Replacement/Upgrade"
+    },
+    {
+        "codename": "change_electricalservice",
+        "content_type_id": 32,
+        "id": 126,
+        "name": "Can change Electrical Service Replacement/Upgrade"
+    },
+    {
+        "codename": "delete_electricalservice",
+        "content_type_id": 32,
+        "id": 127,
+        "name": "Can delete Electrical Service Replacement/Upgrade"
+    },
+    {
+        "codename": "view_electricalservice",
+        "content_type_id": 32,
+        "id": 128,
+        "name": "Can view Electrical Service Replacement/Upgrade"
+    },
+    {
+        "codename": "add_ess",
+        "content_type_id": 33,
+        "id": 129,
+        "name": "Can add Energy Storage System (Battery)"
+    },
+    {
+        "codename": "change_ess",
+        "content_type_id": 33,
+        "id": 130,
+        "name": "Can change Energy Storage System (Battery)"
+    },
+    {
+        "codename": "delete_ess",
+        "content_type_id": 33,
+        "id": 131,
+        "name": "Can delete Energy Storage System (Battery)"
+    },
+    {
+        "codename": "view_ess",
+        "content_type_id": 33,
+        "id": 132,
+        "name": "Can view Energy Storage System (Battery)"
+    },
+    {
+        "codename": "add_evcs",
+        "content_type_id": 34,
+        "id": 133,
+        "name": "Can add Electrical Vehicle Charging Station"
+    },
+    {
+        "codename": "change_evcs",
+        "content_type_id": 34,
+        "id": 134,
+        "name": "Can change Electrical Vehicle Charging Station"
+    },
+    {
+        "codename": "delete_evcs",
+        "content_type_id": 34,
+        "id": 135,
+        "name": "Can delete Electrical Vehicle Charging Station"
+    },
+    {
+        "codename": "view_evcs",
+        "content_type_id": 34,
+        "id": 136,
+        "name": "Can view Electrical Vehicle Charging Station"
+    },
+    {
+        "codename": "add_floodzones",
+        "content_type_id": 35,
+        "id": 137,
+        "name": "Can add Flood Zone"
+    },
+    {
+        "codename": "change_floodzones",
+        "content_type_id": 35,
+        "id": 138,
+        "name": "Can change Flood Zone"
+    },
+    {
+        "codename": "delete_floodzones",
+        "content_type_id": 35,
+        "id": 139,
+        "name": "Can delete Flood Zone"
+    },
+    {
+        "codename": "view_floodzones",
+        "content_type_id": 35,
+        "id": 140,
+        "name": "Can view Flood Zone"
+    },
+    {
+        "codename": "add_generator",
+        "content_type_id": 36,
+        "id": 141,
+        "name": "Can add Backup Generator"
+    },
+    {
+        "codename": "change_generator",
+        "content_type_id": 36,
+        "id": 142,
+        "name": "Can change Backup Generator"
+    },
+    {
+        "codename": "delete_generator",
+        "content_type_id": 36,
+        "id": 143,
+        "name": "Can delete Backup Generator"
+    },
+    {
+        "codename": "view_generator",
+        "content_type_id": 36,
+        "id": 144,
+        "name": "Can view Backup Generator"
+    },
+    {
+        "codename": "add_hvac",
+        "content_type_id": 37,
+        "id": 145,
+        "name": "Can add HVAC Replacement"
+    },
+    {
+        "codename": "change_hvac",
+        "content_type_id": 37,
+        "id": 146,
+        "name": "Can change HVAC Replacement"
+    },
+    {
+        "codename": "delete_hvac",
+        "content_type_id": 37,
+        "id": 147,
+        "name": "Can delete HVAC Replacement"
+    },
+    {
+        "codename": "view_hvac",
+        "content_type_id": 37,
+        "id": 148,
+        "name": "Can view HVAC Replacement"
+    },
+    {
+        "codename": "add_ownerrole",
+        "content_type_id": 38,
+        "id": 149,
+        "name": "Can add Owner Role"
+    },
+    {
+        "codename": "change_ownerrole",
+        "content_type_id": 38,
+        "id": 150,
+        "name": "Can change Owner Role"
+    },
+    {
+        "codename": "delete_ownerrole",
+        "content_type_id": 38,
+        "id": 151,
+        "name": "Can delete Owner Role"
+    },
+    {
+        "codename": "view_ownerrole",
+        "content_type_id": 38,
+        "id": 152,
+        "name": "Can view Owner Role"
+    },
+    {
+        "codename": "add_propane",
+        "content_type_id": 39,
+        "id": 153,
+        "name": "Can add Install Propane Tank"
+    },
+    {
+        "codename": "change_propane",
+        "content_type_id": 39,
+        "id": 154,
+        "name": "Can change Install Propane Tank"
+    },
+    {
+        "codename": "delete_propane",
+        "content_type_id": 39,
+        "id": 155,
+        "name": "Can delete Install Propane Tank"
+    },
+    {
+        "codename": "view_propane",
+        "content_type_id": 39,
+        "id": 156,
+        "name": "Can view Install Propane Tank"
+    },
+    {
+        "codename": "add_sewer",
+        "content_type_id": 40,
+        "id": 157,
+        "name": "Can add Building Sewer Replacement"
+    },
+    {
+        "codename": "change_sewer",
+        "content_type_id": 40,
+        "id": 158,
+        "name": "Can change Building Sewer Replacement"
+    },
+    {
+        "codename": "delete_sewer",
+        "content_type_id": 40,
+        "id": 159,
+        "name": "Can delete Building Sewer Replacement"
+    },
+    {
+        "codename": "view_sewer",
+        "content_type_id": 40,
+        "id": 160,
+        "name": "Can view Building Sewer Replacement"
+    },
+    {
+        "codename": "add_solar",
+        "content_type_id": 41,
+        "id": 161,
+        "name": "Can add solar"
+    },
+    {
+        "codename": "change_solar",
+        "content_type_id": 41,
+        "id": 162,
+        "name": "Can change solar"
+    },
+    {
+        "codename": "delete_solar",
+        "content_type_id": 41,
+        "id": 163,
+        "name": "Can delete solar"
+    },
+    {
+        "codename": "view_solar",
+        "content_type_id": 41,
+        "id": 164,
+        "name": "Can view solar"
+    },
+    {
+        "codename": "add_stucco",
+        "content_type_id": 42,
+        "id": 165,
+        "name": "Can add Replace Exterior Wall (Siding/Stucco)"
+    },
+    {
+        "codename": "change_stucco",
+        "content_type_id": 42,
+        "id": 166,
+        "name": "Can change Replace Exterior Wall (Siding/Stucco)"
+    },
+    {
+        "codename": "delete_stucco",
+        "content_type_id": 42,
+        "id": 167,
+        "name": "Can delete Replace Exterior Wall (Siding/Stucco)"
+    },
+    {
+        "codename": "view_stucco",
+        "content_type_id": 42,
+        "id": 168,
+        "name": "Can view Replace Exterior Wall (Siding/Stucco)"
+    },
+    {
+        "codename": "add_waterheater",
+        "content_type_id": 43,
+        "id": 169,
+        "name": "Can add Water Heater Replacement"
+    },
+    {
+        "codename": "change_waterheater",
+        "content_type_id": 43,
+        "id": 170,
+        "name": "Can change Water Heater Replacement"
+    },
+    {
+        "codename": "delete_waterheater",
+        "content_type_id": 43,
+        "id": 171,
+        "name": "Can delete Water Heater Replacement"
+    },
+    {
+        "codename": "view_waterheater",
+        "content_type_id": 43,
+        "id": 172,
+        "name": "Can view Water Heater Replacement"
+    },
+    {
+        "codename": "add_windows",
+        "content_type_id": 44,
+        "id": 173,
+        "name": "Can add Window Replacement"
+    },
+    {
+        "codename": "change_windows",
+        "content_type_id": 44,
+        "id": 174,
+        "name": "Can change Window Replacement"
+    },
+    {
+        "codename": "delete_windows",
+        "content_type_id": 44,
+        "id": 175,
+        "name": "Can delete Window Replacement"
+    },
+    {
+        "codename": "view_windows",
+        "content_type_id": 44,
+        "id": 176,
+        "name": "Can view Window Replacement"
+    },
+    {
+        "codename": "add_bp",
+        "content_type_id": 45,
+        "id": 177,
+        "name": "Can add Building Permits"
+    },
+    {
+        "codename": "change_bp",
+        "content_type_id": 45,
+        "id": 178,
+        "name": "Can change Building Permits"
+    },
+    {
+        "codename": "delete_bp",
+        "content_type_id": 45,
+        "id": 179,
+        "name": "Can delete Building Permits"
+    },
+    {
+        "codename": "view_bp",
+        "content_type_id": 45,
+        "id": 180,
+        "name": "Can view Building Permits"
+    },
+    {
+        "codename": "add_building",
+        "content_type_id": 46,
+        "id": 181,
+        "name": "Can add New Building/Structure"
+    },
+    {
+        "codename": "change_building",
+        "content_type_id": 46,
+        "id": 182,
+        "name": "Can change New Building/Structure"
+    },
+    {
+        "codename": "delete_building",
+        "content_type_id": 46,
+        "id": 183,
+        "name": "Can delete New Building/Structure"
+    },
+    {
+        "codename": "view_building",
+        "content_type_id": 46,
+        "id": 184,
+        "name": "Can view New Building/Structure"
+    },
+    {
+        "codename": "add_demolition",
+        "content_type_id": 47,
+        "id": 185,
+        "name": "Can add Demolition Permits"
+    },
+    {
+        "codename": "change_demolition",
+        "content_type_id": 47,
+        "id": 186,
+        "name": "Can change Demolition Permits"
+    },
+    {
+        "codename": "delete_demolition",
+        "content_type_id": 47,
+        "id": 187,
+        "name": "Can delete Demolition Permits"
+    },
+    {
+        "codename": "view_demolition",
+        "content_type_id": 47,
+        "id": 188,
+        "name": "Can view Demolition Permits"
+    },
+    {
+        "codename": "add_electrical",
+        "content_type_id": 48,
+        "id": 189,
+        "name": "Can add Electrical Permits"
+    },
+    {
+        "codename": "change_electrical",
+        "content_type_id": 48,
+        "id": 190,
+        "name": "Can change Electrical Permits"
+    },
+    {
+        "codename": "delete_electrical",
+        "content_type_id": 48,
+        "id": 191,
+        "name": "Can delete Electrical Permits"
+    },
+    {
+        "codename": "view_electrical",
+        "content_type_id": 48,
+        "id": 192,
+        "name": "Can view Electrical Permits"
+    },
+    {
+        "codename": "add_fire",
+        "content_type_id": 49,
+        "id": 193,
+        "name": "Can add Fire Protection Permits"
+    },
+    {
+        "codename": "change_fire",
+        "content_type_id": 49,
+        "id": 194,
+        "name": "Can change Fire Protection Permits"
+    },
+    {
+        "codename": "delete_fire",
+        "content_type_id": 49,
+        "id": 195,
+        "name": "Can delete Fire Protection Permits"
+    },
+    {
+        "codename": "view_fire",
+        "content_type_id": 49,
+        "id": 196,
+        "name": "Can view Fire Protection Permits"
+    },
+    {
+        "codename": "add_flood",
+        "content_type_id": 50,
+        "id": 197,
+        "name": "Can add Flood Protection Permits"
+    },
+    {
+        "codename": "change_flood",
+        "content_type_id": 50,
+        "id": 198,
+        "name": "Can change Flood Protection Permits"
+    },
+    {
+        "codename": "delete_flood",
+        "content_type_id": 50,
+        "id": 199,
+        "name": "Can delete Flood Protection Permits"
+    },
+    {
+        "codename": "view_flood",
+        "content_type_id": 50,
+        "id": 200,
+        "name": "Can view Flood Protection Permits"
+    },
+    {
+        "codename": "add_grading",
+        "content_type_id": 51,
+        "id": 201,
+        "name": "Can add Grading Permits"
+    },
+    {
+        "codename": "change_grading",
+        "content_type_id": 51,
+        "id": 202,
+        "name": "Can change Grading Permits"
+    },
+    {
+        "codename": "delete_grading",
+        "content_type_id": 51,
+        "id": 203,
+        "name": "Can delete Grading Permits"
+    },
+    {
+        "codename": "view_grading",
+        "content_type_id": 51,
+        "id": 204,
+        "name": "Can view Grading Permits"
+    },
+    {
+        "codename": "add_mechanical",
+        "content_type_id": 52,
+        "id": 205,
+        "name": "Can add Mechanical Permits"
+    },
+    {
+        "codename": "change_mechanical",
+        "content_type_id": 52,
+        "id": 206,
+        "name": "Can change Mechanical Permits"
+    },
+    {
+        "codename": "delete_mechanical",
+        "content_type_id": 52,
+        "id": 207,
+        "name": "Can delete Mechanical Permits"
+    },
+    {
+        "codename": "view_mechanical",
+        "content_type_id": 52,
+        "id": 208,
+        "name": "Can view Mechanical Permits"
+    },
+    {
+        "codename": "add_plumbing",
+        "content_type_id": 53,
+        "id": 209,
+        "name": "Can add Plumbing Permits"
+    },
+    {
+        "codename": "change_plumbing",
+        "content_type_id": 53,
+        "id": 210,
+        "name": "Can change Plumbing Permits"
+    },
+    {
+        "codename": "delete_plumbing",
+        "content_type_id": 53,
+        "id": 211,
+        "name": "Can delete Plumbing Permits"
+    },
+    {
+        "codename": "view_plumbing",
+        "content_type_id": 53,
+        "id": 212,
+        "name": "Can view Plumbing Permits"
+    },
+    {
+        "codename": "add_pool",
+        "content_type_id": 54,
+        "id": 213,
+        "name": "Can add Pool/Spa Permits"
+    },
+    {
+        "codename": "change_pool",
+        "content_type_id": 54,
+        "id": 214,
+        "name": "Can change Pool/Spa Permits"
+    },
+    {
+        "codename": "delete_pool",
+        "content_type_id": 54,
+        "id": 215,
+        "name": "Can delete Pool/Spa Permits"
+    },
+    {
+        "codename": "view_pool",
+        "content_type_id": 54,
+        "id": 216,
+        "name": "Can view Pool/Spa Permits"
+    },
+    {
+        "codename": "add_reroof",
+        "content_type_id": 55,
+        "id": 217,
+        "name": "Can add reroof"
+    },
+    {
+        "codename": "change_reroof",
+        "content_type_id": 55,
+        "id": 218,
+        "name": "Can change reroof"
+    },
+    {
+        "codename": "delete_reroof",
+        "content_type_id": 55,
+        "id": 219,
+        "name": "Can delete reroof"
+    },
+    {
+        "codename": "view_reroof",
+        "content_type_id": 55,
+        "id": 220,
+        "name": "Can view reroof"
+    },
+    {
+        "codename": "add_agency",
+        "content_type_id": 56,
+        "id": 221,
+        "name": "Can add Partner Agency"
+    },
+    {
+        "codename": "change_agency",
+        "content_type_id": 56,
+        "id": 222,
+        "name": "Can change Partner Agency"
+    },
+    {
+        "codename": "delete_agency",
+        "content_type_id": 56,
+        "id": 223,
+        "name": "Can delete Partner Agency"
+    },
+    {
+        "codename": "view_agency",
+        "content_type_id": 56,
+        "id": 224,
+        "name": "Can view Partner Agency"
+    },
+    {
+        "codename": "add_department",
+        "content_type_id": 57,
+        "id": 225,
+        "name": "Can add Department"
+    },
+    {
+        "codename": "change_department",
+        "content_type_id": 57,
+        "id": 226,
+        "name": "Can change Department"
+    },
+    {
+        "codename": "delete_department",
+        "content_type_id": 57,
+        "id": 227,
+        "name": "Can delete Department"
+    },
+    {
+        "codename": "view_department",
+        "content_type_id": 57,
+        "id": 228,
+        "name": "Can view Department"
+    },
+    {
+        "codename": "add_division",
+        "content_type_id": 58,
+        "id": 229,
+        "name": "Can add Division"
+    },
+    {
+        "codename": "change_division",
+        "content_type_id": 58,
+        "id": 230,
+        "name": "Can change Division"
+    },
+    {
+        "codename": "delete_division",
+        "content_type_id": 58,
+        "id": 231,
+        "name": "Can delete Division"
+    },
+    {
+        "codename": "view_division",
+        "content_type_id": 58,
+        "id": 232,
+        "name": "Can view Division"
+    },
+    {
+        "codename": "add_licenseagency",
+        "content_type_id": 59,
+        "id": 233,
+        "name": "Can add License Agency"
+    },
+    {
+        "codename": "change_licenseagency",
+        "content_type_id": 59,
+        "id": 234,
+        "name": "Can change License Agency"
+    },
+    {
+        "codename": "delete_licenseagency",
+        "content_type_id": 59,
+        "id": 235,
+        "name": "Can delete License Agency"
+    },
+    {
+        "codename": "view_licenseagency",
+        "content_type_id": 59,
+        "id": 236,
+        "name": "Can view License Agency"
+    },
+    {
+        "codename": "add_licensetype",
+        "content_type_id": 60,
+        "id": 237,
+        "name": "Can add License Type"
+    },
+    {
+        "codename": "change_licensetype",
+        "content_type_id": 60,
+        "id": 238,
+        "name": "Can change License Type"
+    },
+    {
+        "codename": "delete_licensetype",
+        "content_type_id": 60,
+        "id": 239,
+        "name": "Can delete License Type"
+    },
+    {
+        "codename": "view_licensetype",
+        "content_type_id": 60,
+        "id": 240,
+        "name": "Can view License Type"
+    },
+    {
+        "codename": "add_profile",
+        "content_type_id": 61,
+        "id": 241,
+        "name": "Can add Profile"
+    },
+    {
+        "codename": "change_profile",
+        "content_type_id": 61,
+        "id": 242,
+        "name": "Can change Profile"
+    },
+    {
+        "codename": "delete_profile",
+        "content_type_id": 61,
+        "id": 243,
+        "name": "Can delete Profile"
+    },
+    {
+        "codename": "view_profile",
+        "content_type_id": 61,
+        "id": 244,
+        "name": "Can view Profile"
+    },
+    {
+        "codename": "add_licenseholder",
+        "content_type_id": 62,
+        "id": 245,
+        "name": "Can add license holder"
+    },
+    {
+        "codename": "change_licenseholder",
+        "content_type_id": 62,
+        "id": 246,
+        "name": "Can change license holder"
+    },
+    {
+        "codename": "delete_licenseholder",
+        "content_type_id": 62,
+        "id": 247,
+        "name": "Can delete license holder"
+    },
+    {
+        "codename": "view_licenseholder",
+        "content_type_id": 62,
+        "id": 248,
+        "name": "Can view license holder"
+    },
+    {
+        "codename": "add_staff",
+        "content_type_id": 63,
+        "id": 249,
+        "name": "Can add staff"
+    },
+    {
+        "codename": "change_staff",
+        "content_type_id": 63,
+        "id": 250,
+        "name": "Can change staff"
+    },
+    {
+        "codename": "delete_staff",
+        "content_type_id": 63,
+        "id": 251,
+        "name": "Can delete staff"
+    },
+    {
+        "codename": "view_staff",
+        "content_type_id": 63,
+        "id": 252,
+        "name": "Can view staff"
+    },
+    {
+        "codename": "add_yolocountypartners",
+        "content_type_id": 64,
+        "id": 253,
+        "name": "Can add yolo county partners"
+    },
+    {
+        "codename": "change_yolocountypartners",
+        "content_type_id": 64,
+        "id": 254,
+        "name": "Can change yolo county partners"
+    },
+    {
+        "codename": "delete_yolocountypartners",
+        "content_type_id": 64,
+        "id": 255,
+        "name": "Can delete yolo county partners"
+    },
+    {
+        "codename": "view_yolocountypartners",
+        "content_type_id": 64,
+        "id": 256,
+        "name": "Can view yolo county partners"
+    },
+    {
+        "codename": "add_cycleresult",
+        "content_type_id": 65,
+        "id": 257,
+        "name": "Can add Cycle Result Option"
+    },
+    {
+        "codename": "change_cycleresult",
+        "content_type_id": 65,
+        "id": 258,
+        "name": "Can change Cycle Result Option"
+    },
+    {
+        "codename": "delete_cycleresult",
+        "content_type_id": 65,
+        "id": 259,
+        "name": "Can delete Cycle Result Option"
+    },
+    {
+        "codename": "view_cycleresult",
+        "content_type_id": 65,
+        "id": 260,
+        "name": "Can view Cycle Result Option"
+    },
+    {
+        "codename": "add_reviewstatus",
+        "content_type_id": 66,
+        "id": 261,
+        "name": "Can add Review Status Option"
+    },
+    {
+        "codename": "change_reviewstatus",
+        "content_type_id": 66,
+        "id": 262,
+        "name": "Can change Review Status Option"
+    },
+    {
+        "codename": "delete_reviewstatus",
+        "content_type_id": 66,
+        "id": 263,
+        "name": "Can delete Review Status Option"
+    },
+    {
+        "codename": "view_reviewstatus",
+        "content_type_id": 66,
+        "id": 264,
+        "name": "Can view Review Status Option"
+    },
+    {
+        "codename": "add_review",
+        "content_type_id": 67,
+        "id": 265,
+        "name": "Can add review"
+    },
+    {
+        "codename": "change_review",
+        "content_type_id": 67,
+        "id": 266,
+        "name": "Can change review"
+    },
+    {
+        "codename": "delete_review",
+        "content_type_id": 67,
+        "id": 267,
+        "name": "Can delete review"
+    },
+    {
+        "codename": "view_review",
+        "content_type_id": 67,
+        "id": 268,
+        "name": "Can view review"
+    },
+    {
+        "codename": "add_reviewcycle",
+        "content_type_id": 68,
+        "id": 269,
+        "name": "Can add Review Cycle"
+    },
+    {
+        "codename": "change_reviewcycle",
+        "content_type_id": 68,
+        "id": 270,
+        "name": "Can change Review Cycle"
+    },
+    {
+        "codename": "delete_reviewcycle",
+        "content_type_id": 68,
+        "id": 271,
+        "name": "Can delete Review Cycle"
+    },
+    {
+        "codename": "view_reviewcycle",
+        "content_type_id": 68,
+        "id": 272,
+        "name": "Can view Review Cycle"
+    },
+    {
+        "codename": "add_reviewtype",
+        "content_type_id": 69,
+        "id": 273,
+        "name": "Can add Review Type"
+    },
+    {
+        "codename": "change_reviewtype",
+        "content_type_id": 69,
+        "id": 274,
+        "name": "Can change Review Type"
+    },
+    {
+        "codename": "delete_reviewtype",
+        "content_type_id": 69,
+        "id": 275,
+        "name": "Can delete Review Type"
+    },
+    {
+        "codename": "view_reviewtype",
+        "content_type_id": 69,
+        "id": 276,
+        "name": "Can view Review Type"
+    },
+    {
+        "codename": "add_citystzip",
+        "content_type_id": 70,
+        "id": 277,
+        "name": "Can add city st zip"
+    },
+    {
+        "codename": "change_citystzip",
+        "content_type_id": 70,
+        "id": 278,
+        "name": "Can change city st zip"
+    },
+    {
+        "codename": "delete_citystzip",
+        "content_type_id": 70,
+        "id": 279,
+        "name": "Can delete city st zip"
+    },
+    {
+        "codename": "view_citystzip",
+        "content_type_id": 70,
+        "id": 280,
+        "name": "Can view city st zip"
+    },
+    {
+        "codename": "add_inspectiongroup",
+        "content_type_id": 71,
+        "id": 281,
+        "name": "Can add inspection group"
+    },
+    {
+        "codename": "change_inspectiongroup",
+        "content_type_id": 71,
+        "id": 282,
+        "name": "Can change inspection group"
+    },
+    {
+        "codename": "delete_inspectiongroup",
+        "content_type_id": 71,
+        "id": 283,
+        "name": "Can delete inspection group"
+    },
+    {
+        "codename": "view_inspectiongroup",
+        "content_type_id": 71,
+        "id": 284,
+        "name": "Can view inspection group"
+    },
+    {
+        "codename": "add_contact",
+        "content_type_id": 72,
+        "id": 285,
+        "name": "Can add Contact"
+    },
+    {
+        "codename": "change_contact",
+        "content_type_id": 72,
+        "id": 286,
+        "name": "Can change Contact"
+    },
+    {
+        "codename": "delete_contact",
+        "content_type_id": 72,
+        "id": 287,
+        "name": "Can delete Contact"
+    },
+    {
+        "codename": "view_contact",
+        "content_type_id": 72,
+        "id": 288,
+        "name": "Can view Contact"
+    },
+    {
+        "codename": "add_restriction",
+        "content_type_id": 30,
+        "id": 289,
+        "name": "Can add restriction"
+    },
+    {
+        "codename": "change_restriction",
+        "content_type_id": 30,
+        "id": 290,
+        "name": "Can change restriction"
+    },
+    {
+        "codename": "delete_restriction",
+        "content_type_id": 30,
+        "id": 291,
+        "name": "Can delete restriction"
+    },
+    {
+        "codename": "view_restriction",
+        "content_type_id": 30,
+        "id": 292,
+        "name": "Can view restriction"
+    },
+    {
+        "codename": "add_form",
+        "content_type_id": 73,
+        "id": 293,
+        "name": "Can add form"
+    },
+    {
+        "codename": "change_form",
+        "content_type_id": 73,
+        "id": 294,
+        "name": "Can change form"
+    },
+    {
+        "codename": "delete_form",
+        "content_type_id": 73,
+        "id": 295,
+        "name": "Can delete form"
+    },
+    {
+        "codename": "view_form",
+        "content_type_id": 73,
+        "id": 296,
+        "name": "Can view form"
+    },
+    {
+        "codename": "add_contacttype",
+        "content_type_id": 74,
+        "id": 297,
+        "name": "Can add contact type"
+    },
+    {
+        "codename": "change_contacttype",
+        "content_type_id": 74,
+        "id": 298,
+        "name": "Can change contact type"
+    },
+    {
+        "codename": "delete_contacttype",
+        "content_type_id": 74,
+        "id": 299,
+        "name": "Can delete contact type"
+    },
+    {
+        "codename": "view_contacttype",
+        "content_type_id": 74,
+        "id": 300,
+        "name": "Can view contact type"
+    },
+    {
+        "codename": "add_appquestion",
+        "content_type_id": 75,
+        "id": 301,
+        "name": "Can add app question"
+    },
+    {
+        "codename": "change_appquestion",
+        "content_type_id": 75,
+        "id": 302,
+        "name": "Can change app question"
+    },
+    {
+        "codename": "delete_appquestion",
+        "content_type_id": 75,
+        "id": 303,
+        "name": "Can delete app question"
+    },
+    {
+        "codename": "view_appquestion",
+        "content_type_id": 75,
+        "id": 304,
+        "name": "Can view app question"
+    }
+]

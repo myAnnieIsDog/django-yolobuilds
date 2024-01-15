@@ -1,0 +1,377 @@
+[
+    {
+        "app_label": "admin",
+        "id": 1,
+        "model": "logentry"
+    },
+    {
+        "app_label": "auth",
+        "id": 2,
+        "model": "permission"
+    },
+    {
+        "app_label": "auth",
+        "id": 3,
+        "model": "group"
+    },
+    {
+        "app_label": "auth",
+        "id": 4,
+        "model": "user"
+    },
+    {
+        "app_label": "contenttypes",
+        "id": 5,
+        "model": "contenttype"
+    },
+    {
+        "app_label": "sessions",
+        "id": 6,
+        "model": "session"
+    },
+    {
+        "app_label": "fees",
+        "id": 7,
+        "model": "account"
+    },
+    {
+        "app_label": "fees",
+        "id": 8,
+        "model": "paymentmethod"
+    },
+    {
+        "app_label": "fees",
+        "id": 9,
+        "model": "feetype"
+    },
+    {
+        "app_label": "fees",
+        "id": 10,
+        "model": "fee"
+    },
+    {
+        "app_label": "fees",
+        "id": 11,
+        "model": "payment"
+    },
+    {
+        "app_label": "fees",
+        "id": 12,
+        "model": "claritifee"
+    },
+    {
+        "app_label": "fees",
+        "id": 13,
+        "model": "trakitfee"
+    },
+    {
+        "app_label": "inspections",
+        "id": 14,
+        "model": "inspectionresult"
+    },
+    {
+        "app_label": "inspections",
+        "id": 15,
+        "model": "inspection"
+    },
+    {
+        "app_label": "inspections",
+        "id": 16,
+        "model": "inspectiontrip"
+    },
+    {
+        "app_label": "inspections",
+        "id": 17,
+        "model": "inspectiontype"
+    },
+    {
+        "app_label": "locations",
+        "id": 18,
+        "model": "district"
+    },
+    {
+        "app_label": "locations",
+        "id": 19,
+        "model": "jurisdiction"
+    },
+    {
+        "app_label": "locations",
+        "id": 20,
+        "model": "parcel"
+    },
+    {
+        "app_label": "locations",
+        "id": 21,
+        "model": "siteaddress"
+    },
+    {
+        "app_label": "permits",
+        "id": 22,
+        "model": "division"
+    },
+    {
+        "app_label": "permits",
+        "id": 23,
+        "model": "permitstatus"
+    },
+    {
+        "app_label": "permits",
+        "id": 24,
+        "model": "permittype"
+    },
+    {
+        "app_label": "permits",
+        "id": 25,
+        "model": "sequence"
+    },
+    {
+        "app_label": "permits",
+        "id": 26,
+        "model": "tag"
+    },
+    {
+        "app_label": "permits",
+        "id": 27,
+        "model": "permitsubtype"
+    },
+    {
+        "app_label": "permits",
+        "id": 28,
+        "model": "permit"
+    },
+    {
+        "app_label": "permits",
+        "id": 29,
+        "model": "relatedrecord"
+    },
+    {
+        "app_label": "permits",
+        "id": 30,
+        "model": "restriction"
+    },
+    {
+        "app_label": "permits_bp",
+        "id": 31,
+        "model": "applicantrole"
+    },
+    {
+        "app_label": "permits_bp",
+        "id": 32,
+        "model": "electricalservice"
+    },
+    {
+        "app_label": "permits_bp",
+        "id": 33,
+        "model": "ess"
+    },
+    {
+        "app_label": "permits_bp",
+        "id": 34,
+        "model": "evcs"
+    },
+    {
+        "app_label": "permits_bp",
+        "id": 35,
+        "model": "floodzones"
+    },
+    {
+        "app_label": "permits_bp",
+        "id": 36,
+        "model": "generator"
+    },
+    {
+        "app_label": "permits_bp",
+        "id": 37,
+        "model": "hvac"
+    },
+    {
+        "app_label": "permits_bp",
+        "id": 38,
+        "model": "ownerrole"
+    },
+    {
+        "app_label": "permits_bp",
+        "id": 39,
+        "model": "propane"
+    },
+    {
+        "app_label": "permits_bp",
+        "id": 40,
+        "model": "sewer"
+    },
+    {
+        "app_label": "permits_bp",
+        "id": 41,
+        "model": "solar"
+    },
+    {
+        "app_label": "permits_bp",
+        "id": 42,
+        "model": "stucco"
+    },
+    {
+        "app_label": "permits_bp",
+        "id": 43,
+        "model": "waterheater"
+    },
+    {
+        "app_label": "permits_bp",
+        "id": 44,
+        "model": "windows"
+    },
+    {
+        "app_label": "permits_bp",
+        "id": 45,
+        "model": "bp"
+    },
+    {
+        "app_label": "permits_bp",
+        "id": 46,
+        "model": "building"
+    },
+    {
+        "app_label": "permits_bp",
+        "id": 47,
+        "model": "demolition"
+    },
+    {
+        "app_label": "permits_bp",
+        "id": 48,
+        "model": "electrical"
+    },
+    {
+        "app_label": "permits_bp",
+        "id": 49,
+        "model": "fire"
+    },
+    {
+        "app_label": "permits_bp",
+        "id": 50,
+        "model": "flood"
+    },
+    {
+        "app_label": "permits_bp",
+        "id": 51,
+        "model": "grading"
+    },
+    {
+        "app_label": "permits_bp",
+        "id": 52,
+        "model": "mechanical"
+    },
+    {
+        "app_label": "permits_bp",
+        "id": 53,
+        "model": "plumbing"
+    },
+    {
+        "app_label": "permits_bp",
+        "id": 54,
+        "model": "pool"
+    },
+    {
+        "app_label": "permits_bp",
+        "id": 55,
+        "model": "reroof"
+    },
+    {
+        "app_label": "profiles",
+        "id": 56,
+        "model": "agency"
+    },
+    {
+        "app_label": "profiles",
+        "id": 57,
+        "model": "department"
+    },
+    {
+        "app_label": "profiles",
+        "id": 58,
+        "model": "division"
+    },
+    {
+        "app_label": "profiles",
+        "id": 59,
+        "model": "licenseagency"
+    },
+    {
+        "app_label": "profiles",
+        "id": 60,
+        "model": "licensetype"
+    },
+    {
+        "app_label": "profiles",
+        "id": 61,
+        "model": "profile"
+    },
+    {
+        "app_label": "profiles",
+        "id": 62,
+        "model": "licenseholder"
+    },
+    {
+        "app_label": "profiles",
+        "id": 63,
+        "model": "staff"
+    },
+    {
+        "app_label": "profiles",
+        "id": 64,
+        "model": "yolocountypartners"
+    },
+    {
+        "app_label": "reviews",
+        "id": 65,
+        "model": "cycleresult"
+    },
+    {
+        "app_label": "reviews",
+        "id": 66,
+        "model": "reviewstatus"
+    },
+    {
+        "app_label": "reviews",
+        "id": 67,
+        "model": "review"
+    },
+    {
+        "app_label": "reviews",
+        "id": 68,
+        "model": "reviewcycle"
+    },
+    {
+        "app_label": "reviews",
+        "id": 69,
+        "model": "reviewtype"
+    },
+    {
+        "app_label": "locations",
+        "id": 70,
+        "model": "citystzip"
+    },
+    {
+        "app_label": "inspections",
+        "id": 71,
+        "model": "inspectiongroup"
+    },
+    {
+        "app_label": "permits",
+        "id": 72,
+        "model": "contact"
+    },
+    {
+        "app_label": "permits",
+        "id": 73,
+        "model": "form"
+    },
+    {
+        "app_label": "permits",
+        "id": 74,
+        "model": "contacttype"
+    },
+    {
+        "app_label": "permits",
+        "id": 75,
+        "model": "appquestion"
+    }
+]

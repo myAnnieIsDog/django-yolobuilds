@@ -2,7 +2,7 @@ from typing import Any
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView
 from locations.models import SiteAddress, Parcel, District
-from permits_bp.models import BP
+# from permits_bp.models import BP
 
 
 class ParcelSearch(ListView):
@@ -24,7 +24,7 @@ class ParcelDetail(DetailView):
         # context["licenses"] = [BL.objects.filter(parcel=self)]
         # context["planning"] = [ZF.objects.filter(parcel=self)]
         # context["public_works"] = [PW.objects.filter(parcel=self)]
-        context["building"] = [BP.objects.filter(parcel=self)]
+        # context["building"] = [BP.objects.filter(parcel=self)]
         return context
 
 

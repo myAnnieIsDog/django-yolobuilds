@@ -1,0 +1,79 @@
+1,Final Building,0.3,1.2,"Use this inspection only for large/complex permits when building has approved their inspections, but other inspections are preventing moving the permit to status Finaled. 
+
+Setting this review to approved means that the permit can be set to final once all non-Building inspections are approved.",20,19
+2,Final C&D,0.3,1.2,,16,19
+3,Final Env. Health,0.3,1.2,,3,19
+4,Fire,0.3,1.2,,20,12
+5,Final Public Works,0.3,1.2,,9,19
+6,Insulation (Ceiling),0.3,1.2,,15,16
+7,Insulation (Floor),0.3,1.2,,15,16
+8,Insulation (Rafters),0.3,1.2,,15,16
+9,Insulation (Roof Deck),0.3,1.2,,15,16
+10,Insulation (Wall Cavity),0.3,1.2,,15,16
+11,Insulation (Wall Panels),0.3,1.2,,15,16
+12,Roofing,0.3,1.2,,15,16
+13,Siding,0.3,1.2,,15,16
+14,Stucco / Lath,0.3,1.2,,15,16
+15,Stucco / Scratch,0.3,1.2,,15,16
+16,Windows,0.3,1.2,,15,16
+17,Demolition 1 Pre-Measure and Utility Disconnect,0.3,1.2,,15,15
+18,Demolition 2 Final,0.3,1.2,,15,15
+19,Battery Backup (Residential),0.3,1.2,,15,4
+20,Equipment,0.3,1.2,,15,5
+21,Electrical Vehicle (EV) Charging Station,0.3,1.2,,15,4
+22,Final Electrical,0.3,1.2,,15,19
+23,Fire Alarms,0.3,1.2,,15,4
+24,Meter Release,0.3,1.2,,15,4
+25,Rough Electrical,0.3,1.2,,15,4
+26,Solar Photovoltaic (PV),0.3,1.2,,15,4
+27,Switchgear,0.3,1.2,,15,4
+28,Underground Electrical,0.3,1.2,,15,4
+29,EC2 Lowest Floor Elevation,0.3,1.2,,15,11
+30,EC3 Finished Construction,0.3,1.2,,15,11
+31,** PERMIT FINAL **,0.3,1.2,"This inspection goes on every permit and changes the permit status to ""Finaled"" or prompts the user with pending items.
+
+CHECKLIST: Verify ALL agencies, districts, departments, and divisions divisions have approved this permit before setting to final, or that their inspection is not necessary for the permit type:
+
+Building
+Env. Health
+Fire District
+Int. Waste
+Public Works
+Service District
+etc.",20,19
+32,Lifts / Progress,0.3,1.2,,20,17
+33,Site Prep,0.3,1.2,,20,17
+34,Final Mechanical,0.3,1.2,,15,19
+35,Hood (Type 1),0.3,1.2,,15,5
+36,Hood (Type 2),0.3,1.2,,15,5
+37,HVAC,0.3,1.2,,15,5
+38,Rough Mechanical,0.3,1.2,,15,5
+39,Final Plumbing,0.3,1.2,,15,19
+40,Gas,0.3,1.2,,15,6
+41,Rough Plumbing,0.3,1.2,,15,6
+42,Underground Plumbing,0.3,1.2,,15,6
+43,Water Heater (Gas),0.3,1.2,,15,6
+44,Water Heater (Heat Pump),0.3,1.2,,15,6
+45,Water Heater (Solar),0.3,1.2,,15,6
+46,Hot Tub,0.3,1.2,,15,18
+47,Pool 2 Pre-Deck,0.3,1.2,,15,18
+48,Pool 1 Pre-Gunite,0.3,1.2,,15,18
+49,Pool 3 Pre-Plaster,0.3,1.2,,15,18
+50,Reroof 1 Roof Deck,0.3,1.2,,15,16
+51,Reroof 2 Final,0.3,1.2,,15,16
+52,Concrete Footings/Piers,0.3,1.2,,15,7
+53,Concrete Slab,0.3,1.2,,15,7
+54,Concrete Walls,0.3,1.2,,15,7
+55,Gypsum Board Nailing,0.3,1.2,,15,16
+56,Masonry 1 Footing,0.3,1.2,,15,7
+57,Masonry 2 Lift,0.3,1.2,,15,7
+58,Masonry 3 Cap,0.3,1.2,,15,7
+59,Wood 1 Subfloor,0.3,1.2,,15,7
+60,Wood 2 Shear & Roof Deck,0.3,1.2,,15,7
+61,Wood 3 Frame,0.3,1.2,,15,7
+62,Manufactured Home 1 Anchoring/Setup,0.3,1.2,,15,9
+63,Manufactured Home 3 Marriage/Utilities,0.3,1.2,,15,9
+64,Commercial Coach Egress,0.3,1.2,,15,10
+65,Commercial Coach Disabled Access,0.3,1.2,,15,10
+66,Commercial Coach Final,0.3,1.2,,15,10
+67,Final Fire District,0.3,1.2,,1,19

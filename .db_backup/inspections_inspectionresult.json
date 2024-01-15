@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "requirements": "Construction may proceed to the next inspection milestone.",
+        "result": "Approved"
+    },
+    {
+        "id": 2,
+        "requirements": "The inspection request was cancelled by the permit holder prior to the inspection.",
+        "result": "Cancelled"
+    },
+    {
+        "id": 3,
+        "requirements": "Construction shall not proceed past the current inspection milestone until the noted corrections have been corrected and approved as described in teh inspection notes.",
+        "result": "Corrections"
+    },
+    {
+        "id": 4,
+        "requirements": "The inspector arrived to a location that was not ready for inspection. A reinspection fee must be paid prior to the next inspection request.",
+        "result": "Not Ready"
+    },
+    {
+        "id": 5,
+        "requirements": "The current inspection milestone is large and has been broken up into several inspections. The portion of the work that has been approved is described in the inspection notes.",
+        "result": "Partial"
+    },
+    {
+        "id": 6,
+        "requirements": "Construction may proceed to the next inspection milestone. At that milestone noted items from this inspection will need to be inspected as described in teh inspection notes.",
+        "result": "Punch List"
+    }
+]
