@@ -3,8 +3,7 @@ from records.models import Record
 from profiles.models import User
 
 ##########################################################################
-""" Inspection Models.  See permits.models for InspectionType, which was 
-placed there to prevent a circular reference to the Permit model. """
+""" Inspection Models """
 ##########################################################################
 
 class InspectionGroup(models.Model):
