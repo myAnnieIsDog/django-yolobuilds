@@ -126,9 +126,11 @@ class Question(models.Model):
 
 
 class Type(models.Model): 
-    type = models.CharField(max_length=255, unique=True)
-    policy = models.CharField(max_length=255)
-    suffix = models.CharField(max_length=7, default="Ex-R", unique=True)
+    division = models.CharField(max_length=55, blank=True, null=True)
+    prefix = models.CharField(max_length=7, blank=True, null=True)
+    type = models.CharField(max_length=55, blank=True, null=True)
+    policy = models.CharField(max_length=255, blank=True, null=True)
+    suffix = models.CharField(max_length=7, blank=True, null=True)
     default_fees = models.ManyToManyField("fees.FeeType", blank=True)
     default_reviews = models.ManyToManyField("reviews.ReviewType", blank=True)
     default_inspection = models.ManyToManyField("inspections.InspectionType", blank=True)
@@ -152,8 +154,8 @@ class Record(models.Model):
     status = models.ForeignKey(Status, on_delete=models.PROTECT)
 
     number = models.CharField(max_length=55, blank=True)
-    description = models.TextField(max_length=55)
-    details = models.TextField(max_length=255)
+    description = models.CharField(max_length=55, blank=True)
+    details = models.TextField(max_length=255, blank=True)
     
     scope = models.ManyToManyField(Type, blank=True)
     apn = models.ManyToManyField(Parcel, blank=True)
@@ -171,7 +173,7 @@ class Record(models.Model):
         "fees.FeeType", through="fees.Fee", blank=True)
 
     def __str__(self) -> str:
-        return f"{self.number}-{self.type.suffix}-{self.type.type}"
+        return f"{self.number}"  # -{self.type.suffix}-{self.type.type}
     
     def set_number(self):
         self.number = "BP24-0001"  # Replace with function.

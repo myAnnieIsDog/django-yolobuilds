@@ -1,507 +1,488 @@
-# ##########################################################################
-# """ Building Permit Base Model """
-# ##########################################################################
-# from django.contrib.auth.models import User
-# from django.db import models
-# from django.utils import timezone
-# from records.models import Record
-# from profiles.models import Profile
-# from inspections.models import InspectionType
-# from reviews.models import ReviewType
+##########################################################################
+""" Building Permit Base Model """
+##########################################################################
+from django.contrib.auth.models import User
+from django.db import models
+from django.utils import timezone
+from records.models import Record
+from profiles.models import Profile
+from inspections.models import InspectionType
+from reviews.models import ReviewType
 
 
 
 
-# class BP(models.Model):
-#     building_permit = models.OneToOneField(Record, on_delete=models.PROTECT)
-#     suffix = models.CharField(max_length=4, default="0000")
-#     valuation = models.DecimalField(
-#         max_digits=15, decimal_places=2, default=2000)
+class BP(models.Model):
+    record = models.OneToOneField(Record, on_delete=models.PROTECT)
+    suffix = models.CharField(max_length=4, default="0000")
+    valuation = models.DecimalField(
+        max_digits=15, decimal_places=2, default=2000)
     
-#     owner_builder_form = models.BooleanField(
-#         "Owner-Builder Form Acknowledgement", default=False)
-#     owner_rep_form = models.BooleanField(
-#         "Owner's Authorization of a Representative", default=False)
-#     CSLB_Forms = models.BooleanField(
-#         "CSLB License Verification", default=False)
-#     employee_authorization = models.BooleanField(
-#         "CSLB Licensed Employer Authorization of Employee to Pull Permits", default=False)
+    owner_builder_form = models.BooleanField(
+        "Owner-Builder Form Acknowledgement", default=False)
+    owner_rep_form = models.BooleanField(
+        "Owner's Authorization of a Representative", default=False)
+    CSLB_Forms = models.BooleanField(
+        "CSLB License Verification", default=False)
+    employee_authorization = models.BooleanField(
+        "CSLB Licensed Employer Authorization of Employee to Pull Permits", default=False)
     
-#     finaled = models.DateTimeField(null="True")
-#     finaled_by = models.ForeignKey(
-#         User, on_delete=models.PROTECT, 
-#         null=True, blank=True, 
-#         related_name="finaler")
-#     expiration_date = models.DateTimeField(null=True,
-#         help_text="""
-#         Building Permits expire 12 months after 
-#         they are issued, except that they are 
-#         extended for specific reasons in 
-#         accordance with County policy.
-#         """)
-#     expiration_set_by = models.ForeignKey(
-#         User, on_delete=models.PROTECT, null=True, blank=True, 
-#         related_name="expirer")
-#     issued = models.DateTimeField(null=True)
-#     issued_by = models.ForeignKey(
-#         User, on_delete=models.PROTECT, null=True, blank=True, 
-#         related_name="issuer")
-#     approved = models.DateTimeField(null=True)
-#     approved_by = models.ForeignKey(
-#         User, on_delete=models.PROTECT, 
-#         null=True, blank=True, 
-#         related_name="approver")
-#     received = models.DateTimeField(null=True)
-#     received_by = models.ForeignKey(
-#         User, on_delete=models.PROTECT, 
-#         null=True, blank=True, 
-#         related_name="receiver")
+    finaled = models.DateTimeField(null="True")
+    finaled_by = models.ForeignKey(
+        User, on_delete=models.PROTECT, 
+        null=True, blank=True, 
+        related_name="finaler")
+    expiration_date = models.DateTimeField(null=True,
+        help_text="""
+        Building Permits expire 12 months after 
+        they are issued, except that they are 
+        extended for specific reasons in 
+        accordance with County policy.
+        """)
+    expiration_set_by = models.ForeignKey(
+        User, on_delete=models.PROTECT, null=True, blank=True, 
+        related_name="expirer")
+    issued = models.DateTimeField(null=True)
+    issued_by = models.ForeignKey(
+        User, on_delete=models.PROTECT, null=True, blank=True, 
+        related_name="issuer")
+    approved = models.DateTimeField(null=True)
+    approved_by = models.ForeignKey(
+        User, on_delete=models.PROTECT, 
+        null=True, blank=True, 
+        related_name="approver")
+    received = models.DateTimeField(null=True)
+    received_by = models.ForeignKey(
+        User, on_delete=models.PROTECT, 
+        null=True, blank=True, 
+        related_name="receiver")
 
-#     def __str__(self) -> str:
-#         return self.building_permit.__str__()
+    def __str__(self) -> str:
+        return self.building_permit.__str__()
     
-#     def apply():
-#         # run_application_checks()
-#         # add_inspections()
-#         # add_reviews()
-#         # add_fees()
-#         pass
+    def apply():
+        # run_application_checks()
+        # add_inspections()
+        # add_reviews()
+        # add_fees()
+        pass
 
-#     def pay_application_fees():
-#         pass
+    def pay_application_fees():
+        pass
 
-#     def receive(self, request):
-#         # run_application_checks()
-#         # prepare_documents()
-#         self.received = timezone.now()
-#         self.received_by = request.user.id
-#         # send_application_receipt_email()
+    def receive(self, request):
+        # run_application_checks()
+        # prepare_documents()
+        self.received = timezone.now()
+        self.received_by = request.user.id
+        # send_application_receipt_email()
 
-#     def approve(self, request):
-#         # run_issuance_checks()
-#         # prepare_approval_documents()
-#         # prepare_issuance_documents()
-#         self.status = "Issued"
-#         self.approved = timezone.now()
-#         self.approved_by = request.user.id
-#         self.save()
-#         # send_approval_email()
+    def approve(self, request):
+        # run_issuance_checks()
+        # prepare_approval_documents()
+        # prepare_issuance_documents()
+        self.status = "Issued"
+        self.approved = timezone.now()
+        self.approved_by = request.user.id
+        self.save()
+        # send_approval_email()
 
-#     def pay_issuance_fees():
-#         pass
+    def pay_issuance_fees():
+        pass
 
-#     def issue(self, request):
-#         self.issued = timezone.now()
-#         self.issued_by = request.user.id
-#         self.expiration_date = timezone.now() + timezone.timedelta(days=365)
-#         self.expiration_set_by = request.user.id
-#         self.save()
+    def issue(self, request):
+        self.issued = timezone.now()
+        self.issued_by = request.user.id
+        self.expiration_date = timezone.now() + timezone.timedelta(days=365)
+        self.expiration_set_by = request.user.id
+        self.save()
 
-#     def extend_expiration(self, request, extra_days=180):
-#         a = self.expiration_date + timezone.timedelta(extra_days)
-#         b = self.issued + timezone.timedelta(days=1095)
-#         self.expiration_date = min(a, b)
-#         self.expiration_set_by = request.user.id
-#         self.save()
+    def extend_expiration(self, request, extra_days=180):
+        a = self.expiration_date + timezone.timedelta(extra_days)
+        b = self.issued + timezone.timedelta(days=1095)
+        self.expiration_date = min(a, b)
+        self.expiration_set_by = request.user.id
+        self.save()
     
-#     def expire(self):
-#         self.status = "Expired"
-#         self.save()
+    def expire(self):
+        self.status = "Expired"
+        self.save()
 
-#     def suspend(self):
-#         self.status = "Suspended"
-#         # add_suspended_tag()
-#         self.save()
+    def suspend(self):
+        self.status = "Suspended"
+        # add_suspended_tag()
+        self.save()
 
-#     def final(self, request):
-#         # run_final_checks()
-#         # prepare_occupancy_documents()
-#         self.status = "Finaled"
-#         self.finaled = timezone.now()
-#         self.finaled_by = request.user.id
-#         self.save()
-#         # send_occupancy_email()
+    def final(self, request):
+        # run_final_checks()
+        # prepare_occupancy_documents()
+        self.status = "Finaled"
+        self.finaled = timezone.now()
+        self.finaled_by = request.user.id
+        self.save()
+        # send_occupancy_email()
 
-#     class Meta:
-#         verbose_name = "Building Permits"
-#         verbose_name_plural = "Building Permits"
-
-
-# ##########################################################################
-# """ Building """
-# ##########################################################################
-
-# class Building(models.Model):
-#     building_permit = models.OneToOneField(BP, on_delete=models.PROTECT)
-#     suffix = "Bldg"
-#     accessory_utility_new_area = models.PositiveIntegerField(default=0)
-#     residential_dwelling_new_units = models.PositiveIntegerField(default=0)
-#     residential_dwelling_new_area = models.PositiveIntegerField(default=0)
-#     assembly_new_area = models.PositiveIntegerField(default=0)
-#     office_new_area = models.PositiveIntegerField(default=0)
-#     processing_or_production_new_area = models.PositiveIntegerField(default=0)
-#     warehouse_new_area = models.PositiveIntegerField(default=0)
-#     retail_new_area = models.PositiveIntegerField(default=0)
-#     other_new_area = models.PositiveIntegerField(default=0)
-#     other_description = models.PositiveIntegerField(default=0)
-
-#     review_days = 20
-#     # reviews = models.ManyToManyField(ReviewType, related_name="revs")
-#     default_reviews = [
-#         "Building (Full)", 
-#         "Env. Health", 
-#         "Fire District", 
-#         "Int. Waste Management", 
-#         "Planning", 
-#         "Public Works"]
-#     # inspections = models.ManyToManyField(InspectionType, related_name="insps")
-#     fees = [""]
-#     notes = ""
-
-#     class Meta:
-#         verbose_name = "New Building/Structure"
-#         verbose_name_plural = "New Buildings/Structures"
+    class Meta:
+        verbose_name = "Building Permits"
+        verbose_name_plural = "Building Permits"
 
 
-# ##########################################################################
-# """ Demolition """
-# ##########################################################################
+##########################################################################
+""" Building """
+##########################################################################
 
-# class Demolition(models.Model):
-#     demolition_permit = models.OneToOneField(BP, on_delete=models.PROTECT)
-#     suffix = "Demo"
-#     number_of_structures = models.PositiveSmallIntegerField(default=1)
-#     building_area = models.PositiveIntegerField(default=1000)
-#     review_days = 20
-#     reviews = ["Building (Full)", "Env. Health", "Fire District", "Int. Waste Management", "Planning", "Public Works"]
-#     inspections = ["Pre-Measure", "Final"]
-#     notes = ""
+class Building(models.Model):
+    bldg_permit = models.OneToOneField(BP, on_delete=models.PROTECT)
+    accessory_utility_new_area = models.PositiveIntegerField(default=0)
+    residential_dwelling_new_units = models.PositiveIntegerField(default=0)
+    residential_dwelling_new_area = models.PositiveIntegerField(default=0)
+    assembly_new_area = models.PositiveIntegerField(default=0)
+    office_new_area = models.PositiveIntegerField(default=0)
+    processing_or_production_new_area = models.PositiveIntegerField(default=0)
+    warehouse_new_area = models.PositiveIntegerField(default=0)
+    retail_new_area = models.PositiveIntegerField(default=0)
+    other_new_area = models.PositiveIntegerField(default=0)
+    other_description = models.PositiveIntegerField(default=0)
 
-#     class Meta:
-#         verbose_name = "Demolition Permits"
-#         verbose_name_plural = "Demolition Permits"
+    review_days = 10
+    # reviews = models.ManyToManyField(ReviewType, related_name="revs")
+    default_reviews = [
+        "Building (Full)", 
+        "Env. Health", 
+        "Fire District", 
+        "Int. Waste Management", 
+        "Planning", 
+        "Public Works"]
+    # inspections = models.ManyToManyField(InspectionType, related_name="insps")
+    fees = [""]
+    notes = ""
 
-# ##########################################################################
-# """ Electrical """
-# ##########################################################################
+    class Meta:
+        verbose_name = "New Building/Structure"
+        verbose_name_plural = "New Buildings/Structures"
 
 
-# class Electrical(models.Model):
-#     electrical_permit = models.OneToOneField(BP, on_delete=models.PROTECT)
-#     suffix = "Elc"
-#     phases = models.PositiveIntegerField(default=1)
-#     voltage = models.PositiveIntegerField(default=240)
-#     current = models.PositiveIntegerField(default=100)
+##########################################################################
+""" Demolition """
+##########################################################################
 
-#     service_drop = models.BooleanField(default=False)
-#     general_lighting_and_receptacles = models.PositiveIntegerField(default=1000)
-#     pv_solar_roof = models.PositiveIntegerField(default=10)
-#     pv_solar_ground = models.PositiveIntegerField(default=100)  
-#     evcs = models.PositiveIntegerField(default=100)
-#     backup_generator = models.PositiveIntegerField(default=100)
-#     ess_battery = models.PositiveIntegerField(default=100)
-#     motor_loads = models.PositiveIntegerField(default=100)
+class Demolition(models.Model):
+    demolition_permit = models.OneToOneField(BP, on_delete=models.PROTECT)
+    number_of_structures = models.PositiveSmallIntegerField(default=1)
+    building_area = models.PositiveIntegerField(default=1000)
+    review_days = 10
+    notes = []
 
-#     review_days = 20
-#     reviews = ["Building (Full)", "Env. Health", "Fire District", "Int. Waste Management", "Planning", "Public Works"]
-#     inspections = ["Rough Electrical", "Final"]
-#     notes = "This permit type is only for work that is not eligible to be expedited."
+    class Meta:
+        ordering = ["demolition_permit"]
+        verbose_name = "Demolition Permits"
+        verbose_name_plural = "Demolition Permits"
 
-#     class Meta:
-#         verbose_name = "Electrical Permits"
-#         verbose_name_plural = "Electrical Permits"
+    def default_reviews(sender, **kwargs):  # django.db.models.signals.post_save
+        return ["Bldg Demolition"] 
+    reviews = models.ManyToManyField(ReviewType,default=default_reviews)
+    
+    def default_inspections(sender, **kwargs):  
+        # django.db.models.signals.post_save
+        return [
+            "Demolition 1 Pre-Measure and Utility Disconnect", 
+            "Demolition 2 Final"
+        ]
+    inspections = models.ManyToManyField(InspectionType,blank=True)
 
-# class ElectricalService(models.Model):
-#     suffix = "OTC-Elc"
-#     voltage = models.CharField(max_length=255, default="120/240 V")
-#     current = models.PositiveIntegerField(default=150)
-#     phases = models.PositiveIntegerField(default=1)
-#     reviews = ["Site Map"]
-#     inspections = ["Meter Release", "Final"]
-#     notes = "The two inspections can be combined in a single inspection stop."
-#     class Meta():
-#         verbose_name = "Electrical Service Replacement/Upgrade"
+##########################################################################
+""" Electrical """
+##########################################################################
+class Electrical(models.Model):
+    elc_record = models.OneToOneField(BP, on_delete=models.PROTECT)
+
+    service_changeout = models.BooleanField(default=False)
+    service_phases = models.PositiveIntegerField(default=1)
+    service_voltage = models.CharField(max_length=255, default="120/240 V")
+    service_current = models.PositiveIntegerField(default=150, help_text="A")
+    serving = models.CharField(max_length=255, default='A Single Residential Dwelling Unit')
+
+    general_lighting_and_receptacles = models.PositiveIntegerField(blank=True, help_text="square feet of the area served")
+    pv_solar_roof = models.PositiveIntegerField(blank=True, help_text="kW ac")
+    solarAPP = models.BooleanField(default=False)
+    pv_solar_ground = models.PositiveIntegerField(blank=True, help_text="kW ac")  
+    ess_current = models.PositiveIntegerField(blank=True, help_text="24 A")
+    ess_capacity = models.PositiveIntegerField(blank=True, help_text="14 kWh")
+    evcs = models.PositiveIntegerField(blank=True, help_text="24 A")
+    generator_power = models.PositiveIntegerField(blank=True, help_text="14 kWh")
+    generator_fuel = models.CharField(max_length=255, default="Propane")
+    motor_loads = models.PositiveIntegerField(blank=True)
+
+    review_days = models.PositiveIntegerField(default=10)
+    reviews = ["Bldg Electrical"]
+    inspections = ["** PERMIT FINAL **"]
+    notes = []
+
+    def __str__(self) -> str:
+        return self.elc_record.bldg_permit.number
+
+    def add_reviews():
+        pass
+    
+    def add_fees():
+        pass
+    
+    def add_insp():
+        pass
+
+    def add_notes(self):   
+        if self.solarAPP:
+            self.notes.append("Plans approved by SolarAPP+ can start work immediately, even if there is an error processing this permit application. At inspection provide the SolarAPP+ checklist.")
+
+        if self.ess_current or self.ess_capacity:
+            self.notes.append("At inspection provide the Energy Storage System (Battery) manufacturer's installation instructions.")
         
-# class ESS(models.Model):
-#     suffix = "OTC-Elc"
-#     voltage = models.CharField(max_length=255, default="120/240 V")
-#     current = models.PositiveIntegerField(default=24, help_text="A")
-#     capacity = models.PositiveIntegerField(default=14, help_text="kWh")
-#     reviews = ["Site Map", "Electrical Plan"]
-#     notes = "At inspection provide the installation instructions."
-#     class Meta():
-#         verbose_name = "Energy Storage System (Battery)"
+        if self.generator_power or self.generator_fuel:
+            self.notes.append("At inspection provide the Generator manufacturer's installation instructions.")
+        
+        if self.evcs:
+            self.notes.append("At inspection provide the EVCS manufacturer's installation instructions.")
 
-# class EVCS(models.Model):
-#     suffix = "OTC-Elc"
-#     voltage = models.CharField(max_length=255, default="120/240 V")
-#     current = models.PositiveIntegerField(default=150)
-#     phases = models.PositiveIntegerField(default=1)
-#     reviews = ["Site Map", "Electrical Plan"]
-#     notes = "At inspection provide the installation instructions."
-#     class Meta():
-#         verbose_name = "Electrical Vehicle Charging Station"
+        if self.pv_solar_ground:
+            self.notes.append("At inspection provide the manufacturer's installation instructions for all Solar Equipment, including panels, dc-dc converters (optimizers), micro- or central-inverters, rapid shut-down, disconnects, racking, foundation systems, etc.")
 
-# class Generator(models.Model):
-#     suffix = "OTC-Elc"
-#     voltage = models.CharField(max_length=255, default="120/240 V")
-#     current = models.PositiveIntegerField(default=24)
-#     phases = models.PositiveIntegerField(default=1)
-#     fuel = models.CharField(max_length=255, default="Propane")
-#     reviews = ["Site Map", "Electrical Plan"]
-#     notes = "At inspection provide the installation instructions."
-#     class Meta():
-#         verbose_name = "Backup Generator"
+        elif self.pv_solar_roof:
+            self.notes.append("At inspection provide the manufacturer's installation instructions for all Solar Equipment, including panels, dc-dc converters (optimizers), micro- or central-inverters, rapid shut-down, disconnects, racking, etc.")
 
-# class Solar(models.Model):
-#     suffix = "OTC-Elc"
-#     roof_mount = models.BooleanField(default=False)
-#     capacity = models.DecimalField(max_digits=10, decimal_places=1)
-#     serving = models.CharField(max_length=255, default='A Single Residential Dwelling')
-#     solarAPP = models.BooleanField(default=False)
-#     review_days = 0
-#     notes = "Plans approved by SolarAPP+ can start work immediately, even if there is an error processing this permit application. At inspection provide the SolarAPP+ checklist."
+    class Meta:
+        ordering = ["elc_record"]
+        verbose_name = "Electrical Permit"
+        verbose_name_plural = "Electrical Permits"
 
 
-# ##########################################################################
-# """ Existing Building/Structure """
-# ##########################################################################
+##########################################################################
+""" Existing Building/Structure """
+##########################################################################
+class Reroof(models.Model):
+    bp = models.OneToOneField(Building, on_delete=models.PROTECT)
+    suffix = "OTC-Bld"
+    reroof_area = models.PositiveIntegerField(default=0)
+    fire_class = models.CharField(max_length=1)
+    cf1r = models.BooleanField(default=False)
+    reviews = ["CF1R"]
+    inspections = ["Roof Deck Nail", "Final"]
 
-# class Reroof(models.Model):
-#     bp = models.OneToOneField(Building, on_delete=models.PROTECT)
-#     suffix = "OTC-Bld"
-#     reroof_area = models.PositiveIntegerField(default=0)
-#     fire_class = models.CharField(max_length=1)
-#     cf1r = models.BooleanField(default=False)
-#     reviews = ["CF1R"]
-#     inspections = ["Roof Deck Nail", "Final"]
+class Stucco(models.Model):
+    suffix = "OTC-Bld"
+    type = models.CharField(max_length=255, default="Stucco")
+    area = models.PositiveIntegerField(default=0)
+    fire_class = models.CharField(max_length=1)
+    class Meta():
+        verbose_name = "Replace Exterior Wall (Siding/Stucco)"
 
-# class Stucco(models.Model):
-#     suffix = "OTC-Bld"
-#     type = models.CharField(max_length=255, default="Stucco")
-#     area = models.PositiveIntegerField(default=0)
-#     fire_class = models.CharField(max_length=1)
-#     class Meta():
-#         verbose_name = "Replace Exterior Wall (Siding/Stucco)"
-
-# class Windows(models.Model):
-#     suffix = "OTC-Win"
-#     number_of_window = models.PositiveIntegerField(default=0)
-#     new_area = models.PositiveIntegerField(default=0)
-#     replacement_area = models.PositiveIntegerField(default=0)
-#     cf1r = models.BooleanField(default=False)
-#     hazardous_locations = models.BooleanField(default=False)
-#     notes = "At inspection provide the CF2R and the installation instructions."
-#     class Meta():
-#         verbose_name = "Window Replacement"
-
-
-# ##########################################################################
-# """ Fire """
-# ##########################################################################
+class Windows(models.Model):
+    suffix = "OTC-Win"
+    number_of_window = models.PositiveIntegerField(default=0)
+    new_area = models.PositiveIntegerField(default=0)
+    replacement_area = models.PositiveIntegerField(default=0)
+    cf1r = models.BooleanField(default=False)
+    hazardous_locations = models.BooleanField(default=False)
+    notes = "At inspection provide the CF2R and the installation instructions."
+    class Meta():
+        verbose_name = "Window Replacement"
 
 
-# class Fire(models.Model):
-#     fire_protection_permit = models.OneToOneField(BP, on_delete=models.PROTECT)
-#     suffix = "Fire"
-#     sprinkler_heads = models.PositiveIntegerField(default=20)
-#     sprinkler_area = models.PositiveIntegerField(default=2000)
-
-#     new_alarm_system = models.BooleanField(False)
-#     fire_detectors = models.PositiveIntegerField(default=20)
-
-#     hazardous_material = models.BooleanField(False)
-#     high_piled_combustible_storage = models.BooleanField(False)
-
-#     class Meta:
-#         verbose_name = "Fire Protection Permits"
-#         verbose_name_plural = "Fire Protection Permits"
-
-# ##########################################################################
-# """ Flood """
-# ##########################################################################
+##########################################################################
+""" Fire """
+##########################################################################
 
 
-# class FloodZones(models.Model):
-#     zone_code = models.CharField("Flood Zone Code", max_length=7)
-#     zone_description = models.CharField("Flood Zone Description", max_length=255)
-#     # FLOOD_ZONE_A = "A", "Approximate A Zone"
-#     # FLOOD_ZONE_AE = "AE", "Detailed AE Zone"
-#     # FLOOD_ZONE_AO = "AO", "Shallow Flooding"
-#     # FLOOD_ZONE_A_FLOODWAY = "A/F", "No-Rise Floodway"
-#     # FLOOD_ZONE_X = "X", "Not Regulated"
+class Fire(models.Model):
+    fire_protection_permit = models.OneToOneField(BP, on_delete=models.PROTECT)
+    suffix = "Fire"
+    sprinkler_heads = models.PositiveIntegerField(default=20)
+    sprinkler_area = models.PositiveIntegerField(default=2000)
 
-#     def __str__(self) -> str:
-#         return self.zone_code
+    new_alarm_system = models.BooleanField(False)
+    fire_detectors = models.PositiveIntegerField(default=20)
+
+    hazardous_material = models.BooleanField(False)
+    high_piled_combustible_storage = models.BooleanField(False)
+
+    class Meta:
+        verbose_name = "Fire Protection Permits"
+        verbose_name_plural = "Fire Protection Permits"
+
+##########################################################################
+""" Flood """
+##########################################################################
+
+
+class FloodZones(models.Model):
+    zone_code = models.CharField("Flood Zone Code", max_length=7)
+    zone_description = models.CharField("Flood Zone Description", max_length=255)
+    # FLOOD_ZONE_A = "A", "Approximate A Zone"
+    # FLOOD_ZONE_AE = "AE", "Detailed AE Zone"
+    # FLOOD_ZONE_AO = "AO", "Shallow Flooding"
+    # FLOOD_ZONE_A_FLOODWAY = "A/F", "No-Rise Floodway"
+    # FLOOD_ZONE_X = "X", "Not Regulated"
+
+    def __str__(self) -> str:
+        return self.zone_code
     
-#     class Meta:
-#         verbose_name = "Flood Zone"
-#         verbose_name_plural = "Flood Zones"
+    class Meta:
+        verbose_name = "Flood Zone"
+        verbose_name_plural = "Flood Zones"
 
-# class Flood(models.Model):
-#     flood_protection_permit = models.OneToOneField(BP, on_delete=models.PROTECT)
-#     suffix = "Flood"
-#     zone = models.ForeignKey(FloodZones, on_delete=models.PROTECT)
-#     bfe = models.PositiveIntegerField(null=True)
-#     design_depth = models.PositiveIntegerField(null=True)
+class Flood(models.Model):
+    flood_permit = models.OneToOneField(BP, on_delete=models.PROTECT)
+    zone = models.ForeignKey(FloodZones, on_delete=models.PROTECT)
+    bfe = models.PositiveIntegerField(null=True)
+    design_depth = models.PositiveIntegerField(null=True)
 
-#     FEMA_defined_structure = models.BooleanField(null=True)
-#     substantial_improvement = models.BooleanField(null=True)
-#     variance = models.BooleanField(null=True)
+    FEMA_defined_structure = models.BooleanField(null=True)
+    substantial_improvement = models.BooleanField(null=True)
+    variance = models.BooleanField(null=True)
 
-#     review_days = 20
-#     reviews = ["FZ Materials", "FZ Anchoring", "FZ Drainage", "FZ Elevation", "FZ Utilities", "FZ Venting"]
-#     inspections = ["Lowest Floor", "Final"]
-#     notes = "This permit type is only for work that is not eligible to be expedited."
+    review_days = 20
+    reviews = ["FZ Materials", "FZ Anchoring", "FZ Drainage", "FZ Elevation", "FZ Utilities", "FZ Venting"]
+    inspections = ["Lowest Floor", "Final"]
+    notes = []
 
-#     class Meta:
-#         verbose_name = "Flood Protection Permits"
-#         verbose_name_plural = "Flood Protection Permits"
+    def __str__(self) -> str:
+        return f"{self.flood_permit}-Fld"
 
-# ##########################################################################
-# """ Grading """
-# ##########################################################################
+    class Meta:
+        verbose_name = "Flood Protection Permits"
+        verbose_name_plural = "Flood Protection Permits"
 
-# class Grading(models.Model):
-#     grading_permit = models.OneToOneField(BP, on_delete=models.PROTECT)
-#     suffix = "Grade"
-#     purpose = models.CharField(max_length=20, null=True)
-#     disturbed_area = models.PositiveIntegerField(default=1000)
-#     max_cut_depth = models.PositiveIntegerField(default=3)
-#     max_cut_slope = models.PositiveIntegerField(default=3)
-#     max_fill_height = models.PositiveIntegerField(default=3)
-#     max_fill_slope = models.PositiveIntegerField(default=3)
-#     geotech_report = models.BooleanField(default=True)
-#     special_inspection = models.BooleanField(default=True)
+##########################################################################
+""" Grading """
+##########################################################################
 
-#     class Meta:
-#         verbose_name = "Grading Permits"
-#         verbose_name_plural = "Grading Permits"
+class Grading(models.Model):
+    grading_permit = models.OneToOneField(BP, on_delete=models.PROTECT)
+    purpose = models.CharField(max_length=20, null=True)
+    disturbed_area = models.PositiveIntegerField(default=1000)
+    max_cut_depth = models.PositiveIntegerField(default=3)
+    max_cut_slope = models.PositiveIntegerField(default=3)
+    max_fill_height = models.PositiveIntegerField(default=3)
+    max_fill_slope = models.PositiveIntegerField(default=3)
+    geotech_report = models.BooleanField(default=True)
+    special_inspection = models.BooleanField(default=True)
 
-# ##########################################################################
-# """ Mechanical """
-# ##########################################################################
-
-# class Mechanical(models.Model):
-#     mechanical_permit = models.OneToOneField(BP, on_delete=models.PROTECT)
-#     suffix = "Mch"
-#     equipment_units = models.PositiveIntegerField(default=1)
-#     hvac_units = models.PositiveIntegerField(default=1)
-#     process_piping = models.PositiveIntegerField(default=1)
-
-#     class Meta:
-#         verbose_name = "Mechanical Permits"
-#         verbose_name_plural = "Mechanical Permits"
-
-# class HVAC(models.Model):
-#     suffix = "OTC-Mch"
-#     type = models.CharField(max_length=255, default="Split")
-#     capacity = models.PositiveIntegerField(default=2)
-#     lenght_of_ductwork = models.PositiveIntegerField(default=0)
-#     reviews = ["CF1R"]
-#     notes = "At inspection provide the CF2R, CF3R and the installation instructions."
-#     class Meta():
-#         verbose_name = "HVAC Replacement"
-
-
-# ##########################################################################
-# """ Plumbing """
-# ##########################################################################
-
-# class Plumbing(models.Model):
-#     plumbing_permit = models.OneToOneField(BP, on_delete=models.PROTECT)
-#     suffix = "Plb"
-#     water_supply_service = models.PositiveIntegerField(default=100)
-#     waste_water_service = models.PositiveIntegerField(default=100)
-#     general_fixtures = models.PositiveIntegerField(default=1000)
-#     fuel_gas_appliance = models.PositiveIntegerField(default=1000)
-#     fuel_gas_pipe = models.PositiveIntegerField(default=1000)
-#     water_heating_heat_pump = models.PositiveIntegerField(default=100)
-#     water_heating_solar = models.PositiveIntegerField(default=10)
-#     water_heating_tankless = models.PositiveIntegerField(default=100)
-
-#     class Meta:
-#         verbose_name = "Plumbing Permits"
-#         verbose_name_plural = "Plumbing Permits"
-
-# class Propane(models.Model):
-#     suffix = "OTC-Gas"
-#     type = models.CharField(max_length=255, default="Tank on Slab/Grade")
-#     capacity = models.PositiveIntegerField(default=500)
-#     lenght_of_piping = models.PositiveIntegerField(default=0)
-#     setback_to_structures = models.PositiveIntegerField(default=10)
-#     reviews = ["Site Plan", "Fuel Gas Plan"]
-#     notes = "The two plans can be combined on one sheet."
-#     class Meta():
-#         verbose_name = "Install Propane Tank"
-
-# class Sewer(models.Model):
-#     suffix = "OTC-Plb"
-#     pipe_diameter = models.CharField(max_length=255, default='3"')
-#     type = models.CharField(max_length=255, default='Trench')
-#     review = ["Site Plan", "Plumbing Plan"]
-#     notes = "The two plans can be combined on one sheet."
-#     class Meta():
-#         verbose_name = "Building Sewer Replacement"
-
-# class WaterHeater(models.Model):
-#     suffix = "OTC-WH"
-#     type = models.CharField(max_length=255, default="Heat Pump")
-#     capacity = models.PositiveIntegerField(default=50)
-#     notes = "At inspection provide the CF2R and the installation instructions."
-#     class Meta():
-#         verbose_name = "Water Heater Replacement"
-
-
-# ##########################################################################
-# """ Pool """
-# ##########################################################################
-
-# class Pool(models.Model):
-#     pool_permit = models.OneToOneField(BP, on_delete=models.PROTECT)
-#     suffix = "Pool"
-#     public = models.BooleanField(default=100)
-#     area = models.PositiveIntegerField("Area (square feet)", default=1000)
-#     depth = models.PositiveIntegerField("Depth (feet)", default=6)
-
-#     enclosure = models.BooleanField(default=100)
-#     structural = models.BooleanField(default=100)
-#     accessibility = models.BooleanField(default=100)
-
-
-#     reviews = models.ManyToManyField(ReviewType, blank=True)
-#     inspections = models.ManyToManyField(InspectionType, blank=True)
-#     notes = models.TextField("Notes", max_length=255, blank=True)
-
-#     def __str__(self) -> str:
-#         return f"{self.pool_permit}-Pool"
+    def __str__(self) -> str:
+        return f"{self.grading_permit}-Grd"
     
-#     class Meta:
-#         verbose_name = "Pool/Spa Permits"
-#         verbose_name_plural = "Pool/Spa Permits"
+    class Meta:
+        ordering = ["grading_permit"]
+        verbose_name = "Grading Permits"
+        verbose_name_plural = "Grading Permits"
+
+##########################################################################
+""" Mechanical """
+##########################################################################
+
+class Mechanical(models.Model):
+    mechanical_permit = models.OneToOneField(BP, on_delete=models.PROTECT)
+    equipment_units = models.PositiveIntegerField(default=1)
+    hvac_units = models.PositiveIntegerField(default=1)
+    hvac_type = models.CharField(max_length=255, default="Split")
+    hvac_capacity = models.PositiveIntegerField(default=2)
+    length_of_ductwork = models.PositiveIntegerField(default=0)
+    process_piping = models.PositiveIntegerField(default=1)
 
 
-# ##########################################################################
-# """ All Models """
-# ##########################################################################
-# """The following list does not currently include the subtypes
-# because the models are not in their final form."""
+    def __str__(self) -> str:
+        return f"{self.mechanical_permit}-Mch"
+    
+    def add_notes(self):
+        if self.wh_type or self.wh_capacity:
+            self.notes.append("At inspection provide the CF2R, CF3R and the manufacturer's installation instructions.")
 
-# all_models = (
-#     ApplicantRole,
-#     OwnerRole,
-#     BP,
-#     Building,
-#     Demolition,
-#     Electrical,
-#     Fire,
-#     FloodZones,
-#     Flood,
-#     Grading,
-#     Mechanical,
-#     Plumbing,
-#     Pool
-# )
-# ##########################################################################
-# """ End File """
-# ##########################################################################
+    class Meta:
+        ordering = ["mechanical_permit"]
+        verbose_name = "Mechanical Permits"
+        verbose_name_plural = "Mechanical Permits"
+
+
+##########################################################################
+""" Plumbing """
+##########################################################################
+class Plumbing(models.Model):
+    plumbing_permit = models.OneToOneField(BP, on_delete=models.PROTECT)
+    general_fixtures = models.PositiveIntegerField(default=1000)
+
+    water_supply_service = models.PositiveIntegerField(default=100)
+    waste_water_service = models.PositiveIntegerField(default=100)
+
+    sewer_diameter = models.PositiveIntegerField(blank=True)
+    sewer_material = models.CharField(max_length=55, help_text="ABS")
+    sewer_trenchless = models.BooleanField(default=False)
+
+    wh_type = models.CharField(max_length=255, default="Heat Pump")
+    wh_capacity = models.PositiveIntegerField(default=50)
+
+    fuel = models.CharField(max_length=55, help_text="Propane")
+    fuel_gas_appliance = models.PositiveIntegerField(default=1000)
+    fuel_gas_pipe_length = models.PositiveIntegerField(blank=True)
+    fuel_gas_pipe_diameter = models.PositiveIntegerField(blank=True)
+    fuel_gas_pipe_material = models.CharField(max_length=55, help_text="Metal")
+    
+    propane_capacity = models.PositiveIntegerField(blank=True)
+    propane_underground = models.BooleanField(default=False)
+    propane_setback_to_structures = models.PositiveIntegerField(blank=True)
+
+    def __str__(self) -> str:
+        return f"{self.plumbing_permit}-Plb"
+
+    def add_notes(self):
+        if self.wh_type or self.wh_capacity:
+            self.notes.append("At inspection provide the CF2R and the installation instructions.")
+
+    class Meta:
+        ordering = ["plumbing_permit"]
+        verbose_name = "Plumbing Permits"
+        verbose_name_plural = "Plumbing Permits"
+
+
+##########################################################################
+""" Pool """
+##########################################################################
+class Pool(models.Model):
+    pool_permit = models.OneToOneField(BP, on_delete=models.PROTECT)
+    public = models.BooleanField(default=False)
+    area = models.PositiveIntegerField("Area (square feet)", blank=True)
+    depth = models.PositiveIntegerField("Depth (feet)", blank=True)
+
+    enclosure = models.BooleanField(default=False)
+    structural = models.BooleanField(default=False)
+    accessibility = models.BooleanField(default=False)
+
+    reviews = models.ManyToManyField(ReviewType, blank=True)
+    inspections = models.ManyToManyField(InspectionType, blank=True)
+    notes = []
+
+    def __str__(self) -> str:
+        return f"{self.pool_permit}-Pool"
+    
+    class Meta:
+        ordering = ["pool_permit"]
+        verbose_name = "Pool/Spa Permits"
+        verbose_name_plural = "Pool/Spa Permits"
+
+
+##########################################################################
+""" All Models """
+##########################################################################
+all_models = (
+    BP,
+    Building,
+    Demolition,
+    Electrical,
+    Fire,
+    FloodZones,
+    Flood,
+    Grading,
+    Mechanical,
+    Plumbing,
+    Pool
+)
+##########################################################################
+""" End File """
+##########################################################################

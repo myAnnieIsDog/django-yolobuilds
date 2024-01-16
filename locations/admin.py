@@ -15,14 +15,12 @@ class DistrictAdmin(admin.ModelAdmin):
 class JurisdictionAdmin(admin.ModelAdmin):
     pass
 
-class AddressInline(admin.StackedInline):
+class AddressInline(admin.TabularInline):
     model = SiteAddress
     extra = 0
 @admin.register(Parcel)
 class ParcelAdmin(admin.ModelAdmin):
-    list_display = ["book", "page", "parcel"]
-    list_display_links = ["book", "page", "parcel"]
-    list_filter = ["book", "page"]
+    ordering = ["book", "page", "parcel"]
     inlines = [AddressInline]
 
 @admin.register(CityStZip)

@@ -1,37 +1,112 @@
 {% extends "base.html" %}
 
+{% block extra_css %}
+<style>
+section table tr td {
+    border-top: 1px dashed gray;
+    padding: 10px 0;
+    vertical-align: top;
+}
+</style>
+{% endblock extra_css %}
 
-{% block header_text %}Building Division{% endblock header_text %}
+
+{% block heading %}Building Division{% endblock heading %}
 
 {% block main_content %}
+
 <section>
     <p>
-        If your permit is for activities entirely within <a href="https://www.yolocounty.org/government/general-government-departments/innovation-and-technology-services/geographical-information-system/use-gis">city limits</a>, and it is not an Evironmental Health permit, contact the city for your permit: <br>
-        <a href="https://www.google.com/search?q=city+of+davis+CA">Davis</a>  |  <a href="https://www.google.com/search?q=city+of+west+sacramento+CA">West Sacramento </a>  |  <a href="https://www.google.com/search?q=city+of+winters+CA">Winters </a>  |  <a href="https://www.google.com/search?q=city+of+woodland+CA">Woodland</a>
+            If your permit is for activities entirely within 
+            <a href="https://www.yolocounty.org/government/general-government-departments/innovation-and-technology-services/geographical-information-system/use-gis">
+            city limits</a>, contact the city for your permit:<br>
+    </p>
+    <p>
+        <a href="https://www.google.com/search?q=city+of+davis+CA"
+        > Davis</a>  |  
+        <a href="https://www.google.com/search?q=city+of+west+sacramento+CA"
+        > West Sacramento</a>  |  
+        <a href="https://www.google.com/search?q=city+of+winters+CA"
+        > Winters</a>  |  
+        <a href="https://www.google.com/search?q=city+of+woodland+CA"
+        > Woodland</a>
     </p>
 </section>
 
 <section>
-    <p>Monitor the progress of a <a href="/bp/permit" aria-disabled="true">permit, review, or inspection.</a></p>
-</section>
+    <h3>Applications</h3>
+    <table class="app-list">
+        <tr>
+            <td><a href="{% url 'bp:commercial' %}">Accessory Structures</a></td>
+            <td>Private garages, barns, sheds, towers, tanks, retaining walls, fences and other non-habitable and non-occupiable structures. See below for Pool/Spa.</td>
+        </tr>
 
-<section class="bp_app_list">
-    <p>Learn about or apply for a:</p>
-    <ul>
-        <li><a href="/bp/app/bldg">Building Permit</a> including residential, commercial, accessory, new, addition, or alteration.</li>
-        <li><a href="/bp/app/demo">Demolition Permit</a> for any building or structure.</li>
-        <li><a href="/bp/app/elc">Electrical Permit</a> including fire alarms, solar, batteries, EVCS, backup generators, and motor loads (such as well pumps).</li>
-        <li><a href="/bp/app/fire">Fire Permit</a> for fire sprinkler systems.</li>
-        <li><a href="/bp/app/flood">Flood Permit</a> for any development in a floodplain.</li>
-        <li><a href="/bp/app/grading">Grading Permit</a> for any earthwork.</li>
-        <li><a href="/bp/app/mch">Mechanical Permit</a> including HVAC.</li>
-        <li><a href="/bp/app/plb">Plumbing Permit</a> including water heaters and fuel gas piping.</li>
-        <li><a href="/bp/app/pool">Pool/Spa Permit</a> for any pool and/or spa, including private residential and public pools.</li>
-    </ul>
+        <tr>
+            <td><a href="{% url 'bp:commercial' %}">Commercial Buildings</a></td>
+            <td>Assembly, restaurants, offices, retail, factories, warehouses and similar occupiable spaces.</td>
+        </tr>
+
+        <tr>
+            <td><a href="{% url 'bp:dwelling' %}">Residential Dwellings</a></td>
+            <td>Custom homes, track homes, manufactured homes, tiny homes, accessory dwelling units (ADU's) and all other habitable spaces.</td>
+        </tr>
+
+        <tr>
+            <td><a href="{% url 'bp:demolition' %}">Demolition</a></td>
+            <td>Any building or structure (including pools) or partial demolition to prepare for a remodel.</td>
+        </tr>
+
+        <tr>
+            <td><a href="{% url 'bp:electrical' %}">Electrical</a></td>
+            <td>For work covered by the CA Electrical Code including Fire alarms, solar, batteries, EVCS, backup generators, and motor loads (such as well pumps).</td>
+        </tr>
+
+        <tr>
+            <td><a href="{% url 'bp:existing' %}">Existing Building</a></td>
+            <td>For work covered by the California Existing Building Code  including repair, alteration, remodel, reconstruction, moved structures, and additions.</td>
+        </tr>
+
+        <tr>
+            <td><a href="{% url 'bp:fire' %}">Fire</a></td>
+            <td>Work regulated by the CA Fire Code including construction permits, operational permits, and fire sprinkler systems. In some fire districts you will work directly with the fire district.</td>
+        </tr>
+
+        <tr>
+            <td><a href="{% url 'bp:flood' %}">Flood</a></td>
+            <td>For any development regulated by the Yolo County Flood Protection Ordinance.</td>
+        </tr>
+
+        <tr>
+            <td><a href="{% url 'bp:grading' %}">Grading</a></td>
+            <td>For any earthwork regulated by CA Building Code Appendix J.</td>
+        </tr>
+
+        <tr>
+            <td><a href="{% url 'bp:mechanical' %}">Mechanical</a></td>
+            <td>Work regulated by the CA Mechanical Code including HVAC.</td>
+        </tr>
+
+        <tr>
+            <td><a href="{% url 'bp:plumbing' %}">Plumbing</a></td>
+            <td>Work regulated by the CA Plumbing Code including water heaters and fuel gas piping.</td>
+        </tr>
+
+        <tr>
+            <td><a href="{% url 'bp:pool' %}">Pool/Spa</a></td>
+            <td>For any pool and/or spa, including private residential and public pools. Private Residential Pools are regulated by the Internation Swimming Pool and Spa Code and the California Swimming Pool Safety Act. Public Pools are regulated by CA Building Code Chapter 31B Public Pools and the Department of Public Health.</td>
+        </tr>   
+    </table>
 </section>
 
 <section>
-    <p>Submit a request for:</p>
+    <p>
+        Monitor the progress of a <a href="/bp/permit" aria-disabled="true">
+            permit, review, or inspection.</a>
+    </p>
+</section>
+
+<section>
+    <h3>Service Requests</h3>
     <ul>
         <li><a href="/bp/insp_req">Address Requests</a></li>
         <li><a href="/bp/insp_req">Certicate of Occupancy, Temporary</a></li>
@@ -42,4 +117,15 @@
         <li><a href="/bp/insp_req">Permit Refund</a></li>
     </ul>
 </section>
+
+
+
+<section>
+    <h3>Information</h3>
+    <ul>
+        <li><a href="/bp/structural">Structural</a></li>
+        <p>More to come...</p>
+    </ul>
+</section>
+
 {% endblock main_content %}

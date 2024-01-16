@@ -113,6 +113,11 @@ class TrakitFee(Fee):
 
     def __str__(self) -> str:
         return self.main_fee.fee_type
+    
+    class Meta:
+        ordering = ["trakit_main_fee"]
+        verbose_name = "Fee/Payment (Trakit)"
+        verbose_name_plural = "Fees/Payments (Trakit)"
 
 class ClaritiFee(Fee):
     clariti_main_fee = models.ForeignKey(Fee, on_delete=models.PROTECT, related_name="clariti_fee")
@@ -125,6 +130,11 @@ class ClaritiFee(Fee):
     def __str__(self) -> str:
         return self.main_fee.fee_type
     
+    class Meta:
+        ordering = ["clariti_main_fee"]
+        verbose_name = "Fee/Payment (Clariti)"
+        verbose_name_plural = "Fees/Payments (Clariti)"
+
 
 ##########################################################################
 """ Payment Model. """

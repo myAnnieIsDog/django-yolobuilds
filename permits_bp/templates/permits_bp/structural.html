@@ -1,163 +1,241 @@
-{% extends "layout.html" %}
+{% extends "base.html" %}
 
-{% block header_text %}
-Structural
-{% endblock header_text %}
-
+{% block heading %} Structural {% endblock heading %}
 
 {% block main_content %}
 
-<form id="Structural">
-    <section> <!-- Category -->
-        <h2>Prescriptive Requirements</h2> 
-        <p>2022 California Residential Code
-            <br>Conventional Light-Frame Wood Construction
-        </p>
+<section>
+    <p>
+        The following are frequently cited code sections during structural plan review and inspection, including several triggers for engineered design.
+    </p>
+</section>
 
-        <details> <!-- General -->
-            <summary>General</summary>
-            <dl>
-                <p><dt>Deviations</dt>
-                <dd>[R301.1.3.1]When any portion of any structure deviates from substantial compliance with conventional framing requirements for woodframe construction found in this code, the building official shall require the construction documents to be approved and stamped by a California licensed architect or engineer for that irregular or non-conforming portion of work.</dd></p>
-                
-                <p><dt>More than Two Stories</dt>
-                <dd>[R301.1.3.2 and R301.2.2.7] The building official shall require construction documents to be approved and stamped by a California licensed architect or engineer for all dwellings of woodframe construction more than two stories and basement in height.</dd></p>
+<section>
+    <h3> Prescriptive Requirements </h3> 
+    <p>
+        2022 California Residential Code
+        <br> Conventional Light-Frame Wood Construction
+    </p>
 
-                <p><dt>Other Than Wood Frame</dt>
-                <dd>[R301.1.3.3] The building official shall require floor, wall or roof-ceiling structural elements in dwellings designed of cold-formed steel, concrete, masonry or structural insulated panels prescribed by this code to be approved and stamped by a California licensed architect or engineer.</dd></p>
+</section>
 
-                <p><dt>Shipping Containers</dt>
-                <dd>[R301.1.4] Intermodal shipping containers that are repurposed for use as buildings or structures shall be designed in accordance with the structural provisions in Section 3115 of the California Building Code.</dd></p>
+<details>
+    <summary> General </summary>
 
-                <p><dt>Wind Speed</dt>
-                <dd>[R301.2.1] Ultimate design wind speed is 93 mph.</dd></p>
-                
-                <p><dt>Seismic Design Category</dt>
-                <dd>[R301.2.2] Use Seismic Design Category D2 or engineering site analysis.</dd></p>
-
-                <p><dt>Dead Loads</dt>
-                <dd>[R301.2.2.2] Provide engineered design if assembly dead load exceeds the following: 
-                    <ul> 
-                    <li>15 psf	Roof-Ceiling Assembly</li>
-                    <li>10 psf	Floor Assembly</li>
-                    <li>15 psf	Exterior light-frame walls</li>
-                    <li>10psf	Interior light-frame walls</li></ul></dd></p>
-
-                <p><dt>Irregularities</dt>
-                <dd>[R301.2.2.6]	The following irregularities require engineered design [see exceptions]: 
-                    <ul>
-                    <li>Shear wall or braced wall offsets out of plane.</li>
-                    <li>Floor or roof is not laterally supported by shear walls or braced wall lines on all edges.</li>
-                    <li>Shear wall or braced wall offsets in plane.</li>
-                    <li>Floor or roof opening exceeds 12 ft or 50% of the dimension.</li>
-                    <li>Portions of a floor level are vertically offset.</li>
-                    <li>Where shear wall and braced wall lines do not occur in two perpendicular directions.</li>
-                    <li>Where above grade story is wood-framed plus concrete or masonry construction.</li>
-                    <li>Where slope exceeds 1V:5H and the tallest cripple wall or post and beam exceeds 7 ft.</li></ul></dd></p>
-                
-                <p><dt>Plumbing Fixtures</dt>          
-                <dd>[R301.2.2.10] Water heaters and thermal storage units shall be anchored per Plumbing Code.</dd></p>
-
-                <p><dt>Story Height</dt>
-                <dd>[R301.] Story heights exceeding 11-ft 7-in require engineered design.</dd></p>
-
-                <p><dt>Treated Wood</dt>
-                <dd>[R317.1] Protection of wood against decay shall be provided in the following: 
-                    <ul>
-                    <li>Distance to exposed ground: 18” to joists, 12 inches to girders, 8 inches to columns.</li> 
-                    <li>Sills and sleepers on concrete.</li>
-                    <li>Siding/sheathing within 6” of ground, or 2” to concrete (sidewalks, etc.)</li>
-                    <li>Balconies, porches and similar supports exposed to weather.</li>
-                    <li>Field cuts, notches, and holes shall be treated in the field.</li></ul></dd></p>
-
-                <p><dt>Balconies</dt>
-                <dd>[R317.1.3]	Enclosed framing in exterior balconies and elevated walking surfaces that are exposed to rain shall be provided with opening that provide a net-free cross-ventilation area not less than 1/150 of the area of each separate space.</dd></p>
-            </dl>
-        </details>
-      
-        <details> <!-- Foundation -->
-            <summary>Foundation</summary>
-            <fieldset>
-                <div>
-                    <input type="checkbox" id="fireAlarm" name="fire" value="Fire Alarms" required />
-                    <label id="fireAlarmLbl" for="fireAlarm">Fire Alarms</label>
-                </div>
-            </fieldset>
-        </details>
-
-        <details> <!-- Foundation -->
-            <summary>Slab-on-Grade</summary>
-            <fieldset>
-                <div>
-                    <input type="checkbox" id="fireAlarm" name="fire" value="Fire Alarms" required />
-                    <label id="fireAlarmLbl" for="fireAlarm">Fire Alarms</label>
-                </div>
-            </fieldset>
-        </details>
-
-        <details> <!-- Floor Framing -->
-            <summary>Floor Framing</summary>
-            <fieldset>
-                <div>
-                    <input type="checkbox" id="fireAlarm" name="fire" value="Fire Alarms" required />
-                    <label id="fireAlarmLbl" for="fireAlarm">Fire Alarms</label>
-                </div>
-            </fieldset>
-        </details>
-
-        <details> <!-- Floor Framing -->
-            <summary>Decks</summary>
-            <fieldset>
-                <div>
-                    <input type="checkbox" id="fireAlarm" name="fire" value="Fire Alarms" required />
-                    <label id="fireAlarmLbl" for="fireAlarm">Fire Alarms</label>
-                </div>
-            </fieldset>
-        </details>
-
-        <details> <!-- Wall Framing -->
-            <summary>Wall Framing (Gravity)</summary>
-            <fieldset>
-                <div>
-                    <input type="checkbox" id="fireAlarm" name="fire" value="Fire Alarms" required />
-                    <label id="fireAlarmLbl" for="fireAlarm">Fire Alarms</label>
-                </div>
-            </fieldset>
-        </details>
-
-        <details> <!-- Wall Framing -->
-            <summary>Braced Walls (Lateral)</summary>
-            <fieldset>
-                <div>
-                    <input type="checkbox" id="fireAlarm" name="fire" value="Fire Alarms" required />
-                    <label id="fireAlarmLbl" for="fireAlarm">Fire Alarms</label>
-                </div>
-            </fieldset>
-        </details>
-
-        <details> <!-- Roof-Ceiling Framing -->
-            <summary>Roof-Ceiling Framing</summary>
-            <fieldset>
-                <div>
-                    <input type="checkbox" id="fireAlarm" name="fire" value="Fire Alarms" required />
-                    <label id="fireAlarmLbl" for="fireAlarm">Fire Alarms</label>
-                </div>
-            </fieldset>
-        </details>
-
-
-
-    </section>
-
-    <section> <!-- Notes -->
-        <p></p>
+    <section>
+        <h4> Deviations </h4>
         <p>
-            <label for="modDetail">Notes:</label><br>
-            <input class="wide" type="text" id="modDetail" name="modDetail">
+            <small>[R301.1.3.1]</small> <br>
+            When any portion of any structure deviates from substantial compliance with conventional framing requirements for woodframe construction found in this code, the building official shall require the construction documents to be approved and stamped by a California licensed architect or engineer for that irregular or non-conforming portion of work.
         </p>
     </section>
-</form>
+    
+    <section>
+        <h4> More than Two Stories </h4>
+        <p>
+            <small>[R301.1.3.2 and R301.2.2.7]</small> <br>
+            The building official shall require construction documents to be approved and stamped by a California licensed architect or engineer for all dwellings of woodframe construction more than two stories and basement in height.
+        </p>
+    </section>
+    
+    <section>
+        <h4> Other Than Wood Frame </h4>
+        <p>
+            <small>[R301.1.3.3]</small> <br>
+            The building official shall require floor, wall or roof-ceiling structural elements in dwellings designed of cold-formed steel, concrete, masonry or structural insulated panels prescribed by this code to be approved and stamped by a California licensed architect or engineer.
+        </p>
+    </section>
+    
+    <section>
+        <h4> Shipping Containers </h4>
+        <p>
+            <small>[R301.1.4]</small> <br>
+            Intermodal shipping containers that are repurposed for use as buildings or structures shall be designed in accordance with the structural provisions in Section 3115 of the California Building Code.
+        </p>
+    </section>
+    
+    <section>    
+        <h4> Wind Speed </h4>
+        <p>
+            <small>[R301.2.1]</small> <br>
+            Ultimate design wind speed is 93 mph.
+        </p>
+    </section>
+    
+    <section>                
+        <h4> Seismic Design Category </h4>
+        <p>
+            <small>[R301.2.2]</small> <br>
+            Use Seismic Design Category D2 or engineering site analysis.
+        </p>
+    </section>
+    
+    <section>    
+        <h4> Dead Loads </h4>
+        <p>
+            <small>[R301.2.2.2]</small> <br>
+            Provide engineered design if assembly dead load exceeds the following: 
+            <ul> 
+            <li>15 psf	Roof-Ceiling Assembly</li>
+            <li>10 psf	Floor Assembly</li>
+            <li>15 psf	Exterior light-frame walls</li>
+            <li>10psf	Interior light-frame walls</li></ul>
+        </p>
+    </section>
+    
+    <section>    
+        <h4> Irregularities </h4>
+        <p>
+            <small>[R301.2.2.6]</small> <br>
+            The following irregularities require engineered design [see exceptions]: 
+            <ul>
+            <li>Shear wall or braced wall offsets out of plane.</li>
+            <li>Floor or roof is not laterally supported by shear walls or braced wall lines on all edges.</li>
+            <li>Shear wall or braced wall offsets in plane.</li>
+            <li>Floor or roof opening exceeds 12 ft or 50% of the dimension.</li>
+            <li>Portions of a floor level are vertically offset.</li>
+            <li>Where shear wall and braced wall lines do not occur in two perpendicular directions.</li>
+            <li>Where above grade story is wood-framed plus concrete or masonry construction.</li>
+            <li>Where slope exceeds 1V:5H and the tallest cripple wall or post and beam exceeds 7 ft.</li></ul>
+        </p>
+    </section>
+    
+    <section>                
+        <h4> Plumbing Fixtures </h4>          
+        <p>
+            <small>[R301.2.2.10]</small> <br>
+            Water heaters and thermal storage units shall be anchored per Plumbing Code.
+        </p>
+    </section>
+    
+    <section>    
+        <h4> Story Height </h4>
+        <p>
+            <small>[R301.]</small> <br>
+            Story heights exceeding 11-ft 7-in require engineered design.
+        </p>
+    </section>
+    
+    <section>    
+        <h4> Treated Wood </h4>
+        <p>
+            <small>[R317.1]</small> <br>
+            Protection of wood against decay shall be provided at the following locations: 
+            <ul>
+                <li>Where floor joists are within 18" of exposed ground.</li>
+                <li>Where floor girders are within 12" of exposed ground.</li>
+                <li>Where floor columns are within 8" of exposed ground.</li>
+                <li>Where sills and sleepers are supported by concrete.</li>
+                <li>Where siding/sheathing are within 6” of ground or within 2” of concrete flatwork.</li>
+                <li>Where balconies, porches and similar supports are exposed to weather.</li>
+                <li>Field cuts, notches, and holes shall be treated in the field.</li>
+            </ul>
+        </p>
+    </section>
+    
+    <section>    
+        <h4> Balconies </h4>
+        <p>
+            <small>[R317.1.3]</small> <br>
+            Enclosed framing in exterior balconies and elevated walking surfaces that are exposed to rain shall be provided with opening that provide a net-free cross-ventilation area not less than 1/150 of the area of each separate space.
+        </p>
+    </section>
+</details>
+      
+<details>
+    <summary> Foundation </summary>
+    <section>
+        <p>
+            This section is under construction...
+        </p>
+    </section>
+</details>
 
-<!-- Submit Form -->
-<button id="submit" type="submit" form="InspRequest" formmethod="post">Create Comment Letter</button>
+<details> 
+    <summary> Slab-on-Grade </summary>
+    <section>
+        <p>
+            This section is under construction...
+        </p>
+    </section>
+</details>
+
+<details>
+    <summary> Floor Framing </summary>
+    <section>
+        <p>
+            This section is under construction...
+        </p>
+    </section>
+</details>
+
+<details> 
+    <summary> Decks </summary>
+    <section>
+        <p>
+            This section is under construction...
+        </p>
+    </section>
+</details>
+
+<details> 
+    <summary> Wall Framing (Gravity) </summary>
+    <section>
+        <p>
+            This section is under construction...
+        </p>
+    </section>
+</details>
+
+<details> 
+    <summary> Braced Walls (Lateral) </summary>
+    <section>
+        <p>
+            This section is under construction...
+        </p>
+    </section>
+</details>
+
+<details>
+    <summary> Roof-Ceiling Framing </summary>
+    <section>
+        <p>
+            This section is under construction...
+        </p>
+    </section>
+</details>
+
+
+<section>
+    <h3> Engineered Design </h3> 
+    <p> 2022 California Building Code </p>
+</section>
+
+<details> 
+    <summary> Design Criteria </summary>
+    <section>
+        <p>
+            This section is under construction...
+        </p>
+    </section>
+</details>
+
+<details>
+    <summary> Truss Calculations </summary>
+    <section>
+        <p>
+            This section is under construction...
+        </p>
+    </section>
+</details>
+
+<details>
+    <summary> Special Inspections </summary>
+    <section>
+        <p>
+            This section is under construction...
+        </p>
+    </section>
+</details>
+
 {% endblock main_content %}

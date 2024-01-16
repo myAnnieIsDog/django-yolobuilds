@@ -44,7 +44,9 @@ class StatusAdmin(admin.ModelAdmin):
 
 @admin.register(Type)
 class TypeAdmin(admin.ModelAdmin):
-    pass
+    list_display = ["division", "prefix", "type", "suffix", "policy"]
+    list_display_links = ["division", "prefix", "policy"] 
+    list_editable = ["type", "suffix"]
 
 @admin.register(Record)
 class RecordAdmin(admin.ModelAdmin):

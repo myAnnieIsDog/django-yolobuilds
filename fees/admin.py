@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import (Account, FeeType, Fee, 
-                     TrakitFee, PaymentMethod, Payment)
+                     TrakitFee, ClaritiFee, PaymentMethod, Payment)
 
 
 ##########################################################################
@@ -82,17 +82,21 @@ class FeeAdmin(admin.ModelAdmin):
     pass
 
 @admin.register(TrakitFee)
-class FeeAdmin(admin.ModelAdmin):
+class TrakitFeeAdmin(admin.ModelAdmin):
     name = "TRAKiT Fees"
 
 @admin.register(PaymentMethod)
-class FeeAdmin(admin.ModelAdmin):
+class PaymentMethodAdmin(admin.ModelAdmin):
     name = "Payment Methods"
     list_display = ["method", "policy"]
     list_display_links = ["method", "policy"]
 
 @admin.register(Payment)
-class FeeAdmin(admin.ModelAdmin):
+class PaymentAdmin(admin.ModelAdmin):
+    pass
+
+@admin.register(ClaritiFee)
+class ClaritiFeeAdmin(admin.ModelAdmin):
     pass
 
 ##########################################################################

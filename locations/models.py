@@ -113,7 +113,7 @@ class SiteAddress(models.Model):
         Parcel, on_delete=models.PROTECT, null=True, blank=True)
     number = models.CharField(max_length=10, default="12345")
     street = models.CharField(max_length=50, default="County Road 98")
-    city_st_zip = models.ForeignKey(CityStZip, on_delete=models.PROTECT, null=True, blank=True)
+    city_st_zip = models.ForeignKey(CityStZip, on_delete=models.PROTECT, null=True, blank=True, verbose_name="City, State, Zip")
     geolocation = models.CharField(max_length=50, null=True, blank=True)
 
     def __str__(self) -> str:
