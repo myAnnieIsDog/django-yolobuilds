@@ -98,6 +98,7 @@ class InspectionTrip(models.Model):
 """ All Models """
 ##########################################################################
 all_models = (
+    InspectionGroup,
     InspectionType,
     InspectionResult,
     Inspection,
