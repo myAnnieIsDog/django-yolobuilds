@@ -1,6 +1,5 @@
 ##########################################################################
-""" Review Models.  See permits.models for ReviewType, which was 
-placed there to prevent a circular reference to the Permit model. """
+""" Review Models """
 ##########################################################################
 from django.db import models
 from fees.models import FeeType
