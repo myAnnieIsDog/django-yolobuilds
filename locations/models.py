@@ -10,6 +10,7 @@ def apn_string_to_display(input: str) -> str:
     book, page, parcel = input[:-6], input[-6:-3], input[-3:]
     return f"{book}-{page}-{parcel}"
 
+
 class District(models.Model): 
     dist_type = models.CharField(max_length=100)
     district = models.CharField(max_length=55)
@@ -29,6 +30,24 @@ class District(models.Model):
         verbose_name = "District"
         verbose_name_plural = "Districts"
 
+
+class FloodZones(models.Model):
+    zone_code = models.CharField("Flood Zone Code", max_length=7)
+    zone_description = models.CharField("Flood Zone Description", max_length=255)
+    # FLOOD_ZONE_A = "A", "Approximate A Zone"
+    # FLOOD_ZONE_AE = "AE", "Detailed AE Zone"
+    # FLOOD_ZONE_AO = "AO", "Shallow Flooding"
+    # FLOOD_ZONE_A_FLOODWAY = "A/F", "No-Rise Floodway"
+    # FLOOD_ZONE_X = "X", "Not Regulated"
+
+    def __str__(self) -> str:
+        return self.zone_code
+    
+    class Meta:
+        verbose_name = "Flood Zone"
+        verbose_name_plural = "Flood Zones"
+
+
 class Jurisdiction(models.Model): 
     jurisdiction = models.CharField(max_length=55)
 
@@ -40,10 +59,6 @@ class Jurisdiction(models.Model):
         verbose_name = "Jurisdiction"
         verbose_name_plural = "Jurisdictions"
 
-
-##########################################################################
-""" Parcel Model """
-##########################################################################
 
 class Parcel(models.Model): 
     book = models.CharField(max_length=3, default="000")
@@ -68,13 +83,7 @@ class Parcel(models.Model):
 
     jurisdiction = models.ForeignKey(
         Jurisdiction, on_delete=models.PROTECT, null=True, blank=True)
-    districts = models.ManyToManyField(District, blank=True)
-    
-    content_type = models.ForeignKey(
-        ContentType, on_delete=models.CASCADE, null=True, blank=True)
-    object_id = models.PositiveIntegerField()
-    content_object = GenericForeignKey("content_type", "object_id")
-    
+    districts = models.ManyToManyField(District, blank=True)    
     parcels = models.ManyToManyField("self", blank=True)
     # addresses = one to many; see foreign key below
     # bl = models.ManyToManyField(SiteAddress, blank=True)
@@ -91,9 +100,7 @@ class Parcel(models.Model):
         verbose_name = "Parcel"
         verbose_name_plural = "Parcels"
 
-##########################################################################
-""" Address Model """
-##########################################################################
+
 class CityStZip(models.Model):
     city = models.CharField(max_length=55, blank=True)
     state = "CA"
@@ -106,6 +113,7 @@ class CityStZip(models.Model):
         ordering = ["city", "zip"]
         verbose_name = "City, State Zip"
         verbose_name_plural = "City, State Zip"
+
 
 class SiteAddress(models.Model): 
     """ Inherits Label, Description, Created, Modified """
@@ -124,15 +132,6 @@ class SiteAddress(models.Model):
         verbose_name = "Site Address"
         verbose_name_plural = "Site Addresses"
 
-##########################################################################
-""" All Models """
-##########################################################################
-all_models = (
-    District,
-    Jurisdiction,
-    Parcel,
-    SiteAddress,
-)
 ##########################################################################
 """ End File """
 ##########################################################################

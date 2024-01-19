@@ -1,9 +1,8 @@
 from django.urls import path
 from django.views.generic.base import TemplateView
-
+from .views import DemolitionCreateView
 app_name = "bp"
 urlpatterns = [
-
     path('', 
         TemplateView.as_view(template_name="permits_bp/home.html"), 
         name="home"),
@@ -24,59 +23,55 @@ urlpatterns = [
         TemplateView.as_view(template_name="permits_bp/structural.html"), 
         name="structural"),
 
-
     path('application/', 
         TemplateView.as_view(template_name="permits_bp/apply.html"), 
         name="application"),
 
-
-
-
     path('app/accessory/', 
-        TemplateView.as_view(template_name="permits_bp/accessory.html"),
+        TemplateView.as_view(template_name="permits_bp/_accessory.html"),
         name="accessory"),
 
     path('app/commercial/', 
-        TemplateView.as_view(template_name="permits_bp/commercial.html"),
+        TemplateView.as_view(template_name="permits_bp/_commercial.html"),
         name="commercial"),
 
     path('app/demolition/', 
-        TemplateView.as_view(template_name="permits_bp/demolition.html"),
+        DemolitionCreateView.as_view(template_name="permits_bp/_demolition.html"),
         name="demolition"),
     
     path('app/dwelling/', 
-        TemplateView.as_view(template_name="permits_bp/dwelling.html"),
+        TemplateView.as_view(template_name="permits_bp/_dwelling.html"),
         name="dwelling"),
 
     path('app/electrical/', 
-        TemplateView.as_view(template_name="permits_bp/electrical.html"),
+        TemplateView.as_view(template_name="permits_bp/_electrical.html"),
         name="electrical"),
 
     path('app/existing/',
-        TemplateView.as_view(template_name="permits_bp/existing.html"),
+        TemplateView.as_view(template_name="permits_bp/_existing.html"),
         name="existing"),
 
     path('app/fire/', 
-        TemplateView.as_view(template_name="permits_bp/fire.html"),
+        TemplateView.as_view(template_name="permits_bp/_fire.html"),
         name="fire"),
 
     path('app/flood/', 
-        TemplateView.as_view(template_name="permits_bp/flood.html"),
+        TemplateView.as_view(template_name="permits_bp/_flood.html"),
         name="flood"),
 
     path('app/grading/',
-        TemplateView.as_view(template_name="permits_bp/grading.html"), 
+        TemplateView.as_view(template_name="permits_bp/_grading.html"), 
         name="grading"),
 
     path('app/mechanical/', 
-        TemplateView.as_view(template_name="permits_bp/mechanical.html"), 
+        TemplateView.as_view(template_name="permits_bp/_mechanical.html"), 
         name="mechanical"),
 
     path('app/plumbing/', 
-        TemplateView.as_view(template_name="permits_bp/plumbing.html"), 
+        TemplateView.as_view(template_name="permits_bp/_plumbing.html"), 
         name="plumbing"),
 
     path('app/pool/', 
-        TemplateView.as_view(template_name="permits_bp/pool.html"), 
+        TemplateView.as_view(template_name="permits_bp/_pool.html"), 
         name="pool"),
 ]

@@ -1,26 +1,25 @@
-##########################################################################
-""" Review Models """
-##########################################################################
+from django.contrib.auth.models import User
 from django.db import models
-from fees.models import FeeType
-from profiles.models import Division, User
-from records.models import Record
+
+from records.models import Record, Type
+
+##########################################################################
+""" Review Types """
+##########################################################################
 
 class ReviewType(models.Model): 
-    review_division = models.ForeignKey(
-        Division, on_delete=models.PROTECT, related_name="+", 
-        null=True, blank=True)
     default_reviewer = models.ForeignKey(
-        User, on_delete=models.PROTECT, related_name="+", 
-        null=True, blank=True)
+        User, 
+        on_delete=models.PROTECT, 
+        related_name="default_reviewer_for", 
+        null=True, 
+        blank=True)
     review_type = models.CharField(max_length=30)
     days_cycle1 = models.PositiveSmallIntegerField(default=15)
     days_cycle2 = models.PositiveSmallIntegerField(default=5)
-    review_fees = models.ManyToManyField(
-        FeeType, related_name="+", blank=True)
-    prerequisite = models.ManyToManyField("self", blank=True)
     review_checklist = models.TextField("Review Checklist", blank=True)
-    add_next = models.ManyToManyField("self", blank=True)
+    """ Record types that will default to include this review. """
+    record_types = models.ManyToManyField(Type, blank=True, related_name="default_reviews")  
 
     def __str__(self) -> str:
         return self.review_type
@@ -46,8 +45,8 @@ class ReviewStatus(models.Model):
 
 
 class Review(models.Model):
-    record = models.ForeignKey(Record, on_delete=models.PROTECT) 
-    type = models.ForeignKey(ReviewType, on_delete=models.PROTECT)   
+    record = models.ForeignKey(Record, on_delete=models.PROTECT, related_name="review") 
+    type = models.ForeignKey(ReviewType, on_delete=models.PROTECT, related_name="review")   
     status = models.ForeignKey(ReviewStatus, on_delete=models.PROTECT)
     coa = models.TextField("Conditions of Approval", max_length=255)  
    
@@ -60,6 +59,7 @@ class Review(models.Model):
 
     class Meta:
         ordering = ["record", "type", "status"]
+
 
 class CycleResult(models.Model):
     result = models.CharField(max_length=55)
@@ -96,24 +96,13 @@ class ReviewCycle(models.Model):
     days_allotted = models.DurationField(null=True)
 
     def __str__(self) -> str:
-        return f"{self.cycle}"
+        return f"{self.review} Review, Cycle {self.cycle}"
     
     class Meta():
         ordering = ["review"]
         verbose_name = "Review Cycle"
         verbose_name_plural = "Review Cycles"
 
-
-##########################################################################
-""" All Models """
-##########################################################################
-all_models = (
-    ReviewType,
-    ReviewStatus,
-    Review,
-    CycleResult,
-    ReviewCycle,
-)
 ##########################################################################
 """ End File """
 ##########################################################################
