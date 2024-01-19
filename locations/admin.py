@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import (
-    District, FloodZones, Jurisdiction, Parcel, SiteAddress, CityStZip
+    District, Jurisdiction, Parcel, SiteAddress, CityStZip
 )
 ##########################################################################
 """ Location Admin """
@@ -10,11 +10,6 @@ class DistrictAdmin(admin.ModelAdmin):
     list_display = ["dist_type", "district", "description"]
     list_display_links = ["dist_type", "district", "description"]
     list_filter = ["dist_type"]
-
-@admin.register(FloodZones)
-class FloodZonesAdmin(admin.ModelAdmin):
-    list_display = ["zone_code", "zone_description"]
-    list_display_links = ["zone_code", "zone_description"]
 
 @admin.register(Jurisdiction)
 class JurisdictionAdmin(admin.ModelAdmin):
