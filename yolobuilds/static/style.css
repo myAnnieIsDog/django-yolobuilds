@@ -146,7 +146,7 @@ input, select {
     font-family:inherit;
     font-size: inherit;
     font-weight: 500; 
-    background-color: VAR(--INPUT);
+    background-color: VAR(--BUTTON);
 }
 input[type="text"],
 input[type="password"],
@@ -190,13 +190,6 @@ details[open] > summary {
     background-color: var(--INPUT);
     color: black;
 }
-
-section table tr td {
-    border-top: 1px dashed gray;
-    padding: 10px 0;
-    vertical-align: top;
-}
-
 
 .name {
     display: flex;

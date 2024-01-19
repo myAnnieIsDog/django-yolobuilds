@@ -1,27 +1,46 @@
-from django.contrib.auth.models import User
+##########################################################################
+""" Fee Type Models """
+##########################################################################
 from django.db import models
+from django.contrib.auth.models import User
+from django.contrib.contenttypes.fields import GenericForeignKey
+from django.contrib.contenttypes.models import ContentType
+from django.core.validators import MaxValueValidator, MinValueValidator
 import requests
 
 from profiles.models import Profile
-from records.models import Record, Type
+from records.models import Record
+
+
 
 ##########################################################################
-""" Fees """
+""" Accounts Model """
 ##########################################################################
-
 class Account(models.Model): 
-    fund = models.CharField(max_length=4, blank=True)
-    fund_label = models.CharField(max_length=55, blank=True)
-    share = models.DecimalField(max_digits=3, decimal_places=2, default=1.00)
-    unit = models.CharField(max_length=4, blank=True)
-    unit_label = models.CharField(max_length=55, blank=True)
-    unit_description = models.CharField(max_length=255, blank=True)
-    cost_center = models.CharField(max_length=6, blank=True)
-    gl_account = models.CharField(max_length=6, blank=True)
-    cams = models.CharField(max_length=9, blank=True)
-    infor_activity = models.CharField(max_length=7, blank=True)
-    infor_account = models.CharField(max_length=5, blank=True)
-    ledger = models.CharField(max_length=20, blank=True)
+    fund = models.CharField(
+        max_length=4, null=True, blank=True)
+    fund_label = models.CharField(
+        max_length=55, null=True, blank=True)
+    share = models.DecimalField(
+        max_digits=3, decimal_places=2, default=1.00)
+    unit = models.CharField(
+        max_length=4, null=True, blank=True)
+    unit_label = models.CharField(
+        max_length=55, null=True, blank=True)
+    unit_description = models.CharField(
+        max_length=255, null=True, blank=True)
+    cost_center = models.CharField(
+        max_length=6, null=True, blank=True)
+    gl_account = models.CharField(
+        max_length=6, null=True, blank=True)
+    cams = models.CharField(
+        max_length=9, null=True, blank=True)
+    infor_activity = models.CharField(
+        max_length=7, null=True, blank=True)
+    infor_account = models.CharField(
+        max_length=5, null=True, blank=True)
+    ledger = models.CharField(
+        max_length=20, null=True, blank=True)
     
     def __str__(self) -> str:
         return self.unit_label
@@ -32,8 +51,12 @@ class Account(models.Model):
         verbose_name_plural = "Accounts"
 
 
+##########################################################################
+""" Fee Types Model """
+##########################################################################
 class FeeType(models.Model): 
-    fee_account = models.ForeignKey(Account, on_delete=models.PROTECT, related_name="acct")
+    fee_account = models.ForeignKey(Account, on_delete=models.PROTECT, 
+                                    related_name="acct")
     fee_group = models.CharField(max_length=255)
     fee_name = models.CharField(max_length=255, unique=True)
     policy = models.TextField(max_length=1000, blank=True)
@@ -41,14 +64,15 @@ class FeeType(models.Model):
     adopted = models.DateField(null=True, blank=True)
     revised = models.DateField(null=True, blank=True)
     expires = models.DateField(null=True, blank=True)
-    tier_base_qty = models.DecimalField(max_digits=15, decimal_places=0, default=0)
-    tier_base_fee = models.DecimalField(max_digits=15, decimal_places=2, default=0)
+    tier_base_qty = models.DecimalField(max_digits=15, decimal_places=0, 
+                                        default=0)
+    tier_base_fee = models.DecimalField(max_digits=15, decimal_places=2, 
+                                        default=0)
     rate = models.FloatField(default=5000000) # round to prevent Float errors
     units = models.CharField(max_length=255, default="each")
-    rate_check = models.CharField(max_length=255, blank=True) 
+    rate_check = models.CharField(max_length=255, null=True, blank=True) 
     active = models.BooleanField(default=True)
     deleted = models.BooleanField(default=False)
-    record_types = models.ManyToManyField(Type, blank = True, related_name="default_fees")
 
     def __str__(self) -> str:
         return self.fee_name 
@@ -59,8 +83,16 @@ class FeeType(models.Model):
         verbose_name_plural = "Fee Types"
 
 
+##########################################################################
+""" Model for fees applied to a record."""
+##########################################################################
 class Fee(models.Model):
-    record = models.ForeignKey(Record, on_delete=models.PROTECT, related_name="fee")
+    # Attach the fee to a record of various types (permit, license, case)
+    # content_type = models.ForeignKey(ContentType, on_delete=models.PROTECT)
+    # object_id = models.PositiveIntegerField()
+    # content_object = GenericForeignKey("content_type", "object_id")
+    
+    permit = models.ForeignKey(Record, on_delete=models.PROTECT)
     fee_type = models.ForeignKey(FeeType, on_delete=models.PROTECT)
     qty = models.DecimalField(max_digits=20, decimal_places=7, default=1.0)
     amount = models.DecimalField(max_digits=15, decimal_places=2, default=1.00)
@@ -71,7 +103,7 @@ class Fee(models.Model):
         return self.fee_type
 
 
-class TrakitFee(models.Model):
+class TrakitFee(Fee):
     trakit_main_fee = models.ForeignKey(Fee, on_delete=models.PROTECT, related_name="trakit_fee")
     trakit_fee_code = models.CharField(max_length=255, null=True, blank=True)
     tech = models.CharField(max_length=255, null=True, blank=True)
@@ -87,8 +119,7 @@ class TrakitFee(models.Model):
         verbose_name = "Fee/Payment (Trakit)"
         verbose_name_plural = "Fees/Payments (Trakit)"
 
-
-class ClaritiFee(models.Model):
+class ClaritiFee(Fee):
     clariti_main_fee = models.ForeignKey(Fee, on_delete=models.PROTECT, related_name="clariti_fee")
     clariti_fee_code = models.CharField(max_length=255, null=True, blank=True)
     tech = models.CharField(max_length=255, null=True, blank=True)
@@ -105,6 +136,9 @@ class ClaritiFee(models.Model):
         verbose_name_plural = "Fees/Payments (Clariti)"
 
 
+##########################################################################
+""" Payment Model. """
+##########################################################################
 class PaymentMethod(models.Model):
     method = models.CharField(max_length=55, unique=True)
     policy = models.TextField(max_length=255)
@@ -170,6 +204,18 @@ class Payment(models.Model):
 
     # print(converge(ssl_amount = 0.50))
 
+    
+##########################################################################
+""" All Models """
+##########################################################################
+all_models = (
+    Account,
+    FeeType,
+    Fee,
+    TrakitFee,
+    PaymentMethod,
+    Payment,
+)
 ##########################################################################
 """ END FILE """
 ##########################################################################

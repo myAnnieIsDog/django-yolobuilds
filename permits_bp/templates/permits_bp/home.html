@@ -1,5 +1,16 @@
 {% extends "base.html" %}
 
+{% block extra_css %}
+<style>
+section table tr td {
+    border-top: 1px dashed gray;
+    padding: 10px 0;
+    vertical-align: top;
+}
+</style>
+{% endblock extra_css %}
+
+
 {% block heading %}Building Division{% endblock heading %}
 
 {% block main_content %}
@@ -24,20 +35,21 @@
 
 <section>
     <h3>Applications</h3>
-    <table>
+    <table class="app-list">
         <tr>
-            <td><a href="{% url 'bp:accessory' %}">Accessory Structures</a></td>
-            <td>New construction of private garages, barns, sheds, towers, tanks, retaining walls, fences and other non-habitable and non-occupiable structures. See below for Pool/Spa.</td>
+            <td><a href="{% url 'bp:commercial' %}">Accessory Structures</a></td>
+            <td>Private garages, barns, sheds, towers, tanks, retaining walls, fences and other non-habitable and non-occupiable structures. See below for Pool/Spa.</td>
         </tr>
 
         <tr>
-            <td><a href="{% url 'bp:commercial' %}">Commercial</a></td>
-            <td>New construction of halls, restaurants, offices, retail, factories, warehouses and similar occupiable spaces.</td>
+            <td><a href="{% url 'bp:commercial' %}">Commercial Buildings</a></td>
+            <td>Assembly, restaurants, offices, retail, factories, warehouses and similar occupiable spaces.</td>
         </tr>
 
         <tr>
-            <td><a href="{% url 'bp:dwelling' %}">Dwellings</a></td>
-            <td>New construction of custom homes, track homes, manufactured homes, tiny homes, accessory dwelling units (ADU's) and similar habitable spaces.
+            <td><a href="{% url 'bp:dwelling' %}">Residential Dwellings</a></td>
+            <td>Custom homes, track homes, manufactured homes, tiny homes, accessory dwelling units (ADU's) and all other habitable spaces.</td>
+        </tr>
 
         <tr>
             <td><a href="{% url 'bp:demolition' %}">Demolition</a></td>
@@ -95,46 +107,25 @@
 
 <section>
     <h3>Service Requests</h3>
-    <table>
-        <tr>
-            <td><a href="/bp/insp_req">Address</a></td>
-            <td>To request that an address be assigned to your property.</td>
-        </tr>
-        <tr>
-            <td><a href="/bp/insp_req">Appeal</a></td>
-            <td>To request an appeal of a staff decision.</td>
-        </tr>
-        <tr>
-            <td><a href="/bp/insp_req">Certicate of Occupancy</a></td>
-            <td> To request your certificate of occupancy (including temporary). </td>
-        </tr>
-        <tr>
-            <td><a href="/bp/insp_req"> Inspection </a></td>
-            <td> To request an inspection. </td>
-        </tr>
-        <tr>
-            <td><a href="/bp/insp_req"> Permit Cancellation </a></td>
-            <td> To cancel a permit. </td>
-        </tr>
-        <tr>
-            <td><a href="/bp/insp_req"> Permit Extension </a></td>
-            <td>To request a permit extension. </td>
-        </tr>
-        <tr>
-            <td><a href="/bp/insp_req"> Permit Refund </a></td>
-            <td> To request a refund of paid fees. </td>
-        </tr>
-    </table>
+    <ul>
+        <li><a href="/bp/insp_req">Address Requests</a></li>
+        <li><a href="/bp/insp_req">Certicate of Occupancy, Temporary</a></li>
+        <li><a href="/bp/insp_req">Certicate of Occupancy, Final</a></li>
+        <li><a href="/bp/insp_req">Inspection Requests</a></li>
+        <li><a href="/bp/insp_req">Permit Cancellation</a></li>
+        <li><a href="/bp/insp_req">Permit Extension</a></li>
+        <li><a href="/bp/insp_req">Permit Refund</a></li>
+    </ul>
 </section>
 
+
+
 <section>
-    <h3> Information </h3>
-    <table>
-        <tr>
-            <td><a href="/bp/structural"> Structural </a></td>
-            <td><p> More to come... </p></td>
-        </tr>
-    </table>
+    <h3>Information</h3>
+    <ul>
+        <li><a href="/bp/structural">Structural</a></li>
+        <p>More to come...</p>
+    </ul>
 </section>
 
 {% endblock main_content %}
