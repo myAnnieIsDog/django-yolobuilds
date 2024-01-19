@@ -1,49 +1,45 @@
-from django.db import models
-
-##########################################################################
-""" Base Models """
-##########################################################################
-from django.contrib.auth.models import User
 from django.contrib.contenttypes.fields import GenericForeignKey
 from django.contrib.contenttypes.models import ContentType
 from django.db import models
 from django.utils import timezone
 
-from locations.models import Parcel, SiteAddress
-from profiles.models import Division, Profile
-
 ##########################################################################
-""" Sequence Counts """
+""" Meta Models """
 ##########################################################################
-class Number(models.Model):
-    title = models.CharField(max_length = 55)
-    prefix = models.CharField(max_length=2)
-    year = models.DateTimeField(default=timezone.now().strftime("%Y"))
-    number = models.CharField(max_length=4, default="0000")
 
+class Division(models.Model): 
+    prefix = models.CharField(max_length=5, unique=True) 
+    division = models.CharField(max_length=30, unique=True)
+    full_division = models.CharField(max_length=255, unique=True)
+    year = models.CharField(max_length=55, default = timezone.now().strftime("%Y"))
+    sequence = models.CharField(max_length = 12, default = "0000")
+
+    class Meta:
+        ordering = ["division"]
+        verbose_name = "Division"
+        verbose_name_plural = "Divisions"
+    
     def __str__(self) -> str:
-        return self.series  
-    # BL, BP, CE, PW, ZF, Receipt, etc.
-
-    def next(series): # <- series title
-        n = Number.objects.get(series_title=series)
-        n.year = timezone.now().strftime("%Y")
+        return self.prefix
+    
+    def next(record_prefix, record_year):
+        """ This function is mostly side-effects, and returns the next record number. """
+        n = Division.objects.get(prefix=record_prefix)
+        if n.year != record_year and n.prefix != "BL": 
+            """ Annual Reset, except BL """
+            n.year = record_year
+            n.sequence = "0000"
         n.sequence = str(int(n.sequence) + 1)
         while len(n.sequence) < 4:
+            """ Add leading zeros to the string. """
             n.sequence = f"0{n.sequence}"
-        return f"{n.series}{n.year}-{n.sequence}"
-    
-    class Meta:
-        ordering = ["prefix", "year", "number"]
-        verbose_name = "Number"
-        verbose_name_plural = "Numbers"
+        n.save()
+        return {n.sequence}
 
-##########################################################################
-""" Restrictions """
-##########################################################################
+
 class Tag(models.Model):      
-    tag = models.CharField(max_length=100, unique=True)
-    policy = models.TextField(max_length=255)
+    tag = models.CharField(max_length=100, blank = True, unique=True)
+    policy = models.TextField(max_length=255, blank = True)
 
     def __str__(self) -> str:
         return self.tag   
@@ -55,8 +51,8 @@ class Tag(models.Model):
 
 
 class Restriction(models.Model):
-    tag = models.ForeignKey(Tag, on_delete=models.PROTECT)
-    policy = models.CharField(max_length=255, null=True, blank=True)
+    tag = models.ForeignKey(Tag, on_delete = models.PROTECT, blank = True, null = True)
+    policy = models.CharField(max_length = 255, null = True, blank = True)
 
     lock = models.BooleanField(
         "Lock this record?", default=False)
@@ -80,11 +76,27 @@ class Restriction(models.Model):
         ordering = ["tag"]
         verbose_name = "Restriction"
         verbose_name_plural = "Restrictions"
-
   
-##########################################################################
-""" Permit Options """
-#########################################################################
+
+class Type(models.Model): 
+    division = models.CharField(max_length=55, blank=True, null=True)
+    prefix = models.CharField(max_length=7, blank=True, null=True)
+    type = models.CharField(max_length=55, blank=True, null=True)
+    policy = models.CharField(max_length=255, blank=True, null=True)
+    suffix = models.CharField(max_length=7, blank=True, null=True)
+    # default_fees = models.ManyToManyField(FeeType, blank=True, null=True)
+    # default_reviews = models.ManyToManyField(ReviewType, blank=True, null=True)
+    # default_inspection = models.ManyToManyField(InspectionType, blank=True, null=True)
+
+    def __str__(self) -> str:
+        return self.type
+    
+    class Meta():
+        ordering = ["type"]
+        verbose_name = "Type"
+        verbose_name_plural = "Types"
+
+
 class Status(models.Model): 
     status = models.CharField(max_length=30, unique=True)
     policy = models.CharField(max_length=255)
@@ -99,134 +111,40 @@ class Status(models.Model):
         verbose_name = "Status"
         verbose_name_plural = "Statuses"
 
-
-class Form(models.Model):
-    form = models.CharField(max_length=255)
-    description = models.TextField(max_length=255)
-
-    def __str__(self) -> str:
-        return self.form
     
-    class Meta:
-        ordering = ["form"]
-        verbose_name = "Form"
-        verbose_name_plural = "Forms"
-
-
-class Question(models.Model):
-    question = models.TextField(max_length=255)
-
-    def __str__(self) -> str:
-        return self.question
-    
-    class Meta:
-        ordering = ["question"]
-        verbose_name = "Question"
-        verbose_name_plural = "Questions"
-
-
-class Type(models.Model): 
-    division = models.CharField(max_length=55, blank=True, null=True)
-    prefix = models.CharField(max_length=7, blank=True, null=True)
-    type = models.CharField(max_length=55, blank=True, null=True)
-    policy = models.CharField(max_length=255, blank=True, null=True)
-    suffix = models.CharField(max_length=7, blank=True, null=True)
-    default_fees = models.ManyToManyField("fees.FeeType", blank=True)
-    default_reviews = models.ManyToManyField("reviews.ReviewType", blank=True)
-    default_inspection = models.ManyToManyField("inspections.InspectionType", blank=True)
-    default_forms = models.ManyToManyField(Form, blank=True)
-    default_app_questions = models.ManyToManyField(Question, blank=True)
-
-    def __str__(self) -> str:
-        return self.type
-    
-    class Meta():
-        ordering = ["type"]
-        verbose_name = "Type"
-        verbose_name_plural = "Types"
-
-    
-##########################################################################
-""" Generic Records """
-##########################################################################
 class Record(models.Model):
-    division = models.ForeignKey(Division, on_delete=models.PROTECT)
-    status = models.ForeignKey(Status, on_delete=models.PROTECT)
+    number = models.CharField(max_length=55, unique = True)
+    division = models.ForeignKey(Division, on_delete=models.PROTECT, null = True, blank = True)
+    status = models.ForeignKey(Status, on_delete=models.PROTECT, null = True, blank = True)
 
-    number = models.CharField(max_length=55, blank=True)
     description = models.CharField(max_length=55, blank=True)
-    details = models.TextField(max_length=255, blank=True)
-    
-    scope = models.ManyToManyField(Type, blank=True)
-    apn = models.ManyToManyField(Parcel, blank=True)
-    address = models.ManyToManyField(SiteAddress, blank=True)
-    related = models.ManyToManyField("self", blank=True)
-    contacts = models.ManyToManyField(
-        Profile, through="Contact", blank=True)
-    app_questions = models.ManyToManyField(Question, blank=True)
-    forms = models.ManyToManyField("form", blank=True)
-    reviews = models.ManyToManyField(
-        "reviews.ReviewType", through="reviews.Review", blank=True)
-    inspections = models.ManyToManyField(
-        "inspections.InspectionType", through="inspections.Inspection", blank=True)
-    fees = models.ManyToManyField(
-        "fees.FeeType", through="fees.Fee", blank=True)
 
-    def __str__(self) -> str:
-        return f"{self.number}"  # -{self.type.suffix}-{self.type.type}
+    """ When creating a record search for address AND parcel and associate 
+    with address whenever possible. Use dialog to encourage selection of
+    an address when the applicant chooses a parce that has associated
+    addresses. """
+    location_type = ContentType() # either an address or apn
+    location_id = models.PositiveSmallIntegerField(null=True, blank = True)
+    location = GenericForeignKey(location_type, location_id)
+
+    """ Use functions/forms to generate the following relationships 
+    from their side as Foreign Keys to the Record. """
+    # related = models.ManyToManyField("self", blank=True)
+    # contacts = models.ForeignKey(Contact, on_delete=models.PROTECT, blank=True)
+    # reviews = models.ManyToManyField(ReviewType, through=Review, blank=True)
+    # inspections = models.ManyToManyField(InspectionType, through=Inspection, blank=True)
+    # fees = models.ManyToManyField(FeeType, through=Fee, blank=True)
     
     def set_number(self):
-        self.number = "BP24-0001"  # Replace with function.
+        year = timezone.now().strftime("%Y")
+        sequence = Division.next(self.prefix, year)
+        return f"{self.prefix}{year}-{sequence}-{self.suffix}"
 
     class Meta():
         ordering = ["number"]
         verbose_name = "Record"
         verbose_name_plural = "Records"
 
-
-class ContactType(models.Model):
-    role = models.CharField(max_length=55)
-    description = models.TextField(max_length=255)
-
-    def __str__(self) -> str:
-        return self.role
-
-    class Meta():
-        ordering = ["description"]
-        verbose_name = "Contact Type"
-        verbose_name_plural = "Contacts Types"
-
-
-class Contact(models.Model):
-    record = models.ForeignKey(Record, on_delete=models.PROTECT)
-    contact = models.ForeignKey(Profile, on_delete=models.PROTECT)
-    contact_type = models.ForeignKey(ContactType, on_delete=models.PROTECT)
-
-    def __str__(self) -> str:
-        return f"{self.contact} is the {self.role} on {self.record}."
-    
-    class Meta():
-        ordering = ["contact"]
-        verbose_name = "Contact"
-        verbose_name_plural = "Contacts"
-
-
-##########################################################################
-""" All Models """
-##########################################################################
-"""This list only includes models that are in their stable form."""
-all_models = (
-    Number,
-    Tag,
-    Restriction,
-    Form,
-    Question,
-    Status,
-    Type,
-    Record,
-    ContactType,
-    Contact,
-)
 ##########################################################################
 """ End File """
 ##########################################################################

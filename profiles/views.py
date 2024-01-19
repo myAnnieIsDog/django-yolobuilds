@@ -1,6 +1,6 @@
 from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin, UserPassesTestMixin
-from django.views.generic import base, detail, list, edit, dates
+from django.views.generic import View, TemplateView, RedirectView, DetailView, ListView, FormView, CreateView, UpdateView, DeleteView, YearArchiveView
 from .models import Profile
 
 
@@ -20,7 +20,7 @@ common_fields = [
             "zip", 
         ]
 
-class ProfileCreateView(LoginRequiredMixin, PermissionRequiredMixin, UserPassesTestMixin, SuccessMessageMixin, edit.CreateView):
+class ProfileCreateView(CreateView):
     template_name = "layout_form.html"
     model = Profile
     exclude = [
@@ -41,7 +41,7 @@ class ProfileCreateView(LoginRequiredMixin, PermissionRequiredMixin, UserPassesT
     success_message = "The profile for %(first_name)s %(last_name)s was created successfully."  
 
 
-class ProfileDetailView(detail.DetailView):
+class ProfileDetailView(DetailView):
     template_name = "layout_form.html"
     model = Profile
     fields = "__all__"
@@ -52,7 +52,7 @@ class ProfileDetailView(detail.DetailView):
     success_url = "profile-update"
 
 
-class ProfileUpdateView(edit.UpdateView):
+class ProfileUpdateView(UpdateView):
     template_name = "layout_form.html"
     model = Profile
     exclude = [

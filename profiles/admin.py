@@ -16,10 +16,10 @@ class ProfilesAdmin(admin.ModelAdmin):
     list_display = ["dept_code", "department"]
     list_display_links = ["dept_code", "department"]
 
-@admin.register(Division)
-class ProfilesAdmin(admin.ModelAdmin):
-    list_display = ["prefix", "division", "full_division"]
-    list_display_links = ["prefix", "division", "full_division"]
+# @admin.register(Division)
+# class ProfilesAdmin(admin.ModelAdmin):
+#     list_display = ["prefix", "division", "full_division"]
+#     list_display_links = ["prefix", "division", "full_division"]
 
 
 class LicenseTypeInline(admin.TabularInline):

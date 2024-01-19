@@ -30,6 +30,15 @@ ALLOWED_HOSTS = [ '*' ]
 # Application definition
 
 INSTALLED_APPS = [
+    'codes.apps.CodesConfig',
+    'locations.apps.LocationsConfig',
+    'records.apps.RecordsConfig',
+    'permits_bp.apps.PermitsBPConfig',
+    'profiles.apps.ProfilesConfig',
+    'reviews.apps.ReviewsConfig',
+    'inspections.apps.InspectionsConfig',
+    'fees.apps.FeesConfig',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -38,19 +47,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
+    'crispy_forms',
+    'crispy_bootstrap4',
     'debug_toolbar',
     'django_extensions',
     'django_recaptcha',
-
-    
-    'fees.apps.FeesConfig',
-    'inspections.apps.InspectionsConfig',
-    'locations.apps.LocationsConfig',
-    # 'permits.apps.PermitsConfig',
-    'permits_bp.apps.PermitsBPConfig',
-    'profiles.apps.ProfilesConfig',
-    'records.apps.RecordsConfig',
-    'reviews.apps.ReviewsConfig',
 ]
 
 MIDDLEWARE = [
@@ -63,7 +64,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
     "debug_toolbar.middleware.DebugToolbarMiddleware",   
-    # "django_htmx.middleware.HtmxMiddleware",
+    "django_htmx.middleware.HtmxMiddleware",
 ]
 
 ROOT_URLCONF = 'yolobuilds.urls'
@@ -157,9 +158,9 @@ STATICFILES_DIRS = ["yolobuilds/static/"]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
 
-CRISPY_TEMPLATE_PACK = 'bootstrap5'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 RECAPTCHA_PUBLIC_KEY = '6LdDMzspAAAAABhHNKa7mjiBoJ9pWcLyDugPNAPm'
 RECAPTCHA_PRIVATE_KEY = '6LdDMzspAAAAAEDuHwhHuV66OcQcNdb8EoVmXG9G'
